@@ -5,6 +5,9 @@ on:
   push:
     branches:
     - stanford
+    
+permissions:
+  pages: write
 
 # This job installs dependencies, build the book, and pushes it to `gh-pages`
 jobs:
