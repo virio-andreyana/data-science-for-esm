@@ -9,7 +9,6 @@ on:
 permissions:
   pages: write
   contents: read
-  metadata: read
 
 # This job installs dependencies, build the book, and pushes it to `gh-pages`
 jobs:
