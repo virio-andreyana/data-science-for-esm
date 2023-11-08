@@ -1,14 +1,18 @@
 name: deploy
 
 on:
-  # Trigger the workflow on push to main branch
+  # Trigger the workflow on push to stanford branch
   push:
     branches:
     - stanford
     
 permissions:
   pages: write
-  contents: read
+  deployments: write
+  contents: write
+  statuses: write
+  actions: write
+  checks: read
 
 # This job installs dependencies, build the book, and pushes it to `gh-pages`
 jobs:
