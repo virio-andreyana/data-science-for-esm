@@ -6,9 +6,9 @@
 #######################################################################################
 # Book settings
 title: Data Science for Energy System Modelling                         # The title of the book. Will be placed in the left navbar.
-author: Fabian Neumann                        # The author of the book
+author: Open Energy Transition and Fabian Neumann                      # The author of the book
 copyright: "2022-2023"                     # Copyright year to be placed in the footer
-logo: logo.png                          # A path to the book logo
+logo: oet-logo-red-n-subtitle.png                          # A path to the book logo
 
 # Force re-execution of notebooks on each build.
 # See https://jupyterbook.org/content/execute.html
@@ -26,9 +26,9 @@ bibtex_bibfiles:
 
 # Information about where the book exists on the web
 repository:
-  url: https://github.com/fneum/data-science-for-esm  # Online location of your book
+  url: https://open-energy-transition.github.io/data-science-for-esm  # Online location of your book
   path_to_book: data-science-for-esm  # Optional path to your book, relative to the repository root
-  branch: main  # Which branch of the repository should be used when creating links (optional)
+  branch: stanford  # Which branch of the repository should be used when creating links (optional)
 
 # Add GitHub buttons to your book
 # See https://jupyterbook.org/customize/config.html#add-a-link-to-your-repository
