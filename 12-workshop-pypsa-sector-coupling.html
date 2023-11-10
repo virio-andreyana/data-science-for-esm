@@ -456,7 +456,7 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(&#39;network-cem.nc&#39;, &lt;http.client.HTTPMessage at 0x7fcb22ab0610&gt;)
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(&#39;network-cem.nc&#39;, &lt;http.client.HTTPMessage at 0x7f3613a44850&gt;)
 </pre></div>
 </div>
 </div>
@@ -715,6 +715,8 @@ Name: 0, dtype: float64
 COP(\Delta T) = 6.81 - 0.121 \Delta T + 0.00063 \Delta T^2
 \]</div>
 <p>where <span class="math notranslate nohighlight">\(\Delta T = T_{sink} - T_{source}\)</span>.</p>
+<p>The quadratic regression used is based on Staffell et al. (2012)
+<a class="reference external" href="https://doi.org/10.1039/C2EE22653G">https://doi.org/10.1039/C2EE22653G</a>.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">cop</span><span class="p">(</span><span class="n">t_source</span><span class="p">,</span> <span class="n">t_sink</span><span class="o">=</span><span class="mi">55</span><span class="p">):</span>
@@ -943,7 +945,7 @@ COP(\Delta T) = 6.81 - 0.121 \Delta T + 0.00063 \Delta T^2
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x7fcb18504850&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x7f360d549a10&gt;
 </pre></div>
 </div>
 <img alt="_images/6d7b501a28f1f62160de41a41d6f0d073900ba661ee7fab871554c6f6a78d7cd.png" src="_images/6d7b501a28f1f62160de41a41d6f0d073900ba661ee7fab871554c6f6a78d7cd.png" />
@@ -1118,13 +1120,13 @@ Index([&#39;electrolysis&#39;, &#39;fuel cell&#39;, &#39;heat pump&#39;, &#39;re
 <div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Writing constraints.:   0%|          | 0/27 [00:00&lt;?, ?it/s]
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Writing constraints.:  48%|████▊     | 13/27 [00:00&lt;00:00, 105.95it/s]
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Writing constraints.:  41%|████      | 11/27 [00:00&lt;00:00, 102.22it/s]
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Writing constraints.:  89%|████████▉ | 24/27 [00:00&lt;00:00, 85.69it/s] 
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Writing constraints.:  81%|████████▏ | 22/27 [00:00&lt;00:00, 58.61it/s] 
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Writing constraints.: 100%|██████████| 27/27 [00:00&lt;00:00, 68.59it/s]
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Writing constraints.: 100%|██████████| 27/27 [00:00&lt;00:00, 49.88it/s]
 </pre></div>
 </div>
 <div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
@@ -1133,47 +1135,16 @@ Index([&#39;electrolysis&#39;, &#39;fuel cell&#39;, &#39;heat pump&#39;, &#39;re
 <div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Writing continuous variables.:   0%|          | 0/12 [00:00&lt;?, ?it/s]
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Writing continuous variables.: 100%|██████████| 12/12 [00:00&lt;00:00, 156.92it/s]
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Writing continuous variables.: 100%|██████████| 12/12 [00:00&lt;00:00, 116.50it/s]
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>INFO:linopy.io: Writing time: 0.49s
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Writing continuous variables.: 100%|██████████| 12/12 [00:00&lt;00:00, 115.46it/s]
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>INFO:linopy.io: Writing time: 0.67s
 </pre></div>
 </div>
 <div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>INFO:linopy.solvers:Log file at /tmp/highs.log.
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running HiGHS 1.5.3 [date: 2023-05-16, git hash: 594fa5a9d-dirty]
-Copyright (c) 2023 HiGHS under MIT licence terms
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Presolving model
-47129 rows, 42760 cols, 119487 nonzeros
-42749 rows, 34000 cols, 106347 nonzeros
-Presolve : Reductions: rows 42749(-51432); columns 34000(-9811); elements 106347(-61243)
-Solving the presolved LP
-Using EKK dual simplex solver - serial
-  Iteration        Objective     Infeasibilities num(sum)
-          0    -5.1304687500e+06 Ph1: 8758(9.8535e+06); Du: 2189(5130.47) 0s
-      22622     7.2640708420e+10 Pr: 6310(4.06246e+11); Du: 0(1.7237e-06) 5s
-      30752     1.2131406462e+11 7s
-Using EKK dual simplex solver - serial
-  Iteration        Objective     Infeasibilities num(sum)
-      30752     1.2129041226e+11 Pr: 1(8.59499e-06) 7s
-      30856     1.2129041006e+11 Pr: 0(0) 7s
-      30856     1.2129041006e+11 Pr: 0(0) 7s
-Solving the original LP from the solution after postsolve
-Using EKK dual simplex solver - serial
-  Iteration        Objective     Infeasibilities num(sum)
-      30856     1.2129041006e+11 Pr: 1432(0.0134378); Du: 0(2.19504e-08) 8s
-      32171     1.2129041006e+11 Pr: 2023(0.153982); Du: 0(4.15028e-08) 13s
-      32469     1.2129041006e+11 Pr: 1722(0.056773); Du: 0(5.42683e-08) 18s
-      32649     1.2129041006e+11 Pr: 1521(0.0124916); Du: 0(5.7636e-08) 23s
-      32799     1.2129041006e+11 Pr: 1298(0.00293577); Du: 0(5.76359e-08) 28s
-      32857     1.2129041006e+11 Pr: 0(0) 30s
-Model   status      : Optimal
-Simplex   iterations: 32857
-Objective value     :  1.2129041006e+11
-HiGHS run time      :         30.27
 </pre></div>
 </div>
 </div>
