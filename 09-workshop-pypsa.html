@@ -69,7 +69,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Capacity Expansion Planning with pypsa" href="10-workshop-pypsa-cem.html" />
-    <link rel="prev" title="Introduction to pyomo" href="08-workshop-pyomo.html" />
+    <link rel="prev" title="Introduction to rasterio and atlite" href="06-workshop-atlite.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -155,8 +155,8 @@ const thebe_selector_output = ".output, .cell_output"
       
     
     
-    <img src="_static/logo.png" class="logo__image only-light" alt="Data Science for Energy System Modelling - Home"/>
-    <script>document.write(`<img src="_static/logo.png" class="logo__image only-dark" alt="Data Science for Energy System Modelling - Home"/>`);</script>
+    <img src="_static/oet-logo-red-n-subtitle.png" class="logo__image only-light" alt="Data Science for Energy System Modelling - Home"/>
+    <script>document.write(`<img src="_static/oet-logo-red-n-subtitle.png" class="logo__image only-dark" alt="Data Science for Energy System Modelling - Home"/>`);</script>
   
   
 </a></div>
@@ -171,14 +171,7 @@ const thebe_selector_output = ".output, .cell_output"
             </li>
         </ul>
         <ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="01-workshop-python.html">Introduction to <code class="docutils literal notranslate"><span class="pre">Python</span></code></a></li>
-<li class="toctree-l1"><a class="reference internal" href="02-workshop-numpy.html">Introduction to <code class="docutils literal notranslate"><span class="pre">numpy</span></code> and <code class="docutils literal notranslate"><span class="pre">matplotlib</span></code></a></li>
-<li class="toctree-l1"><a class="reference internal" href="03-workshop-pandas.html">Introduction to <code class="docutils literal notranslate"><span class="pre">pandas</span></code></a></li>
-<li class="toctree-l1"><a class="reference internal" href="04-workshop-geopandas.html">Introduction to <code class="docutils literal notranslate"><span class="pre">geopandas</span></code> and <code class="docutils literal notranslate"><span class="pre">cartopy</span></code></a></li>
-<li class="toctree-l1"><a class="reference internal" href="05-workshop-pysheds.html">Introduction to <code class="docutils literal notranslate"><span class="pre">pysheds</span></code></a></li>
 <li class="toctree-l1"><a class="reference internal" href="06-workshop-atlite.html">Introduction to <code class="docutils literal notranslate"><span class="pre">rasterio</span></code> and <code class="docutils literal notranslate"><span class="pre">atlite</span></code></a></li>
-<li class="toctree-l1"><a class="reference internal" href="07-workshop-networkx.html">Introduction to <code class="docutils literal notranslate"><span class="pre">networkx</span></code></a></li>
-<li class="toctree-l1"><a class="reference internal" href="08-workshop-pyomo.html">Introduction to <code class="docutils literal notranslate"><span class="pre">pyomo</span></code></a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Introduction to <code class="docutils literal notranslate"><span class="pre">pypsa</span></code></a></li>
 <li class="toctree-l1"><a class="reference internal" href="10-workshop-pypsa-cem.html">Capacity Expansion Planning with <code class="docutils literal notranslate"><span class="pre">pypsa</span></code></a></li>
 <li class="toctree-l1"><a class="reference internal" href="11-workshop-groupwork.html">Preparation for Group Assignment</a></li>
@@ -238,7 +231,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://colab.research.google.com/github/fneum/data-science-for-esm/blob/main/data-science-for-esm/09-workshop-pypsa.ipynb" target="_blank"
+      <li><a href="https://colab.research.google.com/github/open-energy-transition/data-science-for-esm/blob/stanford/data-science-for-esm/09-workshop-pypsa.ipynb" target="_blank"
    class="btn btn-sm dropdown-item"
    title="Launch onColab"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -269,7 +262,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/fneum/data-science-for-esm" target="_blank"
+      <li><a href="https://github.com/open-energy-transition/data-science-for-esm" target="_blank"
    class="btn btn-sm btn-source-repository-button dropdown-item"
    title="Source repository"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -286,7 +279,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/fneum/data-science-for-esm/issues/new?title=Issue%20on%20page%20%2F09-workshop-pypsa.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/open-energy-transition/data-science-for-esm/issues/new?title=Issue%20on%20page%20%2F09-workshop-pypsa.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -459,7 +452,7 @@ document.write(`
 <li><p><code class="docutils literal notranslate"><span class="pre">numpy</span></code> and <code class="docutils literal notranslate"><span class="pre">scipy</span></code> for linear algebra and sparse matrix calculations</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">matplotlib</span></code> and <code class="docutils literal notranslate"><span class="pre">cartopy</span></code> for plotting on a map</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">networkx</span></code> for network calculations</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">pyomo</span></code> for handling optimisation problems</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">linopy</span></code> for handling optimisation problems</p></li>
 </ul>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -502,7 +495,7 @@ document.write(`
 <td><p>Power distribution and transmission lines (overhead and cables).</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference external" href="https://pypsa.readthedocs.io/en/latest/components.html#link">Link</a></p></td>
-<td><p>Links connect two buses with controllable energy flow, direction-control and losses. They can be used to model: <ul><li>HVDC links</li><li>HVAC lines (neglecting KVL, only net transfer capacities (NTCs))</li><li>conversion between carriers (e.g. electricity to hydrogen in electrolysis)</li></ul></p></td>
+<td><p>Links connect two buses with controllable energy flow, direction-control and losses. They can be used to model: <ul><li>HVDC links</li><li>HVAC lines (neglecting KVL, only net transfer capacities (NTCs))</li><li>conversion between carriers (e.g. electricity to hydrogen in electrolysis)</li><li>coupling between different sectors</li></ul></p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference external" href="https://pypsa.readthedocs.io/en/latest/components.html#storage-unit">StorageUnit</a></p></td>
 <td><p>Storage with fixed nominal energy-to-power ratio.</p></td>
@@ -544,13 +537,13 @@ document.write(`
 <h2>From structured data to optimisation<a class="headerlink" href="#from-structured-data-to-optimisation" title="Permalink to this heading">#</a></h2>
 <p>The design principle of PyPSA is that basically each component is associated with a set of variables and constraints that will be added to the optimisation model based on the input data stored for the components.</p>
 <p>For an <em>hourly</em> electricity market simulation, PyPSA will solve an optimisation problem that looks like this</p>
-<div class="amsmath math notranslate nohighlight" id="equation-1d0342e4-5a1c-4ff7-80c6-8bbd5992567e">
-<span class="eqno">(8)<a class="headerlink" href="#equation-1d0342e4-5a1c-4ff7-80c6-8bbd5992567e" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-35c286ca-8e65-488e-b9dd-880c8e39fabf">
+<span class="eqno">(1)<a class="headerlink" href="#equation-35c286ca-8e65-488e-b9dd-880c8e39fabf" title="Permalink to this equation">#</a></span>\[\begin{equation}
 \min_{g_{i,s,t}; f_{\ell,t}; g_{i,r,t,\text{charge}}; g_{i,r,t,\text{discharge}}; e_{i,r,t}} \sum_s o_{s} g_{i,s,t}
 \end{equation}\]</div>
 <p>such that</p>
-<div class="amsmath math notranslate nohighlight" id="equation-3fd079a7-34b3-4070-b8cd-a5793f35a88e">
-<span class="eqno">(9)<a class="headerlink" href="#equation-3fd079a7-34b3-4070-b8cd-a5793f35a88e" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-d4fb2b71-1724-4f65-a5b2-d23705c142a1">
+<span class="eqno">(2)<a class="headerlink" href="#equation-d4fb2b71-1724-4f65-a5b2-d23705c142a1" title="Permalink to this equation">#</a></span>\[\begin{align}
 0 &amp; \leq g_{i,s,t} \leq \hat{g}_{i,s,t} G_{i,s}  &amp; \text{generation limits : generator} \\
 -F_\ell &amp;\leq f_{\ell,t} \leq F_\ell &amp; \text{transmission limits : line}  \\
 d_{i,t} &amp;= \sum_s g_{i,s,t} + \sum_r g_{i,r,t,\text{discharge}} - \sum_r g_{i,r,t,\text{charge}} - \sum_\ell K_{i\ell} f_{\ell,t} &amp; \text{KCL : bus} \\
@@ -586,7 +579,7 @@ d_{i,t} &amp;= \sum_s g_{i,s,t} + \sum_r g_{i,r,t,\text{discharge}} - \sum_r g_{
 </section>
 <section id="simple-electricity-market-example">
 <h2>Simple electricity market example<a class="headerlink" href="#simple-electricity-market-example" title="Permalink to this heading">#</a></h2>
-<p>Let’s get acquainted with PyPSA to build a variant of one of the simple electricity market models we previously built in <code class="docutils literal notranslate"><span class="pre">pyomo</span></code>. Hopefully, it can convince you that it will be easier to work with PyPSA than with <code class="docutils literal notranslate"><span class="pre">pyomo</span></code>.</p>
+<p>Let’s get acquainted with PyPSA to build a variant of one of the simple electricity market models.</p>
 <p>We have the following data:</p>
 <ul class="simple">
 <li><p>fuel costs in € / MWh<span class="math notranslate nohighlight">\(_{th}\)</span></p></li>
@@ -594,9 +587,8 @@ d_{i,t} &amp;= \sum_s g_{i,s,t} + \sum_r g_{i,r,t,\text{discharge}} - \sum_r g_{
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fuel_cost</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span>
-    <span class="n">coal</span><span class="o">=</span><span class="mi">8</span><span class="p">,</span>
     <span class="n">gas</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span>
-    <span class="n">oil</span><span class="o">=</span><span class="mi">48</span><span class="p">,</span>
+    <span class="n">coal</span><span class="o">=</span><span class="mi">5</span>
 <span class="p">)</span>
 </pre></div>
 </div>
@@ -608,9 +600,8 @@ d_{i,t} &amp;= \sum_s g_{i,s,t} + \sum_r g_{i,r,t,\text{discharge}} - \sum_r g_{
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">efficiency</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span>
-    <span class="n">coal</span><span class="o">=</span><span class="mf">0.33</span><span class="p">,</span>
     <span class="n">gas</span><span class="o">=</span><span class="mf">0.58</span><span class="p">,</span>
-    <span class="n">oil</span><span class="o">=</span><span class="mf">0.35</span><span class="p">,</span>
+    <span class="n">coal</span><span class="o">=</span><span class="mf">0.45</span>
 <span class="p">)</span>
 </pre></div>
 </div>
@@ -623,10 +614,8 @@ d_{i,t} &amp;= \sum_s g_{i,s,t} + \sum_r g_{i,r,t,\text{discharge}} - \sum_r g_{
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># t/MWh thermal</span>
 <span class="n">emissions</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span>
-    <span class="n">coal</span><span class="o">=</span><span class="mf">0.34</span><span class="p">,</span>
     <span class="n">gas</span><span class="o">=</span><span class="mf">0.2</span><span class="p">,</span>
-    <span class="n">oil</span><span class="o">=</span><span class="mf">0.26</span><span class="p">,</span>
-    <span class="n">hydro</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span>
+    <span class="n">coal</span><span class="o">=</span><span class="mf">0.8</span>
 <span class="p">)</span>
 </pre></div>
 </div>
@@ -638,8 +627,8 @@ d_{i,t} &amp;= \sum_s g_{i,s,t} + \sum_r g_{i,r,t,\text{discharge}} - \sum_r g_{
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">power_plants</span> <span class="o">=</span> <span class="p">{</span>
-    <span class="s2">&quot;SA&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;coal&quot;</span><span class="p">:</span> <span class="mi">35000</span><span class="p">,</span> <span class="s2">&quot;wind&quot;</span><span class="p">:</span> <span class="mi">3000</span><span class="p">,</span> <span class="s2">&quot;gas&quot;</span><span class="p">:</span> <span class="mi">8000</span><span class="p">,</span> <span class="s2">&quot;oil&quot;</span><span class="p">:</span> <span class="mi">2000</span><span class="p">},</span>
-    <span class="s2">&quot;MZ&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;hydro&quot;</span><span class="p">:</span> <span class="mi">1200</span><span class="p">},</span>
+    <span class="s2">&quot;CA&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;gas&quot;</span><span class="p">:</span> <span class="mi">35000</span><span class="p">,</span> <span class="s2">&quot;solar&quot;</span><span class="p">:</span> <span class="mi">30000</span><span class="p">,</span> <span class="s2">&quot;coal&quot;</span><span class="p">:</span> <span class="mi">5000</span><span class="p">},</span>
+    <span class="s2">&quot;ME&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;wind&quot;</span><span class="p">:</span> <span class="mi">60000</span><span class="p">},</span>
 <span class="p">}</span>
 </pre></div>
 </div>
@@ -651,8 +640,8 @@ d_{i,t} &amp;= \sum_s g_{i,s,t} + \sum_r g_{i,r,t,\text{discharge}} - \sum_r g_{
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">loads</span> <span class="o">=</span> <span class="p">{</span>
-    <span class="s2">&quot;SA&quot;</span><span class="p">:</span> <span class="mi">42000</span><span class="p">,</span>
-    <span class="s2">&quot;MZ&quot;</span><span class="p">:</span> <span class="mi">650</span><span class="p">,</span>
+    <span class="s2">&quot;CA&quot;</span><span class="p">:</span> <span class="mi">52000</span><span class="p">,</span>
+    <span class="s2">&quot;ME&quot;</span><span class="p">:</span> <span class="mi">40000</span><span class="p">,</span>
 <span class="p">}</span>
 </pre></div>
 </div>
@@ -682,8 +671,8 @@ d_{i,t} &amp;= \sum_s g_{i,s,t} + \sum_r g_{i,r,t,\text{discharge}} - \sum_r g_{
 <p>Components can be added to the network <code class="docutils literal notranslate"><span class="pre">n</span></code> using the <code class="docutils literal notranslate"><span class="pre">n.add()</span></code> function. It takes the component name as a first argument, the name of the component as a second argument and possibly further parameters as keyword arguments. Let’s use this function, to add buses for each country to our network:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">n</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="s2">&quot;Bus&quot;</span><span class="p">,</span> <span class="s2">&quot;SA&quot;</span><span class="p">,</span> <span class="n">y</span><span class="o">=-</span><span class="mf">30.5</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="mi">25</span><span class="p">,</span> <span class="n">v_nom</span><span class="o">=</span><span class="mi">400</span><span class="p">,</span> <span class="n">carrier</span><span class="o">=</span><span class="s2">&quot;AC&quot;</span><span class="p">)</span>
-<span class="n">n</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="s2">&quot;Bus&quot;</span><span class="p">,</span> <span class="s2">&quot;MZ&quot;</span><span class="p">,</span> <span class="n">y</span><span class="o">=-</span><span class="mf">18.5</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="mf">35.5</span><span class="p">,</span> <span class="n">v_nom</span><span class="o">=</span><span class="mi">400</span><span class="p">,</span> <span class="n">carrier</span><span class="o">=</span><span class="s2">&quot;AC&quot;</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">n</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="s2">&quot;Bus&quot;</span><span class="p">,</span> <span class="s2">&quot;CA&quot;</span><span class="p">,</span> <span class="n">x</span><span class="o">=-</span><span class="mf">122.17</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mf">37.42</span><span class="p">,</span> <span class="n">v_nom</span><span class="o">=</span><span class="mi">400</span><span class="p">,</span> <span class="n">carrier</span><span class="o">=</span><span class="s2">&quot;AC&quot;</span><span class="p">)</span>
+<span class="n">n</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="s2">&quot;Bus&quot;</span><span class="p">,</span> <span class="s2">&quot;ME&quot;</span><span class="p">,</span> <span class="n">x</span><span class="o">=-</span><span class="mf">99.10</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mf">19.38</span><span class="p">,</span> <span class="n">v_nom</span><span class="o">=</span><span class="mi">400</span><span class="p">,</span> <span class="n">carrier</span><span class="o">=</span><span class="s2">&quot;AC&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -743,11 +732,11 @@ d_{i,t} &amp;= \sum_s g_{i,s,t} + \sum_r g_{i,r,t,\text{discharge}} - \sum_r g_{
   </thead>
   <tbody>
     <tr>
-      <th>SA</th>
+      <th>CA</th>
       <td>400.0</td>
       <td></td>
-      <td>25.0</td>
-      <td>-30.5</td>
+      <td>-122.17</td>
+      <td>37.42</td>
       <td>AC</td>
       <td></td>
       <td>1.0</td>
@@ -757,11 +746,11 @@ d_{i,t} &amp;= \sum_s g_{i,s,t} + \sum_r g_{i,r,t,\text{discharge}} - \sum_r g_{
       <td></td>
     </tr>
     <tr>
-      <th>MZ</th>
+      <th>ME</th>
       <td>400.0</td>
       <td></td>
-      <td>35.5</td>
-      <td>-18.5</td>
+      <td>-99.10</td>
+      <td>19.38</td>
       <td>AC</td>
       <td></td>
       <td>1.0</td>
@@ -784,7 +773,7 @@ d_{i,t} &amp;= \sum_s g_{i,s,t} + \sum_r g_{i,r,t,\text{discharge}} - \sum_r g_{
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{&#39;coal&#39;: 0.34, &#39;gas&#39;: 0.2, &#39;oil&#39;: 0.26, &#39;hydro&#39;: 0}
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{&#39;gas&#39;: 0.2, &#39;coal&#39;: 0.8}
 </pre></div>
 </div>
 </div>
@@ -793,44 +782,44 @@ d_{i,t} &amp;= \sum_s g_{i,s,t} + \sum_r g_{i,r,t,\text{discharge}} - \sum_r g_{
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">n</span><span class="o">.</span><span class="n">madd</span><span class="p">(</span>
     <span class="s2">&quot;Carrier&quot;</span><span class="p">,</span>
-    <span class="p">[</span><span class="s2">&quot;coal&quot;</span><span class="p">,</span> <span class="s2">&quot;gas&quot;</span><span class="p">,</span> <span class="s2">&quot;oil&quot;</span><span class="p">,</span> <span class="s2">&quot;hydro&quot;</span><span class="p">,</span> <span class="s2">&quot;wind&quot;</span><span class="p">],</span>
+    <span class="p">[</span><span class="s2">&quot;coal&quot;</span><span class="p">,</span> <span class="s2">&quot;gas&quot;</span><span class="p">,</span> <span class="s2">&quot;solar&quot;</span><span class="p">,</span> <span class="s2">&quot;wind&quot;</span><span class="p">],</span>
     <span class="n">co2_emissions</span><span class="o">=</span><span class="n">emissions</span><span class="p">,</span>
-    <span class="n">nice_name</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;Coal&quot;</span><span class="p">,</span> <span class="s2">&quot;Gas&quot;</span><span class="p">,</span> <span class="s2">&quot;Oil&quot;</span><span class="p">,</span> <span class="s2">&quot;Hydro&quot;</span><span class="p">,</span> <span class="s2">&quot;Onshore Wind&quot;</span><span class="p">],</span>
-    <span class="n">color</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;grey&quot;</span><span class="p">,</span> <span class="s2">&quot;indianred&quot;</span><span class="p">,</span> <span class="s2">&quot;black&quot;</span><span class="p">,</span> <span class="s2">&quot;aquamarine&quot;</span><span class="p">,</span> <span class="s2">&quot;dodgerblue&quot;</span><span class="p">],</span>
+    <span class="n">nice_name</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;Coal&quot;</span><span class="p">,</span> <span class="s2">&quot;Gas&quot;</span><span class="p">,</span> <span class="s2">&quot;Solar PV&quot;</span><span class="p">,</span> <span class="s2">&quot;Onshore Wind&quot;</span><span class="p">],</span>
+    <span class="n">color</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;black&quot;</span><span class="p">,</span> <span class="s2">&quot;grey&quot;</span><span class="p">,</span> <span class="s2">&quot;yellow&quot;</span><span class="p">,</span> <span class="s2">&quot;dodgerblue&quot;</span><span class="p">],</span>
 <span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Index([&#39;coal&#39;, &#39;gas&#39;, &#39;oil&#39;, &#39;hydro&#39;, &#39;wind&#39;], dtype=&#39;object&#39;)
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Index([&#39;coal&#39;, &#39;gas&#39;, &#39;solar&#39;, &#39;wind&#39;], dtype=&#39;object&#39;)
 </pre></div>
 </div>
 </div>
 </div>
 <p>The <code class="docutils literal notranslate"><span class="pre">n.add()</span></code> function is very general. It lets you add any component to the network object <code class="docutils literal notranslate"><span class="pre">n</span></code>. For instance, in the next step we add <strong>generators</strong> for all the different power plants.</p>
-<p>In Mozambique:</p>
+<p>In Mexico:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">n</span><span class="o">.</span><span class="n">add</span><span class="p">(</span>
     <span class="s2">&quot;Generator&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;MZ hydro&quot;</span><span class="p">,</span>
-    <span class="n">bus</span><span class="o">=</span><span class="s2">&quot;MZ&quot;</span><span class="p">,</span>
-    <span class="n">carrier</span><span class="o">=</span><span class="s2">&quot;hydro&quot;</span><span class="p">,</span>
-    <span class="n">p_nom</span><span class="o">=</span><span class="mi">1200</span><span class="p">,</span>  <span class="c1"># MW</span>
+    <span class="s2">&quot;ME wind&quot;</span><span class="p">,</span>
+    <span class="n">bus</span><span class="o">=</span><span class="s2">&quot;ME&quot;</span><span class="p">,</span>
+    <span class="n">carrier</span><span class="o">=</span><span class="s2">&quot;wind&quot;</span><span class="p">,</span>
+    <span class="n">p_nom</span><span class="o">=</span><span class="n">power_plants</span><span class="p">[</span><span class="s2">&quot;ME&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;wind&quot;</span><span class="p">),</span>  <span class="c1"># MW</span>
     <span class="n">marginal_cost</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span>  <span class="c1"># default</span>
 <span class="p">)</span>
 </pre></div>
 </div>
 </div>
 </div>
-<p>In South Africa (in a loop):</p>
+<p>In California (in a loop):</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">tech</span><span class="p">,</span> <span class="n">p_nom</span> <span class="ow">in</span> <span class="n">power_plants</span><span class="p">[</span><span class="s2">&quot;SA&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">tech</span><span class="p">,</span> <span class="n">p_nom</span> <span class="ow">in</span> <span class="n">power_plants</span><span class="p">[</span><span class="s2">&quot;CA&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
     <span class="n">n</span><span class="o">.</span><span class="n">add</span><span class="p">(</span>
         <span class="s2">&quot;Generator&quot;</span><span class="p">,</span>
-        <span class="sa">f</span><span class="s2">&quot;SA </span><span class="si">{</span><span class="n">tech</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">,</span>
-        <span class="n">bus</span><span class="o">=</span><span class="s2">&quot;SA&quot;</span><span class="p">,</span>
+        <span class="sa">f</span><span class="s2">&quot;CA </span><span class="si">{</span><span class="n">tech</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">,</span>
+        <span class="n">bus</span><span class="o">=</span><span class="s2">&quot;CA&quot;</span><span class="p">,</span>
         <span class="n">carrier</span><span class="o">=</span><span class="n">tech</span><span class="p">,</span>
         <span class="n">efficiency</span><span class="o">=</span><span class="n">efficiency</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">tech</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span>
         <span class="n">p_nom</span><span class="o">=</span><span class="n">p_nom</span><span class="p">,</span>
@@ -915,11 +904,11 @@ d_{i,t} &amp;= \sum_s g_{i,s,t} + \sum_r g_{i,r,t,\text{discharge}} - \sum_r g_{
   </thead>
   <tbody>
     <tr>
-      <th>MZ hydro</th>
-      <td>MZ</td>
+      <th>ME wind</th>
+      <td>ME</td>
       <td>PQ</td>
       <td></td>
-      <td>1200.0</td>
+      <td>60000.0</td>
       <td>False</td>
       <td>0.0</td>
       <td>inf</td>
@@ -939,8 +928,8 @@ d_{i,t} &amp;= \sum_s g_{i,s,t} + \sum_r g_{i,r,t,\text{discharge}} - \sum_r g_{
       <td>0.0</td>
     </tr>
     <tr>
-      <th>SA coal</th>
-      <td>SA</td>
+      <th>CA gas</th>
+      <td>CA</td>
       <td>PQ</td>
       <td></td>
       <td>35000.0</td>
@@ -963,11 +952,11 @@ d_{i,t} &amp;= \sum_s g_{i,s,t} + \sum_r g_{i,r,t,\text{discharge}} - \sum_r g_{
       <td>0.0</td>
     </tr>
     <tr>
-      <th>SA wind</th>
-      <td>SA</td>
+      <th>CA solar</th>
+      <td>CA</td>
       <td>PQ</td>
       <td></td>
-      <td>3000.0</td>
+      <td>30000.0</td>
       <td>False</td>
       <td>0.0</td>
       <td>inf</td>
@@ -987,35 +976,11 @@ d_{i,t} &amp;= \sum_s g_{i,s,t} + \sum_r g_{i,r,t,\text{discharge}} - \sum_r g_{
       <td>0.0</td>
     </tr>
     <tr>
-      <th>SA gas</th>
-      <td>SA</td>
+      <th>CA coal</th>
+      <td>CA</td>
       <td>PQ</td>
       <td></td>
-      <td>8000.0</td>
-      <td>False</td>
-      <td>0.0</td>
-      <td>inf</td>
-      <td>0.0</td>
-      <td>1.0</td>
-      <td>0.0</td>
-      <td>...</td>
-      <td>0</td>
-      <td>0</td>
-      <td>1</td>
-      <td>0</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>1.0</td>
-      <td>1.0</td>
-      <td>1.0</td>
-      <td>0.0</td>
-    </tr>
-    <tr>
-      <th>SA oil</th>
-      <td>SA</td>
-      <td>PQ</td>
-      <td></td>
-      <td>2000.0</td>
+      <td>5000.0</td>
       <td>False</td>
       <td>0.0</td>
       <td>inf</td>
@@ -1036,7 +1001,7 @@ d_{i,t} &amp;= \sum_s g_{i,s,t} + \sum_r g_{i,r,t,\text{discharge}} - \sum_r g_{
     </tr>
   </tbody>
 </table>
-<p>5 rows × 33 columns</p>
+<p>4 rows × 33 columns</p>
 </div></div></div>
 </div>
 <p>Next, we’re going to add the electricity demand.</p>
@@ -1045,9 +1010,9 @@ d_{i,t} &amp;= \sum_s g_{i,s,t} + \sum_r g_{i,r,t,\text{discharge}} - \sum_r g_{
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">n</span><span class="o">.</span><span class="n">add</span><span class="p">(</span>
     <span class="s2">&quot;Load&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;SA electricity demand&quot;</span><span class="p">,</span>
-    <span class="n">bus</span><span class="o">=</span><span class="s2">&quot;SA&quot;</span><span class="p">,</span>
-    <span class="n">p_set</span><span class="o">=</span><span class="n">loads</span><span class="p">[</span><span class="s2">&quot;SA&quot;</span><span class="p">],</span>
+    <span class="s2">&quot;CA electricity demand&quot;</span><span class="p">,</span>
+    <span class="n">bus</span><span class="o">=</span><span class="s2">&quot;CA&quot;</span><span class="p">,</span>
+    <span class="n">p_set</span><span class="o">=</span><span class="n">loads</span><span class="p">[</span><span class="s2">&quot;CA&quot;</span><span class="p">],</span>
     <span class="n">carrier</span><span class="o">=</span><span class="s2">&quot;electricity&quot;</span><span class="p">,</span>
 <span class="p">)</span>
 </pre></div>
@@ -1058,9 +1023,9 @@ d_{i,t} &amp;= \sum_s g_{i,s,t} + \sum_r g_{i,r,t,\text{discharge}} - \sum_r g_{
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">n</span><span class="o">.</span><span class="n">add</span><span class="p">(</span>
     <span class="s2">&quot;Load&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;MZ electricity demand&quot;</span><span class="p">,</span>
-    <span class="n">bus</span><span class="o">=</span><span class="s2">&quot;MZ&quot;</span><span class="p">,</span>
-    <span class="n">p_set</span><span class="o">=</span><span class="n">loads</span><span class="p">[</span><span class="s2">&quot;MZ&quot;</span><span class="p">],</span>
+    <span class="s2">&quot;ME electricity demand&quot;</span><span class="p">,</span>
+    <span class="n">bus</span><span class="o">=</span><span class="s2">&quot;ME&quot;</span><span class="p">,</span>
+    <span class="n">p_set</span><span class="o">=</span><span class="n">loads</span><span class="p">[</span><span class="s2">&quot;ME&quot;</span><span class="p">],</span>
     <span class="n">carrier</span><span class="o">=</span><span class="s2">&quot;electricity&quot;</span><span class="p">,</span>
 <span class="p">)</span>
 </pre></div>
@@ -1111,20 +1076,20 @@ d_{i,t} &amp;= \sum_s g_{i,s,t} + \sum_r g_{i,r,t,\text{discharge}} - \sum_r g_{
   </thead>
   <tbody>
     <tr>
-      <th>SA electricity demand</th>
-      <td>SA</td>
+      <th>CA electricity demand</th>
+      <td>CA</td>
       <td>electricity</td>
       <td></td>
-      <td>42000.0</td>
+      <td>52000.0</td>
       <td>0.0</td>
       <td>-1.0</td>
     </tr>
     <tr>
-      <th>MZ electricity demand</th>
-      <td>MZ</td>
+      <th>ME electricity demand</th>
+      <td>ME</td>
       <td>electricity</td>
       <td></td>
-      <td>650.0</td>
+      <td>40000.0</td>
       <td>0.0</td>
       <td>-1.0</td>
     </tr>
@@ -1132,15 +1097,15 @@ d_{i,t} &amp;= \sum_s g_{i,s,t} + \sum_r g_{i,r,t,\text{discharge}} - \sum_r g_{
 </table>
 </div></div></div>
 </div>
-<p>Finally, we add the connection between Mozambique and South Africa with a 500 MW line:</p>
+<p>Finally, we add the connection between California and Mexico with a 20 GW line:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">n</span><span class="o">.</span><span class="n">add</span><span class="p">(</span>
     <span class="s2">&quot;Line&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;SA-MZ&quot;</span><span class="p">,</span>
-    <span class="n">bus0</span><span class="o">=</span><span class="s2">&quot;SA&quot;</span><span class="p">,</span>
-    <span class="n">bus1</span><span class="o">=</span><span class="s2">&quot;MZ&quot;</span><span class="p">,</span>
-    <span class="n">s_nom</span><span class="o">=</span><span class="mi">500</span><span class="p">,</span>
+    <span class="s2">&quot;CA-ME&quot;</span><span class="p">,</span>
+    <span class="n">bus0</span><span class="o">=</span><span class="s2">&quot;CA&quot;</span><span class="p">,</span>
+    <span class="n">bus1</span><span class="o">=</span><span class="s2">&quot;ME&quot;</span><span class="p">,</span>
+    <span class="n">s_nom</span><span class="o">=</span><span class="mf">20e3</span><span class="p">,</span>
     <span class="n">x</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
     <span class="n">r</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
 <span class="p">)</span>
@@ -1222,15 +1187,15 @@ d_{i,t} &amp;= \sum_s g_{i,s,t} + \sum_r g_{i,r,t,\text{discharge}} - \sum_r g_{
   </thead>
   <tbody>
     <tr>
-      <th>SA-MZ</th>
-      <td>SA</td>
-      <td>MZ</td>
+      <th>CA-ME</th>
+      <td>CA</td>
+      <td>ME</td>
       <td></td>
       <td>1.0</td>
       <td>1.0</td>
       <td>0.0</td>
       <td>0.0</td>
-      <td>500.0</td>
+      <td>20000.0</td>
       <td>False</td>
       <td>0.0</td>
       <td>...</td>
@@ -1253,17 +1218,36 @@ d_{i,t} &amp;= \sum_s g_{i,s,t} + \sum_r g_{i,r,t,\text{discharge}} - \sum_r g_{
 <p>We can have a sneak peek at the network we built with the <code class="docutils literal notranslate"><span class="pre">n.plot()</span></code> function. More details on this in a bit.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">n</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">bus_sizes</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">margin</span><span class="o">=</span><span class="mi">1</span><span class="p">);</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">n</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">bus_sizes</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">margin</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">color_geomap</span><span class="o">=</span><span class="kc">True</span><span class="p">);</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/opt/hostedtoolcache/Python/3.11.6/x64/lib/python3.11/site-packages/cartopy/io/__init__.py:241: DownloadWarning:
+
+Downloading: https://naturalearth.s3.amazonaws.com/50m_physical/ne_50m_land.zip
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/opt/hostedtoolcache/Python/3.11.6/x64/lib/python3.11/site-packages/cartopy/io/__init__.py:241: DownloadWarning:
+
+Downloading: https://naturalearth.s3.amazonaws.com/50m_physical/ne_50m_ocean.zip
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/opt/hostedtoolcache/Python/3.11.6/x64/lib/python3.11/site-packages/cartopy/io/__init__.py:241: DownloadWarning:
+
+Downloading: https://naturalearth.s3.amazonaws.com/50m_cultural/ne_50m_admin_0_boundary_lines_land.zip
+</pre></div>
+</div>
 <div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/opt/hostedtoolcache/Python/3.11.6/x64/lib/python3.11/site-packages/cartopy/mpl/style.py:76: UserWarning:
 
 facecolor will have no effect as it has been defined as &quot;never&quot;.
+
+/opt/hostedtoolcache/Python/3.11.6/x64/lib/python3.11/site-packages/cartopy/io/__init__.py:241: DownloadWarning:
+
+Downloading: https://naturalearth.s3.amazonaws.com/50m_physical/ne_50m_coastline.zip
 </pre></div>
 </div>
-<img alt="_images/3fc5ed2ce4f101794b3f005bf5047ae4b38a41f1b7789a22f382b35436655615.png" src="_images/3fc5ed2ce4f101794b3f005bf5047ae4b38a41f1b7789a22f382b35436655615.png" />
+<img alt="_images/108697aacfbaf3adf12504e60cbd09a1de762d82816adee5540d89cccb4cf777.png" src="_images/108697aacfbaf3adf12504e60cbd09a1de762d82816adee5540d89cccb4cf777.png" />
 </div>
 </div>
 </section>
@@ -1295,8 +1279,8 @@ facecolor will have no effect as it has been defined as &quot;never&quot;.
 <div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>INFO:linopy.constants: Optimization successful: 
 Status: ok
 Termination condition: optimal
-Solution: 6 primals, 14 duals
-Objective: 1.38e+06
+Solution: 5 primals, 12 duals
+Objective: 2.22e+04
 Solver model: available
 Solver message: optimal
 </pre></div>
@@ -1307,12 +1291,18 @@ Solver message: optimal
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running HiGHS 1.5.3 [date: 2023-05-16, git hash: 594fa5a9d-dirty]
 Copyright (c) 2023 HiGHS under MIT licence terms
 Presolving model
-1 rows, 2 cols, 2 nonzeros
-0 rows, 0 cols, 0 nonzeros
-Presolve : Reductions: rows 0(-14); columns 0(-6); elements 0(-19) - Reduced to empty
+1 rows, 4 cols, 4 nonzeros
+1 rows, 3 cols, 3 nonzeros
+Presolve : Reductions: rows 1(-11); columns 3(-2); elements 3(-13)
+Solving the presolved LP
+Using EKK dual simplex solver - serial
+  Iteration        Objective     Infeasibilities num(sum)
+          0    -3.8097086805e-03 Pr: 1(42000) 0s
+          1     2.2222222222e+04 Pr: 0(0) 0s
 Solving the original LP from the solution after postsolve
 Model   status      : Optimal
-Objective value     :  1.3813912524e+06
+Simplex   iterations: 1
+Objective value     :  2.2222222222e+04
 HiGHS run time      :          0.00
 </pre></div>
 </div>
@@ -1349,15 +1339,13 @@ HiGHS run time      :          0.00
   <thead>
     <tr style="text-align: right;">
       <th>Generator</th>
-      <th>MZ hydro</th>
-      <th>SA coal</th>
-      <th>SA wind</th>
-      <th>SA gas</th>
-      <th>SA oil</th>
+      <th>ME wind</th>
+      <th>CA gas</th>
+      <th>CA solar</th>
+      <th>CA coal</th>
     </tr>
     <tr>
       <th>snapshot</th>
-      <th></th>
       <th></th>
       <th></th>
       <th></th>
@@ -1367,10 +1355,9 @@ HiGHS run time      :          0.00
   <tbody>
     <tr>
       <th>now</th>
-      <td>1150.0</td>
-      <td>35000.0</td>
-      <td>3000.0</td>
-      <td>1500.0</td>
+      <td>60000.0</td>
+      <td>-0.0</td>
+      <td>30000.0</td>
       <td>2000.0</td>
     </tr>
   </tbody>
@@ -1403,15 +1390,13 @@ HiGHS run time      :          0.00
   <thead>
     <tr style="text-align: right;">
       <th>Generator</th>
-      <th>MZ hydro</th>
-      <th>SA coal</th>
-      <th>SA wind</th>
-      <th>SA gas</th>
-      <th>SA oil</th>
+      <th>ME wind</th>
+      <th>CA gas</th>
+      <th>CA solar</th>
+      <th>CA coal</th>
     </tr>
     <tr>
       <th>snapshot</th>
-      <th></th>
       <th></th>
       <th></th>
       <th></th>
@@ -1421,11 +1406,10 @@ HiGHS run time      :          0.00
   <tbody>
     <tr>
       <th>now</th>
-      <td>0.958333</td>
       <td>1.0</td>
+      <td>-0.0</td>
       <td>1.0</td>
-      <td>0.1875</td>
-      <td>1.0</td>
+      <td>0.4</td>
     </tr>
   </tbody>
 </table>
@@ -1458,7 +1442,7 @@ HiGHS run time      :          0.00
   <thead>
     <tr style="text-align: right;">
       <th>Line</th>
-      <th>SA-MZ</th>
+      <th>CA-ME</th>
     </tr>
     <tr>
       <th>snapshot</th>
@@ -1468,7 +1452,7 @@ HiGHS run time      :          0.00
   <tbody>
     <tr>
       <th>now</th>
-      <td>-500.0</td>
+      <td>-20000.0</td>
     </tr>
   </tbody>
 </table>
@@ -1499,7 +1483,7 @@ HiGHS run time      :          0.00
   <thead>
     <tr style="text-align: right;">
       <th>Line</th>
-      <th>SA-MZ</th>
+      <th>CA-ME</th>
     </tr>
     <tr>
       <th>snapshot</th>
@@ -1509,7 +1493,7 @@ HiGHS run time      :          0.00
   <tbody>
     <tr>
       <th>now</th>
-      <td>500.0</td>
+      <td>20000.0</td>
     </tr>
   </tbody>
 </table>
@@ -1542,8 +1526,8 @@ HiGHS run time      :          0.00
   <thead>
     <tr style="text-align: right;">
       <th>Bus</th>
-      <th>SA</th>
-      <th>MZ</th>
+      <th>CA</th>
+      <th>ME</th>
     </tr>
     <tr>
       <th>snapshot</th>
@@ -1554,8 +1538,155 @@ HiGHS run time      :          0.00
   <tbody>
     <tr>
       <th>now</th>
-      <td>172.413793</td>
+      <td>11.111111</td>
       <td>-0.0</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<p>The <code class="docutils literal notranslate"><span class="pre">statistics</span></code> module comes in handy for a quick overview.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">n</span><span class="o">.</span><span class="n">statistics</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th></th>
+      <th>Capacity Factor</th>
+      <th>Capital Expenditure</th>
+      <th>Curtailment</th>
+      <th>Dispatch</th>
+      <th>Installed Capacity</th>
+      <th>Market Value</th>
+      <th>Operational Expenditure</th>
+      <th>Optimal Capacity</th>
+      <th>Revenue</th>
+      <th>Supply</th>
+      <th>Withdrawal</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th>carrier</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th rowspan="4" valign="top">Generator</th>
+      <th>Coal</th>
+      <td>0.4</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>2000.0</td>
+      <td>5000.0</td>
+      <td>11.111111</td>
+      <td>22222.222222</td>
+      <td>5000.0</td>
+      <td>22222.222222</td>
+      <td>2000.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>Gas</th>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>35000.0</td>
+      <td>NaN</td>
+      <td>0.000000</td>
+      <td>35000.0</td>
+      <td>0.000000</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>Onshore Wind</th>
+      <td>1.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>60000.0</td>
+      <td>60000.0</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>60000.0</td>
+      <td>0.000000</td>
+      <td>60000.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>Solar PV</th>
+      <td>1.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>30000.0</td>
+      <td>30000.0</td>
+      <td>11.111111</td>
+      <td>0.000000</td>
+      <td>30000.0</td>
+      <td>333333.333333</td>
+      <td>30000.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>Line</th>
+      <th>AC</th>
+      <td>1.0</td>
+      <td>0.0</td>
+      <td>NaN</td>
+      <td>20000.0</td>
+      <td>20000.0</td>
+      <td>11.111111</td>
+      <td>NaN</td>
+      <td>20000.0</td>
+      <td>222222.222222</td>
+      <td>20000.0</td>
+      <td>-20000.0</td>
+    </tr>
+    <tr>
+      <th>Load</th>
+      <th>electricity</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>-92000.0</td>
+      <td>NaN</td>
+      <td>-6.280193</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>577777.777777</td>
+      <td>0.0</td>
+      <td>-92000.0</td>
     </tr>
   </tbody>
 </table>
@@ -1576,13 +1707,13 @@ HiGHS run time      :          0.00
 <p>PyPSA has a built-in plotting function based on <code class="docutils literal notranslate"><span class="pre">matplotlib</span></code>, ….</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">n</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">margin</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">bus_sizes</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">n</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">margin</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">bus_sizes</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">color_geomap</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(&lt;matplotlib.collections.PatchCollection at 0x7f699b7db790&gt;,
- &lt;matplotlib.collections.LineCollection at 0x7f699b7d0d50&gt;)
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(&lt;matplotlib.collections.PatchCollection at 0x7fa1dbeee510&gt;,
+ &lt;matplotlib.collections.LineCollection at 0x7fa1dbdc82d0&gt;)
 </pre></div>
 </div>
 <div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/opt/hostedtoolcache/Python/3.11.6/x64/lib/python3.11/site-packages/cartopy/mpl/style.py:76: UserWarning:
@@ -1590,7 +1721,7 @@ HiGHS run time      :          0.00
 facecolor will have no effect as it has been defined as &quot;never&quot;.
 </pre></div>
 </div>
-<img alt="_images/9d1b7ceab719bba9fdad62cd3ead7a2ff7104a655e47b9421f6997c73bf0e8eb.png" src="_images/9d1b7ceab719bba9fdad62cd3ead7a2ff7104a655e47b9421f6997c73bf0e8eb.png" />
+<img alt="_images/c7a91a58527a3b2246b1f02df9d339f99b92e92cb02118173ffda953326930ac.png" src="_images/c7a91a58527a3b2246b1f02df9d339f99b92e92cb02118173ffda953326930ac.png" />
 </div>
 </div>
 <p>Since we have provided <code class="docutils literal notranslate"><span class="pre">x</span></code> and <code class="docutils literal notranslate"><span class="pre">y</span></code> coordinates for our buses, <code class="docutils literal notranslate"><span class="pre">n.plot()</span></code> will try to plot the network on a map by default. Of course, there’s an option to deactivate this behaviour:</p>
@@ -1601,7 +1732,7 @@ facecolor will have no effect as it has been defined as &quot;never&quot;.
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/7806fcf4777786824740af2a62f6734f43380eb90f5b42ae339207f4b04e1922.png" src="_images/7806fcf4777786824740af2a62f6734f43380eb90f5b42ae339207f4b04e1922.png" />
+<img alt="_images/002b250777692e7d5f911e90524451c778957e0dc6bce45c5476569f8cfea1a7.png" src="_images/002b250777692e7d5f911e90524451c778957e0dc6bce45c5476569f8cfea1a7.png" />
 </div>
 </div>
 <p>The <code class="docutils literal notranslate"><span class="pre">n.plot()</span></code> function has a variety of styling arguments to tweak the appearance of the buses, the lines and the map in the background:</p>
@@ -1626,7 +1757,7 @@ facecolor will have no effect as it has been defined as &quot;never&quot;.
 facecolor will have no effect as it has been defined as &quot;never&quot;.
 </pre></div>
 </div>
-<img alt="_images/87bfc90063a6f1cb65131867f360f6177281aebbd96e3f156899d1a78cc49c18.png" src="_images/87bfc90063a6f1cb65131867f360f6177281aebbd96e3f156899d1a78cc49c18.png" />
+<img alt="_images/26ec48172d645c83bb22d5637766f808fdd3583e102b2c6cf125ef1c1d022124.png" src="_images/26ec48172d645c83bb22d5637766f808fdd3583e102b2c6cf125ef1c1d022124.png" />
 </div>
 </div>
 <p>Just like with <code class="docutils literal notranslate"><span class="pre">geopandas</span></code> we can also control the projection of the network plot:</p>
@@ -1635,7 +1766,7 @@ facecolor will have no effect as it has been defined as &quot;never&quot;.
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">))</span>
 <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">axes</span><span class="p">(</span><span class="n">projection</span><span class="o">=</span><span class="n">ccrs</span><span class="o">.</span><span class="n">EqualEarth</span><span class="p">())</span>
 
-<span class="n">n</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">ax</span><span class="o">=</span><span class="n">ax</span><span class="p">,</span> <span class="n">margin</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">bus_sizes</span><span class="o">=</span><span class="mi">2</span><span class="p">);</span>
+<span class="n">n</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">ax</span><span class="o">=</span><span class="n">ax</span><span class="p">,</span> <span class="n">margin</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">bus_sizes</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">color_geomap</span><span class="o">=</span><span class="kc">True</span><span class="p">);</span>
 </pre></div>
 </div>
 </div>
@@ -1645,7 +1776,7 @@ facecolor will have no effect as it has been defined as &quot;never&quot;.
 facecolor will have no effect as it has been defined as &quot;never&quot;.
 </pre></div>
 </div>
-<img alt="_images/d2957ec4ca53169c58ed7e4eb83bcc704dd4db2cecb5d02ff6294b538c1c224f.png" src="_images/d2957ec4ca53169c58ed7e4eb83bcc704dd4db2cecb5d02ff6294b538c1c224f.png" />
+<img alt="_images/9bc9d74229ead3cab9e0aa54f978f16f923ac62f9bfe42db426825c2339fc907.png" src="_images/9bc9d74229ead3cab9e0aa54f978f16f923ac62f9bfe42db426825c2339fc907.png" />
 </div>
 </div>
 <p>We can use the <code class="docutils literal notranslate"><span class="pre">bus_sizes</span></code> argument of <code class="docutils literal notranslate"><span class="pre">n.plot()</span></code> to display the regional distribution of load. First, we calculate the total load per bus:</p>
@@ -1664,8 +1795,8 @@ facecolor will have no effect as it has been defined as &quot;never&quot;.
 </div>
 <div class="cell_output docutils container">
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>bus
-MZ    0.065
-SA    4.200
+CA    5.2
+ME    4.0
 Name: p_set, dtype: float64
 </pre></div>
 </div>
@@ -1674,7 +1805,7 @@ Name: p_set, dtype: float64
 <p>The resulting <code class="docutils literal notranslate"><span class="pre">pandas.Series</span></code> we can pass to <code class="docutils literal notranslate"><span class="pre">n.plot(bus_sizes=...)</span></code>:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">n</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">margin</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">bus_sizes</span><span class="o">=</span><span class="n">s</span><span class="p">);</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">n</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">margin</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">bus_sizes</span><span class="o">=</span><span class="n">s</span><span class="p">,</span> <span class="n">color_geomap</span><span class="o">=</span><span class="kc">True</span><span class="p">);</span>
 </pre></div>
 </div>
 </div>
@@ -1684,7 +1815,7 @@ Name: p_set, dtype: float64
 facecolor will have no effect as it has been defined as &quot;never&quot;.
 </pre></div>
 </div>
-<img alt="_images/8b1e44d69c1fbb5c977996a287099ac0dfb2376c030ec251e2051bfcb3789b83.png" src="_images/8b1e44d69c1fbb5c977996a287099ac0dfb2376c030ec251e2051bfcb3789b83.png" />
+<img alt="_images/b77490e31a48906e531588fd0b12bd7b964e577e79c03207b8d0852349303a80.png" src="_images/b77490e31a48906e531588fd0b12bd7b964e577e79c03207b8d0852349303a80.png" />
 </div>
 </div>
 <p>The important point here is, that <code class="docutils literal notranslate"><span class="pre">s</span></code> needs to have entries for all buses, i.e. its index needs to match <code class="docutils literal notranslate"><span class="pre">n.buses.index</span></code>.</p>
@@ -1698,11 +1829,10 @@ facecolor will have no effect as it has been defined as &quot;never&quot;.
 </div>
 <div class="cell_output docutils container">
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Generator
-MZ hydro     1150.0
-SA coal     35000.0
-SA wind      3000.0
-SA gas       1500.0
-SA oil       2000.0
+ME wind     60000.0
+CA gas         -0.0
+CA solar    30000.0
+CA coal      2000.0
 Name: now, dtype: float64
 </pre></div>
 </div>
@@ -1725,11 +1855,10 @@ Name: now, dtype: float64
 </div>
 <div class="cell_output docutils container">
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>bus  carrier
-MZ   hydro       1150.0
-SA   coal       35000.0
-     gas         1500.0
-     oil         2000.0
-     wind        3000.0
+CA   coal        2000.0
+     gas            0.0
+     solar      30000.0
+ME   wind       60000.0
 Name: now, dtype: float64
 </pre></div>
 </div>
@@ -1738,7 +1867,7 @@ Name: now, dtype: float64
 <p>… which we can pass to <code class="docutils literal notranslate"><span class="pre">n.plot(bus_sizes=...)</span></code>:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">n</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">margin</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">bus_sizes</span><span class="o">=</span><span class="n">s</span> <span class="o">/</span> <span class="mi">3000</span><span class="p">);</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">n</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">margin</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">bus_sizes</span><span class="o">=</span><span class="n">s</span> <span class="o">/</span> <span class="mi">3000</span><span class="p">,</span> <span class="n">color_geomap</span><span class="o">=</span><span class="kc">True</span><span class="p">);</span>
 </pre></div>
 </div>
 </div>
@@ -1748,24 +1877,24 @@ Name: now, dtype: float64
 facecolor will have no effect as it has been defined as &quot;never&quot;.
 </pre></div>
 </div>
-<img alt="_images/4c58b834d520ce8f2e163f46561bbb43182e0bf18f682ff8f38112098150bc5f.png" src="_images/4c58b834d520ce8f2e163f46561bbb43182e0bf18f682ff8f38112098150bc5f.png" />
+<img alt="_images/b41121109a1e2fcb2128666c93d9cbc3d7880fc1d0a475dc4d3a458a42cfcb70.png" src="_images/b41121109a1e2fcb2128666c93d9cbc3d7880fc1d0a475dc4d3a458a42cfcb70.png" />
 </div>
 </div>
 <p><strong>How does this magic work?</strong> The plotting function will look up the colors specified in <code class="docutils literal notranslate"><span class="pre">n.carriers</span></code> for each carrier and match it with the second index-level of <code class="docutils literal notranslate"><span class="pre">s</span></code>.</p>
 </section>
 <section id="modifying-networks">
 <h2>Modifying networks<a class="headerlink" href="#modifying-networks" title="Permalink to this heading">#</a></h2>
-<p>Modifying data of components in an existing PyPSA network is as easy as modifying the entries of a <code class="docutils literal notranslate"><span class="pre">pandas.DataFrame</span></code>. For instance, if we want to reduce the cross-border transmission capacity between South Africa and Mozambique, we’d run:</p>
+<p>Modifying data of components in an existing PyPSA network is as easy as modifying the entries of a <code class="docutils literal notranslate"><span class="pre">pandas.DataFrame</span></code>. For instance, if we want to reduce the solar power output by half, we’d run:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">n</span><span class="o">.</span><span class="n">lines</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="s2">&quot;SA-MZ&quot;</span><span class="p">,</span> <span class="s2">&quot;s_nom&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">400</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">n</span><span class="o">.</span><span class="n">generators</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="s2">&quot;CA solar&quot;</span><span class="p">,</span> <span class="s2">&quot;p_nom&quot;</span><span class="p">]</span> <span class="o">/=</span> <span class="mi">2</span>
 </pre></div>
 </div>
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">n</span><span class="o">.</span><span class="n">lines</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">n</span><span class="o">.</span><span class="n">generators</span>
 </pre></div>
 </div>
 </div>
@@ -1788,30 +1917,30 @@ facecolor will have no effect as it has been defined as &quot;never&quot;.
   <thead>
     <tr style="text-align: right;">
       <th>attribute</th>
-      <th>bus0</th>
-      <th>bus1</th>
+      <th>bus</th>
+      <th>control</th>
       <th>type</th>
-      <th>x</th>
-      <th>r</th>
-      <th>g</th>
-      <th>b</th>
-      <th>s_nom</th>
-      <th>s_nom_extendable</th>
-      <th>s_nom_min</th>
+      <th>p_nom</th>
+      <th>p_nom_extendable</th>
+      <th>p_nom_min</th>
+      <th>p_nom_max</th>
+      <th>p_min_pu</th>
+      <th>p_max_pu</th>
+      <th>p_set</th>
       <th>...</th>
-      <th>v_ang_max</th>
-      <th>sub_network</th>
-      <th>x_pu</th>
-      <th>r_pu</th>
-      <th>g_pu</th>
-      <th>b_pu</th>
-      <th>x_pu_eff</th>
-      <th>r_pu_eff</th>
-      <th>s_nom_opt</th>
-      <th>v_nom</th>
+      <th>min_up_time</th>
+      <th>min_down_time</th>
+      <th>up_time_before</th>
+      <th>down_time_before</th>
+      <th>ramp_limit_up</th>
+      <th>ramp_limit_down</th>
+      <th>ramp_limit_start_up</th>
+      <th>ramp_limit_shut_down</th>
+      <th>weight</th>
+      <th>p_nom_opt</th>
     </tr>
     <tr>
-      <th>Line</th>
+      <th>Generator</th>
       <th></th>
       <th></th>
       <th></th>
@@ -1837,32 +1966,104 @@ facecolor will have no effect as it has been defined as &quot;never&quot;.
   </thead>
   <tbody>
     <tr>
-      <th>SA-MZ</th>
-      <td>SA</td>
-      <td>MZ</td>
+      <th>ME wind</th>
+      <td>ME</td>
+      <td>Slack</td>
       <td></td>
-      <td>1.0</td>
-      <td>1.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>400.0</td>
+      <td>60000.0</td>
       <td>False</td>
       <td>0.0</td>
-      <td>...</td>
       <td>inf</td>
+      <td>0.0</td>
+      <td>1.0</td>
+      <td>0.0</td>
+      <td>...</td>
       <td>0</td>
-      <td>0.000006</td>
-      <td>0.000006</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>60000.0</td>
+    </tr>
+    <tr>
+      <th>CA gas</th>
+      <td>CA</td>
+      <td>PQ</td>
+      <td></td>
+      <td>35000.0</td>
+      <td>False</td>
       <td>0.0</td>
+      <td>inf</td>
       <td>0.0</td>
-      <td>0.000006</td>
-      <td>0.000006</td>
-      <td>500.0</td>
-      <td>400.0</td>
+      <td>1.0</td>
+      <td>0.0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>35000.0</td>
+    </tr>
+    <tr>
+      <th>CA solar</th>
+      <td>CA</td>
+      <td>PQ</td>
+      <td></td>
+      <td>15000.0</td>
+      <td>False</td>
+      <td>0.0</td>
+      <td>inf</td>
+      <td>0.0</td>
+      <td>1.0</td>
+      <td>0.0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>30000.0</td>
+    </tr>
+    <tr>
+      <th>CA coal</th>
+      <td>CA</td>
+      <td>PQ</td>
+      <td></td>
+      <td>5000.0</td>
+      <td>False</td>
+      <td>0.0</td>
+      <td>inf</td>
+      <td>0.0</td>
+      <td>1.0</td>
+      <td>0.0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>5000.0</td>
     </tr>
   </tbody>
 </table>
-<p>1 rows × 30 columns</p>
+<p>4 rows × 33 columns</p>
 </div></div></div>
 </div>
 <div class="cell tag_hide-output docutils container">
@@ -1889,8 +2090,8 @@ facecolor will have no effect as it has been defined as &quot;never&quot;.
 <div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>INFO:linopy.constants: Optimization successful: 
 Status: ok
 Termination condition: optimal
-Solution: 6 primals, 14 duals
-Objective: 1.40e+06
+Solution: 5 primals, 12 duals
+Objective: 2.12e+06
 Solver model: available
 Solver message: optimal
 </pre></div>
@@ -1901,12 +2102,12 @@ Solver message: optimal
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running HiGHS 1.5.3 [date: 2023-05-16, git hash: 594fa5a9d-dirty]
 Copyright (c) 2023 HiGHS under MIT licence terms
 Presolving model
-1 rows, 2 cols, 2 nonzeros
+1 rows, 1 cols, 1 nonzeros
 0 rows, 0 cols, 0 nonzeros
-Presolve : Reductions: rows 0(-14); columns 0(-6); elements 0(-19) - Reduced to empty
+Presolve : Reductions: rows 0(-12); columns 0(-5); elements 0(-16) - Reduced to empty
 Solving the original LP from the solution after postsolve
 Model   status      : Optimal
-Objective value     :  1.3986326317e+06
+Objective value     :  2.1245210728e+06
 HiGHS run time      :          0.00
 </pre></div>
 </div>
@@ -1942,15 +2143,13 @@ HiGHS run time      :          0.00
   <thead>
     <tr style="text-align: right;">
       <th>Generator</th>
-      <th>MZ hydro</th>
-      <th>SA coal</th>
-      <th>SA wind</th>
-      <th>SA gas</th>
-      <th>SA oil</th>
+      <th>ME wind</th>
+      <th>CA gas</th>
+      <th>CA solar</th>
+      <th>CA coal</th>
     </tr>
     <tr>
       <th>snapshot</th>
-      <th></th>
       <th></th>
       <th></th>
       <th></th>
@@ -1960,20 +2159,35 @@ HiGHS run time      :          0.00
   <tbody>
     <tr>
       <th>now</th>
-      <td>1050.0</td>
-      <td>35000.0</td>
-      <td>3000.0</td>
-      <td>1600.0</td>
-      <td>2000.0</td>
+      <td>60000.0</td>
+      <td>12000.0</td>
+      <td>15000.0</td>
+      <td>5000.0</td>
     </tr>
   </tbody>
 </table>
 </div></div></div>
 </div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">s</span> <span class="o">=</span> <span class="n">n</span><span class="o">.</span><span class="n">generators_t</span><span class="o">.</span><span class="n">p</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="s2">&quot;now&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="n">n</span><span class="o">.</span><span class="n">generators</span><span class="o">.</span><span class="n">bus</span><span class="p">,</span> <span class="n">n</span><span class="o">.</span><span class="n">generators</span><span class="o">.</span><span class="n">carrier</span><span class="p">])</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+<span class="n">n</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">margin</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">bus_sizes</span><span class="o">=</span><span class="n">s</span> <span class="o">/</span> <span class="mi">3000</span><span class="p">,</span> <span class="n">color_geomap</span><span class="o">=</span><span class="kc">True</span><span class="p">);</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/opt/hostedtoolcache/Python/3.11.6/x64/lib/python3.11/site-packages/cartopy/mpl/style.py:76: UserWarning:
+
+facecolor will have no effect as it has been defined as &quot;never&quot;.
+</pre></div>
+</div>
+<img alt="_images/d82c8ef203aa5f08ab84c1f57b24fb27b6edb4d0daa8c81f6d1d8f89d1b01025.png" src="_images/d82c8ef203aa5f08ab84c1f57b24fb27b6edb4d0daa8c81f6d1d8f89d1b01025.png" />
+</div>
+</div>
 </section>
 <section id="global-constraints-for-emission-limits">
 <h2>Global constraints for emission limits<a class="headerlink" href="#global-constraints-for-emission-limits" title="Permalink to this heading">#</a></h2>
-<p>In the example above, we happen to have some spare gas capacity with lower carbon intensity than the coal and oil generators. We could use this to lower the emissions of the system, but it will be more expensive. We can implement the limit of carbon dioxide emissions as a constraint.</p>
+<p>In the example above, we happen to have some spare gas capacity. We could use gas instead of coal to lower the emissions of the system, but it will be more expensive. We can implement the limit of carbon dioxide emissions as a constraint.</p>
 <p>This is achieved in PyPSA through <strong>Global Constraints</strong> which add constraints that apply to many components at once.</p>
 <p>But first, we need to calculate the current level of emissions to set a sensible limit.</p>
 <p>We can compute the emissions per generator (in tonnes of CO<span class="math notranslate nohighlight">\(_2\)</span>) in the following way.</p>
@@ -2010,15 +2224,13 @@ HiGHS run time      :          0.00
   <thead>
     <tr style="text-align: right;">
       <th>Generator</th>
-      <th>MZ hydro</th>
-      <th>SA coal</th>
-      <th>SA wind</th>
-      <th>SA gas</th>
-      <th>SA oil</th>
+      <th>ME wind</th>
+      <th>CA gas</th>
+      <th>CA solar</th>
+      <th>CA coal</th>
     </tr>
     <tr>
       <th>snapshot</th>
-      <th></th>
       <th></th>
       <th></th>
       <th></th>
@@ -2028,11 +2240,10 @@ HiGHS run time      :          0.00
   <tbody>
     <tr>
       <th>now</th>
-      <td>0.0</td>
-      <td>36060.606061</td>
       <td>NaN</td>
-      <td>551.724138</td>
-      <td>1485.714286</td>
+      <td>4137.931034</td>
+      <td>NaN</td>
+      <td>8888.888889</td>
     </tr>
   </tbody>
 </table>
@@ -2046,7 +2257,7 @@ HiGHS run time      :          0.00
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>38098.044484251375
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>13026.819923371648
 </pre></div>
 </div>
 </div>
@@ -2089,8 +2300,8 @@ HiGHS run time      :          0.00
 <div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>INFO:linopy.constants: Optimization successful: 
 Status: ok
 Termination condition: optimal
-Solution: 6 primals, 15 duals
-Objective: 2.12e+06
+Solution: 5 primals, 13 duals
+Objective: 2.27e+06
 Solver model: available
 Solver message: optimal
 </pre></div>
@@ -2101,13 +2312,12 @@ Solver message: optimal
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running HiGHS 1.5.3 [date: 2023-05-16, git hash: 594fa5a9d-dirty]
 Copyright (c) 2023 HiGHS under MIT licence terms
 Presolving model
-2 rows, 3 cols, 6 nonzeros
-1 rows, 2 cols, 2 nonzeros
+2 rows, 2 cols, 4 nonzeros
 0 rows, 0 cols, 0 nonzeros
-Presolve : Reductions: rows 0(-15); columns 0(-6); elements 0(-22) - Reduced to empty
+Presolve : Reductions: rows 0(-13); columns 0(-5); elements 0(-18) - Reduced to empty
 Solving the original LP from the solution after postsolve
 Model   status      : Optimal
-Objective value     :  2.1206212849e+06
+Objective value     :  2.2711598746e+06
 HiGHS run time      :          0.00
 </pre></div>
 </div>
@@ -2142,15 +2352,13 @@ HiGHS run time      :          0.00
   <thead>
     <tr style="text-align: right;">
       <th>Generator</th>
-      <th>MZ hydro</th>
-      <th>SA coal</th>
-      <th>SA wind</th>
-      <th>SA gas</th>
-      <th>SA oil</th>
+      <th>ME wind</th>
+      <th>CA gas</th>
+      <th>CA solar</th>
+      <th>CA coal</th>
     </tr>
     <tr>
       <th>snapshot</th>
-      <th></th>
       <th></th>
       <th></th>
       <th></th>
@@ -2160,11 +2368,10 @@ HiGHS run time      :          0.00
   <tbody>
     <tr>
       <th>now</th>
-      <td>1050.0</td>
-      <td>30603.423345</td>
-      <td>3000.0</td>
-      <td>7996.576655</td>
-      <td>-0.0</td>
+      <td>60000.0</td>
+      <td>12909.090909</td>
+      <td>15000.0</td>
+      <td>4090.909091</td>
     </tr>
   </tbody>
 </table>
@@ -2195,15 +2402,13 @@ HiGHS run time      :          0.00
   <thead>
     <tr style="text-align: right;">
       <th>Generator</th>
-      <th>MZ hydro</th>
-      <th>SA coal</th>
-      <th>SA wind</th>
-      <th>SA gas</th>
-      <th>SA oil</th>
+      <th>ME wind</th>
+      <th>CA gas</th>
+      <th>CA solar</th>
+      <th>CA coal</th>
     </tr>
     <tr>
       <th>snapshot</th>
-      <th></th>
       <th></th>
       <th></th>
       <th></th>
@@ -2213,11 +2418,10 @@ HiGHS run time      :          0.00
   <tbody>
     <tr>
       <th>now</th>
-      <td>0.875</td>
-      <td>0.874384</td>
       <td>1.0</td>
-      <td>0.999572</td>
-      <td>-0.0</td>
+      <td>0.368831</td>
+      <td>1.0</td>
+      <td>0.818182</td>
     </tr>
   </tbody>
 </table>
@@ -2231,7 +2435,7 @@ HiGHS run time      :          0.00
 </div>
 <div class="cell_output docutils container">
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>GlobalConstraint
-emission_limit   -216.158537
+emission_limit   -112.566845
 Name: mu, dtype: float64
 </pre></div>
 </div>
@@ -2314,7 +2518,7 @@ HiGHS run time      :          0.00
 <div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>WARNING:pypsa.io:Directory tmp does not exist, creating it
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>INFO:pypsa.io:Exported network tmp has generators, lines, buses, global_constraints, carriers, loads
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>INFO:pypsa.io:Exported network tmp has lines, generators, buses, carriers, global_constraints, loads
 </pre></div>
 </div>
 </div>
@@ -2338,7 +2542,7 @@ HiGHS run time      :          0.00
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>INFO:pypsa.io:Exported network tmp.nc has generators, lines, buses, global_constraints, carriers, loads
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>INFO:pypsa.io:Exported network tmp.nc has lines, generators, buses, carriers, global_constraints, loads
 </pre></div>
 </div>
 </div>
@@ -2622,6 +2826,7 @@ HiGHS run time      :          0.00
 <span class="n">n</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span>
     <span class="n">ax</span><span class="o">=</span><span class="n">ax</span><span class="p">,</span>
     <span class="n">bus_sizes</span><span class="o">=</span><span class="n">load</span> <span class="o">/</span> <span class="mf">2e5</span><span class="p">,</span>
+    <span class="n">color_geomap</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
 <span class="p">);</span>
 </pre></div>
 </div>
@@ -2632,7 +2837,7 @@ HiGHS run time      :          0.00
 facecolor will have no effect as it has been defined as &quot;never&quot;.
 </pre></div>
 </div>
-<img alt="_images/e07bb1ae937582d6dd6d644cb2a172a85f77c21b52b0f647c8e4d5708bf56829.png" src="_images/e07bb1ae937582d6dd6d644cb2a172a85f77c21b52b0f647c8e4d5708bf56829.png" />
+<img alt="_images/4bd841e7028fddb55478330cb0577763b51178f25a6f464760de1a6cd0ed5ed0.png" src="_images/4bd841e7028fddb55478330cb0577763b51178f25a6f464760de1a6cd0ed5ed0.png" />
 </div>
 </div>
 <p>… and power plant capacities:</p>
@@ -2688,7 +2893,7 @@ facecolor will have no effect as it has been defined as &quot;never&quot;.
 facecolor will have no effect as it has been defined as &quot;never&quot;.
 </pre></div>
 </div>
-<img alt="_images/a421ad4301311b866de5c50ed0510eeb3f13d2f48bc62299923606fa5704ce98.png" src="_images/a421ad4301311b866de5c50ed0510eeb3f13d2f48bc62299923606fa5704ce98.png" />
+<img alt="_images/bfaa37e26f5413959f715dd0ce93b961aa757525daa72f7353bebfca850671a9.png" src="_images/bfaa37e26f5413959f715dd0ce93b961aa757525daa72f7353bebfca850671a9.png" />
 </div>
 </div>
 <p>This dataset also includes a few hydro storage units:</p>
@@ -2892,16 +3097,16 @@ Index([&#39;2&#39;, &#39;5&#39;, &#39;10&#39;, &#39;12&#39;, &#39;13&#39;, &#39;
 <div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Writing constraints.:   0%|          | 0/15 [00:00&lt;?, ?it/s]
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Writing constraints.:  13%|█▎        | 2/15 [00:00&lt;00:01, 12.72it/s]
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Writing constraints.:  13%|█▎        | 2/15 [00:00&lt;00:01, 12.20it/s]
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Writing constraints.:  27%|██▋       | 4/15 [00:00&lt;00:00, 15.90it/s]
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Writing constraints.:  27%|██▋       | 4/15 [00:00&lt;00:00, 15.72it/s]
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Writing constraints.:  87%|████████▋ | 13/15 [00:00&lt;00:00, 32.01it/s]
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Writing constraints.:  87%|████████▋ | 13/15 [00:00&lt;00:00, 33.77it/s]
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Writing constraints.: 100%|██████████| 15/15 [00:00&lt;00:00, 25.58it/s]
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Writing constraints.: 100%|██████████| 15/15 [00:00&lt;00:00, 26.47it/s]
 </pre></div>
 </div>
 <div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
@@ -2910,10 +3115,10 @@ Index([&#39;2&#39;, &#39;5&#39;, &#39;10&#39;, &#39;12&#39;, &#39;13&#39;, &#39;
 <div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Writing continuous variables.:   0%|          | 0/7 [00:00&lt;?, ?it/s]
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Writing continuous variables.: 100%|██████████| 7/7 [00:00&lt;00:00, 74.04it/s]
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Writing continuous variables.: 100%|██████████| 7/7 [00:00&lt;00:00, 74.35it/s]
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>INFO:linopy.io: Writing time: 0.7s
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>INFO:linopy.io: Writing time: 0.68s
 </pre></div>
 </div>
 <div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>INFO:linopy.solvers:Log file at /tmp/highs.log.
@@ -2935,7 +3140,7 @@ Solving the original LP from the solution after postsolve
 Model   status      : Optimal
 Simplex   iterations: 17079
 Objective value     :  9.1992880405e+06
-HiGHS run time      :          4.31
+HiGHS run time      :          4.29
 </pre></div>
 </div>
 <div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>INFO:linopy.constants: Optimization successful: 
@@ -2996,7 +3201,7 @@ Solver message: optimal
 <div class="cell_output docutils container">
 <div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
 <span class="ne">ValueError</span><span class="g g-Whitespace">                                </span>Traceback (most recent call last)
-<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">72</span><span class="p">],</span> <span class="n">line</span> <span class="mi">13</span>
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">74</span><span class="p">],</span> <span class="n">line</span> <span class="mi">13</span>
 <span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">axes</span><span class="p">(</span><span class="n">projection</span><span class="o">=</span><span class="n">ccrs</span><span class="o">.</span><span class="n">EqualEarth</span><span class="p">())</span>
 <span class="g g-Whitespace">      </span><span class="mi">4</span> <span class="n">n</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span>
 <span class="g g-Whitespace">      </span><span class="mi">5</span>     <span class="n">ax</span><span class="o">=</span><span class="n">ax</span><span class="p">,</span>
@@ -3124,16 +3329,16 @@ facecolor will have no effect as it has been defined as &quot;never&quot;.
         },
         codeMirrorConfig: {
             theme: "abcdef",
-            mode: ""
+            mode: "python"
         },
         kernelOptions: {
-            name: "",
+            name: "python3",
             path: "./."
         },
         predefinedOutput: true
     }
     </script>
-    <script>kernelName = ''</script>
+    <script>kernelName = 'python3'</script>
 
                 </article>
               
@@ -3146,12 +3351,12 @@ facecolor will have no effect as it has been defined as &quot;never&quot;.
                   <!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
-       href="08-workshop-pyomo.html"
+       href="06-workshop-atlite.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Introduction to <code class="docutils literal notranslate"><span class="pre">pyomo</span></code></p>
+        <p class="prev-next-title">Introduction to <code class="docutils literal notranslate"><span class="pre">rasterio</span></code> and <code class="docutils literal notranslate"><span class="pre">atlite</span></code></p>
       </div>
     </a>
     <a class="right-next"
@@ -3203,7 +3408,7 @@ facecolor will have no effect as it has been defined as &quot;never&quot;.
   <div class="footer-item">
     
 <p class="component-author">
-By Fabian Neumann
+By Open Energy Transition and Fabian Neumann
 </p>
 
   </div>

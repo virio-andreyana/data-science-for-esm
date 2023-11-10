@@ -45,7 +45,7 @@ facecolor will have no effect as it has been defined as "never".
 
 [0;31m---------------------------------------------------------------------------[0m
 [0;31mValueError[0m                                Traceback (most recent call last)
-Cell [0;32mIn[72], line 13[0m
+Cell [0;32mIn[74], line 13[0m
 [1;32m      2[0m ax [38;5;241m=[39m plt[38;5;241m.[39maxes(projection[38;5;241m=[39mccrs[38;5;241m.[39mEqualEarth())
 [1;32m      4[0m n[38;5;241m.[39mplot(
 [1;32m      5[0m     ax[38;5;241m=[39max,

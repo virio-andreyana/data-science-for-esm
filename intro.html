@@ -66,7 +66,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script>DOCUMENTATION_OPTIONS.pagename = 'intro';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Introduction to Python" href="01-workshop-python.html" />
+    <link rel="next" title="Introduction to rasterio and atlite" href="06-workshop-atlite.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -152,8 +152,8 @@ const thebe_selector_output = ".output, .cell_output"
       
     
     
-    <img src="_static/logo.png" class="logo__image only-light" alt="Data Science for Energy System Modelling - Home"/>
-    <script>document.write(`<img src="_static/logo.png" class="logo__image only-dark" alt="Data Science for Energy System Modelling - Home"/>`);</script>
+    <img src="_static/oet-logo-red-n-subtitle.png" class="logo__image only-light" alt="Data Science for Energy System Modelling - Home"/>
+    <script>document.write(`<img src="_static/oet-logo-red-n-subtitle.png" class="logo__image only-dark" alt="Data Science for Energy System Modelling - Home"/>`);</script>
   
   
 </a></div>
@@ -168,14 +168,7 @@ const thebe_selector_output = ".output, .cell_output"
             </li>
         </ul>
         <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="01-workshop-python.html">Introduction to <code class="docutils literal notranslate"><span class="pre">Python</span></code></a></li>
-<li class="toctree-l1"><a class="reference internal" href="02-workshop-numpy.html">Introduction to <code class="docutils literal notranslate"><span class="pre">numpy</span></code> and <code class="docutils literal notranslate"><span class="pre">matplotlib</span></code></a></li>
-<li class="toctree-l1"><a class="reference internal" href="03-workshop-pandas.html">Introduction to <code class="docutils literal notranslate"><span class="pre">pandas</span></code></a></li>
-<li class="toctree-l1"><a class="reference internal" href="04-workshop-geopandas.html">Introduction to <code class="docutils literal notranslate"><span class="pre">geopandas</span></code> and <code class="docutils literal notranslate"><span class="pre">cartopy</span></code></a></li>
-<li class="toctree-l1"><a class="reference internal" href="05-workshop-pysheds.html">Introduction to <code class="docutils literal notranslate"><span class="pre">pysheds</span></code></a></li>
 <li class="toctree-l1"><a class="reference internal" href="06-workshop-atlite.html">Introduction to <code class="docutils literal notranslate"><span class="pre">rasterio</span></code> and <code class="docutils literal notranslate"><span class="pre">atlite</span></code></a></li>
-<li class="toctree-l1"><a class="reference internal" href="07-workshop-networkx.html">Introduction to <code class="docutils literal notranslate"><span class="pre">networkx</span></code></a></li>
-<li class="toctree-l1"><a class="reference internal" href="08-workshop-pyomo.html">Introduction to <code class="docutils literal notranslate"><span class="pre">pyomo</span></code></a></li>
 <li class="toctree-l1"><a class="reference internal" href="09-workshop-pypsa.html">Introduction to <code class="docutils literal notranslate"><span class="pre">pypsa</span></code></a></li>
 <li class="toctree-l1"><a class="reference internal" href="10-workshop-pypsa-cem.html">Capacity Expansion Planning with <code class="docutils literal notranslate"><span class="pre">pypsa</span></code></a></li>
 <li class="toctree-l1"><a class="reference internal" href="11-workshop-groupwork.html">Preparation for Group Assignment</a></li>
@@ -235,7 +228,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/fneum/data-science-for-esm" target="_blank"
+      <li><a href="https://github.com/open-energy-transition/data-science-for-esm" target="_blank"
    class="btn btn-sm btn-source-repository-button dropdown-item"
    title="Source repository"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -252,7 +245,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/fneum/data-science-for-esm/issues/new?title=Issue%20on%20page%20%2Fintro.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/open-energy-transition/data-science-for-esm/issues/new?title=Issue%20on%20page%20%2Fintro.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -374,23 +367,7 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#python">Python</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#installing-the-package-manager-conda">Installing the package manager <code class="docutils literal notranslate"><span class="pre">conda</span></code></a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#anaconda-python-distribution">Anaconda Python distribution</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lightweight-alternatives-micromamba-and-miniconda">Lightweight alternatives: micromamba and miniconda</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#installing-python-without-a-package-manager">Installing Python without a package manager</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#using-python-without-a-local-installation">Using Python without a local installation</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#managing-environments-with-conda">Managing environments with <code class="docutils literal notranslate"><span class="pre">conda</span></code></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#speeding-things-up-with-mamba">Speeding things up with Mamba</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#python-environment-for-this-course-esm-2023">Python environment for this course: <code class="docutils literal notranslate"><span class="pre">esm-2023</span></code></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#with-conda-or-mamba">With <code class="docutils literal notranslate"><span class="pre">conda</span></code> or <code class="docutils literal notranslate"><span class="pre">mamba</span></code></a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#with-pip">With <code class="docutils literal notranslate"><span class="pre">pip</span></code></a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#jupyterlab-and-jupyter-notebooks">JupyterLab and Jupyter Notebooks</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#markdown-syntax">Markdown Syntax</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#using-python-without-a-local-installation">Using Python without a local installation</a></li>
 </ul>
             </nav>
         </div>
@@ -404,7 +381,7 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="welcome">
 <h1>Welcome<a class="headerlink" href="#welcome" title="Permalink to this heading">#</a></h1>
-<p>Welcome to the website accompanying the course <a class="reference external" href="https://moseskonto.tu-berlin.de/moses/modultransfersystem/bolognamodule/beschreibung/anzeigen.html;jsessionid=DQfixqzzpn1XIg5N1GG7S9um4EDykZn99AHmH6Fj.moseskonto?number=31027&amp;version=1&amp;sprache=2">Data Science for Energy System Modelling</a>. This course is being developed by <a class="reference external" href="https://neumann.fyi">Dr. Fabian Neumann</a> and offered as part of the curriculum of the <a class="reference external" href="https://www.tu.berlin/ensys">Department of Digital Transformation of Energy Systems at TU Berlin</a>.</p>
+<p>Welcome to the website accompanying the <a class="reference external" href="https://openenergytransition.org/">Open Energy Transition</a> course for the Stanford Training. This course was originally developed <a class="reference external" href="https://neumann.fyi">Dr. Fabian Neumann</a> at <a class="reference external" href="https://www.tu.berlin/ensys">Department of Digital Transformation of Energy Systems at TU Berlin</a> and adjusted by <a class="reference external" href="https://www.linkedin.com/in/marthamaria93/">Dr. Martha Frysztacki</a> and <a class="reference external" href="https://www.linkedin.com/in/maximilian-parzen-b047a1126/">Dr. des. Maximilian Parzen</a>.</p>
 <p>On this website you will find practical introductions to many Python packages that are useful for dealing with energy data and building energy system models. Course materials other than practical introductions to Python packages for students at TU Berlin are provided on <a class="reference external" href="https://isis.tu-berlin.de/course/view.php?id=35495">ISIS</a>.</p>
 <p>The course covers tutorials and examples for getting started with Python, <code class="docutils literal notranslate"><span class="pre">numpy</span></code>, <code class="docutils literal notranslate"><span class="pre">matplotlib</span></code>, <code class="docutils literal notranslate"><span class="pre">pandas</span></code>, <code class="docutils literal notranslate"><span class="pre">geopandas</span></code>, <code class="docutils literal notranslate"><span class="pre">cartopy</span></code>, <code class="docutils literal notranslate"><span class="pre">rasterio</span></code>, <code class="docutils literal notranslate"><span class="pre">atlite</span></code>, <code class="docutils literal notranslate"><span class="pre">networkx</span></code>, <code class="docutils literal notranslate"><span class="pre">pyomo</span></code>, <code class="docutils literal notranslate"><span class="pre">pypsa</span></code>, <code class="docutils literal notranslate"><span class="pre">plotly</span></code>, <code class="docutils literal notranslate"><span class="pre">hvplot</span></code>, and <code class="docutils literal notranslate"><span class="pre">streamlit</span></code>. Topics covered include:</p>
 <ul class="simple">
@@ -421,188 +398,10 @@ document.write(`
 <li><p>sector-coupling</p></li>
 <li><p>interactive visualisation and dashboarding</p></li>
 </ul>
-<section id="python">
-<h2>Python<a class="headerlink" href="#python" title="Permalink to this heading">#</a></h2>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>This section is adapted from another course called <a class="reference external" href="https://earth-env-data-science.github.io/lectures/environment/python_environments.html">Earth and Environmental Data Science: Python Environments</a></p>
-</div>
-<p>Python and nearly all of the software packages in the scientific python
-ecosystem are <a class="reference external" href="https://opensource.org/">open-source</a>. Coordinating the
-compatibility between these different packages and their multiple versions used
-to be a nightmare! Fortunately, the problem is solved by using a Python
-<em>distribution</em> and/or <em>package manager</em>. You should use a package manager!</p>
-</section>
-<section id="installing-the-package-manager-conda">
-<h2>Installing the package manager <code class="docutils literal notranslate"><span class="pre">conda</span></code><a class="headerlink" href="#installing-the-package-manager-conda" title="Permalink to this heading">#</a></h2>
-<section id="anaconda-python-distribution">
-<h3>Anaconda Python distribution<a class="headerlink" href="#anaconda-python-distribution" title="Permalink to this heading">#</a></h3>
-<p>The easiest way to set up a full-stack scientific Python deployment is to use a
-Python distribution. This is an installation of Python with a set of curated
-packages which are guaranteed to work together.</p>
-<p>For instance, you can install on your computer the popular
-<a class="reference external" href="https://www.anaconda.com/download/">Anaconda Python Distribution</a>.
-Follow the link above to obtain a one-click installers for your operating system.</p>
-<p>For <strong>Linux and MacOS users</strong>, you can access the command line by opening the <em>terminal</em> program.</p>
-<p>For <strong>Windows users</strong>, you should first install Anaconda (described above) or miniconda/micromamba (described below), which gives you access to the “Anaconda Prompt” desktop application. (Instructions for this are given on the <a class="reference external" href="https://docs.anaconda.com/anaconda/user-guide/getting-started/#write-a-python-program-using-anaconda-prompt-or-terminal">Anaconda Website</a>.)</p>
-<p>From the Anaconda Prompt, you should be able to run <code class="docutils literal notranslate"><span class="pre">conda</span></code> and other shell commands.</p>
-</section>
-<section id="lightweight-alternatives-micromamba-and-miniconda">
-<h3>Lightweight alternatives: micromamba and miniconda<a class="headerlink" href="#lightweight-alternatives-micromamba-and-miniconda" title="Permalink to this heading">#</a></h3>
-<p>If you don’t want to download a large file like the Anaconda Python Distribution (ca. 800 MB), there are
-lightweight alternative installation methods (like <code class="docutils literal notranslate"><span class="pre">micromamba</span></code> and <code class="docutils literal notranslate"><span class="pre">miniconda</span></code>.</p>
-<ol class="arabic simple">
-<li><p><a class="reference external" href="https://mamba.readthedocs.io/en/latest/installation.html#micromamba">Micromamba Installation</a></p></li>
-<li><p><a class="reference external" href="https://docs.conda.io/en/latest/miniconda.html">Miniconda Installation</a></p></li>
-</ol>
-</section>
-<section id="installing-python-without-a-package-manager">
-<h3>Installing Python without a package manager<a class="headerlink" href="#installing-python-without-a-package-manager" title="Permalink to this heading">#</a></h3>
-<p>If you do not wish to install a package manager (not recommended), an
-alternative is to directly install official Python distributions.</p>
-<p>A good tutorial for this can be found <a class="reference external" href="https://realpython.com/installing-python/">here</a>.</p>
-</section>
 <section id="using-python-without-a-local-installation">
-<h3>Using Python without a local installation<a class="headerlink" href="#using-python-without-a-local-installation" title="Permalink to this heading">#</a></h3>
+<h2>Using Python without a local installation<a class="headerlink" href="#using-python-without-a-local-installation" title="Permalink to this heading">#</a></h2>
 <p>You can even start the course without a local Python installation using online services like  <a class="reference external" href="https://colab.google">Google Colab (colab.google)</a> which provide an online Python version
 in a <span class="xref myst">Jupyter Notebook</span> environment.</p>
-</section>
-</section>
-<section id="managing-environments-with-conda">
-<h2>Managing environments with <code class="docutils literal notranslate"><span class="pre">conda</span></code><a class="headerlink" href="#managing-environments-with-conda" title="Permalink to this heading">#</a></h2>
-<p>Python coupled with a package manager provides a way to make isolated,
-reproducible <em>environments</em> where you have fine-tuned control over all packages
-and configuration.</p>
-<p>To create a conda environment, you execute the following command:</p>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>conda create --name my_environment python=3.11 numpy
-</pre></div>
-</div>
-<p>To use this environment, simply “activate” it by executing:</p>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>conda activate my_environment
-</pre></div>
-</div>
-<p>You should now see the string <code class="docutils literal notranslate"><span class="pre">(my_environment)</span></code> prepended to your prompt.
-Now, if you execute any Python-related tool from the
-command line, it will first search in your environment.</p>
-<p>To install additional packages into your environment:</p>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>conda install &lt;package-name&gt;
-</pre></div>
-</div>
-<p>Some packages are community-maintained (e.g. <code class="docutils literal notranslate"><span class="pre">conda-forge</span></code>) and require you to specify a different “channel”:</p>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>conda install -c conda-forge &lt;package-name&gt;
-</pre></div>
-</div>
-<p>You can deactivate your environment by typing:</p>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>conda deactivate
-</pre></div>
-</div>
-<p>To see all the environments on your system:</p>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>conda info --envs
-</pre></div>
-</div>
-<p>To get a complete summary of all the packages installed in your environment, run</p>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>conda list
-</pre></div>
-</div>
-<p>If you want to permanently remove an environment and delete all the data
-associated with it:</p>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>conda env remove --name my_environment --all
-</pre></div>
-</div>
-<p>A conda environment can also be defined through an <code class="docutils literal notranslate"><span class="pre">environment.yaml</span></code> file. With that file, a new environment with the exact
-configuration can be installed by executing</p>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>conda env create -f my_environment.yml
-</pre></div>
-</div>
-<p>Below we will see an example of an environment file.</p>
-<p>For extensive documentation on using environments, please see
-<a class="reference external" href="https://conda.io/docs/using/envs.html">the conda documentation</a>.</p>
-</section>
-<section id="speeding-things-up-with-mamba">
-<h2>Speeding things up with Mamba<a class="headerlink" href="#speeding-things-up-with-mamba" title="Permalink to this heading">#</a></h2>
-<p>In order to put together an actual Python environment from your package specifications,
-<code class="docutils literal notranslate"><span class="pre">conda</span></code> has to solve a difficult puzzle, to ensure that the combination of packages is mutually compatible.
-Each package specified has certain dependencies on other packages.
-Moreover, each version of one package requires certain minimum versions of other
-packages.
-Other packages in your environment may have different or incompatible versions.
-The default implementation of <code class="docutils literal notranslate"><span class="pre">conda</span></code> can be very slow.
-Fortunately, there is a much faster alternative called <a class="reference external" href="https://mamba.readthedocs.io/en/latest/index.html">mamba</a>.
-To install it, just run:</p>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>conda install -n base -c conda-forge mamba
-</pre></div>
-</div>
-<p>Now you can install environments and packages as before, but using the <code class="docutils literal notranslate"><span class="pre">mamba</span></code> command
-instead of <code class="docutils literal notranslate"><span class="pre">conda</span></code>. Everything will be faster.</p>
-</section>
-<section id="python-environment-for-this-course-esm-2023">
-<h2>Python environment for this course: <code class="docutils literal notranslate"><span class="pre">esm-2023</span></code><a class="headerlink" href="#python-environment-for-this-course-esm-2023" title="Permalink to this heading">#</a></h2>
-</section>
-<section id="with-conda-or-mamba">
-<h2>With <code class="docutils literal notranslate"><span class="pre">conda</span></code> or <code class="docutils literal notranslate"><span class="pre">mamba</span></code><a class="headerlink" href="#with-conda-or-mamba" title="Permalink to this heading">#</a></h2>
-<p>The latest environment specification for this course can be downloaded under the following link as a <a class="reference external" href="https://en.wikipedia.org/wiki/YAML"><code class="docutils literal notranslate"><span class="pre">YAML</span></code>-file</a>:</p>
-<p><a class="github reference external" href="https://github.com/fneum/data-science-for-esm/blob/main/environment.yaml">fneum/data-science-for-esm</a></p>
-<p>There is a download button at the top-right corner.</p>
-<p>After navigating to the folder where the <code class="docutils literal notranslate"><span class="pre">environment.yaml</span></code> file is stored,
-you can reate this environment using <code class="docutils literal notranslate"><span class="pre">conda</span></code> or <code class="docutils literal notranslate"><span class="pre">mamba</span></code> (faster)</p>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>conda env create -f environment.yml
-</pre></div>
-</div>
-<p>or</p>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>mamba create -f environment.yml
-</pre></div>
-</div>
-<p>Activate this environment</p>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>mamba activate esm-2023
-</pre></div>
-</div>
-<p>This environment should be sufficient for all of your work in this course.</p>
-<p>The environment has to be activated whenever you open a new terminal,
-<em>before</em> starting a new Jupyter window with</p>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>jupyter lab
-</pre></div>
-</div>
-<section id="with-pip">
-<h3>With <code class="docutils literal notranslate"><span class="pre">pip</span></code><a class="headerlink" href="#with-pip" title="Permalink to this heading">#</a></h3>
-<p>If you want to use <code class="docutils literal notranslate"><span class="pre">pip</span></code> for managing your environment, download</p>
-<p><a class="github reference external" href="https://github.com/fneum/data-science-for-esm/blob/main/requirements.txt">fneum/data-science-for-esm</a></p>
-<p>There is a download button at the top-right corner.</p>
-<p>After navigating to the folder where the <code class="docutils literal notranslate"><span class="pre">requirements.txt</span></code> file is stored,
-you can install the required packages with</p>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>pip install -r requirements.txt
-</pre></div>
-</div>
-<p>This should allow you to start a new Jupyter window:</p>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>jupyter lab
-</pre></div>
-</div>
-</section>
-</section>
-<section id="jupyterlab-and-jupyter-notebooks">
-<h2>JupyterLab and Jupyter Notebooks<a class="headerlink" href="#jupyterlab-and-jupyter-notebooks" title="Permalink to this heading">#</a></h2>
-<p><a class="reference external" href="https://jupyterlab.readthedocs.io">JupyterLab</a> will be our primary method for
-interacting with the computer. JupyterLab contains a complete environment for
-interactive data science which runs in your web browser.</p>
-<p>JupyterLab has excellent documentation. Rather than repeat that documentation
-here, we point you to their docs. The following pages are particularly relevant:</p>
-<ul class="simple">
-<li><p><a class="reference external" href="https://jupyterlab.readthedocs.io/en/stable/user/interface.html">The JupyterLab Interface</a></p></li>
-<li><p><a class="reference external" href="https://jupyterlab.readthedocs.io/en/stable/user/files.html">Working with Files</a></p></li>
-<li><p><a class="reference external" href="https://jupyterlab.readthedocs.io/en/stable/user/file_editor.html">The Text Editor</a></p></li>
-<li><p><a class="reference external" href="https://jupyterlab.readthedocs.io/en/stable/user/notebook.html">Notebooks</a></p></li>
-<li><p><a class="reference external" href="https://jupyterlab.readthedocs.io/en/stable/user/terminal.html">Terminals</a></p></li>
-<li><p><a class="reference external" href="https://jupyterlab.readthedocs.io/en/stable/user/running.html">Managing Kernels and Terminals</a></p></li>
-</ul>
-</section>
-<section id="markdown-syntax">
-<h2>Markdown Syntax<a class="headerlink" href="#markdown-syntax" title="Permalink to this heading">#</a></h2>
-<p>Throughout the course, you might want to write rich text documents using Markdown.
-This is also very common in Jupyter Notebooks.
-Here are some useful references on Markdown syntax.</p>
-<ul class="simple">
-<li><p><a class="reference external" href="https://www.markdownguide.org/basic-syntax">Markdown Guide / Basic Syntax</a></p></li>
-<li><p><a class="reference external" href="https://daringfireball.net/projects/markdown/">Official Markdown Documentation</a></p></li>
-</ul>
 </section>
 <div class="toctree-wrapper compound">
 </div>
@@ -639,11 +438,11 @@ Here are some useful references on Markdown syntax.</p>
                   <!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="right-next"
-       href="01-workshop-python.html"
+       href="06-workshop-atlite.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Introduction to <code class="docutils literal notranslate"><span class="pre">Python</span></code></p>
+        <p class="prev-next-title">Introduction to <code class="docutils literal notranslate"><span class="pre">rasterio</span></code> and <code class="docutils literal notranslate"><span class="pre">atlite</span></code></p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -662,23 +461,7 @@ Here are some useful references on Markdown syntax.</p>
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#python">Python</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#installing-the-package-manager-conda">Installing the package manager <code class="docutils literal notranslate"><span class="pre">conda</span></code></a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#anaconda-python-distribution">Anaconda Python distribution</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lightweight-alternatives-micromamba-and-miniconda">Lightweight alternatives: micromamba and miniconda</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#installing-python-without-a-package-manager">Installing Python without a package manager</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#using-python-without-a-local-installation">Using Python without a local installation</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#managing-environments-with-conda">Managing environments with <code class="docutils literal notranslate"><span class="pre">conda</span></code></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#speeding-things-up-with-mamba">Speeding things up with Mamba</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#python-environment-for-this-course-esm-2023">Python environment for this course: <code class="docutils literal notranslate"><span class="pre">esm-2023</span></code></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#with-conda-or-mamba">With <code class="docutils literal notranslate"><span class="pre">conda</span></code> or <code class="docutils literal notranslate"><span class="pre">mamba</span></code></a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#with-pip">With <code class="docutils literal notranslate"><span class="pre">pip</span></code></a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#jupyterlab-and-jupyter-notebooks">JupyterLab and Jupyter Notebooks</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#markdown-syntax">Markdown Syntax</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#using-python-without-a-local-installation">Using Python without a local installation</a></li>
 </ul>
   </nav></div>
 
@@ -693,7 +476,7 @@ Here are some useful references on Markdown syntax.</p>
   <div class="footer-item">
     
 <p class="component-author">
-By Fabian Neumann
+By Open Energy Transition and Fabian Neumann
 </p>
 
   </div>
