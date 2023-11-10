@@ -66,7 +66,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script>DOCUMENTATION_OPTIONS.pagename = 'intro';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Introduction to rasterio and atlite" href="06-workshop-atlite.html" />
+    <link rel="next" title="Introduction to pypsa" href="09-workshop-pypsa.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -168,7 +168,6 @@ const thebe_selector_output = ".output, .cell_output"
             </li>
         </ul>
         <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="06-workshop-atlite.html">Introduction to <code class="docutils literal notranslate"><span class="pre">rasterio</span></code> and <code class="docutils literal notranslate"><span class="pre">atlite</span></code></a></li>
 <li class="toctree-l1"><a class="reference internal" href="09-workshop-pypsa.html">Introduction to <code class="docutils literal notranslate"><span class="pre">pypsa</span></code></a></li>
 <li class="toctree-l1"><a class="reference internal" href="10-workshop-pypsa-cem.html">Capacity Expansion Planning with <code class="docutils literal notranslate"><span class="pre">pypsa</span></code></a></li>
 <li class="toctree-l1"><a class="reference internal" href="11-workshop-groupwork.html">Preparation for Group Assignment</a></li>
@@ -381,23 +380,8 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="welcome">
 <h1>Welcome<a class="headerlink" href="#welcome" title="Permalink to this heading">#</a></h1>
-<p>Welcome to the website accompanying the <a class="reference external" href="https://openenergytransition.org/">Open Energy Transition</a> course for the Stanford Training. This course was originally developed <a class="reference external" href="https://neumann.fyi">Dr. Fabian Neumann</a> at <a class="reference external" href="https://www.tu.berlin/ensys">Department of Digital Transformation of Energy Systems at TU Berlin</a> and adjusted by <a class="reference external" href="https://www.linkedin.com/in/marthamaria93/">Dr. Martha Frysztacki</a> and <a class="reference external" href="https://www.linkedin.com/in/maximilian-parzen-b047a1126/">Dr. des. Maximilian Parzen</a>.</p>
-<p>On this website you will find practical introductions to many Python packages that are useful for dealing with energy data and building energy system models. Course materials other than practical introductions to Python packages for students at TU Berlin are provided on <a class="reference external" href="https://isis.tu-berlin.de/course/view.php?id=35495">ISIS</a>.</p>
-<p>The course covers tutorials and examples for getting started with Python, <code class="docutils literal notranslate"><span class="pre">numpy</span></code>, <code class="docutils literal notranslate"><span class="pre">matplotlib</span></code>, <code class="docutils literal notranslate"><span class="pre">pandas</span></code>, <code class="docutils literal notranslate"><span class="pre">geopandas</span></code>, <code class="docutils literal notranslate"><span class="pre">cartopy</span></code>, <code class="docutils literal notranslate"><span class="pre">rasterio</span></code>, <code class="docutils literal notranslate"><span class="pre">atlite</span></code>, <code class="docutils literal notranslate"><span class="pre">networkx</span></code>, <code class="docutils literal notranslate"><span class="pre">pyomo</span></code>, <code class="docutils literal notranslate"><span class="pre">pypsa</span></code>, <code class="docutils literal notranslate"><span class="pre">plotly</span></code>, <code class="docutils literal notranslate"><span class="pre">hvplot</span></code>, and <code class="docutils literal notranslate"><span class="pre">streamlit</span></code>. Topics covered include:</p>
-<ul class="simple">
-<li><p>time series analysis (e.g. wind and solar production)</p></li>
-<li><p>tabular data (e.g. LNG terminals, power plants, industrial sites)</p></li>
-<li><p>geographical data (e.g. location of power plants)</p></li>
-<li><p>data visualisation</p></li>
-<li><p>converting weather data to renewable generation</p></li>
-<li><p>land eligibility analysis (e.g. where can we build wind turbines)</p></li>
-<li><p>optimisation</p></li>
-<li><p>electricity market modelling</p></li>
-<li><p>power flow modelling (linearised)</p></li>
-<li><p>capacity expansion planning</p></li>
-<li><p>sector-coupling</p></li>
-<li><p>interactive visualisation and dashboarding</p></li>
-</ul>
+<p>Welcome to the website accompanying the <a class="reference external" href="https://openenergytransition.org/">Open Energy Transition</a> course for the Stanford Training. This course was originally developed <a class="reference external" href="https://neumann.fyi">Dr. Fabian Neumann</a> at <a class="reference external" href="https://www.tu.berlin/ensys">Department of Digital Transformation of Energy Systems at TU Berlin</a> and adjusted by <a class="reference external" href="https://www.linkedin.com/in/marthamaria93/">Dr. Martha Frysztacki</a> and <a class="reference external" href="https://www.linkedin.com/in/maximilian-parzen-b047a1126/">Maximilian Parzen</a>.</p>
+<p>While we cover here only a tailored <code class="docutils literal notranslate"><span class="pre">pypsa</span></code> training, there is much more learning material available at <a class="reference external" href="https://fneum.github.io/data-science-for-esm/intro.html">https://fneum.github.io/data-science-for-esm/intro.html</a> including tutorials on <code class="docutils literal notranslate"><span class="pre">Python</span></code>, <code class="docutils literal notranslate"><span class="pre">numpy</span></code>, <code class="docutils literal notranslate"><span class="pre">matplotlib</span></code>, <code class="docutils literal notranslate"><span class="pre">pandas</span></code>, <code class="docutils literal notranslate"><span class="pre">geopandas</span></code>, <code class="docutils literal notranslate"><span class="pre">cartopy</span></code>, <code class="docutils literal notranslate"><span class="pre">rasterio</span></code>, <code class="docutils literal notranslate"><span class="pre">atlite</span></code>, <code class="docutils literal notranslate"><span class="pre">networkx</span></code>, <code class="docutils literal notranslate"><span class="pre">pyshed</span></code>, <code class="docutils literal notranslate"><span class="pre">pyomo</span></code>, <code class="docutils literal notranslate"><span class="pre">pypsa</span></code>, <code class="docutils literal notranslate"><span class="pre">plotly</span></code>, <code class="docutils literal notranslate"><span class="pre">hvplot</span></code>, and <code class="docutils literal notranslate"><span class="pre">streamlit</span></code>.</p>
 <section id="using-python-without-a-local-installation">
 <h2>Using Python without a local installation<a class="headerlink" href="#using-python-without-a-local-installation" title="Permalink to this heading">#</a></h2>
 <p>You can even start the course without a local Python installation using online services like  <a class="reference external" href="https://colab.google">Google Colab (colab.google)</a> which provide an online Python version
@@ -438,11 +422,11 @@ in a <span class="xref myst">Jupyter Notebook</span> environment.</p>
                   <!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="right-next"
-       href="06-workshop-atlite.html"
+       href="09-workshop-pypsa.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Introduction to <code class="docutils literal notranslate"><span class="pre">rasterio</span></code> and <code class="docutils literal notranslate"><span class="pre">atlite</span></code></p>
+        <p class="prev-next-title">Introduction to <code class="docutils literal notranslate"><span class="pre">pypsa</span></code></p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
