@@ -456,7 +456,7 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(&#39;network-cem.nc&#39;, &lt;http.client.HTTPMessage at 0x7f029d364a90&gt;)
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(&#39;network-cem.nc&#39;, &lt;http.client.HTTPMessage at 0x7fc23c750d50&gt;)
 </pre></div>
 </div>
 </div>
@@ -464,7 +464,7 @@ document.write(`
 </div>
 <section id="previous-capacity-expansion-model">
 <h2>Previous Capacity Expansion Model<a class="headerlink" href="#previous-capacity-expansion-model" title="Permalink to this heading">#</a></h2>
-<p>To explore sector-coupling options with PyPSA, let’s load the capacity expansion model we built for the electricity system and add sector-coupling technologies and demands on top.</p>
+<p>To explore sector-coupling options with PyPSA, let’s load a simple capacity expansion model, similar to the one we built during out last exercise, and add sector-coupling technologies and demands on top.</p>
 <p>This example has single node for Germany and 4-hourly temporal resolution for a year. It has wind and solar solar generation, an OCGT generator as well as battery and hydrogen storage to supply a fixed electricity demand.</p>
 <p>Some sector-coupling technologies have multiple ouputs (e.g. CHP plants producing heat and power). PyPSA can automatically handle links have more than one input (<code class="docutils literal notranslate"><span class="pre">bus0</span></code>)
 and/or output (i.e. <code class="docutils literal notranslate"><span class="pre">bus1</span></code>, <code class="docutils literal notranslate"><span class="pre">bus2</span></code>, <code class="docutils literal notranslate"><span class="pre">bus3</span></code>) with a given efficieny (<code class="docutils literal notranslate"><span class="pre">efficiency</span></code>, <code class="docutils literal notranslate"><span class="pre">efficiency2</span></code>, <code class="docutils literal notranslate"><span class="pre">efficiency3</span></code>).</p>
@@ -943,7 +943,7 @@ COP(\Delta T) = 6.81 - 0.121 \Delta T + 0.00063^\Delta T^2
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x7f028ff16f10&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x7fc234421a10&gt;
 </pre></div>
 </div>
 <img alt="_images/6d7b501a28f1f62160de41a41d6f0d073900ba661ee7fab871554c6f6a78d7cd.png" src="_images/6d7b501a28f1f62160de41a41d6f0d073900ba661ee7fab871554c6f6a78d7cd.png" />
@@ -1118,13 +1118,13 @@ Index([&#39;electrolysis&#39;, &#39;fuel cell&#39;, &#39;heat pump&#39;, &#39;re
 <div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Writing constraints.:   0%|          | 0/27 [00:00&lt;?, ?it/s]
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Writing constraints.:  41%|████      | 11/27 [00:00&lt;00:00, 101.83it/s]
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Writing constraints.:  41%|████      | 11/27 [00:00&lt;00:00, 103.81it/s]
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Writing constraints.:  81%|████████▏ | 22/27 [00:00&lt;00:00, 58.30it/s] 
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Writing constraints.:  81%|████████▏ | 22/27 [00:00&lt;00:00, 58.80it/s] 
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Writing constraints.: 100%|██████████| 27/27 [00:00&lt;00:00, 49.61it/s]
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Writing constraints.: 100%|██████████| 27/27 [00:00&lt;00:00, 49.77it/s]
 </pre></div>
 </div>
 <div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
@@ -1133,13 +1133,13 @@ Index([&#39;electrolysis&#39;, &#39;fuel cell&#39;, &#39;heat pump&#39;, &#39;re
 <div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Writing continuous variables.:   0%|          | 0/12 [00:00&lt;?, ?it/s]
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Writing continuous variables.: 100%|██████████| 12/12 [00:00&lt;00:00, 116.16it/s]
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Writing continuous variables.: 100%|██████████| 12/12 [00:00&lt;00:00, 111.71it/s]
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Writing continuous variables.: 100%|██████████| 12/12 [00:00&lt;00:00, 115.22it/s]
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Writing continuous variables.: 100%|██████████| 12/12 [00:00&lt;00:00, 110.90it/s]
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>INFO:linopy.io: Writing time: 0.67s
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>INFO:linopy.io: Writing time: 0.68s
 </pre></div>
 </div>
 <div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>INFO:linopy.solvers:Log file at /tmp/highs.log.
@@ -1184,16 +1184,16 @@ Index([&#39;electrolysis&#39;, &#39;fuel cell&#39;, &#39;heat pump&#39;, &#39;re
         },
         codeMirrorConfig: {
             theme: "abcdef",
-            mode: ""
+            mode: "python"
         },
         kernelOptions: {
-            name: "",
+            name: "python3",
             path: "./."
         },
         predefinedOutput: true
     }
     </script>
-    <script>kernelName = ''</script>
+    <script>kernelName = 'python3'</script>
 
                 </article>
               
