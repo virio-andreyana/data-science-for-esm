@@ -1,13 +1,12 @@
 
-
 <!DOCTYPE html>
 
 
-<html lang="en" >
+<html lang="en" data-content_root="./" >
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>Sector-Coupling with pypsa &#8212; Data Science for Energy System Modelling</title>
   
@@ -15,57 +14,53 @@
   
   <script data-cfasync="false">
     document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
-    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="_static/styles/theme.css?digest=365ca57ee442770a23c6" rel="stylesheet" />
-<link href="_static/styles/bootstrap.css?digest=365ca57ee442770a23c6" rel="stylesheet" />
-<link href="_static/styles/pydata-sphinx-theme.css?digest=365ca57ee442770a23c6" rel="stylesheet" />
+  <link href="_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
 
   
-  <link href="_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=365ca57ee442770a23c6" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+  <link href="_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
 
-    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
-    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
-    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
-    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=87e54e7c" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=365ca57ee442770a23c6" />
-<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=365ca57ee442770a23c6" />
-  <script src="_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=365ca57ee442770a23c6"></script>
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
 
-    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
-    <script src="_static/jquery.js"></script>
-    <script src="_static/underscore.js"></script>
-    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
-    <script src="_static/doctools.js"></script>
-    <script src="_static/clipboard.min.js"></script>
-    <script src="_static/copybutton.js"></script>
-    <script src="_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script src="_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="_static/togglebutton.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="_static/togglebutton.js?v=4a39c7ea"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script src="_static/design-tabs.js"></script>
-    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
-const thebe_selector = ".thebe,.cell"
-const thebe_selector_input = "pre"
-const thebe_selector_output = ".output, .cell_output"
-</script>
-    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script src="_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = '12-workshop-pypsa-sector-coupling';</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="prev" title="Introduction to pypsa" href="09-workshop-pypsa.html" />
@@ -78,28 +73,23 @@ const thebe_selector_output = ".output, .cell_output"
 
   
   
-  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
   
   <div id="pst-scroll-pixel-helper"></div>
-
   
   <button type="button" class="btn rounded-pill" id="pst-back-to-top">
-    <i class="fa-solid fa-arrow-up"></i>
-    Back to top
-  </button>
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
 
   
   <input type="checkbox"
           class="sidebar-toggle"
-          name="__primary"
-          id="__primary"/>
-  <label class="overlay overlay-primary" for="__primary"></label>
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
   
   <input type="checkbox"
           class="sidebar-toggle"
-          name="__secondary"
-          id="__secondary"/>
-  <label class="overlay overlay-secondary" for="__secondary"></label>
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
   
   <div class="search-button__wrapper">
     <div class="search-button__overlay"></div>
@@ -121,12 +111,20 @@ const thebe_selector_output = ".output, .cell_output"
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
 </form></div>
   </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
   
-    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
-    </nav>
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
   
+
   <div class="bd-container">
     <div class="bd-container__inner bd-page-width">
+      
+      
       
       <div class="bd-sidebar-primary bd-sidebar">
         
@@ -141,6 +139,9 @@ const thebe_selector_output = ".output, .cell_output"
   
     <div class="sidebar-primary-items__start sidebar-primary__section">
         <div class="sidebar-primary-item">
+
+  
+    
   
 
 <a class="navbar-brand logo" href="intro.html">
@@ -159,7 +160,18 @@ const thebe_selector_output = ".output, .cell_output"
   
   
 </a></div>
-        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
@@ -188,7 +200,7 @@ const thebe_selector_output = ".output, .cell_output"
 
       </div>
       
-      <main id="main-content" class="bd-main">
+      <main id="main-content" class="bd-main" role="main">
         
         
 
@@ -197,14 +209,14 @@ const thebe_selector_output = ".output, .cell_output"
           <div class="bd-content">
             <div class="bd-article-container">
               
-              <div class="bd-header-article">
+              <div class="bd-header-article d-print-none">
 <div class="header-article-items header-article__inner">
   
     <div class="header-article-items__start">
       
-        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
   <span class="fa-solid fa-bars"></span>
-</label></div>
+</button></div>
       
     </div>
   
@@ -229,14 +241,14 @@ const thebe_selector_output = ".output, .cell_output"
       
       <li><a href="https://colab.research.google.com/github/open-energy-transition/data-science-for-esm/blob/stanford/data-science-for-esm/12-workshop-pypsa-sector-coupling.ipynb" target="_blank"
    class="btn btn-sm dropdown-item"
-   title="Launch onColab"
+   title="Launch on Colab"
    data-bs-placement="left" data-bs-toggle="tooltip"
 >
   
 
 <span class="btn__icon-container">
   
-    <img src="_static/images/logo_colab.png">
+    <img alt="Colab logo" src="_static/images/logo_colab.png">
   </span>
 <span class="btn__text-container">Colab</span>
 </a>
@@ -357,26 +369,28 @@ const thebe_selector_output = ".output, .cell_output"
 </button>
 
 
+
 <script>
 document.write(`
-  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
-    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
-    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
   </button>
 `);
 </script>
 
+
 <script>
 document.write(`
-  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <i class="fa-solid fa-magnifying-glass fa-lg"></i>
   </button>
 `);
 </script>
-<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <span class="fa-solid fa-list"></span>
-</label>
+</button>
 </div></div>
       
     </div>
@@ -413,10 +427,10 @@ document.write(`
               
                 
 <div id="searchbox"></div>
-                <article class="bd-article" role="main">
+                <article class="bd-article">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="sector-coupling-with-pypsa">
-<h1>Sector-Coupling with <code class="docutils literal notranslate"><span class="pre">pypsa</span></code><a class="headerlink" href="#sector-coupling-with-pypsa" title="Permalink to this heading">#</a></h1>
+<h1>Sector-Coupling with <code class="docutils literal notranslate"><span class="pre">pypsa</span></code><a class="headerlink" href="#sector-coupling-with-pypsa" title="Link to this heading">#</a></h1>
 <img src="https://github.com/fneum/data-science-for-esm/raw/main/data-science-for-esm/pypsa-logo.png" width="300px" /><div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Also in this tutorial, you might want to refer to the PyPSA documentation: <a class="reference external" href="https://pypsa.readthedocs.io">https://pypsa.readthedocs.io</a>.</p>
@@ -456,14 +470,14 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(&#39;network-cem.nc&#39;, &lt;http.client.HTTPMessage at 0x7f52abd2cd50&gt;)
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(&#39;network-cem.nc&#39;, &lt;http.client.HTTPMessage at 0x7f0ae8c635d0&gt;)
 </pre></div>
 </div>
 </div>
 </details>
 </div>
 <section id="previous-capacity-expansion-model">
-<h2>Previous Capacity Expansion Model<a class="headerlink" href="#previous-capacity-expansion-model" title="Permalink to this heading">#</a></h2>
+<h2>Previous Capacity Expansion Model<a class="headerlink" href="#previous-capacity-expansion-model" title="Link to this heading">#</a></h2>
 <p>To explore sector-coupling options with PyPSA, let’s load a simple capacity expansion model, similar to the one we built during out last exercise, and add sector-coupling technologies and demands on top.</p>
 <p>This example has single node for Germany and 4-hourly temporal resolution for a year. It has wind and solar solar generation, an OCGT generator as well as battery and hydrogen storage to supply a fixed electricity demand.</p>
 <p>Some sector-coupling technologies have multiple ouputs (e.g. CHP plants producing heat and power). PyPSA can automatically handle links have more than one input (<code class="docutils literal notranslate"><span class="pre">bus0</span></code>)
@@ -475,7 +489,7 @@ and/or output (i.e. <code class="docutils literal notranslate"><span class="pre"
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>WARNING:pypsa.io:Importing network from PyPSA version v0.21.3 while current version is v0.25.2. Read the release notes at https://pypsa.readthedocs.io/en/latest/release_notes.html to prepare your network for import.
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>WARNING:pypsa.io:Importing network from PyPSA version v0.21.3 while current version is v0.28.0. Read the release notes at https://pypsa.readthedocs.io/en/latest/release_notes.html to prepare your network for import.
 </pre></div>
 </div>
 <div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>INFO:pypsa.io:Imported network network-cem.nc has buses, carriers, generators, global_constraints, loads, storage_units
@@ -541,7 +555,7 @@ Snapshots: 2190
 </div>
 </section>
 <section id="hydrogen-production">
-<h2>Hydrogen Production<a class="headerlink" href="#hydrogen-production" title="Permalink to this heading">#</a></h2>
+<h2>Hydrogen Production<a class="headerlink" href="#hydrogen-production" title="Link to this heading">#</a></h2>
 <p>The following example shows how to model the components of hydrogen storage separately, i.e. electrolysis, fuel cell and storage.</p>
 <p>First, let’s remove the simplified hydrogen storage representation:</p>
 <div class="cell docutils container">
@@ -649,7 +663,7 @@ Snapshots: 2190
 </div>
 </section>
 <section id="heat-demand">
-<h2>Heat Demand<a class="headerlink" href="#heat-demand" title="Permalink to this heading">#</a></h2>
+<h2>Heat Demand<a class="headerlink" href="#heat-demand" title="Link to this heading">#</a></h2>
 <p>For the heat demand, we create another bus and connect a load with the heat demand time series to it:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -701,12 +715,12 @@ Name: 0, dtype: float64
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;Axes: xlabel=&#39;snapshot&#39;, ylabel=&#39;GW&#39;&gt;
 </pre></div>
 </div>
-<img alt="_images/cf916f1a3b0b26ef0a034a23f908a6eb7ee63f99f7c236124d4d8268a278c679.png" src="_images/cf916f1a3b0b26ef0a034a23f908a6eb7ee63f99f7c236124d4d8268a278c679.png" />
+<img alt="_images/763f6cfc510860bf22d43757dc5b889a659decb4adb52e8ac7db7c57c89c95c3.png" src="_images/763f6cfc510860bf22d43757dc5b889a659decb4adb52e8ac7db7c57c89c95c3.png" />
 </div>
 </div>
 </section>
 <section id="heat-pumps">
-<h2>Heat pumps<a class="headerlink" href="#heat-pumps" title="Permalink to this heading">#</a></h2>
+<h2>Heat pumps<a class="headerlink" href="#heat-pumps" title="Link to this heading">#</a></h2>
 <p>To model heat pumps, first we have to calculate the <strong>coefficient of performance (COP)</strong> profile based on the temperature profile of the heat source.</p>
 <p>In the example below, we calculate the COP for an air-sourced heat pump with a sink temperature of 55° C and a population-weighted ambient temperature profile for Germany.</p>
 <p>The heat pump performance is given by the following function:</p>
@@ -743,7 +757,7 @@ COP(\Delta T) = 6.81 - 0.121 \Delta T + 0.00063 \Delta T^2
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/aa3b5ca5b23922a57a9933210ce7ba4693505acdb6ea54aee6bc3b6e34144733.png" src="_images/aa3b5ca5b23922a57a9933210ce7ba4693505acdb6ea54aee6bc3b6e34144733.png" />
+<img alt="_images/abf7a66227e553e88d90f84dc70bb639e13a023e67ce59d077b9220f7634b609.png" src="_images/abf7a66227e553e88d90f84dc70bb639e13a023e67ce59d077b9220f7634b609.png" />
 </div>
 </div>
 <div class="cell docutils container">
@@ -758,7 +772,7 @@ COP(\Delta T) = 6.81 - 0.121 \Delta T + 0.00063 \Delta T^2
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Text(0, 0.5, &#39;COP [-]&#39;)
 </pre></div>
 </div>
-<img alt="_images/6d4d3c5b0cd8fbb5e2eb006a277a9828ff495f108eb0ca410acf20d14aad912a.png" src="_images/6d4d3c5b0cd8fbb5e2eb006a277a9828ff495f108eb0ca410acf20d14aad912a.png" />
+<img alt="_images/7692e522b1f689c7f09779189c3bc007a23c63c1940fda3bbb9cdb819f0bebb6.png" src="_images/7692e522b1f689c7f09779189c3bc007a23c63c1940fda3bbb9cdb819f0bebb6.png" />
 </div>
 </div>
 <p>Once we have calculated the heat pump coefficient of performance, we can add the heat pump to the network as a <code class="docutils literal notranslate"><span class="pre">Link</span></code>. We use the parameter <code class="docutils literal notranslate"><span class="pre">efficiency</span></code> to incorporate the COP.</p>
@@ -807,7 +821,7 @@ COP(\Delta T) = 6.81 - 0.121 \Delta T + 0.00063 \Delta T^2
 </div>
 </section>
 <section id="combined-heat-and-power-chp">
-<h2>Combined Heat-and-Power (CHP)<a class="headerlink" href="#combined-heat-and-power-chp" title="Permalink to this heading">#</a></h2>
+<h2>Combined Heat-and-Power (CHP)<a class="headerlink" href="#combined-heat-and-power-chp" title="Link to this heading">#</a></h2>
 <p>In the following, we are going to add gas-fired combined heat-and-power plants (CHPs). Today, these would use fossil gas, but in the example below we assume green methane with relatively high marginal costs. Since we have no other net emission technology, we can remove the CO<span class="math notranslate nohighlight">\(_2\)</span> limit.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -895,7 +909,7 @@ COP(\Delta T) = 6.81 - 0.121 \Delta T + 0.00063 \Delta T^2
 </div>
 </section>
 <section id="electric-vehicles">
-<h2>Electric Vehicles<a class="headerlink" href="#electric-vehicles" title="Permalink to this heading">#</a></h2>
+<h2>Electric Vehicles<a class="headerlink" href="#electric-vehicles" title="Link to this heading">#</a></h2>
 <p>To model electric vehicles, we first create another bus for the electric vehicles.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -923,7 +937,7 @@ COP(\Delta T) = 6.81 - 0.121 \Delta T + 0.00063 \Delta T^2
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;Axes: xlabel=&#39;snapshot&#39;, ylabel=&#39;GW&#39;&gt;
 </pre></div>
 </div>
-<img alt="_images/89d47002553f95c459c5e5623d0fd10f592bfb118bf47ca73a7c789a7f816b65.png" src="_images/89d47002553f95c459c5e5623d0fd10f592bfb118bf47ca73a7c789a7f816b65.png" />
+<img alt="_images/0b21afd4330e83adb7199114d7afaf693c1c6a14abb4113f564776d1f30c49f3.png" src="_images/0b21afd4330e83adb7199114d7afaf693c1c6a14abb4113f564776d1f30c49f3.png" />
 </div>
 </div>
 <div class="cell docutils container">
@@ -945,10 +959,10 @@ COP(\Delta T) = 6.81 - 0.121 \Delta T + 0.00063 \Delta T^2
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x7f52a59e2e10&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x7f0aa56f7750&gt;
 </pre></div>
 </div>
-<img alt="_images/6d7b501a28f1f62160de41a41d6f0d073900ba661ee7fab871554c6f6a78d7cd.png" src="_images/6d7b501a28f1f62160de41a41d6f0d073900ba661ee7fab871554c6f6a78d7cd.png" />
+<img alt="_images/d9f63e1575ce942e982187eee682beb9350491f4fe6f27be54a7b543bb3e1ef6.png" src="_images/d9f63e1575ce942e982187eee682beb9350491f4fe6f27be54a7b543bb3e1ef6.png" />
 </div>
 </div>
 <p>The electric vehicles can only be charged when they are plugged-in. Below we load an availability profile
@@ -971,7 +985,7 @@ telling us what share of electric vehicles is plugged-in <strong>at home</strong
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;Axes: xlabel=&#39;snapshot&#39;&gt;
 </pre></div>
 </div>
-<img alt="_images/8bc82eee8046b9aeb7865fdabe46fdebc4bc3a9519f1ccb9d9285e6be5792552.png" src="_images/8bc82eee8046b9aeb7865fdabe46fdebc4bc3a9519f1ccb9d9285e6be5792552.png" />
+<img alt="_images/d47f28473909a0b72730d874c5e8dcc409d61ad52633235c185f7936f33b6f97.png" src="_images/d47f28473909a0b72730d874c5e8dcc409d61ad52633235c185f7936f33b6f97.png" />
 </div>
 </div>
 <p>Then, we can add a link for the electric vehicle charger using assumption about the number of EVs and their charging rates.</p>
@@ -1056,7 +1070,7 @@ telling us what share of electric vehicles is plugged-in <strong>at home</strong
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;Axes: xlabel=&#39;snapshot&#39;&gt;
 </pre></div>
 </div>
-<img alt="_images/0de61b6f0275afbbee847e5da8d3622afe816fc4def0760c8e56f074ff1e2e19.png" src="_images/0de61b6f0275afbbee847e5da8d3622afe816fc4def0760c8e56f074ff1e2e19.png" />
+<img alt="_images/0ccdf0007d3ba3038b3945bba390d383293cbe122b111e9c272e3b9d8422b974.png" src="_images/0ccdf0007d3ba3038b3945bba390d383293cbe122b111e9c272e3b9d8422b974.png" />
 </div>
 </div>
 <div class="cell docutils container">
@@ -1120,31 +1134,75 @@ Index([&#39;electrolysis&#39;, &#39;fuel cell&#39;, &#39;heat pump&#39;, &#39;re
 <div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Writing constraints.:   0%|          | 0/27 [00:00&lt;?, ?it/s]
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Writing constraints.:  37%|███▋      | 10/27 [00:00&lt;00:00, 91.27it/s]
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Writing constraints.:  48%|████▊     | 13/27 [00:00&lt;00:00, 103.88it/s]
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Writing constraints.:  74%|███████▍  | 20/27 [00:00&lt;00:00, 47.20it/s]
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Writing constraints.:  89%|████████▉ | 24/27 [00:00&lt;00:00, 84.28it/s] 
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Writing constraints.:  96%|█████████▋| 26/27 [00:00&lt;00:00, 39.15it/s]
-</pre></div>
-</div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Writing constraints.: 100%|██████████| 27/27 [00:00&lt;00:00, 40.97it/s]
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Writing constraints.: 100%|██████████| 27/27 [00:00&lt;00:00, 67.72it/s]
 </pre></div>
 </div>
 <div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Writing continuous variables.:   0%|          | 0/12 [00:00&lt;?, ?it/s]
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Writing continuous variables.:   0%|          | 0/11 [00:00&lt;?, ?it/s]
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Writing continuous variables.:  83%|████████▎ | 10/12 [00:00&lt;00:00, 97.39it/s]
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Writing continuous variables.: 100%|██████████| 11/11 [00:00&lt;00:00, 150.05it/s]
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Writing continuous variables.: 100%|██████████| 12/12 [00:00&lt;00:00, 96.94it/s]
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>INFO:linopy.io: Writing time: 0.49s
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>INFO:linopy.io: Writing time: 0.81s
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>INFO:linopy.solvers:Log file at /tmp/highs.log
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running HiGHS 1.7.2 (git hash: 184e327): Copyright (c) 2024 HiGHS under MIT licence terms
+Coefficient ranges:
+  Matrix [1e-04, 6e+00]
+  Cost   [4e-02, 3e+05]
+  Bound  [0e+00, 0e+00]
+  RHS    [2e+03, 1e+08]
+Presolving model
+47129 rows, 42760 cols, 119487 nonzeros  0s
+40560 rows, 34001 cols, 104159 nonzeros  0s
+38370 rows, 29621 cols, 97589 nonzeros  0s
+Presolve : Reductions: rows 38370(-55811); columns 29621(-14190); elements 97589(-70001)
+Solving the presolved LP
+Using EKK dual simplex solver - serial
+  Iteration        Objective     Infeasibilities num(sum)
+          0     0.0000000000e+00 Ph1: 0(0) 0s
+      21158     7.2645696784e+10 Pr: 6234(4.1166e+12); Du: 0(2.61714e-06) 5s
+      33754     1.2129041006e+11 Pr: 0(0); Du: 0(4.03079e-13) 9s
+      33754     1.2129041006e+11 Pr: 0(0); Du: 0(4.03079e-13) 9s
+Solving the original LP from the solution after postsolve
+Using EKK dual simplex solver - serial
+  Iteration        Objective     Infeasibilities num(sum)
+      33754     1.2129041006e+11 Pr: 1256(0.000766981); Du: 0(2.89776e-08) 9s
+      37118     1.2129041006e+11 Pr: 0(0) 11s
+Model   status      : Optimal
+Simplex   iterations: 37118
+Objective value     :  1.2129041006e+11
+HiGHS run time      :         11.46
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>INFO:linopy.constants: Optimization successful: 
+Status: ok
+Termination condition: optimal
+Solution: 43811 primals, 94181 duals
+Objective: 1.21e+11
+Solver model: available
+Solver message: optimal
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>INFO:pypsa.optimization.optimize:The shadow-prices of the constraints Generator-ext-p-lower, Generator-ext-p-upper, Link-fix-p-lower, Link-fix-p-upper, Link-ext-p-lower, Link-ext-p-upper, Store-fix-e-lower, Store-fix-e-upper, Store-ext-e-lower, Store-ext-e-upper, StorageUnit-ext-p_dispatch-lower, StorageUnit-ext-p_dispatch-upper, StorageUnit-ext-p_store-lower, StorageUnit-ext-p_store-upper, StorageUnit-ext-state_of_charge-lower, StorageUnit-ext-state_of_charge-upper, StorageUnit-energy_balance, Store-energy_balance were not assigned to the network.
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Writing the solution to /tmp/linopy-solve-u5qsrwlb.sol
+</pre></div>
+</div>
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(&#39;ok&#39;, &#39;optimal&#39;)
 </pre></div>
 </div>
 </div>
@@ -1156,6 +1214,259 @@ Index([&#39;electrolysis&#39;, &#39;fuel cell&#39;, &#39;heat pump&#39;, &#39;re
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th></th>
+      <th>Optimal Capacity</th>
+      <th>Installed Capacity</th>
+      <th>Supply</th>
+      <th>Withdrawal</th>
+      <th>Dispatch</th>
+      <th>Transmission</th>
+      <th>Capacity Factor</th>
+      <th>Curtailment</th>
+      <th>Capital Expenditure</th>
+      <th>Operational Expenditure</th>
+      <th>Revenue</th>
+      <th>Market Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th rowspan="3" valign="top">Generator</th>
+      <th>offwind</th>
+      <td>2.281124e+04</td>
+      <td>0.0</td>
+      <td>3.196011e+07</td>
+      <td>0.000000e+00</td>
+      <td>3.196011e+07</td>
+      <td>0.0</td>
+      <td>0.159939</td>
+      <td>4.053516e+07</td>
+      <td>3.606999e+09</td>
+      <td>6.392023e+05</td>
+      <td>3.607639e+09</td>
+      <td>112.879405</td>
+    </tr>
+    <tr>
+      <th>onwind</th>
+      <td>3.437762e+05</td>
+      <td>0.0</td>
+      <td>3.866098e+07</td>
+      <td>0.000000e+00</td>
+      <td>3.866098e+07</td>
+      <td>0.0</td>
+      <td>0.012838</td>
+      <td>5.809284e+08</td>
+      <td>3.303204e+10</td>
+      <td>5.219232e+07</td>
+      <td>3.308423e+10</td>
+      <td>855.752513</td>
+    </tr>
+    <tr>
+      <th>solar</th>
+      <td>7.594874e+05</td>
+      <td>0.0</td>
+      <td>4.245393e+08</td>
+      <td>0.000000e+00</td>
+      <td>4.245393e+08</td>
+      <td>0.0</td>
+      <td>0.063811</td>
+      <td>4.016830e+08</td>
+      <td>3.532292e+10</td>
+      <td>4.245393e+06</td>
+      <td>3.532716e+10</td>
+      <td>83.212930</td>
+    </tr>
+    <tr>
+      <th rowspan="4" valign="top">Link</th>
+      <th>EV charger</th>
+      <td>4.400000e+05</td>
+      <td>440000.0</td>
+      <td>3.732941e+08</td>
+      <td>4.147712e+08</td>
+      <td>-4.147712e+07</td>
+      <td>0.0</td>
+      <td>0.107610</td>
+      <td>0.000000e+00</td>
+      <td>0.000000e+00</td>
+      <td>0.000000e+00</td>
+      <td>0.000000e+00</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>V2G</th>
+      <td>4.400000e+05</td>
+      <td>440000.0</td>
+      <td>2.241148e+08</td>
+      <td>2.490165e+08</td>
+      <td>-2.490165e+07</td>
+      <td>0.0</td>
+      <td>0.064606</td>
+      <td>0.000000e+00</td>
+      <td>0.000000e+00</td>
+      <td>0.000000e+00</td>
+      <td>0.000000e+00</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>electrolysis</th>
+      <td>7.810270e+04</td>
+      <td>0.0</td>
+      <td>4.789257e+08</td>
+      <td>6.841796e+08</td>
+      <td>-2.052539e+08</td>
+      <td>0.0</td>
+      <td>1.000000</td>
+      <td>0.000000e+00</td>
+      <td>3.905135e+09</td>
+      <td>0.000000e+00</td>
+      <td>3.905135e+09</td>
+      <td>8.153947</td>
+    </tr>
+    <tr>
+      <th>resistive heater</th>
+      <td>2.277568e+05</td>
+      <td>0.0</td>
+      <td>5.936692e+08</td>
+      <td>6.596325e+08</td>
+      <td>-6.596325e+07</td>
+      <td>0.0</td>
+      <td>0.330618</td>
+      <td>0.000000e+00</td>
+      <td>2.277568e+09</td>
+      <td>0.000000e+00</td>
+      <td>2.277568e+09</td>
+      <td>3.836426</td>
+    </tr>
+    <tr>
+      <th rowspan="4" valign="top">Load</th>
+      <th>-</th>
+      <td>0.000000e+00</td>
+      <td>0.0</td>
+      <td>0.000000e+00</td>
+      <td>4.789257e+08</td>
+      <td>-4.789257e+08</td>
+      <td>0.0</td>
+      <td>NaN</td>
+      <td>0.000000e+00</td>
+      <td>0.000000e+00</td>
+      <td>0.000000e+00</td>
+      <td>-1.151077e+11</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>EV demand</th>
+      <td>0.000000e+00</td>
+      <td>0.0</td>
+      <td>0.000000e+00</td>
+      <td>1.242776e+08</td>
+      <td>-1.242776e+08</td>
+      <td>0.0</td>
+      <td>NaN</td>
+      <td>0.000000e+00</td>
+      <td>0.000000e+00</td>
+      <td>0.000000e+00</td>
+      <td>0.000000e+00</td>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <th>heat</th>
+      <td>0.000000e+00</td>
+      <td>0.0</td>
+      <td>0.000000e+00</td>
+      <td>5.936692e+08</td>
+      <td>-5.936692e+08</td>
+      <td>0.0</td>
+      <td>NaN</td>
+      <td>0.000000e+00</td>
+      <td>0.000000e+00</td>
+      <td>0.000000e+00</td>
+      <td>-2.277568e+09</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>hydrogen</th>
+      <td>0.000000e+00</td>
+      <td>0.0</td>
+      <td>0.000000e+00</td>
+      <td>4.789257e+08</td>
+      <td>-4.789257e+08</td>
+      <td>0.0</td>
+      <td>NaN</td>
+      <td>0.000000e+00</td>
+      <td>0.000000e+00</td>
+      <td>0.000000e+00</td>
+      <td>-3.905135e+09</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>StorageUnit</th>
+      <th>battery storage</th>
+      <td>4.468159e+05</td>
+      <td>0.0</td>
+      <td>1.908404e+08</td>
+      <td>2.070751e+08</td>
+      <td>-1.623469e+07</td>
+      <td>0.0</td>
+      <td>0.101662</td>
+      <td>0.000000e+00</td>
+      <td>4.308868e+10</td>
+      <td>0.000000e+00</td>
+      <td>4.308868e+10</td>
+      <td>225.783806</td>
+    </tr>
+    <tr>
+      <th rowspan="2" valign="top">Store</th>
+      <th>EV battery</th>
+      <td>1.000000e+06</td>
+      <td>1000000.0</td>
+      <td>2.760000e+08</td>
+      <td>2.760000e+08</td>
+      <td>0.000000e+00</td>
+      <td>0.0</td>
+      <td>0.126027</td>
+      <td>0.000000e+00</td>
+      <td>0.000000e+00</td>
+      <td>0.000000e+00</td>
+      <td>0.000000e+00</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>gas storage</th>
+      <td>1.000000e+08</td>
+      <td>100000000.0</td>
+      <td>0.000000e+00</td>
+      <td>0.000000e+00</td>
+      <td>0.000000e+00</td>
+      <td>0.0</td>
+      <td>1.000000</td>
+      <td>0.000000e+00</td>
+      <td>0.000000e+00</td>
+      <td>0.000000e+00</td>
+      <td>0.000000e+00</td>
+      <td>0.000000</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1165,10 +1476,16 @@ Index([&#39;electrolysis&#39;, &#39;fuel cell&#39;, &#39;heat pump&#39;, &#39;re
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;Axes: ylabel=&#39;bn€/a&#39;&gt;
+</pre></div>
+</div>
+<img alt="_images/9892681e846e4b7073e4bc9218fede00fbf838ab6fcae6bb3aa8473993ca7b09.png" src="_images/9892681e846e4b7073e4bc9218fede00fbf838ab6fcae6bb3aa8473993ca7b09.png" />
+</div>
 </div>
 </section>
 <section id="exercises">
-<h2>Exercises<a class="headerlink" href="#exercises" title="Permalink to this heading">#</a></h2>
+<h2>Exercises<a class="headerlink" href="#exercises" title="Link to this heading">#</a></h2>
 <p>Here are a few things you can do to explore this system:</p>
 <ul class="simple">
 <li><p>exclude one of transport sector, heating sector, hydrogen demand and investigate what impact it has on system operation and investments</p></li>
@@ -1204,8 +1521,8 @@ Index([&#39;electrolysis&#39;, &#39;fuel cell&#39;, &#39;heat pump&#39;, &#39;re
               
               
               
-                <footer class="prev-next-footer">
-                  <!-- Previous / next buttons -->
+                <footer class="prev-next-footer d-print-none">
+                  
 <div class="prev-next-area">
     <a class="left-prev"
        href="09-workshop-pypsa.html"
@@ -1224,6 +1541,7 @@ Index([&#39;electrolysis&#39;, &#39;fuel cell&#39;, &#39;heat pump&#39;, &#39;re
             
               
                 <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
 
   <div class="sidebar-secondary-item">
   <div class="page-toc tocsection onthispage">
@@ -1259,6 +1577,7 @@ By Open Energy Transition and Fabian Neumann
   
   <div class="footer-item">
     
+
   <p class="copyright">
     
       © Copyright 2022-2023.
@@ -1285,8 +1604,8 @@ By Open Energy Transition and Fabian Neumann
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="_static/scripts/bootstrap.js?digest=365ca57ee442770a23c6"></script>
-<script src="_static/scripts/pydata-sphinx-theme.js?digest=365ca57ee442770a23c6"></script>
+  <script src="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
 
   <footer class="bd-footer">
   </footer>
