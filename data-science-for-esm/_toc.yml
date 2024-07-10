@@ -6,3 +6,4 @@ root: intro
 chapters:
 - file: 09-workshop-pypsa
 - file: 12-workshop-pypsa-sector-coupling
+- file: build_YO_content
