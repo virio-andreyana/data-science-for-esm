@@ -4,9 +4,9 @@ This section assists academics, and alike, in  build their content, by modifying
 
 Our main guidelines are the following:
 - once forking this repository, create and push a branch named `stanford`.
-This step can be bypassed in the `Create a new fork` selection, by deselecting _Copy the `main` branch only`_:
+This step can be bypassed in the `Create a new fork` selection, by deselecting _Copy the `main` branch only_:
 <!-- <img src="./pictures/fork_option.png" width="100"/> -->
-<img src="./pictures/fork_option.png" style="width:800px;height:300px;">
+<img src="./pictures/fork_option.png" style="width:800px;">
 
 <!-- [image info](./pictures/fork_option.png 'Title'){width=100} -->
 
