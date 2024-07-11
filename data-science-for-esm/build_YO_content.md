@@ -6,7 +6,9 @@ Our main guidelines are the following:
 - once forking this repository, create and push a branch named `stanford`.
 This step can be bypassed in the `Create a new fork` selection, by deselecting _Copy the `main` branch only`_:
 <!-- <img src="./pictures/fork_option.png" width="100"/> -->
-[image info](./pictures/fork_option.png 'Title'){width=100}
+<img src="./pictures/fork_option.png" style="width:800px;height:300px;">
+
+<!-- [image info](./pictures/fork_option.png 'Title'){width=100} -->
 
 - `gh-pages` branch will be automatically generated, as defined by the workflow in the `.github/workflows/deploy.yml` file
 which will contain the required `HTML`, `css`, `.js`, and other files
