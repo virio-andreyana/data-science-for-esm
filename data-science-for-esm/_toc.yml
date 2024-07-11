@@ -4,6 +4,6 @@
 format: jb-book
 root: intro
 chapters:
-- file: 00-workshop-pypsa
-- file: 01-workshop-pypsa-sector-coupling
-- file: 02_build_YO_content
+- file: cntnt00_workshop_pypsa
+- file: cntnt01_workshop_pypsa_sector_coupling
+- file: cntnt02_build_YO_content
