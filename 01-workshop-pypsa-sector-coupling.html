@@ -151,8 +151,14 @@
   
   
   
+    
+    
+      
+    
+    
+    <img src="_static/00_oet-logo-red-n-subtitle.png" class="logo__image only-light" alt="Data Science for Energy System Modelling - Home"/>
+    <script>document.write(`<img src="_static/00_oet-logo-red-n-subtitle.png" class="logo__image only-dark" alt="Data Science for Energy System Modelling - Home"/>`);</script>
   
-    <p class="title logo__title">Data Science for Energy System Modelling</p>
   
 </a></div>
         <div class="sidebar-primary-item">
@@ -466,7 +472,7 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(&#39;network-cem.nc&#39;, &lt;http.client.HTTPMessage at 0x7f3b6a07c0d0&gt;)
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(&#39;network-cem.nc&#39;, &lt;http.client.HTTPMessage at 0x7fa811531850&gt;)
 </pre></div>
 </div>
 </div>
@@ -955,7 +961,7 @@ COP(\Delta T) = 6.81 - 0.121 \Delta T + 0.00063 \Delta T^2
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x7f3b68bd2ad0&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x7fa80c613d90&gt;
 </pre></div>
 </div>
 <img alt="_images/d9f63e1575ce942e982187eee682beb9350491f4fe6f27be54a7b543bb3e1ef6.png" src="_images/d9f63e1575ce942e982187eee682beb9350491f4fe6f27be54a7b543bb3e1ef6.png" />
@@ -1130,13 +1136,13 @@ Index([&#39;electrolysis&#39;, &#39;fuel cell&#39;, &#39;heat pump&#39;, &#39;re
 <div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Writing constraints.:   0%|          | 0/27 [00:00&lt;?, ?it/s]
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Writing constraints.:  48%|████▊     | 13/27 [00:00&lt;00:00, 97.93it/s]
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Writing constraints.:  48%|████▊     | 13/27 [00:00&lt;00:00, 108.18it/s]
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Writing constraints.:  85%|████████▌ | 23/27 [00:00&lt;00:00, 75.27it/s]
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Writing constraints.:  89%|████████▉ | 24/27 [00:00&lt;00:00, 85.27it/s] 
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Writing constraints.: 100%|██████████| 27/27 [00:00&lt;00:00, 61.10it/s]
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Writing constraints.: 100%|██████████| 27/27 [00:00&lt;00:00, 68.43it/s]
 </pre></div>
 </div>
 <div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
@@ -1145,10 +1151,10 @@ Index([&#39;electrolysis&#39;, &#39;fuel cell&#39;, &#39;heat pump&#39;, &#39;re
 <div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Writing continuous variables.:   0%|          | 0/11 [00:00&lt;?, ?it/s]
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Writing continuous variables.: 100%|██████████| 11/11 [00:00&lt;00:00, 139.07it/s]
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Writing continuous variables.: 100%|██████████| 11/11 [00:00&lt;00:00, 153.20it/s]
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>INFO:linopy.io: Writing time: 0.54s
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>INFO:linopy.io: Writing time: 0.49s
 </pre></div>
 </div>
 <div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>INFO:linopy.solvers:Log file at /tmp/highs.log
@@ -1169,19 +1175,19 @@ Solving the presolved LP
 Using EKK dual simplex solver - serial
   Iteration        Objective     Infeasibilities num(sum)
           0     0.0000000000e+00 Ph1: 0(0) 0s
-      20410     5.3815339377e+10 Pr: 7263(1.01226e+14); Du: 0(2.61714e-06) 5s
-      33754     1.2129041006e+11 Pr: 0(0); Du: 0(4.03079e-13) 10s
-      33754     1.2129041006e+11 Pr: 0(0); Du: 0(4.03079e-13) 10s
+      21158     7.2645696784e+10 Pr: 6234(4.1166e+12); Du: 0(2.61714e-06) 5s
+      33754     1.2129041006e+11 Pr: 0(0); Du: 0(4.03079e-13) 9s
+      33754     1.2129041006e+11 Pr: 0(0); Du: 0(4.03079e-13) 9s
 Solving the original LP from the solution after postsolve
 Using EKK dual simplex solver - serial
   Iteration        Objective     Infeasibilities num(sum)
-      33754     1.2129041006e+11 Pr: 1256(0.000766981); Du: 0(2.89776e-08) 10s
-      37118     1.2129041006e+11 Pr: 0(0) 12s
+      33754     1.2129041006e+11 Pr: 1256(0.000766981); Du: 0(2.89776e-08) 9s
+      37118     1.2129041006e+11 Pr: 0(0) 11s
 Model   status      : Optimal
 Simplex   iterations: 37118
 Objective value     :  1.2129041006e+11
-HiGHS run time      :         12.42
-Writing the solution to /tmp/linopy-solve-h2szaiif.sol
+HiGHS run time      :         11.44
+Writing the solution to /tmp/linopy-solve-9o205uy3.sol
 </pre></div>
 </div>
 <div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>INFO:linopy.constants: Optimization successful: 
