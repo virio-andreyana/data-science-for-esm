@@ -2,8 +2,8 @@
 # Learn more at https://jupyterbook.org/customize/toc.html
 
 format: jb-book
-root: intro
+#root: intro
 chapters:
-- file: 09-workshop-pypsa
-- file: 12-workshop-pypsa-sector-coupling
-- file: build_YO_content
+- file: 00-workshop-pypsa
+- file: 01-workshop-pypsa-sector-coupling
+- file: 02_build_YO_content

@@ -5,8 +5,8 @@ This section assists academics, and alike, in  build their content, by modifying
 Our main guidelines are the following:
 - once forking this repository, create and push a branch named `stanford`.
 This step can be bypassed in the `Create a new fork` selection, by deselecting _Copy the `main` branch only_:
-<!-- <img src="./pictures/fork_option.png" width="100"/> -->
-<img src="fork_option.png" style="width:800px;">
+<img src='https://github.com/open-energy-transition/data-science-for-esm/blob/20f4ccce02f32aae6fdad26b35f26492e2c6ec84/data-science-for-esm/_images/fork_option.png./pictures/fork_option.png' width='200' height='200' />
+<!-- <img src="fork_option.png" style="width:800px;"> -->
 
 <!-- [image info](./pictures/fork_option.png 'Title'){width=100} -->
 
