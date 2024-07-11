@@ -410,8 +410,11 @@ document.write(`
 <p>Our main guidelines are the following:</p>
 <ul class="simple">
 <li><p>once forking this repository, create and push a branch named <code class="docutils literal notranslate"><span class="pre">stanford</span></code>.
-This step can be bypassed in the <code class="docutils literal notranslate"><span class="pre">Create</span> <span class="pre">a</span> <span class="pre">new</span> <span class="pre">fork</span></code> selection, by deselecting _Copy the <code class="docutils literal notranslate"><span class="pre">main</span></code> branch only`:
-<img alt="image info" src="_images/fork_option.png" /></p></li>
+This step can be bypassed in the <code class="docutils literal notranslate"><span class="pre">Create</span> <span class="pre">a</span> <span class="pre">new</span> <span class="pre">fork</span></code> selection, by deselecting <em>Copy the <code class="docutils literal notranslate"><span class="pre">main</span></code> branch only`</em>:
+<img src='./pictures/fork_option.pngIsolated.png' alt='Fork Option' width="100"/></p></li>
+</ul>
+<!-- [image info](./pictures/fork_option.png 'Title') -->
+<ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">gh-pages</span></code> branch will be automatically generated, as defined by the workflow in the <code class="docutils literal notranslate"><span class="pre">.github/workflows/deploy.yml</span></code> file
 which will contain the required <code class="docutils literal notranslate"><span class="pre">HTML</span></code>, <code class="docutils literal notranslate"><span class="pre">css</span></code>, <code class="docutils literal notranslate"><span class="pre">.js</span></code>, and other files</p></li>
 <li><p>in the <code class="docutils literal notranslate"><span class="pre">.github/workflows/deploy.yml</span></code> file you also specify the branch, used by the workflow, which upon the <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">push</span></code> command, is used for generating the required <code class="docutils literal notranslate"><span class="pre">HTML</span></code>, <code class="docutils literal notranslate"><span class="pre">css</span></code>, <code class="docutils literal notranslate"><span class="pre">.js</span></code>, as well as the other files - other than the <code class="docutils literal notranslate"><span class="pre">gh-pages</span></code></p></li>
