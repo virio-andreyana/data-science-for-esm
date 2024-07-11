@@ -1,12 +1,12 @@
 # Build Your Own Content
 
-This section assists academics, and alike, in  build their content, by modifying this repository, or the original TU Berlin (repository)[https://github.com/fneum/data-science-for-esm]. Its primary purpose if for teaching, prviding lectures and learning material, but can also be used for any other purpose. The first step is to  for using a fork of this repository. By doing so one is able to create his own website, with tailor-made content, quickly and with ease. This setup draws from the [peaceiris actions-gh-pages](https://github.com/peaceiris/actions-gh-pages), and [Stanford RC website](https://stanford-rc.github.io/rse-services/docs/resources/documentation). Former serve only as a reference, as the full explanation is provided blow.
+This section assists academics, and alike, in  build their content, by modifying this repository, or the original TU Berlin [repository](https://github.com/fneum/data-science-for-esm). Its primary purpose if for teaching, prviding lectures and learning material, but can also be used for any other purpose. The first step is to  for using a fork of this repository. By doing so one is able to create his own website, with tailor-made content, quickly and with ease. This setup draws from the [peaceiris actions-gh-pages](https://github.com/peaceiris/actions-gh-pages), and [Stanford RC website](https://stanford-rc.github.io/rse-services/docs/resources/documentation). Former serve only as a reference, as the full explanation is provided blow.
 
 Our main guidelines are the following:
 - once forking this repository, create and push a branch named `stanford`.
 This step can be bypassed in the `Create a new fork` selection, by deselecting _Copy the `main` branch only`_:
 <!-- <img src="./pictures/fork_option.png" width="100"/> -->
-[image info](./pictures/fork_option.png 'Title'){width="100"}
+[image info](./pictures/fork_option.png 'Title'){width=100}
 
 - `gh-pages` branch will be automatically generated, as defined by the workflow in the `.github/workflows/deploy.yml` file
 which will contain the required `HTML`, `css`, `.js`, and other files
