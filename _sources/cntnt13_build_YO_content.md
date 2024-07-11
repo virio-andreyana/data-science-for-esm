@@ -6,7 +6,7 @@ Our main guidelines are the following:
 - once forking this repository, create and push a branch named `stanford`.
 This step can be bypassed in the `Create a new fork` selection, by deselecting _Copy the `main` branch only_:
 <!-- <img src="https://github.com/open-energy-transition/data-science-for-esm/blob/a7bedcb87bcbb42d1562d944dc8b4e3707ebf6df/data-science-for-esm/03_fork_option.png" width="100" /> -->
-<img src="img03_fork_option.png" alt="drawing" width="200"/>
+<img src="data-science-for-esm/data-science-for-esm/img03_fork_option.png" alt="" width="200"/>
 <!-- [image info](./pictures/fork_option.png 'Title'){width=100} -->
 
 - `gh-pages` branch will be automatically generated, as defined by the workflow in the `.github/workflows/deploy.yml` file
