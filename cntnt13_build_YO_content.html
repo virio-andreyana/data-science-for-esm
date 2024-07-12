@@ -379,6 +379,7 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#create-a-new-fork">Create a new fork</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#installing-the-package-manager-conda">Installing the package manager <code class="docutils literal notranslate"><span class="pre">conda</span></code></a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#anaconda">Anaconda</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lightweight-miniconda">Lightweight <code class="docutils literal notranslate"><span class="pre">miniconda</span></code></a></li>
@@ -406,52 +407,48 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="build-your-own-content">
 <h1>Build Your Own Content<a class="headerlink" href="#build-your-own-content" title="Link to this heading">#</a></h1>
-<p>This section assists academics, and alike, in  build their content, by modifying this repository, or the original TU Berlin <a class="reference external" href="https://github.com/fneum/data-science-for-esm">repository</a>. Its primary purpose if for teaching, prviding lectures and learning material, but can also be used for any other purpose. The first step is to  for using a fork of this repository. By doing so one is able to create his own website, with tailor-made content, quickly and with ease. This setup draws from the <a class="reference external" href="https://github.com/peaceiris/actions-gh-pages">peaceiris actions-gh-pages</a>, and <a class="reference external" href="https://stanford-rc.github.io/rse-services/docs/resources/documentation">Stanford RC website</a>. Former serve only as a reference, as the full explanation is provided blow.</p>
-<p>Our main guidelines are the following:</p>
-<ul class="simple">
-<li><p>once forking this repository, create and push a branch named <code class="docutils literal notranslate"><span class="pre">stanford</span></code>.
-This step can be bypassed in the <code class="docutils literal notranslate"><span class="pre">Create</span> <span class="pre">a</span> <span class="pre">new</span> <span class="pre">fork</span></code> selection, by deselecting <em>Copy the <code class="docutils literal notranslate"><span class="pre">main</span></code> branch only</em>:</p></li>
-</ul>
-<!-- <img src="https://raw.githubusercontent.com/open-energy-transition/data-science-for-esm/stanford/data-science-for-esm/img03_fork_option.png" alt="" width="200"/> -->
+<p>This section assists academics, and alike, in  build their content, by modifying this repository, or the original TU Berlin <a class="reference external" href="https://github.com/fneum/data-science-for-esm">repository</a>. Its primary purpose if for teaching, providing lectures and learning material, but can also be used for any other purpose. The first step is to fork this repository. By doing so, one is able to create his own website, similar to this one, with a tailor-made content, quickly and with ease.</p>
+<p>This setup draws from the <a class="reference external" href="https://github.com/peaceiris/actions-gh-pages">peaceiris actions-gh-pages</a>, and <a class="reference external" href="https://stanford-rc.github.io/rse-services/docs/resources/documentation">Stanford RC website</a>. However, these serve only as a reference, as the the full explanation is given blow.</p>
+<section id="create-a-new-fork">
+<h2>Create a new fork<a class="headerlink" href="#create-a-new-fork" title="Link to this heading">#</a></h2>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Before forking this repository please have the following in mind: in the <code class="docutils literal notranslate"><span class="pre">Create</span> <span class="pre">a</span> <span class="pre">new</span> <span class="pre">fork</span></code> pop-up menu, deselect the default <strong>Copy the <code class="docutils literal notranslate"><span class="pre">main</span></code> branch only</strong> option. By doing so, you will reduce further branch creation.</p>
 <img src='https://github.com/open-energy-transition/data-science-for-esm/raw/stanford/data-science-for-esm/_images/img03_fork_option.png' alt='default' width='80%'/>
-<ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">gh-pages</span></code> branch will be automatically generated, as defined by the workflow in the <code class="docutils literal notranslate"><span class="pre">.github/workflows/deploy.yml</span></code> file
-which will contain the required <code class="docutils literal notranslate"><span class="pre">HTML</span></code>, <code class="docutils literal notranslate"><span class="pre">css</span></code>, <code class="docutils literal notranslate"><span class="pre">.js</span></code>, and other files</p></li>
-<li><p>in the <code class="docutils literal notranslate"><span class="pre">.github/workflows/deploy.yml</span></code> file you also specify the branch, used by the workflow, which upon the <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">push</span></code> command, is used for generating the required <code class="docutils literal notranslate"><span class="pre">HTML</span></code>, <code class="docutils literal notranslate"><span class="pre">css</span></code>, <code class="docutils literal notranslate"><span class="pre">.js</span></code>, as well as the other files - other than the <code class="docutils literal notranslate"><span class="pre">gh-pages</span></code></p></li>
-<li><p>in the <code class="docutils literal notranslate"><span class="pre">data-science-for-esm/_toc.yml</span></code> file, a sequence of files to be included in the GitHub Page is defined, thereafter displayed in the menu, located on the left side of the page</p></li>
-<li><p>on preexisting knowledge disseminating the gained expertise by OET, and TU Berlin, to help .   Welcome to the website accompanying the course <a class="reference external" href="https://moseskonto.tu-berlin.de/moses/modultransfersystem/bolognamodule/beschreibung/anzeigen.html;jsessionid=DQfixqzzpn1XIg5N1GG7S9um4EDykZn99AHmH6Fj.moseskonto?number=31027&amp;amp;version=1&amp;amp;sprache=2">Data Science for Energy System Modelling</a>. This course is being developed by <a class="reference external" href="https://neumann.fyi">Dr. Fabian Neumann</a> and offered as part of the curriculum of the <a class="reference external" href="https://www.tu.berlin/ensys">Department of Digital Transformation of Energy Systems at TU Berlin</a>.</p></li>
-</ul>
+</div>
+<p>The first step is forking the repository, having the <strong>Note</strong> above in mind.</p>
+<p>The following steps are:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>- But before doing that once forking this repository, create and push a branch named `stanford`:
+- this step can be bypassed in the `Create a new fork` selection, by deselecting _Copy the `main` branch only_:
+
+
+
+- `gh-pages` branch will be automatically generated, as defined by the workflow in the `.github/workflows/deploy.yml` file  which will contain the required `HTML`, `css`, `.js`, and other files
+- in the `.github/workflows/deploy.yml` file you also specify the branch, used by the workflow, which upon the `git push` command, is used for generating the required `HTML`, `css`, `.js`, as well as the other files - other than the `gh-pages`
+- in the `data-science-for-esm/_toc.yml` file, a sequence of files to be included in the GitHub Page is defined, thereafter displayed in the menu, located on the left side of the page
+- on preexisting knowledge disseminating the gained expertise by OET, and TU Berlin, to help .   Welcome to the website accompanying the course [Data Science for Energy System Modelling](https://moseskonto.tu-berlin.de/moses/modultransfersystem/bolognamodule/beschreibung/anzeigen.html;jsessionid=DQfixqzzpn1XIg5N1GG7S9um4EDykZn99AHmH6Fj.moseskonto?number=31027&amp;version=1&amp;sprache=2). This course is being developed by [Dr. Fabian Neumann](https://neumann.fyi) and offered as part of the curriculum of the [Department of Digital Transformation of Energy Systems at TU Berlin](https://www.tu.berlin/ensys).
+</pre></div>
+</div>
 <p>On this website you will find practical introductions to many Python packages that are useful for dealing with energy data and building energy system models. Course materials other than practical introductions to Python packages for students at TU Berlin are provided on <a class="reference external" href="https://isis.tu-berlin.de/course/view.php?id=38042">ISIS</a>.</p>
-<p>The course covers tutorials and examples for getting started with Python, <code class="docutils literal notranslate"><span class="pre">numpy</span></code>, <code class="docutils literal notranslate"><span class="pre">matplotlib</span></code>, <code class="docutils literal notranslate"><span class="pre">pandas</span></code>, <code class="docutils literal notranslate"><span class="pre">geopandas</span></code>, <code class="docutils literal notranslate"><span class="pre">cartopy</span></code>, <code class="docutils literal notranslate"><span class="pre">rasterio</span></code>,  <code class="docutils literal notranslate"><span class="pre">pysheds</span></code>, <code class="docutils literal notranslate"><span class="pre">atlite</span></code>, <code class="docutils literal notranslate"><span class="pre">networkx</span></code>, <code class="docutils literal notranslate"><span class="pre">linopy</span></code>, <code class="docutils literal notranslate"><span class="pre">pypsa</span></code>, <code class="docutils literal notranslate"><span class="pre">plotly</span></code>, <code class="docutils literal notranslate"><span class="pre">hvplot</span></code>, and <code class="docutils literal notranslate"><span class="pre">streamlit</span></code>. Topics covered include:</p>
+<p>:</p>
 <ul class="simple">
-<li><p>time series analysis (e.g. wind and solar production)</p></li>
-<li><p>tabular data (e.g. LNG terminals, power plants, industrial sites)</p></li>
-<li><p>geographical data (e.g. location of power plants)</p></li>
-<li><p>data visualisation</p></li>
-<li><p>converting weather data to renewable generation</p></li>
-<li><p>land eligibility analysis (e.g. where can we build wind turbines)</p></li>
-<li><p>optimisation</p></li>
-<li><p>electricity market modelling</p></li>
-<li><p>power flow modelling (linearised)</p></li>
-<li><p>capacity expansion planning</p></li>
-<li><p>sector-coupling</p></li>
-<li><p>interactive visualisation and dashboarding</p></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
 </ul>
+</section>
 <section id="installing-the-package-manager-conda">
 <h2>Installing the package manager <code class="docutils literal notranslate"><span class="pre">conda</span></code><a class="headerlink" href="#installing-the-package-manager-conda" title="Link to this heading">#</a></h2>
-<p>Python and nearly all of the software packages in the scientific python
-ecosystem are <a class="reference external" href="https://opensource.org/">open-source</a>. Coordinating the
-compatibility between these different packages and their multiple versions used
-to be a nightmare! Fortunately, the problem is solved by using a Python
-<em>distribution</em> and/or <em>package manager</em>. You should use a package manager!</p>
+<p><a class="reference external" href="https://opensource.org/">open-source</a>
+<em>distribution</em> and/or <em>package manager</em></p>
 <section id="anaconda">
 <h3>Anaconda<a class="headerlink" href="#anaconda" title="Link to this heading">#</a></h3>
-<p>The easiest way to set up a full-stack scientific Python deployment is to use a
-Python distribution. This is an installation of Python with a set of curated
-packages which are guaranteed to work together.</p>
-<p>For instance, you can install on your computer the popular
-<a class="reference external" href="https://www.anaconda.com/download/">Anaconda Python Distribution</a>.
-Follow the link above to obtain a one-click installers for your operating system.</p>
+<p><a class="reference external" href="https://www.anaconda.com/download/">Anaconda Python Distribution</a>.</p>
 <p>For <strong>Linux and MacOS users</strong>, you can access the command line by opening the <em>terminal</em> program.</p>
 <p>For <strong>Windows users</strong>, you should first install Anaconda (described above) or miniconda (described below), which gives you access to the “Anaconda Prompt” desktop application. (Instructions for this are given on the <a class="reference external" href="https://docs.anaconda.com/anaconda/user-guide/getting-started/#write-a-python-program-using-anaconda-prompt-or-terminal">Anaconda Website</a>.)</p>
 <p>From the Anaconda Prompt, you should be able to run <code class="docutils literal notranslate"><span class="pre">conda</span></code> and other shell commands.</p>
@@ -645,6 +642,7 @@ Here are some useful references on Markdown syntax.</p>
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#create-a-new-fork">Create a new fork</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#installing-the-package-manager-conda">Installing the package manager <code class="docutils literal notranslate"><span class="pre">conda</span></code></a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#anaconda">Anaconda</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lightweight-miniconda">Lightweight <code class="docutils literal notranslate"><span class="pre">miniconda</span></code></a></li>
