@@ -2,7 +2,7 @@
 # Learn more at https://jupyterbook.org/customize/toc.html
 
 format: jb-book
-root: /_cont/00_intro
+root: 00_intro
 chapters:
 - file: ./_cont/09_workshop_pypsa
 - file: ./_cont/12_workshop_pypsa_sector_coupling
