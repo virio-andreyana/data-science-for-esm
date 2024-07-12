@@ -1,54 +1,52 @@
 # Build Your Own Content
 
-This section assists academics, and alike, in  build their content, by modifying this repository, or the original TU Berlin [repository](https://github.com/fneum/data-science-for-esm). Its primary purpose if for teaching, prviding lectures and learning material, but can also be used for any other purpose. The first step is to  for using a fork of this repository. By doing so one is able to create his own website, with tailor-made content, quickly and with ease. This setup draws from the [peaceiris actions-gh-pages](https://github.com/peaceiris/actions-gh-pages), and [Stanford RC website](https://stanford-rc.github.io/rse-services/docs/resources/documentation). Former serve only as a reference, as the full explanation is provided blow.
+This section assists academics, and alike, in  build their content, by modifying this repository, or the original TU Berlin [repository](https://github.com/fneum/data-science-for-esm). Its primary purpose if for teaching, providing lectures and learning material, but can also be used for any other purpose. The first step is to fork this repository. By doing so, one is able to create his own website, similar to this one, with a tailor-made content, quickly and with ease.
 
-Our main guidelines are the following:
-- once forking this repository, create and push a branch named `stanford`.
-This step can be bypassed in the `Create a new fork` selection, by deselecting _Copy the `main` branch only_:
+This setup draws from the [peaceiris actions-gh-pages](https://github.com/peaceiris/actions-gh-pages), and [Stanford RC website](https://stanford-rc.github.io/rse-services/docs/resources/documentation). However, these serve only as a reference, as the the full explanation is given blow.
 
-<!-- <img src="https://raw.githubusercontent.com/open-energy-transition/data-science-for-esm/stanford/data-science-for-esm/img03_fork_option.png" alt="" width="200"/> -->
+## Create a new fork
+
+:::{note}
+Before forking this repository please have the following in mind: in the `Create a new fork` pop-up menu, deselect the default **Copy the `main` branch only** option. By doing so, you will reduce further branch creation.
+
 <img src='https://github.com/open-energy-transition/data-science-for-esm/raw/stanford/data-science-for-esm/_images/img03_fork_option.png' alt='default' width='80%'/>
+:::
 
-- `gh-pages` branch will be automatically generated, as defined by the workflow in the `.github/workflows/deploy.yml` file
-which will contain the required `HTML`, `css`, `.js`, and other files
-- in the `.github/workflows/deploy.yml` file you also specify the branch, used by the workflow, which upon the `git push` command, is used for generating the required `HTML`, `css`, `.js`, as well as the other files - other than the `gh-pages`
-- in the `data-science-for-esm/_toc.yml` file, a sequence of files to be included in the GitHub Page is defined, thereafter displayed in the menu, located on the left side of the page
-- on preexisting knowledge disseminating the gained expertise by OET, and TU Berlin, to help .   Welcome to the website accompanying the course [Data Science for Energy System Modelling](https://moseskonto.tu-berlin.de/moses/modultransfersystem/bolognamodule/beschreibung/anzeigen.html;jsessionid=DQfixqzzpn1XIg5N1GG7S9um4EDykZn99AHmH6Fj.moseskonto?number=31027&version=1&sprache=2). This course is being developed by [Dr. Fabian Neumann](https://neumann.fyi) and offered as part of the curriculum of the [Department of Digital Transformation of Energy Systems at TU Berlin](https://www.tu.berlin/ensys).
+The first step is forking the repository, having the **Note** above in mind.
+
+The following steps are:
+
+    - But before doing that once forking this repository, create and push a branch named `stanford`:
+    - this step can be bypassed in the `Create a new fork` selection, by deselecting _Copy the `main` branch only_:
+
+
+
+    - `gh-pages` branch will be automatically generated, as defined by the workflow in the `.github/workflows/deploy.yml` file  which will contain the required `HTML`, `css`, `.js`, and other files
+    - in the `.github/workflows/deploy.yml` file you also specify the branch, used by the workflow, which upon the `git push` command, is used for generating the required `HTML`, `css`, `.js`, as well as the other files - other than the `gh-pages`
+    - in the `data-science-for-esm/_toc.yml` file, a sequence of files to be included in the GitHub Page is defined, thereafter displayed in the menu, located on the left side of the page
+    - on preexisting knowledge disseminating the gained expertise by OET, and TU Berlin, to help .   Welcome to the website accompanying the course [Data Science for Energy System Modelling](https://moseskonto.tu-berlin.de/moses/modultransfersystem/bolognamodule/beschreibung/anzeigen.html;jsessionid=DQfixqzzpn1XIg5N1GG7S9um4EDykZn99AHmH6Fj.moseskonto?number=31027&version=1&sprache=2). This course is being developed by [Dr. Fabian Neumann](https://neumann.fyi) and offered as part of the curriculum of the [Department of Digital Transformation of Energy Systems at TU Berlin](https://www.tu.berlin/ensys).
 
 On this website you will find practical introductions to many Python packages that are useful for dealing with energy data and building energy system models. Course materials other than practical introductions to Python packages for students at TU Berlin are provided on [ISIS](https://isis.tu-berlin.de/course/view.php?id=38042).
 
-The course covers tutorials and examples for getting started with Python, `numpy`, `matplotlib`, `pandas`, `geopandas`, `cartopy`, `rasterio`,  `pysheds`, `atlite`, `networkx`, `linopy`, `pypsa`, `plotly`, `hvplot`, and `streamlit`. Topics covered include:
+:
 
-- time series analysis (e.g. wind and solar production)
-- tabular data (e.g. LNG terminals, power plants, industrial sites)
-- geographical data (e.g. location of power plants)
-- data visualisation
-- converting weather data to renewable generation
-- land eligibility analysis (e.g. where can we build wind turbines)
-- optimisation
-- electricity market modelling
-- power flow modelling (linearised)
-- capacity expansion planning
-- sector-coupling
-- interactive visualisation and dashboarding
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
 
 ## Installing the package manager `conda`
 
-Python and nearly all of the software packages in the scientific python
-ecosystem are [open-source](https://opensource.org/). Coordinating the
-compatibility between these different packages and their multiple versions used
-to be a nightmare! Fortunately, the problem is solved by using a Python
-_distribution_ and/or _package manager_. You should use a package manager!
+[open-source](https://opensource.org/)
+_distribution_ and/or _package manager_
 
 ### Anaconda
 
-The easiest way to set up a full-stack scientific Python deployment is to use a
-Python distribution. This is an installation of Python with a set of curated
-packages which are guaranteed to work together.
-
-For instance, you can install on your computer the popular
 [Anaconda Python Distribution](https://www.anaconda.com/download/).
-Follow the link above to obtain a one-click installers for your operating system.
 
 For **Linux and MacOS users**, you can access the command line by opening the _terminal_ program.
 
