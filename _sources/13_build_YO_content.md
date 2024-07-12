@@ -7,9 +7,11 @@ This setup draws from the [peaceiris actions-gh-pages](https://github.com/peacei
 ## Create a new fork
 
 :::{note}
+
 Before forking this repository please have the following in mind. In the `Create a new fork` pop-up menu, deselect the default **Copy the `main` branch only** option. By doing so, you will reduce further branch creation.
 
 <img src='https://github.com/open-energy-transition/data-science-for-esm/raw/stanford/data-science-for-esm/_images/03_fork_option.png' alt='' width='80%'/>
+
 :::
 
 The first step is forking the repository, having the **Note** above in mind.
@@ -25,7 +27,7 @@ In the your own foreked repository `owner/data-science-for-energy-system-modelli
 
 
 
-<img src='https://github.com/open-energy-transition/data-science-for-esm/raw/data-science-for-esm/_images/04_gh-pages_option.png' alt='' width='80%'/>
+<img src='https://raw.githubusercontent.com/open-energy-transition/data-science-for-esm/stanford/data-science-for-esm/_images/04_gh-pages_option.png' width='80%'/>
 
 
 :
