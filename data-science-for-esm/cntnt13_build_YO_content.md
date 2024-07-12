@@ -7,7 +7,7 @@ This setup draws from the [peaceiris actions-gh-pages](https://github.com/peacei
 ## Create a new fork
 
 :::{note}
-Before forking this repository please have the following in mind: in the `Create a new fork` pop-up menu, deselect the default **Copy the `main` branch only** option. By doing so, you will reduce further branch creation.
+Before forking this repository please have the following in mind. In the `Create a new fork` pop-up menu, deselect the default **Copy the `main` branch only** option. By doing so, you will reduce further branch creation.
 
 <img src='https://github.com/open-energy-transition/data-science-for-esm/raw/stanford/data-science-for-esm/_images/img03_fork_option.png' alt='default' width='80%'/>
 :::
@@ -15,12 +15,7 @@ Before forking this repository please have the following in mind: in the `Create
 The first step is forking the repository, having the **Note** above in mind.
 
 The following steps are:
-
-    - But before doing that once forking this repository, create and push a branch named `stanford`:
-    - this step can be bypassed in the `Create a new fork` selection, by deselecting _Copy the `main` branch only_:
-
-
-
+    - Create and push a branch named `stanford` - to be skipped if adhering to the **Note** above
     - `gh-pages` branch will be automatically generated, as defined by the workflow in the `.github/workflows/deploy.yml` file  which will contain the required `HTML`, `css`, `.js`, and other files
     - in the `.github/workflows/deploy.yml` file you also specify the branch, used by the workflow, which upon the `git push` command, is used for generating the required `HTML`, `css`, `.js`, as well as the other files - other than the `gh-pages`
     - in the `data-science-for-esm/_toc.yml` file, a sequence of files to be included in the GitHub Page is defined, thereafter displayed in the menu, located on the left side of the page
