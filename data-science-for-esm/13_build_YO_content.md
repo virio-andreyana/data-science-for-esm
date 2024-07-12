@@ -27,7 +27,7 @@ In the your own foreked repository `owner/data-science-for-energy-system-modelli
 
 
 
-<img src='https://raw.githubusercontent.com/open-energy-transition/data-science-for-esm/stanford/data-science-for-esm/_images/04_gh_pages-options.png' width='85%'/>
+<img src='https://raw.githubusercontent.com/open-energy-transition/data-science-for-esm/stanford/data-science-for-esm/_images/04_gh_pages-options.png' width='100%'/>
 
 
 :
