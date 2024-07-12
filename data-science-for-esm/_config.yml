@@ -5,7 +5,7 @@
 
 #######################################################################################
 # Book settings
-title: Data Science for Energy System Modelling                         # The title of the book. Will be placed in the left navbar.
+title: Data Science for Energy System Modelling - OET Edition                         # The title of the book. Will be placed in the left navbar.
 author: Open Energy Transition and Fabian Neumann                      # The author of the book
 copyright: "2022-2024"                     # Copyright year to be placed in the footer
 logo: ./_images/img00_oet_logo_red_n_subtitle.png                          # A path to the book logo
