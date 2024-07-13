@@ -26,9 +26,11 @@ The following steps are:
 In the your own foreked repository `owner/data-science-for-energy-system-modelling`, please go to the **Settings** -> **Pages**. in the GitHub Page, go to the Branch section, and change the selection from None to `main`, or any branch other than `gh-pages`. Once the branch has been selected, in a manner of minutes a custom  
 
 
-
 <img src='https://raw.githubusercontent.com/open-energy-transition/data-science-for-esm/stanford/data-science-for-esm/_images/04_gh_pages-options.png' width='100%'/>
 
+<a href='https://github.com/open-energy-transition/data-science-for-esm/settings/pages'>
+<img src='/_images/04_gh_pages-options.png' width='100%'/>
+</a>
 
 :
 
