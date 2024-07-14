@@ -424,7 +424,9 @@ document.write(`
 <li><p>[x]</p></li>
 <li><p>[ ]</p></li>
 </ul>
-<p>The first step is forking the repository, having the <strong>Note</strong> above in mind.</p>
+<blockquote>
+<div><p>The first step is forking the repository, having the <strong>Note</strong> above in mind.</p>
+</div></blockquote>
 <p>The following steps are:</p>
 <ul>
 <li><p>Create and push a branch named <code class="docutils literal notranslate"><span class="pre">stanford</span></code> - to be skipped if adhering to the <strong>Note</strong> above</p></li>
@@ -432,11 +434,11 @@ document.write(`
 <li><p>in the <code class="docutils literal notranslate"><span class="pre">.github/workflows/deploy.yml</span></code> file you also specify the branch, used by the workflow, which upon the <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">push</span></code> command, is used for generating the required <code class="docutils literal notranslate"><span class="pre">HTML</span></code>, <code class="docutils literal notranslate"><span class="pre">css</span></code>, <code class="docutils literal notranslate"><span class="pre">.js</span></code>, as well as the other files - other than the <code class="docutils literal notranslate"><span class="pre">gh-pages</span></code>:</p>
 <div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span>push:
   branches:
-<span class="w">  </span><span class="k">-</span><span class="w"> </span>stanford
+<span class="w">  </span><span class="k">-</span><span class="w"> </span><span class="gs">**stanford**</span>
 </pre></div>
 </div>
 </li>
-<li><p>in the <code class="docutils literal notranslate"><span class="pre">data-science-for-esm/_toc.yml</span></code> file, a sequence of files to be included in the GitHub Page is defined, thereafter displayed in the menu, located on the left side of the page</p></li>
+<li><p>in the <code class="docutils literal notranslate"><span class="pre">data-science-for-esm/_toc.yml</span></code> <em>file</em>, a sequence of files to be included in the GitHub Page is defined, thereafter displayed in the menu, located on the left side of the page</p></li>
 <li><p>on preexisting knowledge disseminating the gained expertise by OET, and TU Berlin, to help .   Welcome to the website accompanying the course <a class="reference external" href="https://moseskonto.tu-berlin.de/moses/modultransfersystem/bolognamodule/beschreibung/anzeigen.html;jsessionid=DQfixqzzpn1XIg5N1GG7S9um4EDykZn99AHmH6Fj.moseskonto?number=31027&amp;amp;version=1&amp;amp;sprache=2">Data Science for Energy System Modelling</a>. This course is being developed by <a class="reference external" href="https://neumann.fyi">Dr. Fabian Neumann</a> and offered as part of the curriculum of the <a class="reference external" href="https://www.tu.berlin/ensys">Department of Digital Transformation of Energy Systems at TU Berlin</a>.</p></li>
 </ul>
 <p>In the your own forked repository <code class="docutils literal notranslate"><span class="pre">owner/data-science-for-energy-system-modelling</span></code>, please go to the <strong>Settings</strong> -&gt; <strong>Pages</strong>. in the GitHub Page, go to the Branch section, and change the selection from None to <code class="docutils literal notranslate"><span class="pre">main</span></code>, or any branch other than <code class="docutils literal notranslate"><span class="pre">gh-pages</span></code>. Once the branch has been selected, in a manner of minutes a custom</p>
