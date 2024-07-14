@@ -1,8 +1,8 @@
 #### Table of Contents
 
-1. [BYOC](#build_your_own_content)
-1. [New Fork](#creating_a_new_fork)
-1. [GH Pages](#github_pages_setup)
+1. [BYOC](#build-your-own-content)
+1. [New Fork](#creating-a-new-fork)
+1. [GH Pages](#github-pages-setup)
 
 #### Used Abbreviation
 
@@ -11,13 +11,13 @@
 
 ### Build Your Own Content
 
-This section assists academics, and alike, in  build their content, by modifying this repository, or the original TU Berlin [repository][1].
+This section assists academics, and alike, in build their content, by modifying this repository, or the original F. Neumann's [repository][1].
 
 * Its primary purpose if for teaching, providing lectures and learning material, but can also be used for any other purpose. The first step is to fork this repository.
 
 By doing so, one is able to create his own website, similar to this one, with a tailor-made content, quickly and with ease.
 
-- This setup draws from the [peaceiris actions-gh-pages][2], and [Stanford RC website][3]. However, these serve only as a reference, as the the full explanation is given blow.
+- This setup draws from the [peaceiris actions-gh-pages][2], and the [Stanford RC website][3]. However, these serve only as a reference, as the the full explanation is blow.
 
 ### Creating a new fork
 
@@ -29,7 +29,7 @@ Before forking this repository please have the following in mind. In the `Create
     <a href='https://github.com/open-energy-transition/data-science-for-esm/fork'>
     <img src='https://github.com/open-energy-transition/data-science-for-esm/raw/stanford/data-science-for-esm/_images/03_fork_option.png' alt='' width='95%' style='vertical-align:middle;border:5px solid goldenrod;margin:20px 0px' />
     </a>
-    <figcaption><font color="red">Clicking</font> on the image above will lead directly to the fork creation menu.</figcaption>
+    <figcaption>[Clicking](https://github.com/open-energy-transition/data-science-for-esm/fork) on the image above will lead directly to the fork creation menu.</figcaption>
 </figure>
 
 :::
@@ -63,8 +63,10 @@ In the your own forked repository `owner/data-science-for-energy-system-modellin
     <a href='https://github.com/open-energy-transition/data-science-for-esm/settings/pages'>
     <img src='https://raw.githubusercontent.com/open-energy-transition/data-science-for-esm/stanford/data-science-for-esm/_images/04_gh_pages-options.png' width='97%'style='vertical-align:middle;border:5px solid goldenrod;margin:30px 30px' />
     </a>
-    <figcaption><font color="red">[Clicking](https://github.com/open-energy-transition/data-science-for-esm/blob/6c6563e15d3035647e9e52c852fa1cd5748f15ed/.github/workflows/deploy.yml#L4C2-L7C15)</font> on the image above will lead directly to the GH creation menu.</figcaption>
+    <figcaption>[Clicking](https://github.com/open-energy-transition/data-science-for-esm/settings/pages) on the image above will lead directly to the GH Pages setings menu.</figcaption>
 </figure>
+
+### GH Workflows Deployment
 
 <!-- # References -->
 [1]: https://github.com/fneum/data-science-for-esm
