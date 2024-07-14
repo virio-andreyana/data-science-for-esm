@@ -8,7 +8,7 @@
 ###### List of Abbreviation
 
 | Acronym     | Description |
-| ----------- | ----------- |
+|:-----------:|:-----------:|
 | **GH**      | GitHub      |
 | **repo**    | repository  |
 
