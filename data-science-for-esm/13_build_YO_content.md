@@ -48,9 +48,12 @@ In the your own forked repository `owner/data-science-for-energy-system-modellin
 
 ## GitHub Pages Setup
 
-<a href='https://github.com/open-energy-transition/data-science-for-esm/settings/pages'>
-<img src='https://raw.githubusercontent.com/open-energy-transition/data-science-for-esm/stanford/data-science-for-esm/_images/04_gh_pages-options.png' width='97%'style='vertical-align:middle;border:5px solid goldenrod;margin:30px 30px' />
-</a>
+<figure>
+    <a href='https://github.com/open-energy-transition/data-science-for-esm/settings/pages'>
+    <img src='https://raw.githubusercontent.com/open-energy-transition/data-science-for-esm/stanford/data-science-for-esm/_images/04_gh_pages-options.png' width='97%'style='vertical-align:middle;border:5px solid goldenrod;margin:30px 30px' />
+    </a>
+    <figcaption><font color="red">Clicking</font> on the image above will lead directly to the fork creation menu.</figcaption>
+</figure>
 
 # References
 
