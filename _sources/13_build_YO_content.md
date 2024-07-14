@@ -29,7 +29,7 @@ Before forking this repository please have the following in mind. In the `Create
     <a href='https://github.com/open-energy-transition/data-science-for-esm/fork'>
     <img src='https://github.com/open-energy-transition/data-science-for-esm/raw/stanford/data-science-for-esm/_images/03_fork_option.png' alt='' width='95%' style='vertical-align:middle;border:5px solid goldenrod;margin:20px 0px' />
     </a>
-    <figcaption>[Clicking](https://github.com/open-energy-transition/data-science-for-esm/fork) on the image above will lead directly to the fork creation menu.</figcaption>
+    <figcaption>[Clicking][9] on the image above will lead directly to the fork creation menu.</figcaption>
 </figure>
 
 :::
@@ -58,7 +58,7 @@ In the your own forked repository `owner/data-science-for-energy-system-modellin
     <a href='https://github.com/open-energy-transition/data-science-for-esm/settings/pages'>
     <img src='https://raw.githubusercontent.com/open-energy-transition/data-science-for-esm/stanford/data-science-for-esm/_images/04_gh_pages-options.png' width='97%'style='vertical-align:middle;border:5px solid goldenrod;margin:30px 30px' />
     </a>
-    <figcaption>[Clicking](https://github.com/open-energy-transition/data-science-for-esm/settings/pages) on the image above will lead directly to the GH Pages setings menu.</figcaption>
+    <figcaption>[Clicking][10] on the image above will lead directly to the GH Pages setings menu.</figcaption>
 </figure>
 
 # <font color="red">GH Workflows Deployment</font>
@@ -68,11 +68,13 @@ In the your own forked repository `owner/data-science-for-energy-system-modellin
 The changes will be published in the specified `github.io` URL. There is a short waiting time for 
 
 <!-- # References -->
-[1]: https://github.com/fneum/data-science-for-esm
-[2]: https://github.com/peaceiris/actions-gh-pages
-[3]: https://stanford-rc.github.io/rse-services/docs/resources/documentation
-[4]: https://moseskonto.tu-berlin.de/moses/modultransfersystem/bolognamodule/beschreibung/anzeigen.html;jsessionid=DQfixqzzpn1XIg5N1GG7S9um4EDykZn99AHmH6Fj.moseskonto?number=31027&version=1&sprache=2
-[5]: https://neumann.fyi
-[6]: https://www.tu.berlin/ensys
-[7]: https://github.com/open-energy-transition/data-science-for-esm/raw/.github/workflows/deploy.yml
-[8]: https://github.com/open-energy-transition/data-science-for-esm/blob/6c6563e15d3035647e9e52c852fa1cd5748f15ed/.github/workflows/deploy.yml#L4C2-L7C15
+[01]: https://github.com/fneum/data-science-for-esm
+[02]: https://github.com/peaceiris/actions-gh-pages
+[03]: https://stanford-rc.github.io/rse-services/docs/resources/documentation
+[09]: https://github.com/open-energy-transition/data-science-for-esm/fork
+[10]: https://github.com/open-energy-transition/data-science-for-esm/settings/pages
+[04]: https://moseskonto.tu-berlin.de/moses/modultransfersystem/bolognamodule/beschreibung/anzeigen.html;jsessionid=DQfixqzzpn1XIg5N1GG7S9um4EDykZn99AHmH6Fj.moseskonto?number=31027&version=1&sprache=2
+[05]: https://neumann.fyi
+[06]: https://www.tu.berlin/ensys
+[07]: https://github.com/open-energy-transition/data-science-for-esm/raw/.github/workflows/deploy.yml
+[08]: https://github.com/open-energy-transition/data-science-for-esm/blob/6c6563e15d3035647e9e52c852fa1cd5748f15ed/.github/workflows/deploy.yml#L4C2-L7C15
