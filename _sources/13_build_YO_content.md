@@ -1,15 +1,15 @@
-#### Table of Contents
+# Table of Contents
 
 1. [BYOC](#build-your-own-content)
 1. [New Fork](#creating-a-new-fork)
 1. [GH Pages](#github-pages-setup)
 
-#### Used Abbreviation
+# List of Abbreviation
 
 * GH - GitHub
 * 
 
-### Build Your Own Content
+# Build Your Own Content
 
 This section assists academics, and alike, in build their content, by modifying this repository, or the original F. Neumann's [repository][1].
 
@@ -19,7 +19,7 @@ By doing so, one is able to create his own website, similar to this one, with a 
 
 - This setup draws from the [peaceiris actions-gh-pages][2], and the [Stanford RC website][3]. However, these serve only as a reference, as the the full explanation is blow.
 
-### Creating a new fork
+# Creating a new fork
 
 :::{note}
 
@@ -29,15 +29,10 @@ Before forking this repository please have the following in mind. In the `Create
     <a href='https://github.com/open-energy-transition/data-science-for-esm/fork'>
     <img src='https://github.com/open-energy-transition/data-science-for-esm/raw/stanford/data-science-for-esm/_images/03_fork_option.png' alt='' width='95%' style='vertical-align:middle;border:5px solid goldenrod;margin:20px 0px' />
     </a>
-    <figcaption>[Clicking](https://github.com/open-energy-transition/data-science-for-esm/fork) on the image above will lead directly to the fork creation menu.</figcaption>
+    <figcaption><font color="red">Clicking</font> on the image above will lead directly to the fork creation menu.</figcaption>
 </figure>
 
 :::
-Check list:
-- [x]
-- [ ]
-- [x]
-- [ ]
 
 > The first step is forking the repository, having the **Note** above in mind.
 
@@ -57,16 +52,16 @@ The following steps are:
 
 In the your own forked repository `owner/data-science-for-energy-system-modelling`, please go to the **Settings** -> **Pages**. in the GitHub Page, go to the Branch section, and change the selection from None to `main`, or any branch other than `gh-pages`. Once the branch has been selected, in a manner of minutes a custom  
 
-### GitHub Pages Setup
+# GitHub Pages Setup
 
 <figure>
     <a href='https://github.com/open-energy-transition/data-science-for-esm/settings/pages'>
     <img src='https://raw.githubusercontent.com/open-energy-transition/data-science-for-esm/stanford/data-science-for-esm/_images/04_gh_pages-options.png' width='97%'style='vertical-align:middle;border:5px solid goldenrod;margin:30px 30px' />
     </a>
-    <figcaption>[Clicking](https://github.com/open-energy-transition/data-science-for-esm/settings/pages) on the image above will lead directly to the GH Pages setings menu.</figcaption>
+    <figcaption><font color="red">Clicking</font> on the image above will lead directly to the GH Pages setings menu.</figcaption>
 </figure>
 
-### GH Workflows Deployment
+# GH Workflows Deployment
 
 <!-- # References -->
 [1]: https://github.com/fneum/data-science-for-esm
