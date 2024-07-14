@@ -407,14 +407,15 @@ document.write(`
 <ol class="arabic simple">
 <li><p><a class="reference internal" href="#build-your-own-content"><span class="xref myst">BYOC</span></a></p></li>
 <li><p><a class="reference internal" href="#creating-a-new-fork"><span class="xref myst">New Fork</span></a></p></li>
-<li><p><a class="reference internal" href="#github-pages-setup"><span class="xref myst">GH Pages</span></a></p></li>
+<li><p><a class="reference internal" href="#gh-pages-setup"><span class="xref myst">GH Pages</span></a></p></li>
+<li><p><a class="reference internal" href="#gh-workflows-deployment"><span class="xref myst">GH Workflows Deployment</span></a></p></li>
 </ol>
 </section>
 <section class="tex2jax_ignore mathjax_ignore" id="list-of-abbreviation">
 <h1>List of Abbreviation<a class="headerlink" href="#list-of-abbreviation" title="Link to this heading">#</a></h1>
 <ul class="simple">
-<li><p>GH - GitHub</p></li>
-<li></li>
+<li><p>GH    -&gt; GitHub</p></li>
+<li><p>repo  -&gt;</p></li>
 </ul>
 </section>
 <section class="tex2jax_ignore mathjax_ignore" id="build-your-own-content">
@@ -448,9 +449,9 @@ document.write(`
 <li><p>Create and push a branch named <code class="docutils literal notranslate"><span class="pre">stanford</span></code> - to be skipped if adhering to the <strong>Note</strong> above</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">gh-pages</span></code> branch will be automatically generated, as defined by the workflow in the <code class="docutils literal notranslate"><span class="pre">.github/workflows/deploy.yml</span></code> ([link][7]) file which will contain the required <code class="docutils literal notranslate"><span class="pre">HTML</span></code>, <code class="docutils literal notranslate"><span class="pre">css</span></code>, <code class="docutils literal notranslate"><span class="pre">.js</span></code>, and other files</p></li>
 <li><p>in the <code class="docutils literal notranslate"><span class="pre">.github/workflows/deploy.yml</span></code> file you also specify the branch, used by the workflow, which upon the <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">push</span></code> command, is used for generating the required <code class="docutils literal notranslate"><span class="pre">HTML</span></code>, <code class="docutils literal notranslate"><span class="pre">css</span></code>, <code class="docutils literal notranslate"><span class="pre">.js</span></code>, as well as the other files - other than the <code class="docutils literal notranslate"><span class="pre">gh-pages</span></code>:</p>
-<div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span>push:
+<div class="highlight-yml notranslate"><div class="highlight"><pre><span></span>push:
   branches:
-<span class="w">  </span><span class="k">-</span><span class="w"> </span><span class="gs">**stanford**</span>
+  - **stanford**
 </pre></div>
 </div>
 </li>
