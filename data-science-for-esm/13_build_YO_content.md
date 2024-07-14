@@ -29,7 +29,7 @@ Before forking this repository please have the following in mind. In the `Create
     <a href='https://github.com/open-energy-transition/data-science-for-esm/fork'>
     <img src='https://github.com/open-energy-transition/data-science-for-esm/raw/stanford/data-science-for-esm/_images/03_fork_option.png' alt='' width='95%' style='vertical-align:middle;border:5px solid goldenrod;margin:20px 0px' />
     </a>
-    <figcaption><font color="red">Clicking</font> on the image above will lead directly to the fork creation menu.</figcaption>
+    <figcaption>[Clicking](https://github.com/open-energy-transition/data-science-for-esm/fork) on the image above will lead directly to the fork creation menu.</figcaption>
 </figure>
 
 :::
@@ -38,7 +38,7 @@ Before forking this repository please have the following in mind. In the `Create
 
 The following steps are:
 - Create and push a branch named `stanford` - to be skipped if adhering to the **Note** above
-- `gh-pages` branch will be automatically generated, as defined by the workflow in the `[.github/workflows/deploy.yml][7]` file which will contain the required `HTML`, `css`, `.js`, and other files
+- `gh-pages` branch will be automatically generated, as defined by the workflow in the `.github/workflows/deploy.yml` ([link][7]) file which will contain the required `HTML`, `css`, `.js`, and other files
 - in the `.github/workflows/deploy.yml` file you also specify the branch, used by the workflow, which upon the `git push` command, is used for generating the required `HTML`, `css`, `.js`, as well as the other files - other than the `gh-pages`:
     
     ~~~markdown
@@ -52,18 +52,18 @@ The following steps are:
 
 In the your own forked repository `owner/data-science-for-energy-system-modelling`, please go to the **Settings** -> **Pages**. in the GitHub Page, go to the Branch section, and change the selection from None to `main`, or any branch other than `gh-pages`. Once the branch has been selected, in a manner of minutes a custom  
 
-# GitHub Pages Setup
+# <font color="red">GH Pages Setup</font>
 
 <figure>
     <a href='https://github.com/open-energy-transition/data-science-for-esm/settings/pages'>
     <img src='https://raw.githubusercontent.com/open-energy-transition/data-science-for-esm/stanford/data-science-for-esm/_images/04_gh_pages-options.png' width='97%'style='vertical-align:middle;border:5px solid goldenrod;margin:30px 30px' />
     </a>
-    <figcaption><font color="red">Clicking</font> on the image above will lead directly to the GH Pages setings menu.</figcaption>
+    <figcaption>[Clicking](https://github.com/open-energy-transition/data-science-for-esm/settings/pages) on the image above will lead directly to the GH Pages setings menu.</figcaption>
 </figure>
 
-# GH Workflows Deployment
+# <font color="red">GH Workflows Deployment</font>
 
-`[.github/workflows/deploy.yml][8]` needs specifying which branch of the repo will be used for deployment. You are free to use any branch, other than the `gh-pages`, keeping in mind that upon the git push command the workflow will be triggered.
+`.github/workflows/deploy.yml` ([link][8]) needs specifying which branch of the repo will be used for deployment. You are free to use any branch, other than the `gh-pages`, keeping in mind that upon the git push command the workflow will be triggered.
 
 The changes will be published in the specified `github.io` URL. There is a short waiting time for 
 
