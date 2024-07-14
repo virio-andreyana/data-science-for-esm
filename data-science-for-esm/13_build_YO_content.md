@@ -19,9 +19,10 @@ Before forking this repository please have the following in mind. In the `Create
 </a>
 
 :::
-[:joy]
-[]
-[x]
+- [:joy:]
+- []
+- [x]
+- [:tent:]
 
 The first step is forking the repository, having the **Note** above in mind.
 
