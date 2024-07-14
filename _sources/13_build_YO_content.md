@@ -5,6 +5,10 @@
 1. [GH Pages](#centgithub_pages_setupr)
 1. [Color](#color)
 
+#### Used Abbreviation
+
+* GH - GitHub
+* 
 
 # Build Your Own Content
 
@@ -60,7 +64,7 @@ In the your own forked repository `owner/data-science-for-energy-system-modellin
     <a href='https://github.com/open-energy-transition/data-science-for-esm/settings/pages'>
     <img src='https://raw.githubusercontent.com/open-energy-transition/data-science-for-esm/stanford/data-science-for-esm/_images/04_gh_pages-options.png' width='97%'style='vertical-align:middle;border:5px solid goldenrod;margin:30px 30px' />
     </a>
-    <figcaption><font color="red">Clicking</font> on the image above will lead directly to the fork creation menu.</figcaption>
+    <figcaption><font color="red">[Clicking](https://github.com/open-energy-transition/data-science-for-esm/blob/6c6563e15d3035647e9e52c852fa1cd5748f15ed/.github/workflows/deploy.yml#L4C2-L7C15)</font> on the image above will lead directly to the GH creation menu.</figcaption>
 </figure>
 
 <!-- # References -->
