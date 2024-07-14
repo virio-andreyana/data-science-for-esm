@@ -11,7 +11,7 @@ This setup draws from the [peaceiris actions-gh-pages](https://github.com/peacei
 Before forking this repository please have the following in mind. In the `Create a new fork` pop-up menu, deselect the default **Copy the `main` branch only** option. By doing so, you will reduce further branch creation.
 
 <a href='https://github.com/open-energy-transition/data-science-for-esm/fork'>
-<img src='https://github.com/open-energy-transition/data-science-for-esm/raw/stanford/data-science-for-esm/_images/03_fork_option.png' alt='' width='80%' style='vertical-align:middle;border:5px solid black' />
+<img src='https://github.com/open-energy-transition/data-science-for-esm/raw/stanford/data-science-for-esm/_images/03_fork_option.png' alt='' width='85%' style='horizontal-align:middle;border:2px solid aqua' />
 </a>
 
 :::
@@ -28,7 +28,7 @@ The following steps are:
 In the your own foreked repository `owner/data-science-for-energy-system-modelling`, please go to the **Settings** -> **Pages**. in the GitHub Page, go to the Branch section, and change the selection from None to `main`, or any branch other than `gh-pages`. Once the branch has been selected, in a manner of minutes a custom  
 
 <a href='https://github.com/open-energy-transition/data-science-for-esm/settings/pages'>
-<img src='https://raw.githubusercontent.com/open-energy-transition/data-science-for-esm/stanford/data-science-for-esm/_images/04_gh_pages-options.png' width='100%'style='vertical-align:middle;border:5px solid black' />
+<img src='https://raw.githubusercontent.com/open-energy-transition/data-science-for-esm/stanford/data-science-for-esm/_images/04_gh_pages-options.png' width='100%'style='horizontal-align:middle;border:2px solid aqua' />
 </a>
 
 :
