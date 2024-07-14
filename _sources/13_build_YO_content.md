@@ -18,7 +18,7 @@ Before forking this repository please have the following in mind. In the `Create
     <a href='https://github.com/open-energy-transition/data-science-for-esm/fork'>
     <img src='https://github.com/open-energy-transition/data-science-for-esm/raw/stanford/data-science-for-esm/_images/03_fork_option.png' alt='' width='95%' style='vertical-align:middle;border:5px solid goldenrod;margin:20px 0px' />
     </a>
-    <figcaption>Clicking on the image above will lead directly to the fork creating/selection.</figcaption>
+    <figcaption><font color="red">Clicking</font> on the image above will lead directly to the fork creation menu.</figcaption>
 </figure>
 
 :::
@@ -29,8 +29,6 @@ Check list:
 - [ ]
 
 > The first step is forking the repository, having the **Note** above in mind.
-
-> :bulb: **Tip:** Remember to appreciate the little things in life. <font color="red">This text is red!</font>
 
 The following steps are:
 - Create and push a branch named `stanford` - to be skipped if adhering to the **Note** above
