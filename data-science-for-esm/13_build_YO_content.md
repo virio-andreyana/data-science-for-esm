@@ -1,16 +1,15 @@
 #### Table of Contents
 
-1. [BYOC](#underbuild_your_own_content)
-1. [New Fork](#create_new_fork)
-1. [GH Pages](#centgithub_pages_setupr)
-1. [Color](#color)
+1. [BYOC](#build_your_own_content)
+1. [New Fork](#creating_a_new_fork)
+1. [GH Pages](#github_pages_setup)
 
 #### Used Abbreviation
 
 * GH - GitHub
 * 
 
-# Build Your Own Content
+### Build Your Own Content
 
 This section assists academics, and alike, in  build their content, by modifying this repository, or the original TU Berlin [repository][1].
 
@@ -20,7 +19,7 @@ By doing so, one is able to create his own website, similar to this one, with a 
 
 - This setup draws from the [peaceiris actions-gh-pages][2], and [Stanford RC website][3]. However, these serve only as a reference, as the the full explanation is given blow.
 
-# Create a new fork
+### Creating a new fork
 
 :::{note}
 
@@ -58,7 +57,7 @@ The following steps are:
 
 In the your own forked repository `owner/data-science-for-energy-system-modelling`, please go to the **Settings** -> **Pages**. in the GitHub Page, go to the Branch section, and change the selection from None to `main`, or any branch other than `gh-pages`. Once the branch has been selected, in a manner of minutes a custom  
 
-# GitHub Pages Setup
+### GitHub Pages Setup
 
 <figure>
     <a href='https://github.com/open-energy-transition/data-science-for-esm/settings/pages'>
