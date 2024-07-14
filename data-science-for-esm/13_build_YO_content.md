@@ -2,12 +2,13 @@
 
 1. [BYOC](#build-your-own-content)
 1. [New Fork](#creating-a-new-fork)
-1. [GH Pages](#github-pages-setup)
+1. [GH Pages](#gh-pages-setup)
+1. [GH Workflows Deployment](#gh-workflows-deployment)
 
 # List of Abbreviation
 
-* GH - GitHub
-* 
+* GH    -> GitHub
+* repo  ->
 
 # Build Your Own Content
 
@@ -41,7 +42,7 @@ The following steps are:
 - `gh-pages` branch will be automatically generated, as defined by the workflow in the `.github/workflows/deploy.yml` ([link][7]) file which will contain the required `HTML`, `css`, `.js`, and other files
 - in the `.github/workflows/deploy.yml` file you also specify the branch, used by the workflow, which upon the `git push` command, is used for generating the required `HTML`, `css`, `.js`, as well as the other files - other than the `gh-pages`:
     
-    ~~~markdown
+    ~~~yml
     push:
       branches:
       - **stanford**
