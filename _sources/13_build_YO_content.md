@@ -19,8 +19,9 @@ Before forking this repository please have the following in mind. In the `Create
 </a>
 
 :::
+Check list:
 - [:joy:]
-- []
+- [ ]
 - [x]
 - [:tent:]
 
@@ -28,10 +29,10 @@ The first step is forking the repository, having the **Note** above in mind.
 
 The following steps are:
 - Create and push a branch named `stanford` - to be skipped if adhering to the **Note** above
-- `gh-pages` branch will be automatically generated, as defined by the workflow in the `.github/workflows/deploy.yml` file  which will contain the required `HTML`, `css`, `.js`, and other files
+- `gh-pages` branch will be automatically generated, as defined by the workflow in the `[.github/workflows/deploy.yml][7]` file  which will contain the required `HTML`, `css`, `.js`, and other files
 - in the `.github/workflows/deploy.yml` file you also specify the branch, used by the workflow, which upon the `git push` command, is used for generating the required `HTML`, `css`, `.js`, as well as the other files - other than the `gh-pages`
 - in the `data-science-for-esm/_toc.yml` file, a sequence of files to be included in the GitHub Page is defined, thereafter displayed in the menu, located on the left side of the page
-- on preexisting knowledge disseminating the gained expertise by OET, and TU Berlin, to help .   Welcome to the website accompanying the course [Data Science for Energy System Modelling](https://moseskonto.tu-berlin.de/moses/modultransfersystem/bolognamodule/beschreibung/anzeigen.html;jsessionid=DQfixqzzpn1XIg5N1GG7S9um4EDykZn99AHmH6Fj.moseskonto?number=31027&version=1&sprache=2). This course is being developed by [Dr. Fabian Neumann](https://neumann.fyi) and offered as part of the curriculum of the [Department of Digital Transformation of Energy Systems at TU Berlin](https://www.tu.berlin/ensys).
+- on preexisting knowledge disseminating the gained expertise by OET, and TU Berlin, to help .   Welcome to the website accompanying the course [Data Science for Energy System Modelling][4]. This course is being developed by [Dr. Fabian Neumann][5] and offered as part of the curriculum of the [Department of Digital Transformation of Energy Systems at TU Berlin][6].
 
 In the your own forked repository `owner/data-science-for-energy-system-modelling`, please go to the **Settings** -> **Pages**. in the GitHub Page, go to the Branch section, and change the selection from None to `main`, or any branch other than `gh-pages`. Once the branch has been selected, in a manner of minutes a custom  
 
@@ -46,5 +47,7 @@ In the your own forked repository `owner/data-science-for-energy-system-modellin
 [1]: https://github.com/fneum/data-science-for-esm
 [2]: https://github.com/peaceiris/actions-gh-pages
 [3]: https://stanford-rc.github.io/rse-services/docs/resources/documentation
-[4]: 
-[5]: 
+[4]: https://moseskonto.tu-berlin.de/moses/modultransfersystem/bolognamodule/beschreibung/anzeigen.html;jsessionid=DQfixqzzpn1XIg5N1GG7S9um4EDykZn99AHmH6Fj.moseskonto?number=31027&version=1&sprache=2
+[5]: https://neumann.fyi
+[6]: https://www.tu.berlin/ensys
+[7]: https://github.com/open-energy-transition/data-science-for-esm/raw/.github/workflows/deploy.yml
