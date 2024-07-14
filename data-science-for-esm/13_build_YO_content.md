@@ -25,7 +25,7 @@ Check list:
 - [x]
 - [ ]
 
-The first step is forking the repository, having the **Note** above in mind.
+> The first step is forking the repository, having the **Note** above in mind.
 
 The following steps are:
 - Create and push a branch named `stanford` - to be skipped if adhering to the **Note** above
@@ -35,10 +35,10 @@ The following steps are:
     ~~~markdown
     push:
       branches:
-      - stanford
+      - **stanford**
     ~~~
 
-- in the `data-science-for-esm/_toc.yml` file, a sequence of files to be included in the GitHub Page is defined, thereafter displayed in the menu, located on the left side of the page
+- in the `data-science-for-esm/_toc.yml` *file*, a sequence of files to be included in the GitHub Page is defined, thereafter displayed in the menu, located on the left side of the page
 - on preexisting knowledge disseminating the gained expertise by OET, and TU Berlin, to help .   Welcome to the website accompanying the course [Data Science for Energy System Modelling][4]. This course is being developed by [Dr. Fabian Neumann][5] and offered as part of the curriculum of the [Department of Digital Transformation of Energy Systems at TU Berlin][6].
 
 In the your own forked repository `owner/data-science-for-energy-system-modelling`, please go to the **Settings** -> **Pages**. in the GitHub Page, go to the Branch section, and change the selection from None to `main`, or any branch other than `gh-pages`. Once the branch has been selected, in a manner of minutes a custom  
