@@ -14,9 +14,12 @@ By doing so, one is able to create his own website, similar to this one, with a 
 
 Before forking this repository please have the following in mind. In the `Create a new fork` pop-up menu, deselect the default **Copy the `main` branch only** option. By doing so, you will reduce further branch creation.
 
-<a href='https://github.com/open-energy-transition/data-science-for-esm/fork'>
-<img src='https://github.com/open-energy-transition/data-science-for-esm/raw/stanford/data-science-for-esm/_images/03_fork_option.png' alt='' width='95%' style='vertical-align:middle;border:5px solid goldenrod;margin:20px 0px' />
-</a>
+<figure>
+    <a href='https://github.com/open-energy-transition/data-science-for-esm/fork'>
+    <img src='https://github.com/open-energy-transition/data-science-for-esm/raw/stanford/data-science-for-esm/_images/03_fork_option.png' alt='' width='95%' style='vertical-align:middle;border:5px solid goldenrod;margin:20px 0px' />
+    </a>
+    <figcaption>Clicking on the image above will lead directly to the fork creating/selection.</figcaption>
+</figure>
 
 :::
 Check list:
@@ -27,9 +30,11 @@ Check list:
 
 > The first step is forking the repository, having the **Note** above in mind.
 
+> :bulb: **Tip:** Remember to appreciate the little things in life. <font color="red">This text is red!</font>
+
 The following steps are:
 - Create and push a branch named `stanford` - to be skipped if adhering to the **Note** above
-- `gh-pages` branch will be automatically generated, as defined by the workflow in the `[.github/workflows/deploy.yml][7]` file  which will contain the required `HTML`, `css`, `.js`, and other files
+- `gh-pages` branch will be automatically generated, as defined by the workflow in the `[.github/workflows/deploy.yml][7]` file which will contain the required `HTML`, `css`, `.js`, and other files
 - in the `.github/workflows/deploy.yml` file you also specify the branch, used by the workflow, which upon the `git push` command, is used for generating the required `HTML`, `css`, `.js`, as well as the other files - other than the `gh-pages`:
     
     ~~~markdown
