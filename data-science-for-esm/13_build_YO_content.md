@@ -79,5 +79,5 @@ The changes will be published in the specified `github.io` URL. There is a short
 [04]: https://moseskonto.tu-berlin.de/moses/modultransfersystem/bolognamodule/beschreibung/anzeigen.html;jsessionid=DQfixqzzpn1XIg5N1GG7S9um4EDykZn99AHmH6Fj.moseskonto?number=31027&version=1&sprache=2
 [05]: https://neumann.fyi
 [06]: https://www.tu.berlin/ensys
-[07]: https://github.com/open-energy-transition/data-science-for-esm/raw/.github/workflows/deploy.yml
+[07]: https://github.com/open-energy-transition/data-science-for-esm/blob/ef394898e3100e2bd2d074a8b2da89235355cd4e/.github/workflows/deploy.yml
 [08]: https://github.com/open-energy-transition/data-science-for-esm/blob/6c6563e15d3035647e9e52c852fa1cd5748f15ed/.github/workflows/deploy.yml#L4C2-L7C15
