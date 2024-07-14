@@ -1,12 +1,12 @@
 # Build Your Own Content
 
-This section assists academics, and alike, in  build their content, by modifying this repository, or the original TU Berlin [repository][0].
+This section assists academics, and alike, in  build their content, by modifying this repository, or the original TU Berlin [repository][1].
 
 * Its primary purpose if for teaching, providing lectures and learning material, but can also be used for any other purpose. The first step is to fork this repository.
 
 By doing so, one is able to create his own website, similar to this one, with a tailor-made content, quickly and with ease.
 
-- This setup draws from the [peaceiris actions-gh-pages](https://github.com/peaceiris/actions-gh-pages), and [Stanford RC website](https://stanford-rc.github.io/rse-services/docs/resources/documentation). However, these serve only as a reference, as the the full explanation is given blow.
+- This setup draws from the [peaceiris actions-gh-pages][2], and [Stanford RC website][3]. However, these serve only as a reference, as the the full explanation is given blow.
 
 ## Create a new fork
 
@@ -39,8 +39,8 @@ In the your own forked repository `owner/data-science-for-energy-system-modellin
 
 # References
 
-[0]: https://github.com/fneum/data-science-for-esm
-[]: 
-[]: 
-[]: 
-[]: 
+[1]: https://github.com/fneum/data-science-for-esm
+[2]: https://github.com/peaceiris/actions-gh-pages
+[3]: https://stanford-rc.github.io/rse-services/docs/resources/documentation
+[4]: 
+[5]: 
