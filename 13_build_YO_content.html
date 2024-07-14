@@ -419,10 +419,10 @@ document.write(`
 </div>
 <p>Check list:</p>
 <ul class="simple">
-<li><p>[:joy:]</p></li>
+<li><p>[x]</p></li>
 <li><p>[ ]</p></li>
 <li><p>[x]</p></li>
-<li><p>[:tent:]</p></li>
+<li><p>[ ]</p></li>
 </ul>
 <p>The first step is forking the repository, having the <strong>Note</strong> above in mind.</p>
 <p>The following steps are:</p>
@@ -430,10 +430,9 @@ document.write(`
 <li><p>Create and push a branch named <code class="docutils literal notranslate"><span class="pre">stanford</span></code> - to be skipped if adhering to the <strong>Note</strong> above</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">gh-pages</span></code> branch will be automatically generated, as defined by the workflow in the <code class="docutils literal notranslate"><span class="pre">[.github/workflows/deploy.yml][7]</span></code> file  which will contain the required <code class="docutils literal notranslate"><span class="pre">HTML</span></code>, <code class="docutils literal notranslate"><span class="pre">css</span></code>, <code class="docutils literal notranslate"><span class="pre">.js</span></code>, and other files</p></li>
 <li><p>in the <code class="docutils literal notranslate"><span class="pre">.github/workflows/deploy.yml</span></code> file you also specify the branch, used by the workflow, which upon the <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">push</span></code> command, is used for generating the required <code class="docutils literal notranslate"><span class="pre">HTML</span></code>, <code class="docutils literal notranslate"><span class="pre">css</span></code>, <code class="docutils literal notranslate"><span class="pre">.js</span></code>, as well as the other files - other than the <code class="docutils literal notranslate"><span class="pre">gh-pages</span></code>:</p>
-<div class="highlight-{ notranslate"><div class="highlight"><pre><span></span>push:
+<div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span>push:
   branches:
-  - stanford
-}
+<span class="w">  </span><span class="k">-</span><span class="w"> </span>stanford
 </pre></div>
 </div>
 </li>
