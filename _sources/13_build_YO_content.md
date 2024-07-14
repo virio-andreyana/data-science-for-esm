@@ -5,25 +5,22 @@
 1. [GH Pages](#gh-pages-setup)
 1. [GH Workflows Deployment](#gh-workflows-deployment) -->
 
-# List of Abbreviation
+###### List of Abbreviation
 
-| Acronym      | Description |
+| Acronym     | Description |
 | ----------- | ----------- |
-| Header      | Title       |
-| Paragraph   | Text        |
-
-* GH    -> GitHub
-* repo  ->
+| **GH**      | GitHub      |
+| **repo**    | repository  |
 
 # Build Your Own Content
 
-This section assists academics, and alike, in build their content, by modifying this repository, or the original F. Neumann's [repository][1].
+This section assists academics, and alike, in build their content, by modifying this repository, or the original F. Neumann's [repository][01].
 
 * Its primary purpose if for teaching, providing lectures and learning material, but can also be used for any other purpose. The first step is to fork this repository.
 
 By doing so, one is able to create his own website, similar to this one, with a tailor-made content, quickly and with ease.
 
-- This setup draws from the [peaceiris actions-gh-pages][2], and the [Stanford RC website][3]. However, these serve only as a reference, as the the full explanation is blow.
+- This setup draws from the [peaceiris actions-gh-pages][02], and the [Stanford RC website][03]. However, these serve only as a reference, as the the full explanation is blow.
 
 # Creating a new fork
 
@@ -44,7 +41,7 @@ Before forking this repository please have the following in mind. In the `Create
 
 The following steps are:
 - Create and push a branch named `stanford` - to be skipped if adhering to the **Note** above
-- `gh-pages` branch will be automatically generated, as defined by the workflow in the `.github/workflows/deploy.yml` ([link][09]) file which will contain the required `HTML`, `css`, `.js`, and other files
+- `gh-pages` branch will be automatically generated, as defined by the workflow in the `.github/workflows/deploy.yml` ([link][07]) file which will contain the required `HTML`, `css`, `.js`, and other files
 - in the `.github/workflows/deploy.yml` file you also specify the branch, used by the workflow, which upon the `git push` command, is used for generating the required `HTML`, `css`, `.js`, as well as the other files - other than the `gh-pages`:
     
     ~~~yml
@@ -54,7 +51,7 @@ The following steps are:
     ~~~
 
 - in the `data-science-for-esm/_toc.yml` *file*, a sequence of files to be included in the GitHub Page is defined, thereafter displayed in the menu, located on the left side of the page
-- on preexisting knowledge disseminating the gained expertise by OET, and TU Berlin, to help .   Welcome to the website accompanying the course [Data Science for Energy System Modelling][4]. This course is being developed by [Dr. Fabian Neumann][5] and offered as part of the curriculum of the [Department of Digital Transformation of Energy Systems at TU Berlin][6].
+- on preexisting knowledge disseminating the gained expertise by OET, and TU Berlin, to help .   Welcome to the website accompanying the course [Data Science for Energy System Modelling][04]. This course is being developed by [Dr. F. Neumann][05] and offered as part of the curriculum of the [Department of Digital Transformation of Energy Systems at TU Berlin][06].
 
 In the your own forked repository `owner/data-science-for-energy-system-modelling`, please go to the **Settings** -> **Pages**. in the GitHub Page, go to the Branch section, and change the selection from None to `main`, or any branch other than `gh-pages`. Once the branch has been selected, in a manner of minutes a custom  
 
@@ -64,12 +61,12 @@ In the your own forked repository `owner/data-science-for-energy-system-modellin
     <a href='https://github.com/open-energy-transition/data-science-for-esm/settings/pages'>
     <img src='https://raw.githubusercontent.com/open-energy-transition/data-science-for-esm/stanford/data-science-for-esm/_images/04_gh_pages-options.png' width='97%'style='vertical-align:middle;border:5px solid goldenrod;margin:30px 30px' />
     </a>
-    <figcaption>Clicking on the image above will lead directly to the GH Pages setings menu.</figcaption>
+    <figcaption>Clicking on the image above will lead directly to the GH Pages settings menu.</figcaption>
 </figure>
 
 # <font color="red">GH Workflows Deployment</font>
 
-`.github/workflows/deploy.yml` ([link][10]) needs specifying which branch of the repo will be used for deployment. You are free to use any branch, other than the `gh-pages`, keeping in mind that upon the git push command the workflow will be triggered.
+`.github/workflows/deploy.yml` ([link][08]) needs specifying which branch of the repo will be used for deployment. You are free to use any branch, other than the `gh-pages`, keeping in mind that upon the git push command the workflow will be triggered.
 
 The changes will be published in the specified `github.io` URL. There is a short waiting time for 
 
