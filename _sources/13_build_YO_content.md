@@ -30,7 +30,15 @@ The first step is forking the repository, having the **Note** above in mind.
 The following steps are:
 - Create and push a branch named `stanford` - to be skipped if adhering to the **Note** above
 - `gh-pages` branch will be automatically generated, as defined by the workflow in the `[.github/workflows/deploy.yml][7]` file  which will contain the required `HTML`, `css`, `.js`, and other files
-- in the `.github/workflows/deploy.yml` file you also specify the branch, used by the workflow, which upon the `git push` command, is used for generating the required `HTML`, `css`, `.js`, as well as the other files - other than the `gh-pages`
+- in the `.github/workflows/deploy.yml` file you also specify the branch, used by the workflow, which upon the `git push` command, is used for generating the required `HTML`, `css`, `.js`, as well as the other files - other than the `gh-pages`:
+    
+    ```{
+    push:
+      branches:
+      - stanford
+    }
+    ```
+
 - in the `data-science-for-esm/_toc.yml` file, a sequence of files to be included in the GitHub Page is defined, thereafter displayed in the menu, located on the left side of the page
 - on preexisting knowledge disseminating the gained expertise by OET, and TU Berlin, to help .   Welcome to the website accompanying the course [Data Science for Energy System Modelling][4]. This course is being developed by [Dr. Fabian Neumann][5] and offered as part of the curriculum of the [Department of Digital Transformation of Energy Systems at TU Berlin][6].
 
