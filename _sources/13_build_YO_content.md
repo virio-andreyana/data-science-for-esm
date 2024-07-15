@@ -112,8 +112,7 @@ Upon a successful deployment, indicated by the deploy status, in that time you s
 <!-- <center><mark>Table of Abbreviations</mark></center> -->
 ###### Table of Abbreviations
 
-[^bignote]:
-        | Acronym     | Description |
-        |:-----------:|:-----------:|
-        | **GH**      | GitHub      |
-        | **repo**    | repository  |
+[^bignote]: | Acronym     | Description |
+    |:-----------:|:-----------:|
+    | **GH**      | GitHub      |
+    | **repo**    | repository  |
