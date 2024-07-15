@@ -97,8 +97,9 @@ Upon a successful deployment, indicated by the deploy status, in that time you s
 [08]: https://github.com/open-energy-transition/data-science-for-esm/blob/6c6563e15d3035647e9e52c852fa1cd5748f15ed/.github/workflows/deploy.yml#L4C2-L7C15
 
 <center><mark>Table of Abbreviations</mark></center>
+
 [^bignote]:
-    | Acronym     | Description |
-    |:-----------:|:-----------:|
-    | **GH**      | GitHub      |
-    | **repo**    | repository  |
+ | Acronym     | Description |
+ |:-----------:|:-----------:|
+ | **GH**      | GitHub      |
+ | **repo**    | repository  |
