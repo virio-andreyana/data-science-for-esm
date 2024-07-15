@@ -68,7 +68,7 @@ This is indicated by the status indicator in the repository, in this case a beig
 
 <figure>
     <!-- <a href='https://github.com/open-energy-transition/data-science-for-esm/settings/pages'> -->
-    <img src='https://raw.githubusercontent.com/open-energy-transition/data-science-for-esm/stanford/data-science-for-esm/_images/05_deployment_status.png' width='66%'style='vertical-align:middle;border:5px solid goldenrod;margin:30px 30px' />
+    <img src='https://raw.githubusercontent.com/open-energy-transition/data-science-for-esm/stanford/data-science-for-esm/_images/05_deployment_status.png' width='66%'style='vertical-align:middle;border:5px solid azure;margin:30px 30px' />
     <!-- </a> -->
     <figcaption>Deployment status upon <mark>git push</mark> to the branch specified in the <em>deploy.yml</em> file</figcaption>
 </figure>
@@ -77,7 +77,7 @@ Upon a successful deployment, indicated by the deploy status, in that time you s
 
 <figure>
     <!-- <a href='https://github.com/open-energy-transition/data-science-for-esm/settings/pages'> -->
-    <img src='https://raw.githubusercontent.com/open-energy-transition/data-science-for-esm/stanford/data-science-for-esm/_images/06_successful_deployment.png' width='66%'style='vertical-align:middle;border:5px solid goldenrod;margin:30px 30px' />
+    <img src='https://raw.githubusercontent.com/open-energy-transition/data-science-for-esm/stanford/data-science-for-esm/_images/06_successful_deployment.png' width='66%'style='vertical-align:middle;border:5px solid azure;margin:30px 30px' />
     <!-- </a> -->
     <figcaption>Successful deployment, after a finalized <b>jupyter book build</b> run</figcaption>
 </figure>
@@ -94,8 +94,9 @@ Upon a successful deployment, indicated by the deploy status, in that time you s
 [07]: https://github.com/open-energy-transition/data-science-for-esm/blob/ef394898e3100e2bd2d074a8b2da89235355cd4e/.github/workflows/deploy.yml
 [08]: https://github.com/open-energy-transition/data-science-for-esm/blob/6c6563e15d3035647e9e52c852fa1cd5748f15ed/.github/workflows/deploy.yml#L4C2-L7C15
 
+<mark><center>Table of Abbreviations</center></mark>
 [^bignote]:
-  | Acronym     | Description |
-  |:-----------:|:-----------:|
-  | **GH**      | GitHub      |
-  | **repo**    | repository  |
+   | Acronym     | Description |
+   |:-----------:|:-----------:|
+   | **GH**      | GitHub      |
+   | **repo**    | repository  |
