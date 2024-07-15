@@ -20,6 +20,8 @@ The first step is forking this repository. By doing so, one is able to create hi
 
 # Creating a new fork
 
+> The first step is forking the repository, having the <mark>**Note**</mark> below in mind.
+
 Before forking this repository please have the following in mind. In the `Create a new fork` pop-up menu, deselect the default **Copy the `main` branch only** option. By doing so, you will reduce further branch creation, necessary for this to work.
 
 :::{note}
@@ -33,17 +35,15 @@ Before forking this repository please have the following in mind. In the `Create
 </center>
 :::
 
-> The first step is forking the repository, having the <mark>**Note**</mark> above in mind.
-
 The following steps are:
 * Create and push a branch named `stanford` - to be skipped if adhering to the **Note** above
 * `gh-pages` branch will be automatically generated, as defined by the workflow in the `.github/workflows/deploy.yml` ([link][07]) file which will contain the required `HTML`, `css`, `.js`, and other files
 * in the `.github/workflows/deploy.yml` file you also specify the branch, used by the workflow, which upon the `git push` command, is used for generating the required `HTML`, `css`, `.js`, as well as the other files - other than the `gh-pages`:
     
-    ~~~yml
+    ~~~
     push:
       branches:
-      - **stanford**
+      - <mark>stanford</mark>
     ~~~
 
 - in the `data-science-for-esm/_toc.yml` *file*, a sequence of files to be included in the GitHub Page is defined, thereafter displayed in the menu, located on the left side of the page
