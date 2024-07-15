@@ -78,7 +78,7 @@ Upon a successful deployment, indicated by the deploy status, in that time you s
     <!-- <a href='https://github.com/open-energy-transition/data-science-for-esm/settings/pages'> -->
     <img src='https://raw.githubusercontent.com/open-energy-transition/data-science-for-esm/stanford/data-science-for-esm/_images/06_successful_deployment.png' width='97%'style='vertical-align:middle;border:5px solid goldenrod;margin:30px 30px' />
     <!-- </a> -->
-    <figcaption>Successful deployment, after a finalized <strong>jupyter book build</strong> run</figcaption>
+    <figcaption>Successful deployment, after a finalized <b>jupyter book build</b> run</figcaption>
 </figure>
 
 <!-- # References -->
