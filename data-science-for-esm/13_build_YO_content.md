@@ -11,18 +11,18 @@
 
 This section assists academics, and alike, in build their content, by modifying this repository, or the original [Dr. F. Neumann's repository][01].
 
-* Its primary purpose if helping/guiding on building a GH[^bignote] page, to be used for generating learning material, i.e. lectures, or similar.
+* Its primary purpose if helping/guiding on building a GH[^1] page, to be used for generating learning material, i.e. lectures, or similar.
 * It can also be used for any other purpose, for that matter.
 * This setup draws from the [peaceiris actions-gh-pages][02], and the [Stanford RC website][03]. However, these serve only as a reference, as the the full explanation is blow.
 
-The first step is forking this repository. By doing so, one is able to create his own website, similar to this one, with a tailor-made content, quickly and with ease. However, there are two or three thing to keep in mind when doing so, hence please read on.
+The first step is forking this repository. By doing so, one is able to create his own website, similar to this one, with a tailor-made content, quickly and with ease. However, there are two or three thing to keep in mind when doing so, so please read on.
 
 
-# <font color="darkgreen">Creating a new fork</font>
+# <font color="darkgreen">Creating a new fork of this repo[^2]</font>
 
 > The first step is forking the repository, having the <mark>**Note**</mark> below in mind.
 
-Before forking this repository please have the following in mind. In the `Create a new fork` pop-up menu, deselect the default **Copy the `main` branch only** option. By doing so, you will reduce further branch creation, necessary for this to work.
+Before forking this repository please have the following in mind. In the `Create a new fork` pop-up menu, shown in the figure below, deselect the default **Copy the `main` branch only** option. By doing so, you will reduce further branch creation, necessary for this to work.
 
 :::{note}
 <center>
@@ -34,12 +34,13 @@ Before forking this repository please have the following in mind. In the `Create
 </figure>
 </center>
 
-The key point to to have a `stanford` branch, and the correct deployment brach set in the `./github/workflows/deploy.yml`.
 :::
+
+> **Note:** The key point is to have a `stanford` branch, and the correct deployment branch set in the `./github/workflows/deploy.yml`.
 
 The following steps are:
 * Create and push a branch named `stanford` - to be skipped if adhering to the **Note** above
-* `gh-pages` branch will be automatically generated, as defined by the workflow, of the forked repository, in the `.github/workflows/deploy.yml` ([link][07]) file which will contain the required `HTML`, `css`, `.js`, and other files
+* `gh-pages` branch will be automatically generated, as defined by the workflow, hence its creation is not required
 * in the `.github/workflows/deploy.yml` file you also specify the branch, used by the workflow, which upon the `git push` command, is used for generating the required `HTML`, `css`, `.js`, as well as the other files - other than the `gh-pages`:
     
     ~~~
@@ -47,6 +48,8 @@ The following steps are:
       branches:
       - stanford
     ~~~
+
+of the forked repository, in the `.github/workflows/deploy.yml` ([link][07]) file which will contain the required `HTML`, `css`, `.js`, and other files
 
 - in the `data-science-for-esm/_toc.yml` *file*, a sequence of files to be included in the GitHub Page is defined, thereafter displayed in the menu, located on the left side of the page
 - on preexisting knowledge disseminating the gained expertise by OET, and TU Berlin, to help .   Welcome to the website accompanying the course [Data Science for Energy System Modelling][04]. This course is being developed by [Dr. F. Neumann][05] and offered as part of the curriculum of the [Department of Digital Transformation of Energy Systems at TU Berlin][06].
@@ -103,10 +106,10 @@ Upon a successful deployment, indicated by the deploy status, in that time you s
 [08]: https://github.com/open-energy-transition/data-science-for-esm/blob/6c6563e15d3035647e9e52c852fa1cd5748f15ed/.github/workflows/deploy.yml#L4C2-L7C15
 
 <!-- <center><mark>Table of Abbreviations</mark></center> -->
-####### Table of Abbreviations
+###### Table of Abbreviations
 
 [^bignote]:
 | Acronym     | Description |
 |:-----------:|:-----------:|
-| **GH**      | GitHub      |
-| **repo**    | repository  |
+| **GH**[^1]      | GitHub      |
+| **repo**[^2]    | repository  |
