@@ -470,19 +470,23 @@ document.write(`
 <h1><font color="red">GH Workflows Deployment</font><a class="headerlink" href="#gh-workflows-deployment" title="Link to this heading">#</a></h1>
 <p><code class="docutils literal notranslate"><span class="pre">.github/workflows/deploy.yml</span></code> (<a class="reference external" href="https://github.com/open-energy-transition/data-science-for-esm/blob/6c6563e15d3035647e9e52c852fa1cd5748f15ed/.github/workflows/deploy.yml#L4C2-L7C15">link</a>) needs specifying which branch of the repo will be used for deployment. You are free to use any branch, other than the <code class="docutils literal notranslate"><span class="pre">gh-pages</span></code>, keeping in mind that upon the <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">push</span></code>, the workflow will be triggered.</p>
 <p>This is indicated by the status indicator in the repository, in this case a beige-brown dot, which if clicked on, will show the running status and the deployment details. As mentioned, the deployment takes approx. 2 minutes.</p>
+<center>
 <figure>
     <!-- <a href='https://github.com/open-energy-transition/data-science-for-esm/settings/pages'> -->
-    <img src='https://raw.githubusercontent.com/open-energy-transition/data-science-for-esm/stanford/data-science-for-esm/_images/05_deployment_status.png' width='66%'style='vertical-align:middle;border:5px solid azure;margin:30px 30px' />
+    <img src='https://raw.githubusercontent.com/open-energy-transition/data-science-for-esm/stanford/data-science-for-esm/_images/05_deployment_status.png' width='66%'style='vertical-align:middle;border:5px solid paleturquoise;margin:30px 30px' />
     <!-- </a> -->
     <figcaption>Deployment status upon <mark>git push</mark> to the branch specified in the <em>deploy.yml</em> file</figcaption>
 </figure>
+</center>
 <p>Upon a successful deployment, indicated by the deploy status, in that time you should be able to see the changes taking place in the specified <code class="docutils literal notranslate"><span class="pre">github.io</span></code> URL.</p>
+<center>
 <figure>
     <!-- <a href='https://github.com/open-energy-transition/data-science-for-esm/settings/pages'> -->
-    <img src='https://raw.githubusercontent.com/open-energy-transition/data-science-for-esm/stanford/data-science-for-esm/_images/06_successful_deployment.png' width='66%'style='vertical-align:middle;border:5px solid azure;margin:30px 30px' />
+    <img src='https://raw.githubusercontent.com/open-energy-transition/data-science-for-esm/stanford/data-science-for-esm/_images/06_successful_deployment.png' width='66%'style='vertical-align:middle;border:5px solid paleturquoise;margin:30px 30px' />
     <!-- </a> -->
     <figcaption>Successful deployment, after a finalized <b>jupyter book build</b> run</figcaption>
 </figure>
+</center>
 <!-- # References -->
 <p><mark><center>Table of Abbreviations</center></mark></p>
 <div class="pst-scrollable-table-container"><table class="table">

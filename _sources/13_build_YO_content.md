@@ -66,21 +66,25 @@ In the your own forked repository `owner/data-science-for-energy-system-modellin
 
 This is indicated by the status indicator in the repository, in this case a beige-brown dot, which if clicked on, will show the running status and the deployment details. As mentioned, the deployment takes approx. 2 minutes.
 
+<center>
 <figure>
     <!-- <a href='https://github.com/open-energy-transition/data-science-for-esm/settings/pages'> -->
-    <img src='https://raw.githubusercontent.com/open-energy-transition/data-science-for-esm/stanford/data-science-for-esm/_images/05_deployment_status.png' width='66%'style='vertical-align:middle;border:5px solid azure;margin:30px 30px' />
+    <img src='https://raw.githubusercontent.com/open-energy-transition/data-science-for-esm/stanford/data-science-for-esm/_images/05_deployment_status.png' width='66%'style='vertical-align:middle;border:5px solid paleturquoise;margin:30px 30px' />
     <!-- </a> -->
     <figcaption>Deployment status upon <mark>git push</mark> to the branch specified in the <em>deploy.yml</em> file</figcaption>
 </figure>
+</center>
 
 Upon a successful deployment, indicated by the deploy status, in that time you should be able to see the changes taking place in the specified `github.io` URL.
 
+<center>
 <figure>
     <!-- <a href='https://github.com/open-energy-transition/data-science-for-esm/settings/pages'> -->
-    <img src='https://raw.githubusercontent.com/open-energy-transition/data-science-for-esm/stanford/data-science-for-esm/_images/06_successful_deployment.png' width='66%'style='vertical-align:middle;border:5px solid azure;margin:30px 30px' />
+    <img src='https://raw.githubusercontent.com/open-energy-transition/data-science-for-esm/stanford/data-science-for-esm/_images/06_successful_deployment.png' width='66%'style='vertical-align:middle;border:5px solid paleturquoise;margin:30px 30px' />
     <!-- </a> -->
     <figcaption>Successful deployment, after a finalized <b>jupyter book build</b> run</figcaption>
 </figure>
+</center>
 
 <!-- # References -->
 [01]: https://github.com/fneum/data-science-for-esm
