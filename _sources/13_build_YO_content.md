@@ -103,7 +103,7 @@ Upon a successful deployment, indicated by the deploy status, in that time you s
 <center><mark>Table of Abbreviations</mark></center>
 
 [^bignote]:
- | Acronym     | Description |
- |:-----------:|:-----------:|
- | **GH**      | GitHub      |
- | **repo**    | repository  |
+| Acronym     | Description |
+|:-----------:|:-----------:|
+| **GH**      | GitHub      |
+| **repo**    | repository  |
