@@ -11,8 +11,8 @@
 
 This section assists academics, and alike, in build their content, by modifying this repository, or the original [Dr. F. Neumann's repository][01].
 
-> :bulb: * Its primary purpose if helping/giuding on building a GH page, that can be used for teaching, providing lectures and learning material.
-* It can also be used for any other purpose.
+> * Its primary purpose if helping/guiding on building a GH[^bignote] page, to be used for generating learning material, i.e. lectures, or similar.
+> * It can also be used for any other purpose, for that matter.
 
 The first step is forking this repository. By doing so, one is able to create his own website, similar to this one, with a tailor-made content, quickly and with ease.
 
@@ -33,12 +33,12 @@ Before forking this repository please have the following in mind. In the `Create
 
 :::
 
-> The first step is forking the repository, having the **Note** above in mind.
+> The first step is forking the repository, having the ==**Note**== above in mind.
 
 The following steps are:
-- Create and push a branch named `stanford` - to be skipped if adhering to the **Note** above
-- `gh-pages` branch will be automatically generated, as defined by the workflow in the `.github/workflows/deploy.yml` ([link][07]) file which will contain the required `HTML`, `css`, `.js`, and other files
-- in the `.github/workflows/deploy.yml` file you also specify the branch, used by the workflow, which upon the `git push` command, is used for generating the required `HTML`, `css`, `.js`, as well as the other files - other than the `gh-pages`:
+* Create and push a branch named `stanford` - to be skipped if adhering to the **Note** above
+* `gh-pages` branch will be automatically generated, as defined by the workflow in the `.github/workflows/deploy.yml` ([link][07]) file which will contain the required `HTML`, `css`, `.js`, and other files
+* in the `.github/workflows/deploy.yml` file you also specify the branch, used by the workflow, which upon the `git push` command, is used for generating the required `HTML`, `css`, `.js`, as well as the other files - other than the `gh-pages`:
     
     ~~~yml
     push:
@@ -68,7 +68,7 @@ This is indicated by the status indicator in the repository, in this case a beig
 
 <figure>
     <!-- <a href='https://github.com/open-energy-transition/data-science-for-esm/settings/pages'> -->
-    <img src='https://raw.githubusercontent.com/open-energy-transition/data-science-for-esm/stanford/data-science-for-esm/_images/05_deployment_status.png' width='97%'style='vertical-align:middle;border:5px solid goldenrod;margin:30px 30px' />
+    <img src='https://raw.githubusercontent.com/open-energy-transition/data-science-for-esm/stanford/data-science-for-esm/_images/05_deployment_status.png' width='66%'style='vertical-align:middle;border:5px solid goldenrod;margin:30px 30px' />
     <!-- </a> -->
     <figcaption>Deployment status upon <mark>git push</mark> to the branch specified in the <em>deploy.yml</em> file</figcaption>
 </figure>
@@ -77,7 +77,7 @@ Upon a successful deployment, indicated by the deploy status, in that time you s
 
 <figure>
     <!-- <a href='https://github.com/open-energy-transition/data-science-for-esm/settings/pages'> -->
-    <img src='https://raw.githubusercontent.com/open-energy-transition/data-science-for-esm/stanford/data-science-for-esm/_images/06_successful_deployment.png' width='97%'style='vertical-align:middle;border:5px solid goldenrod;margin:30px 30px' />
+    <img src='https://raw.githubusercontent.com/open-energy-transition/data-science-for-esm/stanford/data-science-for-esm/_images/06_successful_deployment.png' width='66%'style='vertical-align:middle;border:5px solid goldenrod;margin:30px 30px' />
     <!-- </a> -->
     <figcaption>Successful deployment, after a finalized <b>jupyter book build</b> run</figcaption>
 </figure>
@@ -95,7 +95,7 @@ Upon a successful deployment, indicated by the deploy status, in that time you s
 [08]: https://github.com/open-energy-transition/data-science-for-esm/blob/6c6563e15d3035647e9e52c852fa1cd5748f15ed/.github/workflows/deploy.yml#L4C2-L7C15
 
 [^bignote]:
-| Acronym     | Description |
-|:-----------:|:-----------:|
-| **GH**      | GitHub      |
-| **repo**    | repository  |
+  | Acronym     | Description |
+  |:-----------:|:-----------:|
+  | **GH**      | GitHub      |
+  | **repo**    | repository  |
