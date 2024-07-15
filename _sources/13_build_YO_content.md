@@ -9,11 +9,12 @@
 
 ###### List of Abbreviation[^bignote]
 
-This section assists academics, and alike, in build their content, by modifying this repository, or the original F. Neumann's [repository][01].
+This section assists academics, and alike, in build their content, by modifying this repository, or the original [Dr. F. Neumann's repository][01].
 
-* Its primary purpose if for teaching, providing lectures and learning material, but can also be used for any other purpose. The first step is to fork this repository.
+> :bulb: * Its primary purpose if helping/giuding on building a GH page, that can be used for teaching, providing lectures and learning material.
+* It can also be used for any other purpose.
 
-By doing so, one is able to create his own website, similar to this one, with a tailor-made content, quickly and with ease.
+The first step is forking this repository. By doing so, one is able to create his own website, similar to this one, with a tailor-made content, quickly and with ease.
 
 - This setup draws from the [peaceiris actions-gh-pages][02], and the [Stanford RC website][03]. However, these serve only as a reference, as the the full explanation is blow.
 
