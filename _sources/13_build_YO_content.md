@@ -11,14 +11,14 @@
 
 This section assists academics, and alike, in build their content, by modifying this repository, or the original [Dr. F. Neumann's repository][01].
 
-* Its primary purpose if helping/guiding on building a GH[^1] page, to be used for generating learning material, i.e. lectures, or similar.
+* Its primary purpose if helping/guiding on building a GH[^bignote] page, to be used for generating learning material, i.e. lectures, or similar.
 * It can also be used for any other purpose, for that matter.
 * This setup draws from the [peaceiris actions-gh-pages][02], and the [Stanford RC website][03]. However, these serve only as a reference, as the the full explanation is blow.
 
 The first step is forking this repository. By doing so, one is able to create his own website, similar to this one, with a tailor-made content, quickly and with ease. However, there are two or three thing to keep in mind when doing so, so please read on.
 
 
-# <font color="darkgreen">Creating a new fork of this repo[^2]</font>
+# <font color="darkgreen">Creating a new fork of this repo[^bingnote]</font>
 
 > The first step is forking the repository, having the <mark>**Note**</mark> below in mind.
 
@@ -112,8 +112,8 @@ Upon a successful deployment, indicated by the deploy status, in that time you s
 <!-- <center><mark>Table of Abbreviations</mark></center> -->
 ###### Table of Abbreviations
 
-<!-- [^bignote]: -->
+[^bignote]:
         | Acronym     | Description |
         |:-----------:|:-----------:|
-[^1]:   | **GH**      | GitHub      |
-[^2]:   | **repo**    | repository  |
+        | **GH**      | GitHub      |
+        | **repo**    | repository  |
