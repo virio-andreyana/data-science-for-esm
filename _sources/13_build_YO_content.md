@@ -11,16 +11,16 @@
 
 This section assists academics, and alike, in build their content, by modifying this repository, or the original [Dr. F. Neumann's repository][01].
 
-> * Its primary purpose if helping/guiding on building a GH[^bignote] page, to be used for generating learning material, i.e. lectures, or similar.
-> * It can also be used for any other purpose, for that matter.
+* Its primary purpose if helping/guiding on building a GH[^bignote] page, to be used for generating learning material, i.e. lectures, or similar.
+* It can also be used for any other purpose, for that matter.
+* This setup draws from the [peaceiris actions-gh-pages][02], and the [Stanford RC website][03]. However, these serve only as a reference, as the the full explanation is blow.
 
-The first step is forking this repository. By doing so, one is able to create his own website, similar to this one, with a tailor-made content, quickly and with ease.
+The first step is forking this repository. By doing so, one is able to create his own website, similar to this one, with a tailor-made content, quickly and with ease. However, there are two or three thing to keep in mind when doing so, hence please read on.
 
-- This setup draws from the [peaceiris actions-gh-pages][02], and the [Stanford RC website][03]. However, these serve only as a reference, as the the full explanation is blow.
 
 # Creating a new fork
 
-Before forking this repository please have the following in mind. In the `Create a new fork` pop-up menu, deselect the default **Copy the `main` branch only** option. By doing so, you will reduce further branch creation.
+Before forking this repository please have the following in mind. In the `Create a new fork` pop-up menu, deselect the default **Copy the `main` branch only** option. By doing so, you will reduce further branch creation, necessary for this to work.
 
 :::{note}
 <center>
