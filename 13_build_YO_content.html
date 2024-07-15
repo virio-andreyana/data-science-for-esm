@@ -383,7 +383,7 @@ document.write(`
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Build Your Own Content</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-a-new-fork-of-this-repo-2"><font color="darkgreen">Creating a new fork of this repo[^2]</font></a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-a-new-fork-of-this-repo2"><font color="darkgreen">Creating a new fork of this repo</font></a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#gh-pages-setup"><font color="darkgreen">GH Pages Setup</font></a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#gh-workflows-deployment"><font color="darkgreen">GH Workflows Deployment</font></a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#table-of-abbreviations">Table of Abbreviations</a></li>
@@ -412,14 +412,14 @@ document.write(`
 <!-- ###### List of Abbreviation[^bignote] -->
 <p>This section assists academics, and alike, in build their content, by modifying this repository, or the original <a class="reference external" href="https://github.com/fneum/data-science-for-esm">Dr. F. Neumann’s repository</a>.</p>
 <ul class="simple">
-<li><p>Its primary purpose if helping/guiding on building a GH[^1] page, to be used for generating learning material, i.e. lectures, or similar.</p></li>
+<li><p>Its primary purpose if helping/guiding on building a GH<a class="footnote-reference brackets" href="#id3" id="id1" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a> page, to be used for generating learning material, i.e. lectures, or similar.</p></li>
 <li><p>It can also be used for any other purpose, for that matter.</p></li>
 <li><p>This setup draws from the <a class="reference external" href="https://github.com/peaceiris/actions-gh-pages">peaceiris actions-gh-pages</a>, and the <a class="reference external" href="https://stanford-rc.github.io/rse-services/docs/resources/documentation">Stanford RC website</a>. However, these serve only as a reference, as the the full explanation is blow.</p></li>
 </ul>
 <p>The first step is forking this repository. By doing so, one is able to create his own website, similar to this one, with a tailor-made content, quickly and with ease. However, there are two or three thing to keep in mind when doing so, so please read on.</p>
 </section>
-<section class="tex2jax_ignore mathjax_ignore" id="creating-a-new-fork-of-this-repo-2">
-<h1><font color="darkgreen">Creating a new fork of this repo[^2]</font><a class="headerlink" href="#creating-a-new-fork-of-this-repo-2" title="Link to this heading">#</a></h1>
+<section class="tex2jax_ignore mathjax_ignore" id="creating-a-new-fork-of-this-repo2">
+<h1><font color="darkgreen">Creating a new fork of this repo<a class="footnote-reference brackets" href="#id4" id="id2" role="doc-noteref"><span class="fn-bracket">[</span>2<span class="fn-bracket">]</span></a></font><a class="headerlink" href="#creating-a-new-fork-of-this-repo2" title="Link to this heading">#</a></h1>
 <blockquote>
 <div><p>The first step is forking the repository, having the <mark><strong>Note</strong></mark> below in mind.</p>
 </div></blockquote>
@@ -442,7 +442,7 @@ document.write(`
 <ul>
 <li><p>Create and push a branch named <code class="docutils literal notranslate"><span class="pre">stanford</span></code> - to be skipped if adhering to the <strong>Note</strong> above</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">gh-pages</span></code> branch will be automatically generated, as defined by the workflow, hence its creation is not required</p></li>
-<li><p>in the <code class="docutils literal notranslate"><span class="pre">.github/workflows/deploy.yml</span></code> file you also specify the branch, used by the workflow, which upon the <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">push</span></code> command, is used for generating the required <code class="docutils literal notranslate"><span class="pre">HTML</span></code>, <code class="docutils literal notranslate"><span class="pre">css</span></code>, <code class="docutils literal notranslate"><span class="pre">.js</span></code>, as well as the other files - other than the <code class="docutils literal notranslate"><span class="pre">gh-pages</span></code>:</p>
+<li><p>in the <code class="docutils literal notranslate"><span class="pre">.github/workflows/deploy.yml</span></code> file specify the branch, which will later be used by the workflow, which upon the <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">push</span></code> command, triggers the workflow:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">push</span><span class="p">:</span>
   <span class="n">branches</span><span class="p">:</span>
   <span class="o">-</span> <span class="n">stanford</span>
@@ -450,11 +450,13 @@ document.write(`
 </div>
 </li>
 </ul>
-<p>of the forked repository, in the <code class="docutils literal notranslate"><span class="pre">.github/workflows/deploy.yml</span></code> (<a class="reference external" href="https://github.com/open-energy-transition/data-science-for-esm/blob/ef394898e3100e2bd2d074a8b2da89235355cd4e/.github/workflows/deploy.yml">link</a>) file which will contain the required <code class="docutils literal notranslate"><span class="pre">HTML</span></code>, <code class="docutils literal notranslate"><span class="pre">css</span></code>, <code class="docutils literal notranslate"><span class="pre">.js</span></code>, and other files</p>
+<p>of the forked repository, in the <code class="docutils literal notranslate"><span class="pre">.github/workflows/deploy.yml</span></code> (<a class="reference external" href="https://github.com/open-energy-transition/data-science-for-esm/blob/ef394898e3100e2bd2d074a8b2da89235355cd4e/.github/workflows/deploy.yml">link</a>) file which will contain the required <code class="docutils literal notranslate"><span class="pre">HTML</span></code>, <code class="docutils literal notranslate"><span class="pre">css</span></code>, <code class="docutils literal notranslate"><span class="pre">.js</span></code>, and other files
+is used for generating the required <code class="docutils literal notranslate"><span class="pre">HTML</span></code>, <code class="docutils literal notranslate"><span class="pre">css</span></code>, <code class="docutils literal notranslate"><span class="pre">.js</span></code>, as well as the other files - other than the <code class="docutils literal notranslate"><span class="pre">gh-pages</span></code></p>
 <ul class="simple">
 <li><p>in the <code class="docutils literal notranslate"><span class="pre">data-science-for-esm/_toc.yml</span></code> <em>file</em>, a sequence of files to be included in the GitHub Page is defined, thereafter displayed in the menu, located on the left side of the page</p></li>
 <li><p>on preexisting knowledge disseminating the gained expertise by OET, and TU Berlin, to help .   Welcome to the website accompanying the course <a class="reference external" href="https://moseskonto.tu-berlin.de/moses/modultransfersystem/bolognamodule/beschreibung/anzeigen.html;jsessionid=DQfixqzzpn1XIg5N1GG7S9um4EDykZn99AHmH6Fj.moseskonto?number=31027&amp;amp;version=1&amp;amp;sprache=2">Data Science for Energy System Modelling</a>. This course is being developed by <a class="reference external" href="https://neumann.fyi">Dr. F. Neumann</a> and offered as part of the curriculum of the <a class="reference external" href="https://www.tu.berlin/ensys">Department of Digital Transformation of Energy Systems at TU Berlin</a>.</p></li>
 </ul>
+<p>The website logo, as well as the other figures can be placed in the <code class="docutils literal notranslate"><span class="pre">data-science-for-esm/_images/</span></code> folder. The content</p>
 <p>In the your own forked repository <code class="docutils literal notranslate"><span class="pre">owner/data-science-for-energy-system-modelling</span></code>, please go to the <strong>Settings</strong> -&gt; <strong>Pages</strong>. in the GitHub Page, go to the Branch section, and change the selection from None to <code class="docutils literal notranslate"><span class="pre">main</span></code>, or any branch other than <code class="docutils literal notranslate"><span class="pre">gh-pages</span></code>. Once the branch has been selected, in a manner of minutes a custom</p>
 </section>
 <section class="tex2jax_ignore mathjax_ignore" id="gh-pages-setup">
@@ -493,22 +495,22 @@ document.write(`
 <!-- <center><mark>Table of Abbreviations</mark></center> -->
 <section id="table-of-abbreviations">
 <h2>Table of Abbreviations<a class="headerlink" href="#table-of-abbreviations" title="Link to this heading">#</a></h2>
-<div class="pst-scrollable-table-container"><table class="table">
-<thead>
-<tr class="row-odd"><th class="head text-center"><p>Acronym</p></th>
-<th class="head text-center"><p>Description</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td class="text-center"><p><strong>GH</strong>[^1]</p></td>
-<td class="text-center"><p>GitHub</p></td>
-</tr>
-<tr class="row-odd"><td class="text-center"><p><strong>repo</strong>[^2]</p></td>
-<td class="text-center"><p>repository</p></td>
-</tr>
-</tbody>
-</table>
+<!-- [^bignote]: -->
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>    | Acronym     | Description |
+    |:-----------:|:-----------:|
+</pre></div>
 </div>
+<hr class="footnotes docutils" />
+<aside class="footnote-list brackets">
+<aside class="footnote brackets" id="id3" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id1">1</a><span class="fn-bracket">]</span></span>
+<p>| <strong>GH</strong>      | GitHub      |</p>
+</aside>
+<aside class="footnote brackets" id="id4" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id2">2</a><span class="fn-bracket">]</span></span>
+<p>| <strong>repo</strong>    | repository  |</p>
+</aside>
+</aside>
 </section>
 </section>
 
@@ -568,7 +570,7 @@ document.write(`
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Build Your Own Content</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-a-new-fork-of-this-repo-2"><font color="darkgreen">Creating a new fork of this repo[^2]</font></a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-a-new-fork-of-this-repo2"><font color="darkgreen">Creating a new fork of this repo</font></a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#gh-pages-setup"><font color="darkgreen">GH Pages Setup</font></a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#gh-workflows-deployment"><font color="darkgreen">GH Workflows Deployment</font></a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#table-of-abbreviations">Table of Abbreviations</a></li>

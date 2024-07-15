@@ -41,7 +41,7 @@ Before forking this repository please have the following in mind. In the `Create
 The following steps are:
 * Create and push a branch named `stanford` - to be skipped if adhering to the **Note** above
 * `gh-pages` branch will be automatically generated, as defined by the workflow, hence its creation is not required
-* in the `.github/workflows/deploy.yml` file you also specify the branch, used by the workflow, which upon the `git push` command, is used for generating the required `HTML`, `css`, `.js`, as well as the other files - other than the `gh-pages`:
+* in the `.github/workflows/deploy.yml` file specify the branch, which will later be used by the workflow, which upon the `git push` command, triggers the workflow:
     
     ~~~
     push:
@@ -50,9 +50,11 @@ The following steps are:
     ~~~
 
 of the forked repository, in the `.github/workflows/deploy.yml` ([link][07]) file which will contain the required `HTML`, `css`, `.js`, and other files
-
+is used for generating the required `HTML`, `css`, `.js`, as well as the other files - other than the `gh-pages`
 - in the `data-science-for-esm/_toc.yml` *file*, a sequence of files to be included in the GitHub Page is defined, thereafter displayed in the menu, located on the left side of the page
 - on preexisting knowledge disseminating the gained expertise by OET, and TU Berlin, to help .   Welcome to the website accompanying the course [Data Science for Energy System Modelling][04]. This course is being developed by [Dr. F. Neumann][05] and offered as part of the curriculum of the [Department of Digital Transformation of Energy Systems at TU Berlin][06].
+
+The website logo, as well as the other figures can be placed in the `data-science-for-esm/_images/` folder. The content 
 
 In the your own forked repository `owner/data-science-for-energy-system-modelling`, please go to the **Settings** -> **Pages**. in the GitHub Page, go to the Branch section, and change the selection from None to `main`, or any branch other than `gh-pages`. Once the branch has been selected, in a manner of minutes a custom  
 
@@ -108,8 +110,8 @@ Upon a successful deployment, indicated by the deploy status, in that time you s
 <!-- <center><mark>Table of Abbreviations</mark></center> -->
 ###### Table of Abbreviations
 
-[^bignote]:
-| Acronym     | Description |
-|:-----------:|:-----------:|
-| **GH**[^1]      | GitHub      |
-| **repo**[^2]    | repository  |
+<!-- [^bignote]: -->
+        | Acronym     | Description |
+        |:-----------:|:-----------:|
+[^1]:   | **GH**      | GitHub      |
+[^2]:   | **repo**    | repository  |
