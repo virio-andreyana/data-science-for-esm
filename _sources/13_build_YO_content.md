@@ -5,14 +5,9 @@
 1. [GH Pages](#gh-pages-setup)
 1. [GH Workflows Deployment](#gh-workflows-deployment) -->
 
-###### List of Abbreviation
-
-| Acronym     | Description |
-|:-----------:|:-----------:|
-| **GH**      | GitHub      |
-| **repo**    | repository  |
-
 # Build Your Own Content
+
+###### List of Abbreviation[^bignote]
 
 This section assists academics, and alike, in build their content, by modifying this repository, or the original F. Neumann's [repository][01].
 
@@ -97,3 +92,8 @@ Upon a successful deployment, indicated by the deploy status, in that time you s
 [06]: https://www.tu.berlin/ensys
 [07]: https://github.com/open-energy-transition/data-science-for-esm/blob/ef394898e3100e2bd2d074a8b2da89235355cd4e/.github/workflows/deploy.yml
 [08]: https://github.com/open-energy-transition/data-science-for-esm/blob/6c6563e15d3035647e9e52c852fa1cd5748f15ed/.github/workflows/deploy.yml#L4C2-L7C15
+
+[^bignote]: | Acronym     | Description |
+            |:-----------:|:-----------:|
+            | **GH**      | GitHub      |
+            | **repo**    | repository  |
