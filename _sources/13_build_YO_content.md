@@ -23,12 +23,14 @@ The first step is forking this repository. By doing so, one is able to create hi
 Before forking this repository please have the following in mind. In the `Create a new fork` pop-up menu, deselect the default **Copy the `main` branch only** option. By doing so, you will reduce further branch creation.
 
 :::{note}
+<center>
 <figure>
     <a href='https://github.com/open-energy-transition/data-science-for-esm/fork'>
     <img src='https://github.com/open-energy-transition/data-science-for-esm/raw/stanford/data-science-for-esm/_images/03_fork_option.png' alt='' width='95%' style='vertical-align:middle;border:5px solid goldenrod;margin:20px 0px' />
     </a>
-    <figcaption>Clicking on the image above will lead directly to the <mark>"Create a new fork menu"</mark></figcaption>
+    <figcaption>Clicking on the image above will lead directly to the <b><strong><mark>Create a new fork menu</mark></b></strong></figcaption>
 </figure>
+</center>
 :::
 
 > The first step is forking the repository, having the <mark>**Note**</mark> above in mind.
@@ -51,12 +53,14 @@ In the your own forked repository `owner/data-science-for-energy-system-modellin
 
 # <font color="red">GH Pages Setup</font>
 
+<center>
 <figure>
     <a href='https://github.com/open-energy-transition/data-science-for-esm/settings/pages'>
     <img src='https://raw.githubusercontent.com/open-energy-transition/data-science-for-esm/stanford/data-science-for-esm/_images/04_gh_pages-options.png' width='97%'style='vertical-align:middle;border:5px solid goldenrod;margin:30px 30px' />
     </a>
     <figcaption>Clicking on the image above will lead directly to the GH Pages settings menu</figcaption>
 </figure>
+</center>
 
 # <font color="red">GH Workflows Deployment</font>
 
@@ -67,7 +71,7 @@ This is indicated by the status indicator in the repository, in this case a beig
 <center>
 <figure>
     <!-- <a href='https://github.com/open-energy-transition/data-science-for-esm/settings/pages'> -->
-    <img src='https://raw.githubusercontent.com/open-energy-transition/data-science-for-esm/stanford/data-science-for-esm/_images/05_deployment_status.png' width='66%'style='vertical-align:middle;border:5px solid paleturquoise;margin:30px 30px' />
+    <img src='https://raw.githubusercontent.com/open-energy-transition/data-science-for-esm/stanford/data-science-for-esm/_images/05_deployment_status.png' width='85%'style='vertical-align:middle;border:5px solid paleturquoise;margin:30px 30px' />
     <!-- </a> -->
     <figcaption>Deployment status upon <mark>git push</mark> to the branch specified in the <em>deploy.yml</em> file</figcaption>
 </figure>
@@ -78,7 +82,7 @@ Upon a successful deployment, indicated by the deploy status, in that time you s
 <center>
 <figure>
     <!-- <a href='https://github.com/open-energy-transition/data-science-for-esm/settings/pages'> -->
-    <img src='https://raw.githubusercontent.com/open-energy-transition/data-science-for-esm/stanford/data-science-for-esm/_images/06_successful_deployment.png' width='66%'style='vertical-align:middle;border:5px solid paleturquoise;margin:30px 30px' />
+    <img src='https://raw.githubusercontent.com/open-energy-transition/data-science-for-esm/stanford/data-science-for-esm/_images/06_successful_deployment.png' width='85%'style='vertical-align:middle;border:5px solid paleturquoise;margin:30px 30px' />
     <!-- </a> -->
     <figcaption>Successful deployment, after a finalized <b>jupyter book build</b> run</figcaption>
 </figure>
