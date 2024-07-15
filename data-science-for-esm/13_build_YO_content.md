@@ -54,7 +54,9 @@ is used for generating the required `HTML`, `css`, `.js`, as well as the other f
 - in the `data-science-for-esm/_toc.yml` *file*, a sequence of files to be included in the GitHub Page is defined, thereafter displayed in the menu, located on the left side of the page
 - on preexisting knowledge disseminating the gained expertise by OET, and TU Berlin, to help .   Welcome to the website accompanying the course [Data Science for Energy System Modelling][04]. This course is being developed by [Dr. F. Neumann][05] and offered as part of the curriculum of the [Department of Digital Transformation of Energy Systems at TU Berlin][06].
 
-The website logo, as well as the other figures can be placed in the `data-science-for-esm/_images/` folder. The content 
+The website logo, as well as the other figures can be placed in the `data-science-for-esm/_images/` folder. The content in terms od the `.ipynb` & `.md` files are to be placed in the root of the `data-science-for--esm` folder, and specified in the `_toc.yml` file. If not being placed in the root, the workflow will be unable to locate the files specified in the `_toc.yml`, resulting in the unsuccessful deployment, and not accessible `github.io` site.
+
+Both `_config.yml`, as well as the `_toc.yml``are to remain in the root of the `data-science-for esm` folder. In the `_config.yml` details of the website, such as the author, logo, other relevant links to GitHub, Google Collab, can be defined. Please use the already provided `_toc` and `_config.yml` files as a templace, and follow the provided structure.
 
 In the your own forked repository `owner/data-science-for-energy-system-modelling`, please go to the **Settings** -> **Pages**. in the GitHub Page, go to the Branch section, and change the selection from None to `main`, or any branch other than `gh-pages`. Once the branch has been selected, in a manner of minutes a custom  
 
