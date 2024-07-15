@@ -32,7 +32,7 @@ Before forking this repository please have the following in mind. In the `Create
     <a href='https://github.com/open-energy-transition/data-science-for-esm/fork'>
     <img src='https://github.com/open-energy-transition/data-science-for-esm/raw/stanford/data-science-for-esm/_images/03_fork_option.png' alt='' width='95%' style='vertical-align:middle;border:5px solid goldenrod;margin:20px 0px' />
     </a>
-    <figcaption>Clicking on the image above will lead directly to the fork creation menu.</figcaption>
+    <figcaption>Clicking on the image above will lead directly to the fork creation menu</figcaption>
 </figure>
 
 :::
@@ -61,14 +61,30 @@ In the your own forked repository `owner/data-science-for-energy-system-modellin
     <a href='https://github.com/open-energy-transition/data-science-for-esm/settings/pages'>
     <img src='https://raw.githubusercontent.com/open-energy-transition/data-science-for-esm/stanford/data-science-for-esm/_images/04_gh_pages-options.png' width='97%'style='vertical-align:middle;border:5px solid goldenrod;margin:30px 30px' />
     </a>
-    <figcaption>Clicking on the image above will lead directly to the GH Pages settings menu.</figcaption>
+    <figcaption>Clicking on the image above will lead directly to the GH Pages settings menu</figcaption>
 </figure>
 
 # <font color="red">GH Workflows Deployment</font>
 
-`.github/workflows/deploy.yml` ([link][08]) needs specifying which branch of the repo will be used for deployment. You are free to use any branch, other than the `gh-pages`, keeping in mind that upon the git push command the workflow will be triggered.
+`.github/workflows/deploy.yml` ([link][08]) needs specifying which branch of the repo will be used for deployment. You are free to use any branch, other than the `gh-pages`, keeping in mind that upon the `git push`, the workflow will be triggered.
 
-The changes will be published in the specified `github.io` URL. There is a short waiting time for 
+This is indicated by the status indicator in the repository, in this case a beige-brown dot, which if clicked on, will show the running status and the deployment details. As mentioned, the deployment takes approx. 2 minutes.
+
+<figure>
+    <!-- <a href='https://github.com/open-energy-transition/data-science-for-esm/settings/pages'> -->
+    <img src='https://raw.githubusercontent.com/open-energy-transition/data-science-for-esm/stanford/data-science-for-esm/_images/05_deployment_status.png' width='97%'style='vertical-align:middle;border:5px solid goldenrod;margin:30px 30px' />
+    <!-- </a> -->
+    <figcaption>Deployment status upon `git push` to the branch specified in the `deploy.yml` file</figcaption>
+</figure>
+
+Upon a successful deployment, indicated by the deploy status, in that time you should be able to see the changes taking place in the specified `github.io` URL.
+
+<figure>
+    <!-- <a href='https://github.com/open-energy-transition/data-science-for-esm/settings/pages'> -->
+    <img src='https://raw.githubusercontent.com/open-energy-transition/data-science-for-esm/stanford/data-science-for-esm/_images/06_successful_deployment.png' width='97%'style='vertical-align:middle;border:5px solid goldenrod;margin:30px 30px' />
+    <!-- </a> -->
+    <figcaption>Successful deployment, after a finalized `jupyter buils book` run</figcaption>
+</figure>
 
 <!-- # References -->
 [01]: https://github.com/fneum/data-science-for-esm
