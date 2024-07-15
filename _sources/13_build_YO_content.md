@@ -33,7 +33,7 @@ Before forking this repository please have the following in mind. In the `Create
 
 :::
 
-> The first step is forking the repository, having the ==**Note**== above in mind.
+> The first step is forking the repository, having the <mark>**Note**</mark> above in mind.
 
 The following steps are:
 * Create and push a branch named `stanford` - to be skipped if adhering to the **Note** above
