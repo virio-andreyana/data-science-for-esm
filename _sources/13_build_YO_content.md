@@ -18,7 +18,7 @@ This section assists academics, and alike, in build their content, by modifying 
 The first step is forking this repository. By doing so, one is able to create his own website, similar to this one, with a tailor-made content, quickly and with ease. However, there are two or three thing to keep in mind when doing so, hence please read on.
 
 
-# Creating a new fork
+# <font color="darkgreen">Creating a new fork</font>
 
 > The first step is forking the repository, having the <mark>**Note**</mark> below in mind.
 
@@ -33,17 +33,19 @@ Before forking this repository please have the following in mind. In the `Create
     <figcaption>Clicking on the image above will lead directly to the <b><strong><mark>Create a new fork menu</mark></b></strong></figcaption>
 </figure>
 </center>
+
+The key point to to have a `stanford` branch, and the correct deployment brach set in the `./github/workflows/deploy.yml`.
 :::
 
 The following steps are:
 * Create and push a branch named `stanford` - to be skipped if adhering to the **Note** above
-* `gh-pages` branch will be automatically generated, as defined by the workflow in the `.github/workflows/deploy.yml` ([link][07]) file which will contain the required `HTML`, `css`, `.js`, and other files
+* `gh-pages` branch will be automatically generated, as defined by the workflow, of the forked repository, in the `.github/workflows/deploy.yml` ([link][07]) file which will contain the required `HTML`, `css`, `.js`, and other files
 * in the `.github/workflows/deploy.yml` file you also specify the branch, used by the workflow, which upon the `git push` command, is used for generating the required `HTML`, `css`, `.js`, as well as the other files - other than the `gh-pages`:
     
     ~~~
     push:
       branches:
-      - <mark>stanford</mark>
+      - stanford
     ~~~
 
 - in the `data-science-for-esm/_toc.yml` *file*, a sequence of files to be included in the GitHub Page is defined, thereafter displayed in the menu, located on the left side of the page
@@ -51,7 +53,7 @@ The following steps are:
 
 In the your own forked repository `owner/data-science-for-energy-system-modelling`, please go to the **Settings** -> **Pages**. in the GitHub Page, go to the Branch section, and change the selection from None to `main`, or any branch other than `gh-pages`. Once the branch has been selected, in a manner of minutes a custom  
 
-# <font color="red">GH Pages Setup</font>
+# <font color="darkgreen">GH Pages Setup</font>
 
 <center>
 <figure>
@@ -62,7 +64,7 @@ In the your own forked repository `owner/data-science-for-energy-system-modellin
 </figure>
 </center>
 
-# <font color="red">GH Workflows Deployment</font>
+# <font color="darkgreen">GH Workflows Deployment</font>
 
 `.github/workflows/deploy.yml` ([link][08]) needs specifying which branch of the repo will be used for deployment. You are free to use any branch, other than the `gh-pages`, keeping in mind that upon the `git push`, the workflow will be triggered.
 
