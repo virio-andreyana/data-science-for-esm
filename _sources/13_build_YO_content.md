@@ -7,7 +7,7 @@
 
 # Build Your Own Content
 
-###### List of Abbreviation[^bignote]
+<!-- ###### List of Abbreviation[^bignote] -->
 
 This section assists academics, and alike, in build their content, by modifying this repository, or the original [Dr. F. Neumann's repository][01].
 
@@ -20,17 +20,15 @@ The first step is forking this repository. By doing so, one is able to create hi
 
 # Creating a new fork
 
-:::{note}
-
 Before forking this repository please have the following in mind. In the `Create a new fork` pop-up menu, deselect the default **Copy the `main` branch only** option. By doing so, you will reduce further branch creation.
 
+:::{note}
 <figure>
     <a href='https://github.com/open-energy-transition/data-science-for-esm/fork'>
     <img src='https://github.com/open-energy-transition/data-science-for-esm/raw/stanford/data-science-for-esm/_images/03_fork_option.png' alt='' width='95%' style='vertical-align:middle;border:5px solid goldenrod;margin:20px 0px' />
     </a>
-    <figcaption>Clicking on the image above will lead directly to the fork creation menu</figcaption>
+    <figcaption>Clicking on the image above will lead directly to the <mark>"Create a new fork menu"</mark></figcaption>
 </figure>
-
 :::
 
 > The first step is forking the repository, having the <mark>**Note**</mark> above in mind.
@@ -98,9 +96,9 @@ Upon a successful deployment, indicated by the deploy status, in that time you s
 [07]: https://github.com/open-energy-transition/data-science-for-esm/blob/ef394898e3100e2bd2d074a8b2da89235355cd4e/.github/workflows/deploy.yml
 [08]: https://github.com/open-energy-transition/data-science-for-esm/blob/6c6563e15d3035647e9e52c852fa1cd5748f15ed/.github/workflows/deploy.yml#L4C2-L7C15
 
-<mark><center>Table of Abbreviations</center></mark>
+<center><mark>Table of Abbreviations</mark></center>
 [^bignote]:
-   | Acronym     | Description |
-   |:-----------:|:-----------:|
-   | **GH**      | GitHub      |
-   | **repo**    | repository  |
+    | Acronym     | Description |
+    |:-----------:|:-----------:|
+    | **GH**      | GitHub      |
+    | **repo**    | repository  |
