@@ -72,7 +72,7 @@ This is indicated by the status indicator in the repository, in this case a beig
 
 <figure>
     <!-- <a href='https://github.com/open-energy-transition/data-science-for-esm/settings/pages'> -->
-    <img src='https://raw.githubusercontent.com/open-energy-transition/data-science-for-esm/stanford/data-science-for-esm/_images/05_deployment_status.jpg' width='97%'style='vertical-align:middle;border:5px solid goldenrod;margin:30px 30px' />
+    <img src='https://raw.githubusercontent.com/open-energy-transition/data-science-for-esm/stanford/data-science-for-esm/_images/05_deployment_status.png' width='97%'style='vertical-align:middle;border:5px solid goldenrod;margin:30px 30px' />
     <!-- </a> -->
     <figcaption>Deployment status upon `git push` to the branch specified in the `deploy.yml` file</figcaption>
 </figure>
