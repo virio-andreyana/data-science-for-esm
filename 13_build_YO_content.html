@@ -469,10 +469,10 @@ is used for generating the required `HTML`, `css`, `.js`, as well as the other f
 <div><p><strong>Note:</strong> The key point is set the correct deployment branch set in the <code>./github/workflows/deploy.yml</code>.</p>
 </div></blockquote>
 <ul>
-<li><p>in the <code class="docutils literal notranslate"><span class="pre">.github/workflows/deploy.yml</span></code> file specify the branch, which will later be used by the workflow, which upon the <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">push</span></code> command, triggers the workflow:</p>
+<li><p>in the <code>.github/workflows/deploy.yml</code> file specify the branch, which will later be used by the workflow, which upon the <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">push</span></code> command, triggers the workflow:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">push</span><span class="p">:</span>
   <span class="n">branches</span><span class="p">:</span>
-  <span class="o">-</span> <span class="o">&lt;</span><span class="n">b</span><span class="o">&gt;&lt;</span><span class="n">mark</span><span class="o">&gt;</span><span class="n">stanford</span><span class="o">&lt;/</span><span class="n">mark</span><span class="o">&gt;&lt;/</span><span class="n">b</span><span class="o">&gt;</span>
+  <span class="o">-</span> <span class="n">stanford</span>
 </pre></div>
 </div>
 </li>

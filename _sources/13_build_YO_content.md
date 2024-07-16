@@ -70,11 +70,11 @@ In the your own forked repository `"owner"/data-science-for-energy-system-modell
 
 > **Note:** The key point is set the correct deployment branch set in the <code>./github/workflows/deploy.yml</code>.
 
-* in the `.github/workflows/deploy.yml` file specify the branch, which will later be used by the workflow, which upon the `git push` command, triggers the workflow:
+* in the <code>.github/workflows/deploy.yml</code> file specify the branch, which will later be used by the workflow, which upon the `git push` command, triggers the workflow:
     ~~~
     push:
       branches:
-      - <b><mark>stanford</mark></b>
+      - stanford
     ~~~
 
 
