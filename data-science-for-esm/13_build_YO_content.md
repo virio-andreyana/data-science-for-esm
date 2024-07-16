@@ -24,7 +24,7 @@ The first step is forking this repository. By doing so, one is able to create hi
 =====================================================================
 > **Note:** The first step is forking the repository, having the below in mind.
 
-Before forking this repository please have the following in mind. In the <mark>**Create a new fork**</mark> pop-up menu, shown in the figure below, **deselect** the default **Copy the `main` branch only** option. By doing so, you will reduce further branch creation, necessary for this to work.
+Before forking this repository please have the following in mind. In the <strong><b><mark>Create a new fork</mark></b></strong> pop-up menu, shown in the figure below, **deselect** the default **Copy the `main` branch only** option. By doing so, you will reduce further branch creation, necessary for this to work.
 
 :::{note}
 <center>
