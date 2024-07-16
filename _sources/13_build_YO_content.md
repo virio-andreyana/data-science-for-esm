@@ -23,7 +23,7 @@ The first step is forking this repository. By doing so, one is able to create hi
 
 > **Note:** The first step is forking the repository, having the below in mind.
 
-Before forking this repository please have the following in mind. In the `Create a new fork` pop-up menu, shown in the figure below, *deselect* the default **Copy the `main` branch only** option. By doing so, you will reduce further branch creation, necessary for this to work.
+Before forking this repository please have the following in mind. In the ==Create a new fork== pop-up menu, shown in the figure below, **deselect** the default **Copy the `main` branch only** option. By doing so, you will reduce further branch creation, necessary for this to work.
 
 :::{note}
 <center>
@@ -31,24 +31,26 @@ Before forking this repository please have the following in mind. In the `Create
     <a href='https://github.com/open-energy-transition/data-science-for-esm/fork'>
     <img src='https://github.com/open-energy-transition/data-science-for-esm/raw/stanford/data-science-for-esm/_images/03_fork_option.png' alt='' width='95%' style='vertical-align:middle;border:5px solid goldenrod;margin:20px 0px' />
     </a>
-    <figcaption>Clicking on the image above will lead directly to the <strong><mark>Create a new fork</mark></strong> menu</figcaption>
+    <figcaption>Clicking on the image above will lead directly to the <strong><b><mark>Create a new fork</mark></b></strong> menu</figcaption>
 </figure>
 </center>
 :::
 
 > **Note:** The key point is to have a `stanford` branch.
+
 The following steps are:
-* Alternatively, `stanford` branch can be created locally and push - however, this is to be skipped if adhering to the **Note** above
-* `gh-pages` branch will be automatically generated, as defined by the workflow, hence its creation is not required
-* It is also not required to have the `gh-pages` locally, as it hosts the website files, taken care by the workflow
-    
+* Alternatively, `stanford` branch can be created locally and push - however, this is to be skipped if adhering to the **Note** above.
+* `gh-pages` branch will be automatically generated, as defined by the workflow, hence its creation is not required.
+* It is also not required to have the `gh-pages` locally, as it hosts the website files, taken care by the workflow.
 
-The remote `gh-pages`, itself, hosts the required `HTML`, `css`, `.js`, and the other files, that are used for generating the `github.io` website. Hence, there is no requirement in having the branch locally. These will be generated, upon a successful workflow execution, every time `git push` is performed in the prior specified git branch. How this is specified, is explained [below](#deployment-setup).
+The remote `gh-pages`, itself, hosts the required `HTML`, `css`, `.js`, and the other files, which are used for generating the `github.io` website. Hence, there is no requirement for having the branch locally.
 
-of the forked repository, in the `.github/workflows/deploy.yml` ([link][07]) file which will contain the required `HTML`, `css`, `.js`, and other files
+These will be generated, upon a successful workflow execution, every time `git push` is performed in the prior specified git branch. How this is specified, is explained [below](#deployment-setup).
+
+<!-- of the forked repository, in the `.github/workflows/deploy.yml` ([link][07]) file which will contain the required `HTML`, `css`, `.js`, and other files
 is used for generating the required `HTML`, `css`, `.js`, as well as the other files - other than the `gh-pages`
-- in the `data-science-for-esm/_toc.yml` *file*, a sequence of files to be included in the GitHub Page is defined, thereafter displayed in the menu, located on the left side of the page
-- on preexisting knowledge disseminating the gained expertise by OET, and TU Berlin, to help .   Welcome to the website accompanying the course [Data Science for Energy System Modelling][04]. This course is being developed by [Dr. F. Neumann][05] and offered as part of the curriculum of the [Department of Digital Transformation of Energy Systems at TU Berlin][06].
+
+- on preexisting knowledge disseminating the gained expertise by OET, and TU Berlin, to help .   Welcome to the website accompanying the course [Data Science for Energy System Modelling][04]. This course is being developed by [Dr. F. Neumann][05] and offered as part of the curriculum of the [Department of Digital Transformation of Energy Systems at TU Berlin][06]. -->
 
 
 # <font color="darkgreen">GitHub Pages Setup</font>
@@ -83,6 +85,7 @@ The website logo, as well as the other figures can be placed in the `data-scienc
 
 Both `_config.yml`, as well as the `_toc.yml``are to remain in the root of the `data-science-for esm` folder. In the `_config.yml` details of the website, such as the author, logo, other relevant links to GitHub, Google Collab, can be defined. Please use the already provided `_toc` and `_config.yml` files as a template, and follow the provided structure.
 
+- in the `data-science-for-esm/_toc.yml` *file*, a sequence of files to be included in the GitHub Page is defined, thereafter displayed in the menu, located on the left side of the page
 
 # <font color="darkgreen">GitHub Workflows Deployment</font>
 
