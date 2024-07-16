@@ -20,6 +20,7 @@ The first step is forking this repository. By doing so, one is able to create hi
 
 # <font color="darkgreen">Creating a new fork of this repository</font>
 
+> [!IMPORTANT]
 > The first step is forking the repository, having the <mark>**Note**</mark> below in mind.
 
 Before forking this repository please have the following in mind. In the `Create a new fork` pop-up menu, shown in the figure below, deselect the default **Copy the `main` branch only** option. By doing so, you will reduce further branch creation, necessary for this to work.
@@ -117,7 +118,7 @@ Upon a successful deployment, indicated by the deploy status, in that time you s
 [08]: https://github.com/open-energy-transition/data-science-for-esm/blob/6c6563e15d3035647e9e52c852fa1cd5748f15ed/.github/workflows/deploy.yml#L4C2-L7C15
 
 <!-- <center><mark>Table of Abbreviations</mark></center> -->
-###### Table of Abbreviations
+<!-- ###### Table of Abbreviations -->
 
 [^bignote]: | Acronym     | Description |
     |:-----------:|:-----------:|
