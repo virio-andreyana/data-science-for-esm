@@ -24,7 +24,7 @@ The first step is forking this repository. By doing so, one is able to create hi
 =====================================================================
 > **Note:** The first step is forking the repository, having the below in mind.
 
-Before forking this repository please have the following in mind. In the <mark>Create a new fork</mark> pop-up menu, shown in the figure below, **deselect** the default **Copy the `main` branch only** option. By doing so, you will reduce further branch creation, necessary for this to work.
+Before forking this repository please have the following in mind. In the <mark>**Create a new fork**</mark> pop-up menu, shown in the figure below, **deselect** the default **Copy the `main` branch only** option. By doing so, you will reduce further branch creation, necessary for this to work.
 
 :::{note}
 <center>
@@ -39,9 +39,9 @@ Before forking this repository please have the following in mind. In the <mark>C
 
 > **Note:** The key point is to have a `stanford` branch.
 
-* Alternatively, `stanford` branch can be created locally and push - however, this is to be skipped if adhering to the **Note** above.
+* Alternatively, `stanford` branch can be created locally and `git pushed`, however, this is to be skipped if adhering to the **Note** above.
 * `gh-pages` branch will be automatically generated, as defined by the workflow, hence its creation is not required.
-* It is also **not** required to have the `gh-pages` locally, as it hosts only the website files, and is taken care by the workflow.
+* It is also **not** required to have the `gh-pages` locally, once generated, as it hosts only the website files, and is taken care by the workflow.
 
 The remote `gh-pages`, itself, hosts the required `HTML`, `css`, `.js`, and the other files, used for generating the `github.io` website. Hence, there is no requirement for having the branch locally. (repetitive)
 
@@ -77,15 +77,16 @@ Once the branch has been selected, in a manner of minutes a custom URL will be p
 ===============================================
 > **Note:** The key point is set the correct deployment branch set in the <code>./github/workflows/deploy.yml</code>.
 
-* in the <code>.github/workflows/deploy.yml</code> [file][8] specify the branch, which will later be used by the workflow, which upon the `git push` command, triggers the 
-workflow:
+* in the <code>.github/workflows/deploy.yml</code> [file][08] please specify the branch, which will later be used by the workflow, which upon the `git push` command, triggers the workflow:
     ~~~
     push:
       branches:
       - stanford
     ~~~
 
-The specified `branch` can be any, other than the `gh-pages`. We use the `stanford` branch for our workflow, but it can also be the `main`, or any other newly created branch. Upon the `git push`, the [workflow](#github-workflow-deployment) will be triggered.
+The specified `branch` can be any, other than the `gh-pages`.
+
+We use the `stanford` branch for our workflow, but it can also be the `main`, or any other newly created branch. Upon the `git push`, the [workflow](#github-workflow-deployment) will be triggered.
 
 ---
 
@@ -101,9 +102,9 @@ Both `_config.yml`, as well as the `_toc.yml``are to remain in the root of the `
 
 <font color="darkgreen">GitHub Workflow Deployment</font>
 =========================================================
-`.github/workflows/deploy.yml` ([link][08]) needs specifying which branch of the repository will be used for deployment. You are free to use any branch, other than the `gh-pages`, keeping in mind that upon the `git push`, the workflow will be triggered.
+In the [Deployment Setup](#deployment-setup) we entered in the `.github/workflows/deploy.yml` [file][08] which branch, of the repository, is used for the deployment. You are free to use any branch, other than the `gh-pages`, keeping in mind that upon the `git push`, the workflow will be triggered.
 
-This is indicated by the status indicator in the repository, in this case a beige-brown dot, which if clicked on, will show the running status and the deployment details. As mentioned, the deployment takes approx. 2 minutes.
+The workflow deployment itself is tracked by the status indicator in the repository, in this case a beige-brown dot, which if clicked on, will show the running status, and the deployment details. As mentioned, the deployment takes approx. 2 minutes to finish.
 
 <center>
 <figure>
@@ -114,7 +115,7 @@ This is indicated by the status indicator in the repository, in this case a beig
 </figure>
 </center>
 
-Upon a successful deployment, indicated by the deploy status, in that time you should be able to see the changes taking place in the specified `github.io` URL.
+Upon a successful deployment, indicated by the deploy status - either a green thick (successful) or a red x (unsuccessful), in that time you should be able to see the changes taking place in the specified `github.io` URL.
 
 <center>
 <figure>
