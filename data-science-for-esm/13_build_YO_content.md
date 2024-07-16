@@ -33,7 +33,6 @@ Before forking this repository please have the following in mind. In the `Create
     <figcaption>Clicking on the image above will lead directly to the <b><mark>Create a new fork menu</mark></b></figcaption>
 </figure>
 </center>
-
 :::
 
 > **Note:** The key point is to have a `stanford` branch, and the correct deployment branch set in the `./github/workflows/deploy.yml`.
@@ -73,7 +72,7 @@ In the your own forked repository `owner/data-science-for-energy-system-modellin
     ~~~
     push:
       branches:
-      - stanford
+      - <b><mark>stanford</mark></b>
     ~~~
 
 # <font color="darkgreen">Content Modification Setup</font>
