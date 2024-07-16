@@ -54,7 +54,7 @@ is used for generating the required `HTML`, `css`, `.js`, as well as the other f
 
 # <font color="darkgreen">GitHub Pages Setup</font>
 
-In the your own forked repository `"owner"/data-science-for-energy-system-modelling`, please go to the GitHub **Settings** -> **Pages**. In the **GitHub Pages**, go to the Branch section, and change the selection from `None` to `gh-pages/root`. Once the branch has been selected, in a manner of minutes a custom URL will be provided: **"Your site is live at https://..."**
+In the your own forked repository `"owner"/data-science-for-energy-system-modelling`, please go to the GitHub **Settings** -> **Pages**. In the **GitHub Pages**, go to the Branch section, and change the selection from `None` to `gh-pages/root`. Once the branch has been selected, in a manner of minutes a custom URL will be provided: **"Your site is live at [https://...](https://open-energy-transition.github.io/data-science-for-esm/)"**
 
 <center>
 <figure>
