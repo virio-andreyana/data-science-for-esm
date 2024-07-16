@@ -39,7 +39,7 @@ Before forking this repository please have the following in mind. In the `Create
 The following steps are:
 * Alternatively, `stanford` branch can be created locally and push - however, this is to be skipped if adhering to the **Note** above
 * `gh-pages` branch will be automatically generated, as defined by the workflow, hence its creation is not required
-* it is also not required to have the `gh-pages` locally, as it hosts the website files, created by the workflow
+* It is also not required to have the `gh-pages` locally, as it hosts the website files, taken care by the workflow
     
 
 of the forked repository, in the `.github/workflows/deploy.yml` ([link][07]) file which will contain the required `HTML`, `css`, `.js`, and other files
