@@ -89,7 +89,7 @@ This is indicated by the status indicator in the repository, in this case a beig
     <!-- <a href='https://github.com/open-energy-transition/data-science-for-esm/settings/pages'> -->
     <img src='https://raw.githubusercontent.com/open-energy-transition/data-science-for-esm/stanford/data-science-for-esm/_images/05_deployment_status.png' width='85%'style='vertical-align:middle;border:5px solid paleturquoise;margin:30px 30px' />
     <!-- </a> -->
-    <figcaption>Deployment status upon <mark><b>git push</b></mark> to the branch specified in the <em>deploy.yml</em> file</figcaption>
+    <figcaption>Deployment status upon <strong><b><mark>git push</mark></b></strong> to the branch specified in the <em>deploy.yml</em> file</figcaption>
 </figure>
 </center>
 
@@ -100,7 +100,7 @@ Upon a successful deployment, indicated by the deploy status, in that time you s
     <!-- <a href='https://github.com/open-energy-transition/data-science-for-esm/settings/pages'> -->
     <img src='https://raw.githubusercontent.com/open-energy-transition/data-science-for-esm/stanford/data-science-for-esm/_images/06_successful_deployment.png' width='85%'style='vertical-align:middle;border:5px solid paleturquoise;margin:30px 30px' />
     <!-- </a> -->
-    <figcaption>Successful deployment, after a finalized <b>jupyter book build</b> run</figcaption>
+    <figcaption>Successful deployment, after a finalized <b><strong>jupyter book build</b</strong> run</figcaption>
 </figure>
 </center>
 
