@@ -469,13 +469,14 @@ is used for generating the required `HTML`, `css`, `.js`, as well as the other f
 </figure>
 </center>
 <p>This GitHub is the go to location for disseminating any material, be it Jupyter Notebooks, slides, videos, markdown text explanations, or links to your other resources.</p>
-<p><mark style="background-color: fuchsia; color: black">Kindly use us a <a class="reference external" href="https://open-energy-transition.github.io/data-science-for-esm/00_intro.html">reference</a>, in case using this workflow, or our materials, presented here. By doing so, your success is our success, as well.</mark></p>
+<p>**<mark style="background-color: fuchsia; color: black">Kindly use us a <a class="reference external" href="https://open-energy-transition.github.io/data-science-for-esm/00_intro.html">reference</a>, in case using this workflow, or our materials, presented here.</p>
+<p>By doing so, your success is also our success.</mark>**</p>
 </section>
 <hr class="docutils" />
 <section class="tex2jax_ignore mathjax_ignore" id="deployment-setup">
 <h1><font color="darkgreen">Deployment Setup</font><a class="headerlink" href="#deployment-setup" title="Link to this heading">#</a></h1>
 <blockquote>
-<div><p><strong>Note:</strong> The key point is set the correct deployment branch set in the <code>./github/workflows/deploy.yml</code>.</p>
+<div><p><strong>Note:</strong> The key point is to set the correct deployment branch in the <code>./github/workflows/deploy.yml</code> <a class="reference external" href="https://github.com/open-energy-transition/data-science-for-esm/blob/ef394898e3100e2bd2d074a8b2da89235355cd4e/.github/workflows/deploy.yml#L4-L7">file</a>.</p>
 </div></blockquote>
 <ul>
 <li><p>in the <code>.github/workflows/deploy.yml</code> <a class="reference external" href="https://github.com/open-energy-transition/data-science-for-esm/blob/ef394898e3100e2bd2d074a8b2da89235355cd4e/.github/workflows/deploy.yml#L4-L7">file</a> please specify the branch, which will later be used by the workflow, which upon the <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">push</span></code> command, triggers the workflow:</p>
@@ -487,7 +488,7 @@ is used for generating the required `HTML`, `css`, `.js`, as well as the other f
 </li>
 </ul>
 <p>The specified <code class="docutils literal notranslate"><span class="pre">branch</span></code> can be any, other than the <code class="docutils literal notranslate"><span class="pre">gh-pages</span></code>.</p>
-<p>We use the <code class="docutils literal notranslate"><span class="pre">stanford</span></code> branch for our workflow, but it can also be the <code class="docutils literal notranslate"><span class="pre">main</span></code>, or any other newly created branch. Upon the <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">push</span></code>, the <a class="reference internal" href="#github-workflow-deployment"><span class="xref myst">workflow</span></a> will be triggered.</p>
+<p>This setup uses the <code class="docutils literal notranslate"><span class="pre">stanford</span></code> branch for our workflow, but it can also be the <code class="docutils literal notranslate"><span class="pre">main</span></code>, or any other newly created branch. Upon the <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">push</span></code>, the <a class="reference internal" href="#github-workflow-deployment"><span class="xref myst">workflow</span></a> will be triggered.</p>
 </section>
 <hr class="docutils" />
 <section class="tex2jax_ignore mathjax_ignore" id="content-modification-setup">

@@ -73,13 +73,15 @@ Once the branch has been selected, a URL will be provided (please give it a mome
 
 This GitHub is the go to location for disseminating any material, be it Jupyter Notebooks, slides, videos, markdown text explanations, or links to your other resources. 
 
-<mark style="background-color: fuchsia; color: black">Kindly use us a [reference][11], in case using this workflow, or our materials, presented here. By doing so, your success is our success, as well.</mark>
+**<mark style="background-color: fuchsia; color: black">Kindly use us a [reference][11], in case using this workflow, or our materials, presented here.
+
+By doing so, your success is also our success.</mark>**
 
 ---
 
 <font color="darkgreen">Deployment Setup</font>
 ===============================================
-> **Note:** The key point is set the correct deployment branch set in the <code>./github/workflows/deploy.yml</code>.
+> **Note:** The key point is to set the correct deployment branch in the <code>./github/workflows/deploy.yml</code> [file][08].
 
 * in the <code>.github/workflows/deploy.yml</code> [file][08] please specify the branch, which will later be used by the workflow, which upon the `git push` command, triggers the workflow:
     ~~~
@@ -90,7 +92,7 @@ This GitHub is the go to location for disseminating any material, be it Jupyter 
 
 The specified `branch` can be any, other than the `gh-pages`.
 
-We use the `stanford` branch for our workflow, but it can also be the `main`, or any other newly created branch. Upon the `git push`, the [workflow](#github-workflow-deployment) will be triggered.
+This setup uses the `stanford` branch for our workflow, but it can also be the `main`, or any other newly created branch. Upon the `git push`, the [workflow](#github-workflow-deployment) will be triggered.
 
 ---
 
