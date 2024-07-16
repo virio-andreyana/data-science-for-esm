@@ -386,10 +386,10 @@ document.write(`
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Build Your Own Content</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-a-new-fork-of-this-repository"><font color="darkgreen">Creating a new fork of this repository</font></a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#gh-pages-setup"><font color="darkgreen">GH Pages Setup</font></a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#github-pages-setup"><font color="darkgreen">GitHub Pages Setup</font></a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#deployment-setup"><font color="darkgreen">Deployment Setup</font></a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#content-modification-setup"><font color="darkgreen">Content Modification Setup</font></a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#gh-workflows-deployment"><font color="darkgreen">GH Workflows Deployment</font></a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#github-workflows-deployment"><font color="darkgreen">GitHub Workflows Deployment</font></a></li>
 </ul>
 
             </nav>
@@ -441,8 +441,9 @@ document.write(`
 </div></blockquote>
 <p>The following steps are:</p>
 <ul class="simple">
-<li><p>Create and push a branch named <code class="docutils literal notranslate"><span class="pre">stanford</span></code> - to be skipped if adhering to the <strong>Note</strong> above</p></li>
+<li><p>Alternatively, <code class="docutils literal notranslate"><span class="pre">stanford</span></code> branch can be created locally and push - however, this is to be skipped if adhering to the <strong>Note</strong> above</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">gh-pages</span></code> branch will be automatically generated, as defined by the workflow, hence its creation is not required</p></li>
+<li><p>it is also not required to have the <code class="docutils literal notranslate"><span class="pre">gh-pages</span></code> locally, as it hosts the website files, created by the workflow</p></li>
 </ul>
 <p>of the forked repository, in the <code class="docutils literal notranslate"><span class="pre">.github/workflows/deploy.yml</span></code> (<a class="reference external" href="https://github.com/open-energy-transition/data-science-for-esm/blob/ef394898e3100e2bd2d074a8b2da89235355cd4e/.github/workflows/deploy.yml">link</a>) file which will contain the required <code class="docutils literal notranslate"><span class="pre">HTML</span></code>, <code class="docutils literal notranslate"><span class="pre">css</span></code>, <code class="docutils literal notranslate"><span class="pre">.js</span></code>, and other files
 is used for generating the required <code class="docutils literal notranslate"><span class="pre">HTML</span></code>, <code class="docutils literal notranslate"><span class="pre">css</span></code>, <code class="docutils literal notranslate"><span class="pre">.js</span></code>, as well as the other files - other than the <code class="docutils literal notranslate"><span class="pre">gh-pages</span></code></p>
@@ -454,8 +455,8 @@ is used for generating the required <code class="docutils literal notranslate"><
 <p>Both <code class="docutils literal notranslate"><span class="pre">_config.yml</span></code>, as well as the <code class="docutils literal notranslate"><span class="pre">_toc.yml``are</span> <span class="pre">to</span> <span class="pre">remain</span> <span class="pre">in</span> <span class="pre">the</span> <span class="pre">root</span> <span class="pre">of</span> <span class="pre">the</span> </code>data-science-for esm<code class="docutils literal notranslate"><span class="pre">folder.</span> <span class="pre">In</span> <span class="pre">the</span></code>_config.yml<code class="docutils literal notranslate"><span class="pre">details</span> <span class="pre">of</span> <span class="pre">the</span> <span class="pre">website,</span> <span class="pre">such</span> <span class="pre">as</span> <span class="pre">the</span> <span class="pre">author,</span> <span class="pre">logo,</span> <span class="pre">other</span> <span class="pre">relevant</span> <span class="pre">links</span> <span class="pre">to</span> <span class="pre">GitHub,</span> <span class="pre">Google</span> <span class="pre">Collab,</span> <span class="pre">can</span> <span class="pre">be</span> <span class="pre">defined.</span> <span class="pre">Please</span> <span class="pre">use</span> <span class="pre">the</span> <span class="pre">already</span> <span class="pre">provided</span></code>_toc<code class="docutils literal notranslate"><span class="pre">and</span></code>_config.yml` files as a template, and follow the provided structure.</p>
 <p>In the your own forked repository <code class="docutils literal notranslate"><span class="pre">owner/data-science-for-energy-system-modelling</span></code>, please go to the <strong>Settings</strong> -&gt; <strong>Pages</strong>. in the GitHub Page, go to the Branch section, and change the selection from None to <code class="docutils literal notranslate"><span class="pre">main</span></code>, or any branch other than <code class="docutils literal notranslate"><span class="pre">gh-pages</span></code>. Once the branch has been selected, in a manner of minutes a custom</p>
 </section>
-<section class="tex2jax_ignore mathjax_ignore" id="gh-pages-setup">
-<h1><font color="darkgreen">GH Pages Setup</font><a class="headerlink" href="#gh-pages-setup" title="Link to this heading">#</a></h1>
+<section class="tex2jax_ignore mathjax_ignore" id="github-pages-setup">
+<h1><font color="darkgreen">GitHub Pages Setup</font><a class="headerlink" href="#github-pages-setup" title="Link to this heading">#</a></h1>
 <center>
 <figure>
     <a href='https://github.com/open-energy-transition/data-science-for-esm/settings/pages'>
@@ -483,8 +484,8 @@ is used for generating the required <code class="docutils literal notranslate"><
 <section class="tex2jax_ignore mathjax_ignore" id="content-modification-setup">
 <h1><font color="darkgreen">Content Modification Setup</font><a class="headerlink" href="#content-modification-setup" title="Link to this heading">#</a></h1>
 </section>
-<section class="tex2jax_ignore mathjax_ignore" id="gh-workflows-deployment">
-<h1><font color="darkgreen">GH Workflows Deployment</font><a class="headerlink" href="#gh-workflows-deployment" title="Link to this heading">#</a></h1>
+<section class="tex2jax_ignore mathjax_ignore" id="github-workflows-deployment">
+<h1><font color="darkgreen">GitHub Workflows Deployment</font><a class="headerlink" href="#github-workflows-deployment" title="Link to this heading">#</a></h1>
 <p><code class="docutils literal notranslate"><span class="pre">.github/workflows/deploy.yml</span></code> (<a class="reference external" href="https://github.com/open-energy-transition/data-science-for-esm/blob/6c6563e15d3035647e9e52c852fa1cd5748f15ed/.github/workflows/deploy.yml#L4C2-L7C15">link</a>) needs specifying which branch of the repo will be used for deployment. You are free to use any branch, other than the <code class="docutils literal notranslate"><span class="pre">gh-pages</span></code>, keeping in mind that upon the <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">push</span></code>, the workflow will be triggered.</p>
 <p>This is indicated by the status indicator in the repository, in this case a beige-brown dot, which if clicked on, will show the running status and the deployment details. As mentioned, the deployment takes approx. 2 minutes.</p>
 <center>
@@ -566,10 +567,10 @@ is used for generating the required <code class="docutils literal notranslate"><
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Build Your Own Content</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-a-new-fork-of-this-repository"><font color="darkgreen">Creating a new fork of this repository</font></a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#gh-pages-setup"><font color="darkgreen">GH Pages Setup</font></a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#github-pages-setup"><font color="darkgreen">GitHub Pages Setup</font></a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#deployment-setup"><font color="darkgreen">Deployment Setup</font></a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#content-modification-setup"><font color="darkgreen">Content Modification Setup</font></a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#gh-workflows-deployment"><font color="darkgreen">GH Workflows Deployment</font></a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#github-workflows-deployment"><font color="darkgreen">GitHub Workflows Deployment</font></a></li>
 </ul>
 
   </nav></div>
