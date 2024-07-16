@@ -60,7 +60,7 @@ In the your own forked repository `owner/data-science-for-energy-system-modellin
     <a href='https://github.com/open-energy-transition/data-science-for-esm/settings/pages'>
     <img src='https://raw.githubusercontent.com/open-energy-transition/data-science-for-esm/stanford/data-science-for-esm/_images/04_gh_pages-options.png' width='97%'style='vertical-align:middle;border:5px solid darkgreen;margin:30px 30px' />
     </a>
-    <figcaption>Clicking on the image above will lead directly to the GH Pages settings menu</figcaption>
+    <figcaption>Clicking on the image above will lead directly to the <strong><b><mark>GitHub Pages</mark></b></strong> settings menu</figcaption>
 </figure>
 </center>
 
@@ -89,7 +89,7 @@ This is indicated by the status indicator in the repository, in this case a beig
     <!-- <a href='https://github.com/open-energy-transition/data-science-for-esm/settings/pages'> -->
     <img src='https://raw.githubusercontent.com/open-energy-transition/data-science-for-esm/stanford/data-science-for-esm/_images/05_deployment_status.png' width='85%'style='vertical-align:middle;border:5px solid paleturquoise;margin:30px 30px' />
     <!-- </a> -->
-    <figcaption>Deployment status upon <strong><b><mark>git push</mark></b></strong> to the branch specified in the <em>deploy.yml</em> file</figcaption>
+    <figcaption>Deployment status upon <code>git push</code> to the branch specified in the <em>deploy.yml</em> file</figcaption>
 </figure>
 </center>
 
