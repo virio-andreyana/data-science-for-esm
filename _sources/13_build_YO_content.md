@@ -43,10 +43,9 @@ Before forking this repository please have the following in mind. In the <strong
 * `gh-pages` branch will be automatically generated, as defined by the workflow, hence its creation is not required.
 * It is also **not** required to have the `gh-pages` locally, once generated, as it hosts only the website files, which are taken care of by the workflow.
 
-The remote `gh-pages`, itself, hosts the required `HTML`, `css`, `.js`, and the other files, used for generating the `github.io` website.
-<!-- Hence, there is no requirement for having the branch locally. (repetitive) -->
+> **Note:** The remote `gh-pages`, itself, hosts the required `HTML`, `css`, `.js`, and the other files, used for generating the `github.io` website. Hence, there is no requirement for having the branch locally.
 
-These will be re-generated, upon a successful workflow execution, every time `git push` is performed, in the prior specified git branch. Branch specification, is explained [below](#deployment-setup).
+These will be re-generated, upon a successful workflow execution, every time `git push` is performed, in the prior specified git branch. Branch specification is provided [below](#deployment-setup).
 
 <!-- of the forked repository, in the `.github/workflows/deploy.yml` ([link][07]) file which will contain the required `HTML`, `css`, `.js`, and other files
 is used for generating the required `HTML`, `css`, `.js`, as well as the other files - other than the `gh-pages`
@@ -61,7 +60,7 @@ In the your own forked repository `"owner"/data-science-for-energy-system-modell
 
 In the **GitHub Pages**, go to the **Branch** section, and change the selection from `None` to `gh-pages/root`.
 
-Once the branch has been selected, in a manner of minutes a custom URL will be provided at the top: **"Your site is live at [https://...](https://open-energy-transition.github.io/data-science-for-esm/)"**
+Once the branch has been selected, a URL will be provided (please give it a moment) at the top: **"Your site is live at [https://...](https://open-energy-transition.github.io/data-science-for-esm/)"**
 
 <center>
 <figure>
@@ -71,6 +70,8 @@ Once the branch has been selected, in a manner of minutes a custom URL will be p
     <figcaption>Clicking on the image above will lead directly to the <strong><b><mark>GitHub Pages</mark></b></strong> settings menu</figcaption>
 </figure>
 </center>
+
+This GitHub is the go to location for disseminating any material, be it Jupyter Notebooks, slides, videos, markdown text explanations, or links to your other resources. Kindly use us a [reference][11], in case using this workflow, or our materials, presented here. By your so, your success will be our success as well.
 
 ---
 
@@ -138,6 +139,7 @@ Upon a successful deployment, indicated by the deploy status - either a green th
 [06]: https://www.tu.berlin/ensys
 [07]: https://github.com/open-energy-transition/data-science-for-esm/blob/ef394898e3100e2bd2d074a8b2da89235355cd4e/.github/workflows/deploy.yml
 [08]: https://github.com/open-energy-transition/data-science-for-esm/blob/ef394898e3100e2bd2d074a8b2da89235355cd4e/.github/workflows/deploy.yml#L4-L7
+[11]: https://open-energy-transition.github.io/data-science-for-esm/00_intro.html
 
 <!-- <center><mark>Table of Abbreviations</mark></center> -->
 <!-- ###### Table of Abbreviations -->
