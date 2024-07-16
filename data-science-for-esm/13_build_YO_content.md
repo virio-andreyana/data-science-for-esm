@@ -30,7 +30,7 @@ Before forking this repository please have the following in mind. In the `Create
     <a href='https://github.com/open-energy-transition/data-science-for-esm/fork'>
     <img src='https://github.com/open-energy-transition/data-science-for-esm/raw/stanford/data-science-for-esm/_images/03_fork_option.png' alt='' width='95%' style='vertical-align:middle;border:5px solid goldenrod;margin:20px 0px' />
     </a>
-    <figcaption>Clicking on the image above will lead directly to the <b><mark>Create a new fork menu</mark></b></figcaption>
+    <figcaption>Clicking on the image above will lead directly to the <strong><mark>Create a new fork menu</mark></strong></figcaption>
 </figure>
 </center>
 :::
@@ -89,7 +89,7 @@ This is indicated by the status indicator in the repository, in this case a beig
     <!-- <a href='https://github.com/open-energy-transition/data-science-for-esm/settings/pages'> -->
     <img src='https://raw.githubusercontent.com/open-energy-transition/data-science-for-esm/stanford/data-science-for-esm/_images/05_deployment_status.png' width='85%'style='vertical-align:middle;border:5px solid paleturquoise;margin:30px 30px' />
     <!-- </a> -->
-    <figcaption>Deployment status upon <mark><b>git push</b></mark> to the branch specified in the <em>deploy.yml</em> file</figcaption>
+    <figcaption>Deployment status upon <mark><strong>git push</strong></mark> to the branch specified in the <em>deploy.yml</em> file</figcaption>
 </figure>
 </center>
 
