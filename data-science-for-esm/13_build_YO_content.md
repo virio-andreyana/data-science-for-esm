@@ -20,8 +20,7 @@ The first step is forking this repository. By doing so, one is able to create hi
 
 # <font color="darkgreen">Creating a new fork of this repository</font>
 
-> [!IMPORTANT]
-> The first step is forking the repository, having the <mark>**Note**</mark> below in mind.
+> **Note:** The first step is forking the repository, having the below in mind.
 
 Before forking this repository please have the following in mind. In the `Create a new fork` pop-up menu, shown in the figure below, deselect the default **Copy the `main` branch only** option. By doing so, you will reduce further branch creation, necessary for this to work.
 
