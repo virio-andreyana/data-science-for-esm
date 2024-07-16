@@ -7,7 +7,7 @@
 
 
 <font color="red">Build Your Own Content</font>
-======================
+===============================================
 <!-- ###### List of Abbreviation[^bignote] -->
 
 This section assists academics, and alike, in build their content, by modifying this repository, or the original [Dr. F. Neumann's repository][01].
@@ -71,7 +71,9 @@ Once the branch has been selected, a URL will be provided (please give it a mome
 </figure>
 </center>
 
-This GitHub is the go to location for disseminating any material, be it Jupyter Notebooks, slides, videos, markdown text explanations, or links to your other resources. Kindly use us a [reference][11], in case using this workflow, or our materials, presented here. By your so, your success will be our success as well.
+This GitHub is the go to location for disseminating any material, be it Jupyter Notebooks, slides, videos, markdown text explanations, or links to your other resources. 
+
+Kindly use us a [reference][11], in case using this workflow, or our materials, presented here. By doing so, your success is our success, as well.
 
 ---
 
