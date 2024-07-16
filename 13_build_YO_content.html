@@ -187,6 +187,8 @@
 
 
 
+
+
 </ul>
 
     </div>
@@ -383,8 +385,10 @@ document.write(`
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Build Your Own Content</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-a-new-fork-of-this-repo-bingnote"><font color="darkgreen">Creating a new fork of this repo[^bingnote]</font></a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-a-new-fork-of-this-repository"><font color="darkgreen">Creating a new fork of this repository</font></a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#gh-pages-setup"><font color="darkgreen">GH Pages Setup</font></a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#deployment-setup"><font color="darkgreen">Deployment Setup</font></a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#content-modification-setup"><font color="darkgreen">Content Modification Setup</font></a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#gh-workflows-deployment"><font color="darkgreen">GH Workflows Deployment</font></a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#table-of-abbreviations">Table of Abbreviations</a></li>
 </ul>
@@ -412,14 +416,14 @@ document.write(`
 <!-- ###### List of Abbreviation[^bignote] -->
 <p>This section assists academics, and alike, in build their content, by modifying this repository, or the original <a class="reference external" href="https://github.com/fneum/data-science-for-esm">Dr. F. Neumann’s repository</a>.</p>
 <ul class="simple">
-<li><p>Its primary purpose if helping/guiding on building a GH<a class="footnote-reference brackets" href="#bignote" id="id1" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a> page, to be used for generating learning material, i.e. lectures, or similar.</p></li>
+<li><p>Its primary purpose if helping/guiding on building a GitHub page, to be used for generating learning material, i.e. lectures, or similar.</p></li>
 <li><p>It can also be used for any other purpose, for that matter.</p></li>
 <li><p>This setup draws from the <a class="reference external" href="https://github.com/peaceiris/actions-gh-pages">peaceiris actions-gh-pages</a>, and the <a class="reference external" href="https://stanford-rc.github.io/rse-services/docs/resources/documentation">Stanford RC website</a>. However, these serve only as a reference, as the the full explanation is blow.</p></li>
 </ul>
 <p>The first step is forking this repository. By doing so, one is able to create his own website, similar to this one, with a tailor-made content, quickly and with ease. However, there are two or three thing to keep in mind when doing so, so please read on.</p>
 </section>
-<section class="tex2jax_ignore mathjax_ignore" id="creating-a-new-fork-of-this-repo-bingnote">
-<h1><font color="darkgreen">Creating a new fork of this repo[^bingnote]</font><a class="headerlink" href="#creating-a-new-fork-of-this-repo-bingnote" title="Link to this heading">#</a></h1>
+<section class="tex2jax_ignore mathjax_ignore" id="creating-a-new-fork-of-this-repository">
+<h1><font color="darkgreen">Creating a new fork of this repository</font><a class="headerlink" href="#creating-a-new-fork-of-this-repository" title="Link to this heading">#</a></h1>
 <blockquote>
 <div><p>The first step is forking the repository, having the <mark><strong>Note</strong></mark> below in mind.</p>
 </div></blockquote>
@@ -457,7 +461,7 @@ is used for generating the required <code class="docutils literal notranslate"><
 <li><p>on preexisting knowledge disseminating the gained expertise by OET, and TU Berlin, to help .   Welcome to the website accompanying the course <a class="reference external" href="https://moseskonto.tu-berlin.de/moses/modultransfersystem/bolognamodule/beschreibung/anzeigen.html;jsessionid=DQfixqzzpn1XIg5N1GG7S9um4EDykZn99AHmH6Fj.moseskonto?number=31027&amp;amp;version=1&amp;amp;sprache=2">Data Science for Energy System Modelling</a>. This course is being developed by <a class="reference external" href="https://neumann.fyi">Dr. F. Neumann</a> and offered as part of the curriculum of the <a class="reference external" href="https://www.tu.berlin/ensys">Department of Digital Transformation of Energy Systems at TU Berlin</a>.</p></li>
 </ul>
 <p>The website logo, as well as the other figures can be placed in the <code class="docutils literal notranslate"><span class="pre">data-science-for-esm/_images/</span></code> folder. The content in terms od the <code class="docutils literal notranslate"><span class="pre">.ipynb</span></code> &amp; <code class="docutils literal notranslate"><span class="pre">.md</span></code> files are to be placed in the root of the <code class="docutils literal notranslate"><span class="pre">data-science-for--esm</span></code> folder, and specified in the <code class="docutils literal notranslate"><span class="pre">_toc.yml</span></code> file. If not being placed in the root, the workflow will be unable to locate the files specified in the <code class="docutils literal notranslate"><span class="pre">_toc.yml</span></code>, resulting in the unsuccessful deployment, and not accessible <code class="docutils literal notranslate"><span class="pre">github.io</span></code> site.</p>
-<p>Both <code class="docutils literal notranslate"><span class="pre">_config.yml</span></code>, as well as the <code class="docutils literal notranslate"><span class="pre">_toc.yml``are</span> <span class="pre">to</span> <span class="pre">remain</span> <span class="pre">in</span> <span class="pre">the</span> <span class="pre">root</span> <span class="pre">of</span> <span class="pre">the</span> </code>data-science-for esm<code class="docutils literal notranslate"><span class="pre">folder.</span> <span class="pre">In</span> <span class="pre">the</span></code>_config.yml<code class="docutils literal notranslate"><span class="pre">details</span> <span class="pre">of</span> <span class="pre">the</span> <span class="pre">website,</span> <span class="pre">such</span> <span class="pre">as</span> <span class="pre">the</span> <span class="pre">author,</span> <span class="pre">logo,</span> <span class="pre">other</span> <span class="pre">relevant</span> <span class="pre">links</span> <span class="pre">to</span> <span class="pre">GitHub,</span> <span class="pre">Google</span> <span class="pre">Collab,</span> <span class="pre">can</span> <span class="pre">be</span> <span class="pre">defined.</span> <span class="pre">Please</span> <span class="pre">use</span> <span class="pre">the</span> <span class="pre">already</span> <span class="pre">provided</span></code>_toc<code class="docutils literal notranslate"><span class="pre">and</span></code>_config.yml` files as a templace, and follow the provided structure.</p>
+<p>Both <code class="docutils literal notranslate"><span class="pre">_config.yml</span></code>, as well as the <code class="docutils literal notranslate"><span class="pre">_toc.yml``are</span> <span class="pre">to</span> <span class="pre">remain</span> <span class="pre">in</span> <span class="pre">the</span> <span class="pre">root</span> <span class="pre">of</span> <span class="pre">the</span> </code>data-science-for esm<code class="docutils literal notranslate"><span class="pre">folder.</span> <span class="pre">In</span> <span class="pre">the</span></code>_config.yml<code class="docutils literal notranslate"><span class="pre">details</span> <span class="pre">of</span> <span class="pre">the</span> <span class="pre">website,</span> <span class="pre">such</span> <span class="pre">as</span> <span class="pre">the</span> <span class="pre">author,</span> <span class="pre">logo,</span> <span class="pre">other</span> <span class="pre">relevant</span> <span class="pre">links</span> <span class="pre">to</span> <span class="pre">GitHub,</span> <span class="pre">Google</span> <span class="pre">Collab,</span> <span class="pre">can</span> <span class="pre">be</span> <span class="pre">defined.</span> <span class="pre">Please</span> <span class="pre">use</span> <span class="pre">the</span> <span class="pre">already</span> <span class="pre">provided</span></code>_toc<code class="docutils literal notranslate"><span class="pre">and</span></code>_config.yml` files as a template, and follow the provided structure.</p>
 <p>In the your own forked repository <code class="docutils literal notranslate"><span class="pre">owner/data-science-for-energy-system-modelling</span></code>, please go to the <strong>Settings</strong> -&gt; <strong>Pages</strong>. in the GitHub Page, go to the Branch section, and change the selection from None to <code class="docutils literal notranslate"><span class="pre">main</span></code>, or any branch other than <code class="docutils literal notranslate"><span class="pre">gh-pages</span></code>. Once the branch has been selected, in a manner of minutes a custom</p>
 </section>
 <section class="tex2jax_ignore mathjax_ignore" id="gh-pages-setup">
@@ -465,11 +469,17 @@ is used for generating the required <code class="docutils literal notranslate"><
 <center>
 <figure>
     <a href='https://github.com/open-energy-transition/data-science-for-esm/settings/pages'>
-    <img src='https://raw.githubusercontent.com/open-energy-transition/data-science-for-esm/stanford/data-science-for-esm/_images/04_gh_pages-options.png' width='97%'style='vertical-align:middle;border:5px solid goldenrod;margin:30px 30px' />
+    <img src='https://raw.githubusercontent.com/open-energy-transition/data-science-for-esm/stanford/data-science-for-esm/_images/04_gh_pages-options.png' width='97%'style='vertical-align:middle;border:5px solid darkgreen;margin:30px 30px' />
     </a>
     <figcaption>Clicking on the image above will lead directly to the GH Pages settings menu</figcaption>
 </figure>
 </center>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="deployment-setup">
+<h1><font color="darkgreen">Deployment Setup</font><a class="headerlink" href="#deployment-setup" title="Link to this heading">#</a></h1>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="content-modification-setup">
+<h1><font color="darkgreen">Content Modification Setup</font><a class="headerlink" href="#content-modification-setup" title="Link to this heading">#</a></h1>
 </section>
 <section class="tex2jax_ignore mathjax_ignore" id="gh-workflows-deployment">
 <h1><font color="darkgreen">GH Workflows Deployment</font><a class="headerlink" href="#gh-workflows-deployment" title="Link to this heading">#</a></h1>
@@ -496,28 +506,6 @@ is used for generating the required <code class="docutils literal notranslate"><
 <!-- <center><mark>Table of Abbreviations</mark></center> -->
 <section id="table-of-abbreviations">
 <h2>Table of Abbreviations<a class="headerlink" href="#table-of-abbreviations" title="Link to this heading">#</a></h2>
-<hr class="footnotes docutils" />
-<aside class="footnote-list brackets">
-<aside class="footnote brackets" id="bignote" role="doc-footnote">
-<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id1">1</a><span class="fn-bracket">]</span></span>
-<div class="pst-scrollable-table-container"><table class="table">
-<thead>
-<tr class="row-odd"><th class="head text-center"><p>Acronym</p></th>
-<th class="head text-center"><p>Description</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td class="text-center"><p><strong>GH</strong></p></td>
-<td class="text-center"><p>GitHub</p></td>
-</tr>
-<tr class="row-odd"><td class="text-center"><p><strong>repo</strong></p></td>
-<td class="text-center"><p>repository</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-</aside>
-</aside>
 </section>
 </section>
 
@@ -577,8 +565,10 @@ is used for generating the required <code class="docutils literal notranslate"><
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Build Your Own Content</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-a-new-fork-of-this-repo-bingnote"><font color="darkgreen">Creating a new fork of this repo[^bingnote]</font></a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-a-new-fork-of-this-repository"><font color="darkgreen">Creating a new fork of this repository</font></a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#gh-pages-setup"><font color="darkgreen">GH Pages Setup</font></a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#deployment-setup"><font color="darkgreen">Deployment Setup</font></a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#content-modification-setup"><font color="darkgreen">Content Modification Setup</font></a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#gh-workflows-deployment"><font color="darkgreen">GH Workflows Deployment</font></a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#table-of-abbreviations">Table of Abbreviations</a></li>
 </ul>

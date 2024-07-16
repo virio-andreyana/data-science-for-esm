@@ -11,14 +11,14 @@
 
 This section assists academics, and alike, in build their content, by modifying this repository, or the original [Dr. F. Neumann's repository][01].
 
-* Its primary purpose if helping/guiding on building a GH[^bignote] page, to be used for generating learning material, i.e. lectures, or similar.
+* Its primary purpose if helping/guiding on building a GitHub page, to be used for generating learning material, i.e. lectures, or similar.
 * It can also be used for any other purpose, for that matter.
 * This setup draws from the [peaceiris actions-gh-pages][02], and the [Stanford RC website][03]. However, these serve only as a reference, as the the full explanation is blow.
 
 The first step is forking this repository. By doing so, one is able to create his own website, similar to this one, with a tailor-made content, quickly and with ease. However, there are two or three thing to keep in mind when doing so, so please read on.
 
 
-# <font color="darkgreen">Creating a new fork of this repo[^bingnote]</font>
+# <font color="darkgreen">Creating a new fork of this repository</font>
 
 > The first step is forking the repository, having the <mark>**Note**</mark> below in mind.
 
@@ -56,7 +56,7 @@ is used for generating the required `HTML`, `css`, `.js`, as well as the other f
 
 The website logo, as well as the other figures can be placed in the `data-science-for-esm/_images/` folder. The content in terms od the `.ipynb` & `.md` files are to be placed in the root of the `data-science-for--esm` folder, and specified in the `_toc.yml` file. If not being placed in the root, the workflow will be unable to locate the files specified in the `_toc.yml`, resulting in the unsuccessful deployment, and not accessible `github.io` site.
 
-Both `_config.yml`, as well as the `_toc.yml``are to remain in the root of the `data-science-for esm` folder. In the `_config.yml` details of the website, such as the author, logo, other relevant links to GitHub, Google Collab, can be defined. Please use the already provided `_toc` and `_config.yml` files as a templace, and follow the provided structure.
+Both `_config.yml`, as well as the `_toc.yml``are to remain in the root of the `data-science-for esm` folder. In the `_config.yml` details of the website, such as the author, logo, other relevant links to GitHub, Google Collab, can be defined. Please use the already provided `_toc` and `_config.yml` files as a template, and follow the provided structure.
 
 In the your own forked repository `owner/data-science-for-energy-system-modelling`, please go to the **Settings** -> **Pages**. in the GitHub Page, go to the Branch section, and change the selection from None to `main`, or any branch other than `gh-pages`. Once the branch has been selected, in a manner of minutes a custom  
 
@@ -65,11 +65,18 @@ In the your own forked repository `owner/data-science-for-energy-system-modellin
 <center>
 <figure>
     <a href='https://github.com/open-energy-transition/data-science-for-esm/settings/pages'>
-    <img src='https://raw.githubusercontent.com/open-energy-transition/data-science-for-esm/stanford/data-science-for-esm/_images/04_gh_pages-options.png' width='97%'style='vertical-align:middle;border:5px solid goldenrod;margin:30px 30px' />
+    <img src='https://raw.githubusercontent.com/open-energy-transition/data-science-for-esm/stanford/data-science-for-esm/_images/04_gh_pages-options.png' width='97%'style='vertical-align:middle;border:5px solid darkgreen;margin:30px 30px' />
     </a>
     <figcaption>Clicking on the image above will lead directly to the GH Pages settings menu</figcaption>
 </figure>
 </center>
+
+# <font color="darkgreen">Deployment Setup</font>
+
+
+
+# <font color="darkgreen">Content Modification Setup</font>
+
 
 # <font color="darkgreen">GH Workflows Deployment</font>
 
