@@ -73,7 +73,7 @@ Once the branch has been selected, a URL will be provided (please give it a mome
 
 This GitHub is the go to location for disseminating any material, be it Jupyter Notebooks, slides, videos, markdown text explanations, or links to your other resources. 
 
-Kindly use us a [reference][11], in case using this workflow, or our materials, presented here. By doing so, your success is our success, as well.
+<mark style="background-color: fuchsia; color: black">Kindly use us a [reference][11], in case using this workflow, or our materials, presented here. By doing so, your success is our success, as well.</mark>
 
 ---
 
