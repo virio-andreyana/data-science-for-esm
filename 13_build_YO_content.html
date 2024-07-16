@@ -424,7 +424,7 @@ document.write(`
 <blockquote>
 <div><p><strong>Note:</strong> The first step is forking the repository, having the below in mind.</p>
 </div></blockquote>
-<p>Before forking this repository please have the following in mind. In the ==Create a new fork== pop-up menu, shown in the figure below, <strong>deselect</strong> the default <strong>Copy the <code class="docutils literal notranslate"><span class="pre">main</span></code> branch only</strong> option. By doing so, you will reduce further branch creation, necessary for this to work.</p>
+<p>Before forking this repository please have the following in mind. In the <mark>Create a new fork</mark> pop-up menu, shown in the figure below, <strong>deselect</strong> the default <strong>Copy the <code class="docutils literal notranslate"><span class="pre">main</span></code> branch only</strong> option. By doing so, you will reduce further branch creation, necessary for this to work.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <center>
@@ -439,11 +439,10 @@ document.write(`
 <blockquote>
 <div><p><strong>Note:</strong> The key point is to have a <code class="docutils literal notranslate"><span class="pre">stanford</span></code> branch.</p>
 </div></blockquote>
-<p>The following steps are:</p>
 <ul class="simple">
 <li><p>Alternatively, <code class="docutils literal notranslate"><span class="pre">stanford</span></code> branch can be created locally and push - however, this is to be skipped if adhering to the <strong>Note</strong> above.</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">gh-pages</span></code> branch will be automatically generated, as defined by the workflow, hence its creation is not required.</p></li>
-<li><p>It is also not required to have the <code class="docutils literal notranslate"><span class="pre">gh-pages</span></code> locally, as it hosts the website files, taken care by the workflow.</p></li>
+<li><p>It is also <strong>not</strong> required to have the <code class="docutils literal notranslate"><span class="pre">gh-pages</span></code> locally, as it hosts only the website files, and is taken care by the workflow.</p></li>
 </ul>
 <p>The remote <code class="docutils literal notranslate"><span class="pre">gh-pages</span></code>, itself, hosts the required <code class="docutils literal notranslate"><span class="pre">HTML</span></code>, <code class="docutils literal notranslate"><span class="pre">css</span></code>, <code class="docutils literal notranslate"><span class="pre">.js</span></code>, and the other files, which are used for generating the <code class="docutils literal notranslate"><span class="pre">github.io</span></code> website. Hence, there is no requirement for having the branch locally.</p>
 <p>These will be generated, upon a successful workflow execution, every time <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">push</span></code> is performed in the prior specified git branch. How this is specified, is explained <a class="reference internal" href="#deployment-setup"><span class="xref myst">below</span></a>.</p>
