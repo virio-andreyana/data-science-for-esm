@@ -41,13 +41,7 @@ Before forking this repository please have the following in mind. In the `Create
 The following steps are:
 * Create and push a branch named `stanford` - to be skipped if adhering to the **Note** above
 * `gh-pages` branch will be automatically generated, as defined by the workflow, hence its creation is not required
-* in the `.github/workflows/deploy.yml` file specify the branch, which will later be used by the workflow, which upon the `git push` command, triggers the workflow:
     
-    ~~~
-    push:
-      branches:
-      - stanford
-    ~~~
 
 of the forked repository, in the `.github/workflows/deploy.yml` ([link][07]) file which will contain the required `HTML`, `css`, `.js`, and other files
 is used for generating the required `HTML`, `css`, `.js`, as well as the other files - other than the `gh-pages`
@@ -73,7 +67,14 @@ In the your own forked repository `owner/data-science-for-energy-system-modellin
 
 # <font color="darkgreen">Deployment Setup</font>
 
+> **Note:** The key point is set the correct deployment branch set in the `./github/workflows/deploy.yml`.
 
+* in the `.github/workflows/deploy.yml` file specify the branch, which will later be used by the workflow, which upon the `git push` command, triggers the workflow:
+    ~~~
+    push:
+      branches:
+      - stanford
+    ~~~
 
 # <font color="darkgreen">Content Modification Setup</font>
 

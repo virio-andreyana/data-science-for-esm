@@ -440,16 +440,9 @@ document.write(`
 <div><p><strong>Note:</strong> The key point is to have a <code class="docutils literal notranslate"><span class="pre">stanford</span></code> branch, and the correct deployment branch set in the <code class="docutils literal notranslate"><span class="pre">./github/workflows/deploy.yml</span></code>.</p>
 </div></blockquote>
 <p>The following steps are:</p>
-<ul>
+<ul class="simple">
 <li><p>Create and push a branch named <code class="docutils literal notranslate"><span class="pre">stanford</span></code> - to be skipped if adhering to the <strong>Note</strong> above</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">gh-pages</span></code> branch will be automatically generated, as defined by the workflow, hence its creation is not required</p></li>
-<li><p>in the <code class="docutils literal notranslate"><span class="pre">.github/workflows/deploy.yml</span></code> file specify the branch, which will later be used by the workflow, which upon the <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">push</span></code> command, triggers the workflow:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">push</span><span class="p">:</span>
-  <span class="n">branches</span><span class="p">:</span>
-  <span class="o">-</span> <span class="n">stanford</span>
-</pre></div>
-</div>
-</li>
 </ul>
 <p>of the forked repository, in the <code class="docutils literal notranslate"><span class="pre">.github/workflows/deploy.yml</span></code> (<a class="reference external" href="https://github.com/open-energy-transition/data-science-for-esm/blob/ef394898e3100e2bd2d074a8b2da89235355cd4e/.github/workflows/deploy.yml">link</a>) file which will contain the required <code class="docutils literal notranslate"><span class="pre">HTML</span></code>, <code class="docutils literal notranslate"><span class="pre">css</span></code>, <code class="docutils literal notranslate"><span class="pre">.js</span></code>, and other files
 is used for generating the required <code class="docutils literal notranslate"><span class="pre">HTML</span></code>, <code class="docutils literal notranslate"><span class="pre">css</span></code>, <code class="docutils literal notranslate"><span class="pre">.js</span></code>, as well as the other files - other than the <code class="docutils literal notranslate"><span class="pre">gh-pages</span></code></p>
@@ -474,6 +467,18 @@ is used for generating the required <code class="docutils literal notranslate"><
 </section>
 <section class="tex2jax_ignore mathjax_ignore" id="deployment-setup">
 <h1><font color="darkgreen">Deployment Setup</font><a class="headerlink" href="#deployment-setup" title="Link to this heading">#</a></h1>
+<blockquote>
+<div><p><strong>Note:</strong> The key point is set the correct deployment branch set in the <code class="docutils literal notranslate"><span class="pre">./github/workflows/deploy.yml</span></code>.</p>
+</div></blockquote>
+<ul>
+<li><p>in the <code class="docutils literal notranslate"><span class="pre">.github/workflows/deploy.yml</span></code> file specify the branch, which will later be used by the workflow, which upon the <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">push</span></code> command, triggers the workflow:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">push</span><span class="p">:</span>
+  <span class="n">branches</span><span class="p">:</span>
+  <span class="o">-</span> <span class="n">stanford</span>
+</pre></div>
+</div>
+</li>
+</ul>
 </section>
 <section class="tex2jax_ignore mathjax_ignore" id="content-modification-setup">
 <h1><font color="darkgreen">Content Modification Setup</font><a class="headerlink" href="#content-modification-setup" title="Link to this heading">#</a></h1>
