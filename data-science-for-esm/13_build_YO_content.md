@@ -68,7 +68,7 @@ In the your own forked repository `"owner"/data-science-for-energy-system-modell
 
 # <font color="darkgreen">Deployment Setup</font>
 
-> **Note:** The key point is set the correct deployment branch set in the `./github/workflows/deploy.yml`.
+> **Note:** The key point is set the correct deployment branch set in the <code>./github/workflows/deploy.yml</code>.
 
 * in the `.github/workflows/deploy.yml` file specify the branch, which will later be used by the workflow, which upon the `git push` command, triggers the workflow:
     ~~~
