@@ -41,11 +41,12 @@ Before forking this repository please have the following in mind. In the <strong
 
 * Alternatively, `stanford` branch can be created locally and `git pushed`, however, this is to be skipped if adhering to the **Note** above.
 * `gh-pages` branch will be automatically generated, as defined by the workflow, hence its creation is not required.
-* It is also **not** required to have the `gh-pages` locally, once generated, as it hosts only the website files, and is taken care by the workflow.
+* It is also **not** required to have the `gh-pages` locally, once generated, as it hosts only the website files, which are taken care of by the workflow.
 
-The remote `gh-pages`, itself, hosts the required `HTML`, `css`, `.js`, and the other files, used for generating the `github.io` website. Hence, there is no requirement for having the branch locally. (repetitive)
+The remote `gh-pages`, itself, hosts the required `HTML`, `css`, `.js`, and the other files, used for generating the `github.io` website.
+<!-- Hence, there is no requirement for having the branch locally. (repetitive) -->
 
-These will be generated, upon a successful workflow execution, every time `git push` is performed, in the prior specified git branch. How this is specified, is explained [below](#deployment-setup).
+These will be re-generated, upon a successful workflow execution, every time `git push` is performed, in the prior specified git branch. Branch specification, is explained [below](#deployment-setup).
 
 <!-- of the forked repository, in the `.github/workflows/deploy.yml` ([link][07]) file which will contain the required `HTML`, `css`, `.js`, and other files
 is used for generating the required `HTML`, `css`, `.js`, as well as the other files - other than the `gh-pages`
