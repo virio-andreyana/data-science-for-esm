@@ -425,7 +425,7 @@ document.write(`
 <blockquote>
 <div><p><strong>Note:</strong> The first step is forking the repository, having the below in mind.</p>
 </div></blockquote>
-<p>Before forking this repository please have the following in mind. In the <mark>Create a new fork</mark> pop-up menu, shown in the figure below, <strong>deselect</strong> the default <strong>Copy the <code class="docutils literal notranslate"><span class="pre">main</span></code> branch only</strong> option. By doing so, you will reduce further branch creation, necessary for this to work.</p>
+<p>Before forking this repository please have the following in mind. In the <mark><strong>Create a new fork</strong></mark> pop-up menu, shown in the figure below, <strong>deselect</strong> the default <strong>Copy the <code class="docutils literal notranslate"><span class="pre">main</span></code> branch only</strong> option. By doing so, you will reduce further branch creation, necessary for this to work.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <center>
@@ -441,9 +441,9 @@ document.write(`
 <div><p><strong>Note:</strong> The key point is to have a <code class="docutils literal notranslate"><span class="pre">stanford</span></code> branch.</p>
 </div></blockquote>
 <ul class="simple">
-<li><p>Alternatively, <code class="docutils literal notranslate"><span class="pre">stanford</span></code> branch can be created locally and push - however, this is to be skipped if adhering to the <strong>Note</strong> above.</p></li>
+<li><p>Alternatively, <code class="docutils literal notranslate"><span class="pre">stanford</span></code> branch can be created locally and <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">pushed</span></code>, however, this is to be skipped if adhering to the <strong>Note</strong> above.</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">gh-pages</span></code> branch will be automatically generated, as defined by the workflow, hence its creation is not required.</p></li>
-<li><p>It is also <strong>not</strong> required to have the <code class="docutils literal notranslate"><span class="pre">gh-pages</span></code> locally, as it hosts only the website files, and is taken care by the workflow.</p></li>
+<li><p>It is also <strong>not</strong> required to have the <code class="docutils literal notranslate"><span class="pre">gh-pages</span></code> locally, once generated, as it hosts only the website files, and is taken care by the workflow.</p></li>
 </ul>
 <p>The remote <code class="docutils literal notranslate"><span class="pre">gh-pages</span></code>, itself, hosts the required <code class="docutils literal notranslate"><span class="pre">HTML</span></code>, <code class="docutils literal notranslate"><span class="pre">css</span></code>, <code class="docutils literal notranslate"><span class="pre">.js</span></code>, and the other files, used for generating the <code class="docutils literal notranslate"><span class="pre">github.io</span></code> website. Hence, there is no requirement for having the branch locally. (repetitive)</p>
 <p>These will be generated, upon a successful workflow execution, every time <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">push</span></code> is performed, in the prior specified git branch. How this is specified, is explained <a class="reference internal" href="#deployment-setup"><span class="xref myst">below</span></a>.</p>
@@ -474,8 +474,7 @@ is used for generating the required `HTML`, `css`, `.js`, as well as the other f
 <div><p><strong>Note:</strong> The key point is set the correct deployment branch set in the <code>./github/workflows/deploy.yml</code>.</p>
 </div></blockquote>
 <ul>
-<li><p>in the <code>.github/workflows/deploy.yml</code> [file][8] specify the branch, which will later be used by the workflow, which upon the <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">push</span></code> command, triggers the
-workflow:</p>
+<li><p>in the <code>.github/workflows/deploy.yml</code> <a class="reference external" href="https://github.com/open-energy-transition/data-science-for-esm/blob/ef394898e3100e2bd2d074a8b2da89235355cd4e/.github/workflows/deploy.yml#L4-L7">file</a> please specify the branch, which will later be used by the workflow, which upon the <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">push</span></code> command, triggers the workflow:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">push</span><span class="p">:</span>
   <span class="n">branches</span><span class="p">:</span>
   <span class="o">-</span> <span class="n">stanford</span>
@@ -483,7 +482,8 @@ workflow:</p>
 </div>
 </li>
 </ul>
-<p>The specified <code class="docutils literal notranslate"><span class="pre">branch</span></code> can be any, other than the <code class="docutils literal notranslate"><span class="pre">gh-pages</span></code>. We use the <code class="docutils literal notranslate"><span class="pre">stanford</span></code> branch for our workflow, but it can also be the <code class="docutils literal notranslate"><span class="pre">main</span></code>, or any other newly created branch. Upon the <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">push</span></code>, the <a class="reference internal" href="#github-workflow-deployment"><span class="xref myst">workflow</span></a> will be triggered.</p>
+<p>The specified <code class="docutils literal notranslate"><span class="pre">branch</span></code> can be any, other than the <code class="docutils literal notranslate"><span class="pre">gh-pages</span></code>.</p>
+<p>We use the <code class="docutils literal notranslate"><span class="pre">stanford</span></code> branch for our workflow, but it can also be the <code class="docutils literal notranslate"><span class="pre">main</span></code>, or any other newly created branch. Upon the <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">push</span></code>, the <a class="reference internal" href="#github-workflow-deployment"><span class="xref myst">workflow</span></a> will be triggered.</p>
 </section>
 <hr class="docutils" />
 <section class="tex2jax_ignore mathjax_ignore" id="content-modification-setup">
@@ -497,8 +497,8 @@ workflow:</p>
 <hr class="docutils" />
 <section class="tex2jax_ignore mathjax_ignore" id="github-workflow-deployment">
 <h1><font color="darkgreen">GitHub Workflow Deployment</font><a class="headerlink" href="#github-workflow-deployment" title="Link to this heading">#</a></h1>
-<p><code class="docutils literal notranslate"><span class="pre">.github/workflows/deploy.yml</span></code> (<a class="reference external" href="https://github.com/open-energy-transition/data-science-for-esm/blob/ef394898e3100e2bd2d074a8b2da89235355cd4e/.github/workflows/deploy.yml#L4-L7">link</a>) needs specifying which branch of the repository will be used for deployment. You are free to use any branch, other than the <code class="docutils literal notranslate"><span class="pre">gh-pages</span></code>, keeping in mind that upon the <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">push</span></code>, the workflow will be triggered.</p>
-<p>This is indicated by the status indicator in the repository, in this case a beige-brown dot, which if clicked on, will show the running status and the deployment details. As mentioned, the deployment takes approx. 2 minutes.</p>
+<p>In the <a class="reference internal" href="#deployment-setup"><span class="xref myst">Deployment Setup</span></a> we entered in the <code class="docutils literal notranslate"><span class="pre">.github/workflows/deploy.yml</span></code> <a class="reference external" href="https://github.com/open-energy-transition/data-science-for-esm/blob/ef394898e3100e2bd2d074a8b2da89235355cd4e/.github/workflows/deploy.yml#L4-L7">file</a> which branch, of the repository, is used for the deployment. You are free to use any branch, other than the <code class="docutils literal notranslate"><span class="pre">gh-pages</span></code>, keeping in mind that upon the <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">push</span></code>, the workflow will be triggered.</p>
+<p>The workflow deployment itself is tracked by the status indicator in the repository, in this case a beige-brown dot, which if clicked on, will show the running status, and the deployment details. As mentioned, the deployment takes approx. 2 minutes to finish.</p>
 <center>
 <figure>
     <!-- <a href='https://github.com/open-energy-transition/data-science-for-esm/settings/pages'> -->
@@ -507,7 +507,7 @@ workflow:</p>
     <figcaption>Deployment status upon <code>git push</code> to the branch specified in the <em>deploy.yml</em> file</figcaption>
 </figure>
 </center>
-<p>Upon a successful deployment, indicated by the deploy status, in that time you should be able to see the changes taking place in the specified <code class="docutils literal notranslate"><span class="pre">github.io</span></code> URL.</p>
+<p>Upon a successful deployment, indicated by the deploy status - either a green thick (successful) or a red x (unsuccessful), in that time you should be able to see the changes taking place in the specified <code class="docutils literal notranslate"><span class="pre">github.io</span></code> URL.</p>
 <center>
 <figure>
     <!-- <a href='https://github.com/open-energy-transition/data-science-for-esm/settings/pages'> -->
