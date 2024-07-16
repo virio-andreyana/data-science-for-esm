@@ -30,7 +30,7 @@ Before forking this repository please have the following in mind. In the `Create
     <a href='https://github.com/open-energy-transition/data-science-for-esm/fork'>
     <img src='https://github.com/open-energy-transition/data-science-for-esm/raw/stanford/data-science-for-esm/_images/03_fork_option.png' alt='' width='95%' style='vertical-align:middle;border:5px solid goldenrod;margin:20px 0px' />
     </a>
-    <figcaption>Clicking on the image above will lead directly to the <strong><b><mark>Create a new fork</mark></b></strong> menu</figcaption>
+    <figcaption>Clicking on the image above will lead directly to the <mark><strong>Create a new fork</strong></mark> menu</figcaption>
 </figure>
 </center>
 :::
@@ -107,7 +107,7 @@ Upon a successful deployment, indicated by the deploy status, in that time you s
     <!-- <a href='https://github.com/open-energy-transition/data-science-for-esm/settings/pages'> -->
     <img src='https://raw.githubusercontent.com/open-energy-transition/data-science-for-esm/stanford/data-science-for-esm/_images/06_successful_deployment.png' width='85%'style='vertical-align:middle;border:5px solid paleturquoise;margin:30px 30px' />
     <!-- </a> -->
-    <figcaption>Successful deployment, after a finalized <b><strong>jupyter book build</b</strong> run</figcaption>
+    <figcaption>Successful deployment, after a finalized <code>jupyter book build</code> run</figcaption>
 </figure>
 </center>
 
