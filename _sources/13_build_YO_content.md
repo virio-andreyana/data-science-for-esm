@@ -30,13 +30,12 @@ Before forking this repository please have the following in mind. In the `Create
     <a href='https://github.com/open-energy-transition/data-science-for-esm/fork'>
     <img src='https://github.com/open-energy-transition/data-science-for-esm/raw/stanford/data-science-for-esm/_images/03_fork_option.png' alt='' width='95%' style='vertical-align:middle;border:5px solid goldenrod;margin:20px 0px' />
     </a>
-    <figcaption>Clicking on the image above will lead directly to the <strong><mark>Create a new fork</mark></strong> menu</figcaption>
+    <figcaption>Clicking on the image above will lead directly to the <strong><b><mark>Create a new fork</mark></b></strong> menu</figcaption>
 </figure>
 </center>
 :::
 
-> **Note:** The key point is to have a `stanford` branch, and the correct deployment branch set in the `./github/workflows/deploy.yml`.
-
+> **Note:** The key point is to have a `stanford` branch.
 The following steps are:
 * Alternatively, `stanford` branch can be created locally and push - however, this is to be skipped if adhering to the **Note** above
 * `gh-pages` branch will be automatically generated, as defined by the workflow, hence its creation is not required
