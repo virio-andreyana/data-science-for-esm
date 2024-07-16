@@ -6,8 +6,8 @@
 1. [GH Workflows Deployment](#gh-workflows-deployment) -->
 
 
-# Build Your Own Content
-
+Build Your Own Content
+======================
 <!-- ###### List of Abbreviation[^bignote] -->
 
 This section assists academics, and alike, in build their content, by modifying this repository, or the original [Dr. F. Neumann's repository][01].
@@ -18,9 +18,10 @@ This section assists academics, and alike, in build their content, by modifying 
 
 The first step is forking this repository. By doing so, one is able to create his own website, similar to this one, with a tailor-made content, quickly and with ease. However, there are two or three thing to keep in mind when doing so, so please read on.
 
+---
 
-# <font color="darkgreen">Creating a new fork of this repository</font>
-
+<font color="darkgreen">Creating a new fork of this repository</font>
+=====================================================================
 > **Note:** The first step is forking the repository, having the below in mind.
 
 Before forking this repository please have the following in mind. In the <mark>Create a new fork</mark> pop-up menu, shown in the figure below, **deselect** the default **Copy the `main` branch only** option. By doing so, you will reduce further branch creation, necessary for this to work.
@@ -51,9 +52,10 @@ is used for generating the required `HTML`, `css`, `.js`, as well as the other f
 
 - on preexisting knowledge disseminating the gained expertise by OET, and TU Berlin, to help .   Welcome to the website accompanying the course [Data Science for Energy System Modelling][04]. This course is being developed by [Dr. F. Neumann][05] and offered as part of the curriculum of the [Department of Digital Transformation of Energy Systems at TU Berlin][06]. -->
 
+---
 
-# <font color="darkgreen">GitHub Pages Setup</font>
-
+<font color="darkgreen">GitHub Pages Setup</font>
+=================================================
 In the your own forked repository `"owner"/data-science-for-energy-system-modelling`, please go to the GitHub **Settings** -> **Pages**.
 
 In the **GitHub Pages**, go to the **Branch** section, and change the selection from `None` to `gh-pages/root`.
@@ -69,8 +71,7 @@ Once the branch has been selected, in a manner of minutes a custom URL will be p
 </figure>
 </center>
 
-___
-
+---
 
 <font color="darkgreen">Deployment Setup</font>
 ===============================================
@@ -86,8 +87,7 @@ workflow:
 
 The specified `branch` can be any, other than the `gh-pages`. We use the `stanford` branch for our workflow, but it can also be the `main`, or any other newly created branch. Upon the `git push`, the [workflow](#github-workflow-deployment) will be triggered.
 
-___
-
+---
 
 <font color="darkgreen">Content Modification Setup</font>
 =========================================================
@@ -97,8 +97,10 @@ Both `_config.yml`, as well as the `_toc.yml``are to remain in the root of the `
 
 - in the `data-science-for-esm/_toc.yml` *file*, a sequence of files to be included in the GitHub Page is defined, thereafter displayed in the menu, located on the left side of the page
 
-# <font color="darkgreen">GitHub Workflow Deployment</font>
+---
 
+<font color="darkgreen">GitHub Workflow Deployment</font>
+=========================================================
 `.github/workflows/deploy.yml` ([link][08]) needs specifying which branch of the repository will be used for deployment. You are free to use any branch, other than the `gh-pages`, keeping in mind that upon the `git push`, the workflow will be triggered.
 
 This is indicated by the status indicator in the repository, in this case a beige-brown dot, which if clicked on, will show the running status and the deployment details. As mentioned, the deployment takes approx. 2 minutes.
