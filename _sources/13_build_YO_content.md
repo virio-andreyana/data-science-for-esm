@@ -37,7 +37,7 @@ Before forking this repository please have the following in mind. In the <strong
 </center>
 :::
 
-> **Note:** The key point is to have a `stanford` branch.
+> **Note:** The key point is to have/keep the `stanford` branch in your fork.
 
 * Alternatively, `stanford` branch can be created locally and `git pushed`, however, this is to be skipped if adhering to the **Note** above.
 * `gh-pages` branch will be automatically generated, as defined by the workflow, hence its creation is not required.
