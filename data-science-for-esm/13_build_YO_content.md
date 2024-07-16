@@ -38,8 +38,9 @@ Before forking this repository please have the following in mind. In the `Create
 > **Note:** The key point is to have a `stanford` branch, and the correct deployment branch set in the `./github/workflows/deploy.yml`.
 
 The following steps are:
-* Create and push a branch named `stanford` - to be skipped if adhering to the **Note** above
+* Alternatively, `stanford` branch can be created locally and push - however, this is to be skipped if adhering to the **Note** above
 * `gh-pages` branch will be automatically generated, as defined by the workflow, hence its creation is not required
+* it is also not required to have the `gh-pages` locally, as it hosts the website files, created by the workflow
     
 
 of the forked repository, in the `.github/workflows/deploy.yml` ([link][07]) file which will contain the required `HTML`, `css`, `.js`, and other files
@@ -53,7 +54,7 @@ Both `_config.yml`, as well as the `_toc.yml``are to remain in the root of the `
 
 In the your own forked repository `owner/data-science-for-energy-system-modelling`, please go to the **Settings** -> **Pages**. in the GitHub Page, go to the Branch section, and change the selection from None to `main`, or any branch other than `gh-pages`. Once the branch has been selected, in a manner of minutes a custom  
 
-# <font color="darkgreen">GH Pages Setup</font>
+# <font color="darkgreen">GitHub Pages Setup</font>
 
 <center>
 <figure>
@@ -78,7 +79,7 @@ In the your own forked repository `owner/data-science-for-energy-system-modellin
 # <font color="darkgreen">Content Modification Setup</font>
 
 
-# <font color="darkgreen">GH Workflows Deployment</font>
+# <font color="darkgreen">GitHub Workflows Deployment</font>
 
 `.github/workflows/deploy.yml` ([link][08]) needs specifying which branch of the repo will be used for deployment. You are free to use any branch, other than the `gh-pages`, keeping in mind that upon the `git push`, the workflow will be triggered.
 
