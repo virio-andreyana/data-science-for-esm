@@ -30,7 +30,7 @@ Before forking this repository please have the following in mind. In the `Create
     <a href='https://github.com/open-energy-transition/data-science-for-esm/fork'>
     <img src='https://github.com/open-energy-transition/data-science-for-esm/raw/stanford/data-science-for-esm/_images/03_fork_option.png' alt='' width='95%' style='vertical-align:middle;border:5px solid goldenrod;margin:20px 0px' />
     </a>
-    <figcaption>Clicking on the image above will lead directly to the <strong><mark>Create a new fork menu</mark></strong></figcaption>
+    <figcaption>Clicking on the image above will lead directly to the <strong><mark>Create a new fork</mark></strong> menu</figcaption>
 </figure>
 </center>
 :::
