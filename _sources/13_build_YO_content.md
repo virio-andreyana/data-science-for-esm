@@ -54,7 +54,11 @@ is used for generating the required `HTML`, `css`, `.js`, as well as the other f
 
 # <font color="darkgreen">GitHub Pages Setup</font>
 
-In the your own forked repository `"owner"/data-science-for-energy-system-modelling`, please go to the GitHub **Settings** -> **Pages**. In the **GitHub Pages**, go to the Branch section, and change the selection from `None` to `gh-pages/root`. Once the branch has been selected, in a manner of minutes a custom URL will be provided: **"Your site is live at [https://...](https://open-energy-transition.github.io/data-science-for-esm/)"**
+In the your own forked repository `"owner"/data-science-for-energy-system-modelling`, please go to the GitHub **Settings** -> **Pages**.
+
+In the **GitHub Pages**, go to the **Branch** section, and change the selection from `None` to `gh-pages/root`.
+
+Once the branch has been selected, in a manner of minutes a custom URL will be provided at the top: **"Your site is live at [https://...](https://open-energy-transition.github.io/data-science-for-esm/)"**
 
 <center>
 <figure>
@@ -70,13 +74,15 @@ In the your own forked repository `"owner"/data-science-for-energy-system-modell
 
 > **Note:** The key point is set the correct deployment branch set in the <code>./github/workflows/deploy.yml</code>.
 
-* in the <code>.github/workflows/deploy.yml</code> file specify the branch, which will later be used by the workflow, which upon the `git push` command, triggers the workflow:
+* in the <code>.github/workflows/deploy.yml</code> [file][8] specify the branch, which will later be used by the workflow, which upon the `git push` command, triggers the 
+workflow:
     ~~~
     push:
       branches:
       - stanford
     ~~~
 
+The specified `branch` can be any, other than the `gh-pages`. We use the `stanford` branch for our workflow, but it can also be the `main`, or any other newly created branch. Upon the `git push`, the [workflow](#github-workflow-deployment) will be triggered.
 
 # <font color="darkgreen">Content Modification Setup</font>
 
@@ -86,9 +92,9 @@ Both `_config.yml`, as well as the `_toc.yml``are to remain in the root of the `
 
 - in the `data-science-for-esm/_toc.yml` *file*, a sequence of files to be included in the GitHub Page is defined, thereafter displayed in the menu, located on the left side of the page
 
-# <font color="darkgreen">GitHub Workflows Deployment</font>
+# <font color="darkgreen">GitHub Workflow Deployment</font>
 
-`.github/workflows/deploy.yml` ([link][08]) needs specifying which branch of the repo will be used for deployment. You are free to use any branch, other than the `gh-pages`, keeping in mind that upon the `git push`, the workflow will be triggered.
+`.github/workflows/deploy.yml` ([link][08]) needs specifying which branch of the repository will be used for deployment. You are free to use any branch, other than the `gh-pages`, keeping in mind that upon the `git push`, the workflow will be triggered.
 
 This is indicated by the status indicator in the repository, in this case a beige-brown dot, which if clicked on, will show the running status and the deployment details. As mentioned, the deployment takes approx. 2 minutes.
 
@@ -122,7 +128,7 @@ Upon a successful deployment, indicated by the deploy status, in that time you s
 [05]: https://neumann.fyi
 [06]: https://www.tu.berlin/ensys
 [07]: https://github.com/open-energy-transition/data-science-for-esm/blob/ef394898e3100e2bd2d074a8b2da89235355cd4e/.github/workflows/deploy.yml
-[08]: https://github.com/open-energy-transition/data-science-for-esm/blob/6c6563e15d3035647e9e52c852fa1cd5748f15ed/.github/workflows/deploy.yml#L4C2-L7C15
+[08]: https://github.com/open-energy-transition/data-science-for-esm/blob/ef394898e3100e2bd2d074a8b2da89235355cd4e/.github/workflows/deploy.yml#L4-L7
 
 <!-- <center><mark>Table of Abbreviations</mark></center> -->
 <!-- ###### Table of Abbreviations -->
