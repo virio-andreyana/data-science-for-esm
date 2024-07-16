@@ -42,6 +42,8 @@ The following steps are:
 * It is also not required to have the `gh-pages` locally, as it hosts the website files, taken care by the workflow
     
 
+The remote `gh-pages` itself will host required `HTML`, `css`, `.js`, and the other files, used for generating the `github.io` website. These will be generated, upon a successful workflow execution, every time `git push` is performed in the prior specified git branch. How this is specified, is explained [below](#deployment-setup).
+
 of the forked repository, in the `.github/workflows/deploy.yml` ([link][07]) file which will contain the required `HTML`, `css`, `.js`, and other files
 is used for generating the required `HTML`, `css`, `.js`, as well as the other files - other than the `gh-pages`
 - in the `data-science-for-esm/_toc.yml` *file*, a sequence of files to be included in the GitHub Page is defined, thereafter displayed in the menu, located on the left side of the page
