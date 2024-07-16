@@ -5,6 +5,7 @@
 1. [GH Pages](#gh-pages-setup)
 1. [GH Workflows Deployment](#gh-workflows-deployment) -->
 
+
 # Build Your Own Content
 
 <!-- ###### List of Abbreviation[^bignote] -->
@@ -42,16 +43,12 @@ The following steps are:
 * It is also not required to have the `gh-pages` locally, as it hosts the website files, taken care by the workflow
     
 
-The remote `gh-pages` itself will host required `HTML`, `css`, `.js`, and the other files, used for generating the `github.io` website. These will be generated, upon a successful workflow execution, every time `git push` is performed in the prior specified git branch. How this is specified, is explained [below](#deployment-setup).
+The remote `gh-pages`, itself, hosts the required `HTML`, `css`, `.js`, and the other files, that are used for generating the `github.io` website. Hence, there is no requirement in having the branch locally. These will be generated, upon a successful workflow execution, every time `git push` is performed in the prior specified git branch. How this is specified, is explained [below](#deployment-setup).
 
 of the forked repository, in the `.github/workflows/deploy.yml` ([link][07]) file which will contain the required `HTML`, `css`, `.js`, and other files
 is used for generating the required `HTML`, `css`, `.js`, as well as the other files - other than the `gh-pages`
 - in the `data-science-for-esm/_toc.yml` *file*, a sequence of files to be included in the GitHub Page is defined, thereafter displayed in the menu, located on the left side of the page
 - on preexisting knowledge disseminating the gained expertise by OET, and TU Berlin, to help .   Welcome to the website accompanying the course [Data Science for Energy System Modelling][04]. This course is being developed by [Dr. F. Neumann][05] and offered as part of the curriculum of the [Department of Digital Transformation of Energy Systems at TU Berlin][06].
-
-
-
-
 
 
 # <font color="darkgreen">GitHub Pages Setup</font>
@@ -67,6 +64,7 @@ In the your own forked repository `owner/data-science-for-energy-system-modellin
 </figure>
 </center>
 
+
 # <font color="darkgreen">Deployment Setup</font>
 
 > **Note:** The key point is set the correct deployment branch set in the `./github/workflows/deploy.yml`.
@@ -77,6 +75,7 @@ In the your own forked repository `owner/data-science-for-energy-system-modellin
       branches:
       - <b><mark>stanford</mark></b>
     ~~~
+
 
 # <font color="darkgreen">Content Modification Setup</font>
 
