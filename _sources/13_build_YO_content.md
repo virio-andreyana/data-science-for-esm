@@ -69,9 +69,11 @@ Once the branch has been selected, in a manner of minutes a custom URL will be p
 </figure>
 </center>
 
+___
 
-# <font color="darkgreen">Deployment Setup</font>
 
+<font color="darkgreen">Deployment Setup</font>
+===============================================
 > **Note:** The key point is set the correct deployment branch set in the <code>./github/workflows/deploy.yml</code>.
 
 * in the <code>.github/workflows/deploy.yml</code> [file][8] specify the branch, which will later be used by the workflow, which upon the `git push` command, triggers the 
@@ -84,8 +86,11 @@ workflow:
 
 The specified `branch` can be any, other than the `gh-pages`. We use the `stanford` branch for our workflow, but it can also be the `main`, or any other newly created branch. Upon the `git push`, the [workflow](#github-workflow-deployment) will be triggered.
 
-# <font color="darkgreen">Content Modification Setup</font>
+___
 
+
+<font color="darkgreen">Content Modification Setup</font>
+=========================================================
 The website logo, as well as the other figures can be placed in the `data-science-for-esm/_images/` folder. The content in terms od the `.ipynb` & `.md` files are to be placed in the root of the `data-science-for--esm` folder, and specified in the `_toc.yml` file. If not being placed in the root, the workflow will be unable to locate the files specified in the `_toc.yml`, resulting in the unsuccessful deployment, and not accessible `github.io` site.
 
 Both `_config.yml`, as well as the `_toc.yml``are to remain in the root of the `data-science-for esm` folder. In the `_config.yml` details of the website, such as the author, logo, other relevant links to GitHub, Google Collab, can be defined. Please use the already provided `_toc` and `_config.yml` files as a template, and follow the provided structure.
