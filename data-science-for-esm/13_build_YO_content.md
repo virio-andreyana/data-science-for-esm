@@ -42,9 +42,9 @@ Before forking this repository please have the following in mind. In the <mark>C
 * `gh-pages` branch will be automatically generated, as defined by the workflow, hence its creation is not required.
 * It is also **not** required to have the `gh-pages` locally, as it hosts only the website files, and is taken care by the workflow.
 
-The remote `gh-pages`, itself, hosts the required `HTML`, `css`, `.js`, and the other files, which are used for generating the `github.io` website. Hence, there is no requirement for having the branch locally.
+The remote `gh-pages`, itself, hosts the required `HTML`, `css`, `.js`, and the other files, used for generating the `github.io` website. Hence, there is no requirement for having the branch locally. (repetitive)
 
-These will be generated, upon a successful workflow execution, every time `git push` is performed in the prior specified git branch. How this is specified, is explained [below](#deployment-setup).
+These will be generated, upon a successful workflow execution, every time `git push` is performed, in the prior specified git branch. How this is specified, is explained [below](#deployment-setup).
 
 <!-- of the forked repository, in the `.github/workflows/deploy.yml` ([link][07]) file which will contain the required `HTML`, `css`, `.js`, and other files
 is used for generating the required `HTML`, `css`, `.js`, as well as the other files - other than the `gh-pages`
@@ -54,7 +54,7 @@ is used for generating the required `HTML`, `css`, `.js`, as well as the other f
 
 # <font color="darkgreen">GitHub Pages Setup</font>
 
-In the your own forked repository `owner/data-science-for-energy-system-modelling`, please go to the **Settings** -> **Pages**. in the GitHub Page, go to the Branch section, and change the selection from None to `main`, or any branch other than `gh-pages`. Once the branch has been selected, in a manner of minutes a custom
+In the your own forked repository `"owner"/data-science-for-energy-system-modelling`, please go to the GitHub **Settings** -> **Pages**. In the **GitHub Pages**, go to the Branch section, and change the selection from `None` to `gh-pages/root`. Once the branch has been selected, in a manner of minutes a custom URL will be provided: **"Your site is live at https://..."**
 
 <center>
 <figure>
