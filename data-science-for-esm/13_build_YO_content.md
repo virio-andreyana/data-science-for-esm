@@ -82,7 +82,7 @@ workflow:
       - stanford
     ~~~
 
-The `branch` defined
+The specified `branch` can be any, other than the `gh-pages`. We use the `stanford` branch for our workflow, but it can also be the `main`, or any other newly created branch. Upon the `git push`, the [workflow](#github-workflow-deployment) will be triggered.
 
 # <font color="darkgreen">Content Modification Setup</font>
 
@@ -92,9 +92,9 @@ Both `_config.yml`, as well as the `_toc.yml``are to remain in the root of the `
 
 - in the `data-science-for-esm/_toc.yml` *file*, a sequence of files to be included in the GitHub Page is defined, thereafter displayed in the menu, located on the left side of the page
 
-# <font color="darkgreen">GitHub Workflows Deployment</font>
+# <font color="darkgreen">GitHub Workflow Deployment</font>
 
-`.github/workflows/deploy.yml` ([link][08]) needs specifying which branch of the repo will be used for deployment. You are free to use any branch, other than the `gh-pages`, keeping in mind that upon the `git push`, the workflow will be triggered.
+`.github/workflows/deploy.yml` ([link][08]) needs specifying which branch of the repository will be used for deployment. You are free to use any branch, other than the `gh-pages`, keeping in mind that upon the `git push`, the workflow will be triggered.
 
 This is indicated by the status indicator in the repository, in this case a beige-brown dot, which if clicked on, will show the running status and the deployment details. As mentioned, the deployment takes approx. 2 minutes.
 
