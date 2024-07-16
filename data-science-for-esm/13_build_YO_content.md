@@ -22,7 +22,7 @@ The first step is forking this repository. By doing so, one is able to create hi
 
 > **Note:** The first step is forking the repository, having the below in mind.
 
-Before forking this repository please have the following in mind. In the `Create a new fork` pop-up menu, shown in the figure below, deselect the default **Copy the `main` branch only** option. By doing so, you will reduce further branch creation, necessary for this to work.
+Before forking this repository please have the following in mind. In the `Create a new fork` pop-up menu, shown in the figure below, *deselect* the default **Copy the `main` branch only** option. By doing so, you will reduce further branch creation, necessary for this to work.
 
 :::{note}
 <center>
@@ -89,7 +89,7 @@ This is indicated by the status indicator in the repository, in this case a beig
     <!-- <a href='https://github.com/open-energy-transition/data-science-for-esm/settings/pages'> -->
     <img src='https://raw.githubusercontent.com/open-energy-transition/data-science-for-esm/stanford/data-science-for-esm/_images/05_deployment_status.png' width='85%'style='vertical-align:middle;border:5px solid paleturquoise;margin:30px 30px' />
     <!-- </a> -->
-    <figcaption>Deployment status upon <mark><strong>git push</strong></mark> to the branch specified in the <em>deploy.yml</em> file</figcaption>
+    <figcaption>Deployment status upon <mark><b>git push</b></mark> to the branch specified in the <em>deploy.yml</em> file</figcaption>
 </figure>
 </center>
 
