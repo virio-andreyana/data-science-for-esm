@@ -189,6 +189,7 @@
 
 
 
+
 </ul>
 
     </div>
@@ -385,11 +386,12 @@ document.write(`
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#"><font color="red">Build Your Own Content</font></a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-a-new-fork-of-this-repository"><font color="darkgreen">Creating a new fork of this repository</font></a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#github-pages-setup"><font color="darkgreen">GitHub Pages Setup</font></a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#deployment-setup"><font color="darkgreen">Deployment Setup</font></a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#content-modification-setup"><font color="darkgreen">Content Modification Setup</font></a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#github-workflow-deployment"><font color="darkgreen">GitHub Workflow Deployment</font></a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-a-new-fork-of-this-repository">Creating a new fork of this repository</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#github-pages-setup">GitHub Pages Setup</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#deployment-setup">Deployment Setup</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#content-modification-setup">Content Modification Setup</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#github-workflow-deployment">GitHub Workflow Deployment</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#relevant-references">Relevant References</a></li>
 </ul>
 
             </nav>
@@ -421,7 +423,7 @@ document.write(`
 </section>
 <hr class="docutils" />
 <section class="tex2jax_ignore mathjax_ignore" id="creating-a-new-fork-of-this-repository">
-<h1><font color="darkgreen">Creating a new fork of this repository</font><a class="headerlink" href="#creating-a-new-fork-of-this-repository" title="Link to this heading">#</a></h1>
+<h1>Creating a new fork of this repository<a class="headerlink" href="#creating-a-new-fork-of-this-repository" title="Link to this heading">#</a></h1>
 <blockquote>
 <div><p><strong>Note:</strong> The first step is forking the repository, having the below in mind.</p>
 </div></blockquote>
@@ -456,7 +458,7 @@ is used for generating the required `HTML`, `css`, `.js`, as well as the other f
 </section>
 <hr class="docutils" />
 <section class="tex2jax_ignore mathjax_ignore" id="github-pages-setup">
-<h1><font color="darkgreen">GitHub Pages Setup</font><a class="headerlink" href="#github-pages-setup" title="Link to this heading">#</a></h1>
+<h1>GitHub Pages Setup<a class="headerlink" href="#github-pages-setup" title="Link to this heading">#</a></h1>
 <p>In the your own forked repository <code class="docutils literal notranslate"><span class="pre">&quot;owner&quot;/data-science-for-energy-system-modelling</span></code>, please go to the GitHub <strong>Settings</strong> -&gt; <strong>Pages</strong>.</p>
 <p>In the <strong>GitHub Pages</strong>, go to the <strong>Branch</strong> section, and change the selection from <code class="docutils literal notranslate"><span class="pre">None</span></code> to <code class="docutils literal notranslate"><span class="pre">gh-pages/root</span></code>.</p>
 <p>Once the branch has been selected, a URL will be provided (please give it a moment) at the top: <strong>“Your site is live at <a class="reference external" href="https://open-energy-transition.github.io/data-science-for-esm/">https://”owner”.github.io/data-science-for-esm</a>”</strong></p>
@@ -469,11 +471,11 @@ is used for generating the required `HTML`, `css`, `.js`, as well as the other f
 </figure>
 </center>
 <p>This GitHub is the go to location for disseminating any material, be it Jupyter Notebooks, slides, videos, markdown text explanations, or links to your other resources.</p>
-<p><strong><mark style="background-color: fuchsia; color: black">Kindly <a class="reference external" href="https://open-energy-transition.github.io/data-science-for-esm/00_intro.html">reference</a> us, in case using our materials, e.g. the workflow presented here.<br><br>By doing so, your success is our success also.</mark></strong></p>
+<p><mark style="background-color: gold; color: black">Kindly <a class="reference external" href="https://open-energy-transition.github.io/data-science-for-esm/00_intro.html">reference</a> us, in case using our materials, e.g. the workflow presented here.<br><br>By doing so, your success is our success also.</mark></p>
 </section>
 <hr class="docutils" />
 <section class="tex2jax_ignore mathjax_ignore" id="deployment-setup">
-<h1><font color="darkgreen">Deployment Setup</font><a class="headerlink" href="#deployment-setup" title="Link to this heading">#</a></h1>
+<h1>Deployment Setup<a class="headerlink" href="#deployment-setup" title="Link to this heading">#</a></h1>
 <blockquote>
 <div><p><strong>Note:</strong> The key point is to set the correct deployment branch in the <code>./github/workflows/deploy.yml</code>.</p>
 </div></blockquote>
@@ -498,7 +500,8 @@ is used for generating the required `HTML`, `css`, `.js`, as well as the other f
 </section>
 <hr class="docutils" />
 <section class="tex2jax_ignore mathjax_ignore" id="content-modification-setup">
-<h1><font color="darkgreen">Content Modification Setup</font><a class="headerlink" href="#content-modification-setup" title="Link to this heading">#</a></h1>
+<h1>Content Modification Setup<a class="headerlink" href="#content-modification-setup" title="Link to this heading">#</a></h1>
+<p>Please use the provided files as templates, as this will assist you in content creating, reducing the time in searching for answers.</p>
 <ul class="simple">
 <li><p>The website logo, as well as the other figures can be placed in the <code class="docutils literal notranslate"><span class="pre">data-science-for-esm/_images/</span></code> folder.</p></li>
 <li><p>Please keep in mind that, when changing images and modifying files, the referencing throughout <code class="docutils literal notranslate"><span class="pre">.md</span></code> and <code class="docutils literal notranslate"><span class="pre">.ipynb</span></code> files needs changing as well.</p></li>
@@ -510,12 +513,12 @@ is used for generating the required `HTML`, `css`, `.js`, as well as the other f
 </ul>
 <p>Both <code class="docutils literal notranslate"><span class="pre">_config.yml</span></code>, as well as the <code class="docutils literal notranslate"><span class="pre">_toc.yml</span></code> are to remain in the root of the <code class="docutils literal notranslate"><span class="pre">data-science-for</span> <span class="pre">esm</span></code> folder. The details of the website, such as the author, logo, other relevant links to GitHub, Google Collab, are defined in the <code class="docutils literal notranslate"><span class="pre">_config.yml</span></code>. Please use the already provided <code class="docutils literal notranslate"><span class="pre">_toc</span></code> and <code class="docutils literal notranslate"><span class="pre">_config.yml</span></code> files as a template, and follow their structure.</p>
 <ul class="simple">
-<li><p>in the <code class="docutils literal notranslate"><span class="pre">data-science-for-esm/_toc.yml</span></code> <em>file</em>, a sequence of files to be included in the GitHub Page is defined, thereafter displayed in the menu, located on the left side of the page</p></li>
+<li><p>In the <code class="docutils literal notranslate"><span class="pre">data-science-for-esm/_toc.yml</span></code> <a class="reference external" href="https://github.com/open-energy-transition/data-science-for-esm/blob/37c3ef84651a12ee947573dfedd6c4b7786731bc/data-science-for-esm/_toc.yml">file</a>, a sequence of files to be included in the GitHub Page is defined, thereafter displayed in the menu, located on the left side of the page.</p></li>
 </ul>
 </section>
 <hr class="docutils" />
 <section class="tex2jax_ignore mathjax_ignore" id="github-workflow-deployment">
-<h1><font color="darkgreen">GitHub Workflow Deployment</font><a class="headerlink" href="#github-workflow-deployment" title="Link to this heading">#</a></h1>
+<h1>GitHub Workflow Deployment<a class="headerlink" href="#github-workflow-deployment" title="Link to this heading">#</a></h1>
 <p>In the <a class="reference internal" href="#deployment-setup"><span class="xref myst">Deployment Setup</span></a> we entered in the <code class="docutils literal notranslate"><span class="pre">.github/workflows/deploy.yml</span></code> <a class="reference external" href="https://github.com/open-energy-transition/data-science-for-esm/blob/ef394898e3100e2bd2d074a8b2da89235355cd4e/.github/workflows/deploy.yml#L4-L7">file</a> which branch, of the repository, is used for the deployment. You are free to use any branch, other than the <code class="docutils literal notranslate"><span class="pre">gh-pages</span></code>, keeping in mind that upon the <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">push</span></code>, the workflow will be triggered.</p>
 <p>The workflow deployment itself is tracked by the status indicator in the repository, in this case a beige-brown dot, which if clicked on, will show the running status, and the deployment details. As mentioned, the deployment takes approx. 2 minutes to finish.</p>
 <center>
@@ -535,7 +538,10 @@ is used for generating the required `HTML`, `css`, `.js`, as well as the other f
     <figcaption>Successful deployment, after a finalized <code>jupyter book build</code> run</figcaption>
 </figure>
 </center>
-<!-- # References -->
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="relevant-references">
+<h1>Relevant References<a class="headerlink" href="#relevant-references" title="Link to this heading">#</a></h1>
+<!-- # Internal Doc References -->
 <!-- <center><mark>Table of Abbreviations</mark></center> -->
 <!-- ###### Table of Abbreviations -->
 </section>
@@ -596,11 +602,12 @@ is used for generating the required `HTML`, `css`, `.js`, as well as the other f
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#"><font color="red">Build Your Own Content</font></a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-a-new-fork-of-this-repository"><font color="darkgreen">Creating a new fork of this repository</font></a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#github-pages-setup"><font color="darkgreen">GitHub Pages Setup</font></a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#deployment-setup"><font color="darkgreen">Deployment Setup</font></a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#content-modification-setup"><font color="darkgreen">Content Modification Setup</font></a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#github-workflow-deployment"><font color="darkgreen">GitHub Workflow Deployment</font></a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-a-new-fork-of-this-repository">Creating a new fork of this repository</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#github-pages-setup">GitHub Pages Setup</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#deployment-setup">Deployment Setup</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#content-modification-setup">Content Modification Setup</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#github-workflow-deployment">GitHub Workflow Deployment</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#relevant-references">Relevant References</a></li>
 </ul>
 
   </nav></div>
