@@ -7,7 +7,8 @@ If you'd like to develop and/or build the Data Science for Energy System Modelli
 1. Clone this repository
 2. Run `pip install -r requirements.txt` (it is recommended you do this within a virtual environment)
 3. Edit the books source files located in the `data-science-for-esm/` directory
-4. Run `jupyter-book toc from-project data-science-for-esm/ -f jb-book` for command-line TOC output - tp be entered verbatim into the **_toc.yml** file
+4. Run `jupyter-book toc from-project data-science-for-esm/ -f jb-book` for command-line TOC output:
+    * to be entered verbatim into the **_toc.yml** file
 5. Run `jupyter-book clean data-science-for-esm/ --all` to remove any existing builds
 6. Run `jupyter-book build data-science-for-esm/`
 
