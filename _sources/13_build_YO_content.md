@@ -94,7 +94,7 @@ This setup uses the `stanford` branch for our workflow, but it can also be the `
 
 The actual deployment is the `jupyter-build book` executed on the data-science-for-esm folder, the command generating the HTML code from the data provided in the [data-science-for-esm folder](https://github.com/open-energy-transition/data-science-for-esm/tree/ef394898e3100e2bd2d074a8b2da89235355cd4e/data-science-for-esm).
 
-Further explanation of the commands to be used is provided in the [README.md](https://github.com/open-energy-transition/data-science-for-esm/blob/37c3ef84651a12ee947573dfedd6c4b7786731bc/README.md) file, as well as the following **References:**
+Further explanation of the commands, e.g. `jupyter-book build` to be used is provided in the [README.md](https://github.com/open-energy-transition/data-science-for-esm/blob/37c3ef84651a12ee947573dfedd6c4b7786731bc/README.md) file, as well as the following **References:**
 1. [Build your book](https://jupyterbook.org/en/stable/start/build.html)
 1. [Build from the command line](https://jupyterbook.org/en/stable/basics/build.html)
 1. [Structure the Table of Contents](https://jupyterbook.org/en/stable/structure/toc.html)
@@ -112,7 +112,13 @@ Please use the provided files as templates, as this will assist you in content c
 
 Both `_config.yml`, as well as the `_toc.yml` are to remain in the root of the `data-science-for esm` folder. The details of the website, such as the author, logo, other relevant links to GitHub, Google Collab, are defined in the `_config.yml`. Please use the already provided `_toc` and `_config.yml` files as a template, and follow their structure.
 
-- In the `data-science-for-esm/_toc.yml` [file](https://github.com/open-energy-transition/data-science-for-esm/blob/37c3ef84651a12ee947573dfedd6c4b7786731bc/data-science-for-esm/_toc.yml), a sequence of files to be included in the GitHub Page is defined, thereafter displayed in the menu, located on the left side of the page.
+- In the `data-science-for-esm/_toc.yml` [file](https://github.com/open-energy-transition/data-science-for-esm/blob/37c3ef84651a12ee947573dfedd6c4b7786731bc/data-science-for-esm/_toc.yml), a sequence of files to be included in the GitHub Page is defined, and further used by the `jupyter-build book` command.
+
+After a successful run, the TOC displayed in the menu, located on the left side of the page.
+
+Please keep in mind that that for a successful workflow run, python environment is required, the required python packages need to be pre-installed. It is optimally using it in a `venv` with a python packaging system `mamba`, for which further instructions are provided in
+
+An IDE is also a prerequisite, and our recommendation would be VSCode, due to ease of use, and being open-source.
 
 ---
 
