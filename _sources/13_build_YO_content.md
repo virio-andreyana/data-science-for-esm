@@ -118,9 +118,9 @@ After a successful run, the TOC displayed in the menu, located on the left side 
 
 Please keep in mind that that for a successful workflow run, the [correct python environment][12] is required, the [required python packages][13] need to be pre-installed.
 
-It is optimally using it in a `venv` with a python packaging system `mamba`, for which further instructions are provided in the [documentation](https://pypsa.readthedocs.io/en/latest/getting-started/installation.html).
+It is optimally using it in a `venv` with a python packaging system `mamba`, for which further instructions are provided in the [documentation][14].
 
-An IDE is also a prerequisite, and our recommendation VSCode, used by [PyPSA developers](), due to ease of use, and being open-source.
+An IDE is also a prerequisite, and our recommendation VSCode, used by [PyPSA developers][15], due to ease of use, and being open-source.
 
 ---
 
@@ -176,6 +176,8 @@ Relevant References for further reading
 [11]: https://open-energy-transition.github.io/data-science-for-esm/00_intro.html
 [12]: https://github.com/open-energy-transition/data-science-for-esm/blob/e52f7980165928a7cd90826ee0bf8cd3fb407892/environment.yaml
 [13]: https://github.com/open-energy-transition/data-science-for-esm/blob/e52f7980165928a7cd90826ee0bf8cd3fb407892/requirements.txt
+[14]: https://pypsa.readthedocs.io/en/latest/getting-started/installation.html
+[15]: https://pypsa-earth.readthedocs.io/en/latest/installation.html
 
 <!-- <center><mark>Table of Abbreviations</mark></center> -->
 <!-- ###### Table of Abbreviations -->
