@@ -20,7 +20,7 @@ The first step is forking this repository. By doing so, one is able to create hi
 
 ---
 
-<font color="darkgreen">Creating a new fork of this repository</font>
+Creating a new fork of this repository
 =====================================================================
 > **Note:** The first step is forking the repository, having the below in mind.
 
@@ -54,7 +54,7 @@ is used for generating the required `HTML`, `css`, `.js`, as well as the other f
 
 ---
 
-<font color="darkgreen">GitHub Pages Setup</font>
+GitHub Pages Setup
 =================================================
 In the your own forked repository `"owner"/data-science-for-energy-system-modelling`, please go to the GitHub **Settings** -> **Pages**.
 
@@ -73,11 +73,11 @@ Once the branch has been selected, a URL will be provided (please give it a mome
 
 This GitHub is the go to location for disseminating any material, be it Jupyter Notebooks, slides, videos, markdown text explanations, or links to your other resources. 
 
-**<mark style="background-color: fuchsia; color: black">Kindly [reference][11] us, in case using our materials, e.g. the workflow presented here.<br><br>By doing so, your success is our success also.</mark>**
+<mark style="background-color: gold; color: black">Kindly [reference][11] us, in case using our materials, e.g. the workflow presented here.<br><br>By doing so, your success is our success also.</mark>
 
 ---
 
-<font color="darkgreen">Deployment Setup</font>
+Deployment Setup
 ===============================================
 > **Note:** The key point is to set the correct deployment branch in the <code>./github/workflows/deploy.yml</code>.
 
@@ -101,8 +101,10 @@ Further explanation of the commands to be used is provided in the [README.md](ht
 
 ---
 
-<font color="darkgreen">Content Modification Setup</font>
+Content Modification Setup
 =========================================================
+Please use the provided files as templates, as this will assist you in content creating, reducing the time in searching for answers.
+
 * The website logo, as well as the other figures can be placed in the `data-science-for-esm/_images/` folder.
 * Please keep in mind that, when changing images and modifying files, the referencing throughout `.md` and `.ipynb` files needs changing as well.
 * The `.ipynb` & `.md` content files are to be placed in the root of the `data-science-for--esm` folder, and specified in the `_toc.yml` file.
@@ -110,11 +112,11 @@ Further explanation of the commands to be used is provided in the [README.md](ht
 
 Both `_config.yml`, as well as the `_toc.yml` are to remain in the root of the `data-science-for esm` folder. The details of the website, such as the author, logo, other relevant links to GitHub, Google Collab, are defined in the `_config.yml`. Please use the already provided `_toc` and `_config.yml` files as a template, and follow their structure.
 
-- in the `data-science-for-esm/_toc.yml` *file*, a sequence of files to be included in the GitHub Page is defined, thereafter displayed in the menu, located on the left side of the page
+- In the `data-science-for-esm/_toc.yml` [file](https://github.com/open-energy-transition/data-science-for-esm/blob/37c3ef84651a12ee947573dfedd6c4b7786731bc/data-science-for-esm/_toc.yml), a sequence of files to be included in the GitHub Page is defined, thereafter displayed in the menu, located on the left side of the page.
 
 ---
 
-<font color="darkgreen">GitHub Workflow Deployment</font>
+GitHub Workflow Deployment
 =========================================================
 In the [Deployment Setup](#deployment-setup) we entered in the `.github/workflows/deploy.yml` [file][08] which branch, of the repository, is used for the deployment. You are free to use any branch, other than the `gh-pages`, keeping in mind that upon the `git push`, the workflow will be triggered.
 
@@ -140,7 +142,12 @@ Upon a successful deployment, indicated by the deploy status - either a green th
 </figure>
 </center>
 
-<!-- # References -->
+
+Relevant References
+===================
+
+
+<!-- # Internal Doc References -->
 [01]: https://github.com/fneum/data-science-for-esm
 [02]: https://github.com/peaceiris/actions-gh-pages
 [03]: https://stanford-rc.github.io/rse-services/docs/resources/documentation
