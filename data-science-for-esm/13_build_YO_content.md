@@ -73,7 +73,7 @@ Once the branch has been selected, a URL will be provided (please give it a mome
 
 This GitHub is the go to location for disseminating any material, be it Jupyter Notebooks, slides, videos, markdown text explanations, or links to your other resources. 
 
-<mark style="background-color: peachpuff; color: black">Kindly [reference][11] us, in case using our materials, e.g. the workflow presented here.<br><br>By doing so, your success is our success also.</mark>
+
 
 ---
 
@@ -149,9 +149,16 @@ Upon a successful deployment, indicated by the deploy status - either a green th
 </center>
 
 
-Relevant References
-===================
+Relevant References for further reading
+=======================================
 
+1. 
+1. 
+1. 
+1. 
+1. 
+
+<mark style="background-color: peachpuff; color: black">Kindly [reference][11] us, in case using our materials, e.g. the workflow presented here.<br><br>By doing so, your success is our success also.</mark>
 
 <!-- # Internal Doc References -->
 [01]: https://github.com/fneum/data-science-for-esm
