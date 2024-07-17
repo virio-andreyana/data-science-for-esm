@@ -116,9 +116,11 @@ Both `_config.yml`, as well as the `_toc.yml` are to remain in the root of the `
 
 After a successful run, the TOC displayed in the menu, located on the left side of the page.
 
-Please keep in mind that that for a successful workflow run, python environment is required, the required python packages need to be pre-installed. It is optimally using it in a `venv` with a python packaging system `mamba`, for which further instructions are provided in
+Please keep in mind that that for a successful workflow run, the [correct python environment][12] is required, the [required python packages][13] need to be pre-installed.
 
-An IDE is also a prerequisite, and our recommendation would be VSCode, due to ease of use, and being open-source.
+It is optimally using it in a `venv` with a python packaging system `mamba`, for which further instructions are provided in the [documentation](https://pypsa.readthedocs.io/en/latest/getting-started/installation.html).
+
+An IDE is also a prerequisite, and our recommendation VSCode, used by [PyPSA developers](), due to ease of use, and being open-source.
 
 ---
 
@@ -158,7 +160,7 @@ Relevant References for further reading
 1. 
 1. 
 
-<mark style="background-color: peachpuff; color: black">Kindly [reference][11] us, in case using our materials, e.g. the workflow presented here.<br><br>By doing so, your success is our success also.</mark>
+<mark style="background-color: peachpuff; color: black">Kindly [reference][11] us, in case using our materials, e.g. the workflow presented here.<br><br>This way, your success is our success also.</mark>
 
 <!-- # Internal Doc References -->
 [01]: https://github.com/fneum/data-science-for-esm
@@ -172,6 +174,8 @@ Relevant References for further reading
 [07]: https://github.com/open-energy-transition/data-science-for-esm/blob/ef394898e3100e2bd2d074a8b2da89235355cd4e/.github/workflows/deploy.yml
 [08]: https://github.com/open-energy-transition/data-science-for-esm/blob/ef394898e3100e2bd2d074a8b2da89235355cd4e/.github/workflows/deploy.yml#L4-L7
 [11]: https://open-energy-transition.github.io/data-science-for-esm/00_intro.html
+[12]: https://github.com/open-energy-transition/data-science-for-esm/blob/e52f7980165928a7cd90826ee0bf8cd3fb407892/environment.yaml
+[13]: https://github.com/open-energy-transition/data-science-for-esm/blob/e52f7980165928a7cd90826ee0bf8cd3fb407892/requirements.txt
 
 <!-- <center><mark>Table of Abbreviations</mark></center> -->
 <!-- ###### Table of Abbreviations -->
