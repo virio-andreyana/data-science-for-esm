@@ -14,7 +14,8 @@ This section assists academics, and alike, in build their content, by modifying 
 
 * Its primary purpose if helping/guiding on building a GitHub page, to be used for generating learning material, i.e. lectures, or similar.
 * It can also be used for any other purpose, for that matter.
-* This setup draws from the [peaceiris actions-gh-pages][02], in specific using the [Static Site Generator with Python](https://github.com/peaceiris/actions-gh-pages?tab=readme-ov-file#%EF%B8%8F-static-site-generators-with-python). However, this serves only as a reference, as the the full explanation is blow.
+* This setup draws from the [peaceiris actions-gh-pages][02], in specific using the [Static Site Generator with Python](https://github.com/peaceiris/actions-gh-pages?tab=readme-ov-file#%EF%B8%8F-static-site-generators-with-python).
+    * This serves only as a reference, as the the full explanation is blow.
 
 The first step is forking this repository. By doing so, one is able to create his own website, similar to this one, with a tailor-made content, quickly and with ease. However, there are two or three thing to keep in mind when doing so, so please read on.
 
