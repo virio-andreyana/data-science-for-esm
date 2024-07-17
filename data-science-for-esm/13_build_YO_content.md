@@ -94,7 +94,7 @@ This setup uses the `stanford` branch for our workflow, but it can also be the `
 
 The actual deployment is the `jupyter-build book` executed on the data-science-for-esm folder, the command generating the HTML code from the data provided in the [data-science-for-esm folder](https://github.com/open-energy-transition/data-science-for-esm/tree/ef394898e3100e2bd2d074a8b2da89235355cd4e/data-science-for-esm).
 
-Further explanation of the commands to be used is provided in the [README.md](https://github.com/open-energy-transition/data-science-for-esm/blob/ef394898e3100e2bd2d074a8b2da89235355cd4e/README.md) file, as well as the following **References:**
+Further explanation of the commands to be used is provided in the [README.md](https://github.com/open-energy-transition/data-science-for-esm/blob/37c3ef84651a12ee947573dfedd6c4b7786731bc/README.md) file, as well as the following **References:**
 1. [Build your book](https://jupyterbook.org/en/stable/start/build.html)
 1. [Build from the command line](https://jupyterbook.org/en/stable/basics/build.html)
 1. '[Structure the Table of Contents](https://jupyterbook.org/en/stable/structure/toc.html)
