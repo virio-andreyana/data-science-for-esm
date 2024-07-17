@@ -25,7 +25,7 @@ Creating a new fork of this repository
 =====================================================================
 > **Note:** The first step is forking the repository, having the below in mind.
 
-Before forking this repository please have the following in mind. In the <strong><b><mark>Create a new fork</mark></b></strong> pop-up menu, shown in the figure below, **deselect** the default **Copy the `main` branch only** option. By doing so, you will reduce further branch creation, necessary for this to work.
+Before forking this repository please have the following in mind. In the <strong><b><mark>Create a new fork</mark></b></strong> pop-up menu, shown in the figure below, **deselect** the default **Copy the `main` branch only** option. By doing so, you will reduce further branch creation, required by the workflow.
 
 :::{note}
 <center>
@@ -42,7 +42,7 @@ Before forking this repository please have the following in mind. In the <strong
 
 * Alternatively, `stanford` branch can be created locally and `git pushed`, however, this is to be skipped if adhering to the **Note** above.
 * `gh-pages` branch will be automatically generated, as defined by the workflow, hence its creation is not required.
-* It is also **not** required to have the `gh-pages` locally, once generated, as it hosts only the website files, which are taken care of by the workflow.
+* It is also **not** required to have the `gh-pages` locally, once generated, as it hosts only the static site build files, which are taken care of by the workflow.
 
 > **Note:** The remote `gh-pages`, itself, hosts the required `HTML`, `css`, `.js`, and the other files, used for generating the `github.io` website. Hence, there is no requirement for having the branch locally.
 
