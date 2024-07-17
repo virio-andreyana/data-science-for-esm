@@ -73,7 +73,7 @@ Once the branch has been selected, a URL will be provided (please give it a mome
 
 This GitHub is the go to location for disseminating any material, be it Jupyter Notebooks, slides, videos, markdown text explanations, or links to your other resources. 
 
-**<mark style="background-color: fuchsia; color: black">Kindly [reference][11] us, in case using this workflow, or our materials, presented here.By doing so, your success is our successalso.</mark>**
+**<mark style="background-color: fuchsia; color: black">Kindly [reference][11] us, in case of our materials, e.g. the workflow presented here. By doing so, your success is our success also.</mark>**
 
 ---
 
@@ -91,6 +91,13 @@ This GitHub is the go to location for disseminating any material, be it Jupyter 
 The specified `branch` can be any, other than the <ins>`gh-pages`</ins>.
 
 This setup uses the `stanford` branch for our workflow, but it can also be the `main`, or any other newly created branch. Upon the `git push`, the [workflow](#github-workflow-deployment) will be triggered.
+
+The actual deployment is the `jupyter-build book` executed on the data-science-for-esm folder, the command generating the HTML code from the data provided in the [data-science-for-esm folder](https://github.com/open-energy-transition/data-science-for-esm/tree/ef394898e3100e2bd2d074a8b2da89235355cd4e/data-science-for-esm).
+
+Further explanation fot this is provided in the [README.md file](https://github.com/open-energy-transition/data-science-for-esm/blob/ef394898e3100e2bd2d074a8b2da89235355cd4e/README.md), as well as the following **references:**
+1. [Build your book](https://jupyterbook.org/en/stable/start/build.html)
+1. [Build from the command line](https://jupyterbook.org/en/stable/basics/build.html)
+1. '[Structure the Table of Contents](https://jupyterbook.org/en/stable/structure/toc.html)
 
 ---
 

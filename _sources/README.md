@@ -1,18 +1,15 @@
-# Data Science for Energy System Modelling
-
-Course at TU Berlin to learn energy system modelling with data.
-
 ## Usage
 
 ### Building the book
 
 If you'd like to develop and/or build the Data Science for Energy System Modelling book, you should:
 
-1. Clone this repository
-2. Run `pip install -r requirements.txt` (it is recommended you do this within a virtual environment)
-3. (Optional) Edit the books source files located in the `data-science-for-esm/` directory
-4. Run `jupyter-book clean data-science-for-esm/` to remove any existing builds
-5. Run `jupyter-book build data-science-for-esm/`
+1. Fork this repository
+2. Run `pip install -r requirements.txt` (it is recommended you do this within a virtual environment using mamba)
+3. Edit the books source files located in the `data-science-for-esm/` directory
+4. Run `jupyter-book toc from-project data-science-for-esm/ -f jb-book` for command-line TOC output - to be entered verbatim into the **_toc.yml** file
+5. Run `jupyter-book clean data-science-for-esm/ --all` to remove any existing builds
+6. Run `jupyter-book build data-science-for-esm/`
 
 A fully-rendered HTML version of the book will be built in `data-science-for-esm/_build/html/`.
 
