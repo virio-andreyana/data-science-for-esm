@@ -14,8 +14,8 @@ This section assists academics, and alike, in build their content, by modifying 
 
 * Its primary purpose if helping/guiding on building a GitHub page, to be used for generating learning material, i.e. lectures, or similar.
 * It can also be used for any other purpose, for that matter.
-* This setup draws from the [peaceiris actions-gh-pages][02], in specific using the [Static Site Generator with Python](https://github.com/peaceiris/actions-gh-pages?tab=readme-ov-file#%EF%B8%8F-static-site-generators-with-python).
-    * *This serves only as a reference, as the the full explanation is blow.*
+* This setup draws from the [peaceiris actions-gh-pages][02], in specific using the [Static Site Generator with Python][17].
+    * *This serves only as a reference, as the the full explanation is below.*
 
 The first step is forking this repository. By doing so, one is able to create his own website, similar to this one, with a tailor-made content, quickly and with ease. However, there are two or three thing to keep in mind when doing so, so please read on.
 
@@ -92,7 +92,7 @@ The specified `branch` can be any, other than the <ins>`gh-pages`</ins>.
 
 This setup uses the `stanford` branch for our workflow, but it can also be the `main`, or any other newly created branch. Upon the `git push`, the [workflow](#github-workflow-deployment) will be triggered.
 
-The actual deployment is the `jupyter-build book` executed on the data-science-for-esm folder, the command generating the HTML code from the data provided in the [data-science-for-esm folder](https://github.com/open-energy-transition/data-science-for-esm/tree/ef394898e3100e2bd2d074a8b2da89235355cd4e/data-science-for-esm).
+The actual deployment is the `jupyter-build book` executed on the data-science-for-esm folder, the command generating the HTML code from the data provided in the [data-science-for-esm folder][16].
 
 Further explanation of the commands, e.g. `jupyter-book build` to be used is provided in the [README.md](https://github.com/open-energy-transition/data-science-for-esm/blob/37c3ef84651a12ee947573dfedd6c4b7786731bc/README.md) file, as well as the following **References:**
 1. [Build your book](https://jupyterbook.org/en/stable/start/build.html)
@@ -116,9 +116,9 @@ Both `_config.yml`, as well as the `_toc.yml` are to remain in the root of the `
 
 After a successful run, the TOC displayed in the menu, located on the left side of the page.
 
-Please keep in mind that that for a successful workflow run, the [correct python environment][12] is required, the [required python packages][13] need to be pre-installed.
+Please keep in mind that that for a successful workflow run, the [correct python environment][12], with all the [python package dependencies][13], is required.
 
-It is optimally using it in a `venv` with a python packaging system `mamba`, for which further instructions are provided in the [documentation][14].
+Python is optimally used in a `venv` and a package manager `mamba`, for which further detailed installation instructions are provided in the [documentation][15].
 
 An IDE is also a prerequisite, and our recommendation VSCode, used by [PyPSA developers][15], due to ease of use, and being open-source.
 
@@ -165,19 +165,20 @@ Relevant References for further reading
 <!-- # Internal Doc References -->
 [01]: https://github.com/fneum/data-science-for-esm
 [02]: https://github.com/peaceiris/actions-gh-pages
-[03]: https://stanford-rc.github.io/rse-services/docs/resources/documentation
-[09]: https://github.com/open-energy-transition/data-science-for-esm/fork
-[10]: https://github.com/open-energy-transition/data-science-for-esm/settings/pages
 [04]: https://moseskonto.tu-berlin.de/moses/modultransfersystem/bolognamodule/beschreibung/anzeigen.html;jsessionid=DQfixqzzpn1XIg5N1GG7S9um4EDykZn99AHmH6Fj.moseskonto?number=31027&version=1&sprache=2
 [05]: https://neumann.fyi
 [06]: https://www.tu.berlin/ensys
 [07]: https://github.com/open-energy-transition/data-science-for-esm/blob/ef394898e3100e2bd2d074a8b2da89235355cd4e/.github/workflows/deploy.yml
 [08]: https://github.com/open-energy-transition/data-science-for-esm/blob/ef394898e3100e2bd2d074a8b2da89235355cd4e/.github/workflows/deploy.yml#L4-L7
+[09]: https://github.com/open-energy-transition/data-science-for-esm/fork
+[10]: https://github.com/open-energy-transition/data-science-for-esm/settings/pages
 [11]: https://open-energy-transition.github.io/data-science-for-esm/00_intro.html
 [12]: https://github.com/open-energy-transition/data-science-for-esm/blob/e52f7980165928a7cd90826ee0bf8cd3fb407892/environment.yaml
 [13]: https://github.com/open-energy-transition/data-science-for-esm/blob/e52f7980165928a7cd90826ee0bf8cd3fb407892/requirements.txt
-[14]: https://pypsa.readthedocs.io/en/latest/getting-started/installation.html
+<!-- [14]: https://pypsa.readthedocs.io/en/latest/getting-started/installation.html -->
 [15]: https://pypsa-earth.readthedocs.io/en/latest/installation.html
+[16]: https://github.com/open-energy-transition/data-science-for-esm/tree/ef394898e3100e2bd2d074a8b2da89235355cd4e/data-science-for-esm
+[17]: https://github.com/peaceiris/actions-gh-pages?tab=readme-ov-file#%EF%B8%8F-static-site-generators-with-python
 
 <!-- <center><mark>Table of Abbreviations</mark></center> -->
 <!-- ###### Table of Abbreviations -->
