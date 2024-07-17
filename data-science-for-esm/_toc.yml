@@ -7,4 +7,4 @@ chapters:
 - file: 09_workshop_pypsa
 - file: 12_workshop_pypsa_sector_coupling
 - file: 13_build_YO_content
-- file: 14_README.md
+#- file: 14_README.md
