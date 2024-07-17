@@ -94,7 +94,7 @@ This setup uses the `stanford` branch for our workflow, but it can also be the `
 
 The actual deployment is the `jupyter-build book` executed on the data-science-for-esm folder, the command generating the HTML code from the data provided in the [data-science-for-esm folder](https://github.com/open-energy-transition/data-science-for-esm/tree/ef394898e3100e2bd2d074a8b2da89235355cd4e/data-science-for-esm).
 
-Further explanation fot this is provided in the [README.md file](https://github.com/open-energy-transition/data-science-for-esm/blob/ef394898e3100e2bd2d074a8b2da89235355cd4e/README.md), as well as the following **references:**
+Further explanation of the commands to be used is provided in the [README.md](https://github.com/open-energy-transition/data-science-for-esm/blob/ef394898e3100e2bd2d074a8b2da89235355cd4e/README.md) file, as well as the following **references:**
 1. [Build your book](https://jupyterbook.org/en/stable/start/build.html)
 1. [Build from the command line](https://jupyterbook.org/en/stable/basics/build.html)
 1. '[Structure the Table of Contents](https://jupyterbook.org/en/stable/structure/toc.html)
@@ -103,7 +103,9 @@ Further explanation fot this is provided in the [README.md file](https://github.
 
 <font color="darkgreen">Content Modification Setup</font>
 =========================================================
-The website logo, as well as the other figures can be placed in the `data-science-for-esm/_images/` folder. The content in terms od the `.ipynb` & `.md` files are to be placed in the root of the `data-science-for--esm` folder, and specified in the `_toc.yml` file. If not being placed in the root, the workflow will be unable to locate the files specified in the `_toc.yml`, resulting in the unsuccessful deployment, and not accessible `github.io` site.
+The website logo, as well as the other figures can be placed in the `data-science-for-esm/_images/` folder. Please keep in mind that, when changing images and modifying files, the referencing throughout `.md` and `.ipynb` files needs changing as well.
+
+in The content in terms od the `.ipynb` & `.md` files are to be placed in the root of the `data-science-for--esm` folder, and specified in the `_toc.yml` file. If not being placed in the root, the workflow will be unable to locate the files specified in the `_toc.yml`, resulting in the unsuccessful deployment, and not accessible `github.io` site.
 
 Both `_config.yml`, as well as the `_toc.yml``are to remain in the root of the `data-science-for esm` folder. In the `_config.yml` details of the website, such as the author, logo, other relevant links to GitHub, Google Collab, can be defined. Please use the already provided `_toc` and `_config.yml` files as a template, and follow the provided structure.
 
