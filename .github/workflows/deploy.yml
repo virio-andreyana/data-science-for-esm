@@ -4,7 +4,7 @@ on:
   # Trigger the workflow on push to stanford branch
   push:
     branches:
-    - stanford
+    - main
     
 permissions:
   pages: write
