@@ -11,11 +11,11 @@
 <!-- ###### List of Abbreviation[^bignote] -->
 
 <br>
-**This section assists academics, and alike, in build their content, by modifying this repository, or the original [Dr. F. Neumann's repository][01].** We use Dr. Neumann's repository in the figures below.
+This section assists academics, and alike, in build their content, by modifying this repository, or the original [Dr. F. Neumann's repository][01]. Dr. Neumann's repository is used as ane example in the figures below.
 
-> **Goal:** To create a course page for your own teaching, like OET has done, follow this guide.
+> **Goal:** *To create a course page for your own teaching, like OET has done, follow this guide.*
 
-* Its primary purpose if helping/guiding on how to build/generate a GitHub page, to be used for learning material, i.e. lectures, or similar.
+* Its primary purpose is guidance on how to generate a GitHub page, to be used for learning material, i.e. lectures, or similar.
 * It can also be used for any other purpose, for that matter.
 * This setup draws from the [peaceiris actions-gh-pages][02], in specific using the [Static Site Generator with Python][17].
     * *This serves only as a reference, as the the full explanation is below.*
