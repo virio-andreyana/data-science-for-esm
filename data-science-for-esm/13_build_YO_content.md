@@ -10,9 +10,11 @@
 ===============================================
 <!-- ###### List of Abbreviation[^bignote] -->
 
-This section assists academics, and alike, in build their content, by modifying this repository, or the original [Dr. F. Neumann's repository][01].
+**This section assists academics, and alike, in build their content, by modifying this repository, or the original [Dr. F. Neumann's repository][01].** We use Dr. Neumann's repository in the figures below.
 
-* Its primary purpose if helping/guiding on building a GitHub page, to be used for generating learning material, i.e. lectures, or similar.
+> **Goal:** To create a course page for your own teaching, like OET has done, follow this guide
+
+* Its primary purpose if helping/guiding on how to build/generate a GitHub page, to be used for learning material, i.e. lectures, or similar.
 * It can also be used for any other purpose, for that matter.
 * This setup draws from the [peaceiris actions-gh-pages][02], in specific using the [Static Site Generator with Python][17].
     * *This serves only as a reference, as the the full explanation is below.*
@@ -33,7 +35,7 @@ By doing so, you will reduce further branch creation, required by the workflow.
 :::{note}
 <center>
 <figure>
-    <a href='https://github.com/open-energy-transition/data-science-for-esm/fork'>
+    <a href='https://github.com/fneum/data-science-for-esm/fork'>
     <img src='https://github.com/open-energy-transition/data-science-for-esm/raw/stanford/data-science-for-esm/_images/03_fork_option.png' alt='' width='95%' style='vertical-align:middle;border:5px solid goldenrod;margin:20px 0px' />
     </a>
     <figcaption>Clicking on the image above will lead directly to the <strong><b><mark>Create a new fork</mark></b></strong> menu</figcaption>
@@ -84,7 +86,7 @@ Deployment Setup
 ===============================================
 > **Note:** The key point is to set the correct deployment branch in the <code>./github/workflows/deploy.yml</code>.
 
-In the <code>.github/workflows/deploy.yml</code> [file][08] please specify the branch, which will later be used by the workflow. Upon the `git push` command to the specified branch, the workflow will be triggered:
+In the <code>.github/workflows/deploy.yml</code> [file][08] please specify the branch, later to be used by the workflow. Upon the `git push` command to the specified branch, the workflow will be triggered:
 
 ~~~
     push:
@@ -96,9 +98,9 @@ The specified `branch` can be any[^1], other than the <ins>`gh-pages`</ins>.
 
 This setup uses the `stanford` branch for our workflow, but it can also be the `main`, or any other newly created branch. Upon the `git push`, the [workflow](#github-workflow-deployment) will be triggered.
 
-The actual deployment is the `jupyter-build book` executed on the data-science-for-esm folder, the command generating the HTML code from the data provided in the [data-science-for-esm folder][16].
+The deployment itself is the `jupyter-build book` [command](https://github.com/open-energy-transition/data-science-for-esm/blob/b1ab15c6d99fb325ca3877b0d33578a42669c3b7/.github/workflows/deploy.yml#L37) being executed on the [data-science-for-esm folder][16]. This command is generating the HTML code from the data provided in the data-science-for-esm folder.
 
-Further explanation of the commands, e.g. `jupyter-book build` to be used is provided in the [README.md](https://github.com/open-energy-transition/data-science-for-esm/blob/37c3ef84651a12ee947573dfedd6c4b7786731bc/README.md) file, as well as the following **References:**
+Further explanation of this command, i.e. `jupyter-book build`, as well as the other  to be used is provided in the [README.md](https://github.com/open-energy-transition/data-science-for-esm/blob/37c3ef84651a12ee947573dfedd6c4b7786731bc/README.md) file, as well as the following **References:**
 1. [Build your book](https://jupyterbook.org/en/stable/start/build.html)
 1. [Build from the command line](https://jupyterbook.org/en/stable/basics/build.html)
 1. [Structure the Table of Contents](https://jupyterbook.org/en/stable/structure/toc.html)
