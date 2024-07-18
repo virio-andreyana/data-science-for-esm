@@ -85,11 +85,12 @@ Deployment Setup
 > **Note:** The key point is to set the correct deployment branch in the <code>./github/workflows/deploy.yml</code>.
 
 In the <code>.github/workflows/deploy.yml</code> [file][08] please specify the branch, which will later be used by the workflow. Upon the `git push` command to the specified branch, the workflow will be triggered:
-    ~~~
+
+~~~
     push:
       branches:
       - stanford
-    ~~~
+~~~
 
 The specified `branch` can be any[^1], other than the <ins>`gh-pages`</ins>.
 
