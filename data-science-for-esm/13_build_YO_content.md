@@ -10,6 +10,7 @@
 ===============================================
 <!-- ###### List of Abbreviation[^bignote] -->
 
+<br>
 **This section assists academics, and alike, in build their content, by modifying this repository, or the original [Dr. F. Neumann's repository][01].** We use Dr. Neumann's repository in the figures below.
 
 > **Goal:** To create a course page for your own teaching, like OET has done, follow this guide.
@@ -26,7 +27,7 @@ Requirements
 ------------
 Please keep in mind that that for a successful workflow run, the [correct python environment][12], with all the [python package dependencies][13], is required. Our suggestion is `venv` and a package manager `mamba`, for which further detailed, and well explained, installation instructions are provided in the [documentation of PyPSA-Earth creators][15].
 
-* Please also keep in mind that there is no need to run the the usual
+* Please also keep in mind that there is no need to run the the usual:
 
 ~~~
 pip install -r requirements.txt
@@ -38,15 +39,13 @@ as the
 mamba env create -f envs/environment.yaml
 ~~~
 
-takes care of both the correct `venv` creation, and packages installation. The only package requiring `pip` is the `highspy` solver, which we highly recommend for general use, and for that an installed `pip` is needed:
+takes care of both the correct `venv` creation, and packages installation. The only package requiring `pip` is the `highspy` solver. We highly recommend `highspy` for general use, and for that an installed `pip` is needed:
 ~~~
 sudo apt install python3-pip -y
 pip install highspy
 ~~~
 
-Python is optimally used in a 
-
-An IDE is also a prerequisite. Our recommendation is VSCode, used by the [PyPSA developers][15], due to ease of use, and being open-source.
+Python and `*.ipynb` are optimally used in an IDE. Our recommendation is VSCode, used by the [PyPSA developers][15], due to ease of use, and being open-source.
 
 ---
 
