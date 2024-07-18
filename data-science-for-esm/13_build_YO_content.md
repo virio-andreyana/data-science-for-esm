@@ -154,7 +154,10 @@ Please use the provided files as templates, as this will assist you in content c
 * Please modify `*.ipynb` files as seen fit. They are the core-content.
 * Upon each content update, there is a chain of git to-do commands, resulting in the website update:
 ~~~
-git add
+git status
+git add .
+git commit -m 'new changes applied'
+git push origin stanford
 ~~~
 
 Both `_config.yml`, as well as the `_toc.yml` are to remain in the root of the `data-science-for esm` folder. The details of the website, such as the author, logo, other relevant links to GitHub, Google Collab, are defined in the `_config.yml`. Please use the already provided `_toc` and `_config.yml` files as a template, and follow their structure.
