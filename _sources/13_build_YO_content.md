@@ -27,19 +27,19 @@ Requirements
 ------------
 Please keep in mind that that for a successful workflow run, the [correct python environment][12], with all the [python package dependencies][13] satisfied, is required. Our suggestion is `venv` and a package manager `mamba`, for which further details, and installation instructions, are provided in the [documentation of PyPSA-Earth creators][15].
 
-* Please also keep in mind that there is no need to run the the usual:
+* Please also keep in mind that there is no need for the usual:
 
 ~~~
 pip install -r requirements.txt
 ~~~
 
-as the
+since the
 
 ~~~
 mamba env create -f envs/environment.yaml
 ~~~
 
-takes care of both the correct `venv` creation, and packages installation. The only package requiring `pip` is the `highspy` solver. We highly recommend `highspy` for general use, and for that an installed `pip` is needed:
+takes care of both the correct `venv` creation, and packages installation. The only package requiring `pip` is the `highspy` solver. We highly recommend using `highspy`, and for that `pip` is needed:
 ~~~
 sudo apt install python3-pip -y
 pip install highspy

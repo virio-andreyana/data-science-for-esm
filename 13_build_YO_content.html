@@ -434,16 +434,16 @@ document.write(`
 <h2>Requirements<a class="headerlink" href="#requirements" title="Link to this heading">#</a></h2>
 <p>Please keep in mind that that for a successful workflow run, the <a class="reference external" href="https://github.com/open-energy-transition/data-science-for-esm/blob/e52f7980165928a7cd90826ee0bf8cd3fb407892/environment.yaml">correct python environment</a>, with all the <a class="reference external" href="https://github.com/open-energy-transition/data-science-for-esm/blob/e52f7980165928a7cd90826ee0bf8cd3fb407892/requirements.txt">python package dependencies</a> satisfied, is required. Our suggestion is <code class="docutils literal notranslate"><span class="pre">venv</span></code> and a package manager <code class="docutils literal notranslate"><span class="pre">mamba</span></code>, for which further details, and installation instructions, are provided in the <a class="reference external" href="https://pypsa-earth.readthedocs.io/en/latest/installation.html">documentation of PyPSA-Earth creators</a>.</p>
 <ul class="simple">
-<li><p>Please also keep in mind that there is no need to run the the usual:</p></li>
+<li><p>Please also keep in mind that there is no need for the usual:</p></li>
 </ul>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="o">-</span><span class="n">r</span> <span class="n">requirements</span><span class="o">.</span><span class="n">txt</span>
 </pre></div>
 </div>
-<p>as the</p>
+<p>since the</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">mamba</span> <span class="n">env</span> <span class="n">create</span> <span class="o">-</span><span class="n">f</span> <span class="n">envs</span><span class="o">/</span><span class="n">environment</span><span class="o">.</span><span class="n">yaml</span>
 </pre></div>
 </div>
-<p>takes care of both the correct <code class="docutils literal notranslate"><span class="pre">venv</span></code> creation, and packages installation. The only package requiring <code class="docutils literal notranslate"><span class="pre">pip</span></code> is the <code class="docutils literal notranslate"><span class="pre">highspy</span></code> solver. We highly recommend <code class="docutils literal notranslate"><span class="pre">highspy</span></code> for general use, and for that an installed <code class="docutils literal notranslate"><span class="pre">pip</span></code> is needed:</p>
+<p>takes care of both the correct <code class="docutils literal notranslate"><span class="pre">venv</span></code> creation, and packages installation. The only package requiring <code class="docutils literal notranslate"><span class="pre">pip</span></code> is the <code class="docutils literal notranslate"><span class="pre">highspy</span></code> solver. We highly recommend using <code class="docutils literal notranslate"><span class="pre">highspy</span></code>, and for that <code class="docutils literal notranslate"><span class="pre">pip</span></code> is needed:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">apt</span> <span class="n">install</span> <span class="n">python3</span><span class="o">-</span><span class="n">pip</span> <span class="o">-</span><span class="n">y</span>
 <span class="n">pip</span> <span class="n">install</span> <span class="n">highspy</span>
 </pre></div>
