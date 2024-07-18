@@ -166,7 +166,9 @@ Relevant References for further reading
 1. 
 1. 
 
-<mark style="background-color: peachpuff; color: black">Kindly [reference][11] us, in case using our materials, e.g. the workflow presented here.<br><br>This way, your success is our success also.</mark>
+<!-- <mark style="background-color: peachpuff; color: black"> -->
+*Kindly [reference][11] us, in case using our materials, e.g. the workflow presented here.
+This way, your success is our success also.*
 
 <!-- # Internal Doc References -->
 [01]: https://github.com/fneum/data-science-for-esm
