@@ -28,11 +28,15 @@ Please keep in mind that that for a successful workflow run, the [correct python
 
 * Please also keep in mind that there is no need to run the the usual
 
-~~~pip install -r requirements.txt~~~
+~~~
+pip install -r requirements.txt
+~~~
 
 as the
 
-~~~mamba env create -f envs/environment.yaml~~~
+~~~
+mamba env create -f envs/environment.yaml
+~~~
 
 takes care of both the correct `venv` creation, and packages installation. The only package requiring `pip` is the `highspy` solver, which we highly recommend for general use, and for that an installed `pip` is needed:
 ~~~

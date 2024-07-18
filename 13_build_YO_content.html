@@ -184,6 +184,12 @@
 
 <li class="toctree-l1"><a class="reference internal" href="12_workshop_pypsa_sector_coupling.html">Sector-Coupling with <code class="docutils literal notranslate"><span class="pre">pypsa</span></code></a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#"><font color="red">Build Your Own Content</font></a></li>
+
+
+
+
+
+
 </ul>
 
     </div>
@@ -379,8 +385,18 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#"><font color="red">Build Your Own Content</font></a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#requirements">Requirements</a></li>
 </ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-a-new-fork-of-this-repository">Creating a new fork of this repository</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#github-pages-setup">GitHub Pages Setup</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#deployment-setup">Deployment Setup</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#content-modification-setup">Content Modification Setup</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#github-workflow-deployment">GitHub Workflow Deployment</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#relevant-references-for-further-reading">Relevant References for further reading</a></li>
+</ul>
+
             </nav>
         </div>
     </div>
@@ -400,14 +416,14 @@ document.write(`
 <section class="tex2jax_ignore mathjax_ignore" id="build-your-own-content">
 <h1><font color="red">Build Your Own Content</font><a class="headerlink" href="#build-your-own-content" title="Link to this heading">#</a></h1>
 <!-- ###### List of Abbreviation[^bignote] -->
-<p><strong>This section assists academics, and alike, in build their content, by modifying this repository, or the original [Dr. F. Neumann’s repository][01].</strong> We use Dr. Neumann’s repository in the figures below.</p>
+<p><strong>This section assists academics, and alike, in build their content, by modifying this repository, or the original <a class="reference external" href="https://github.com/fneum/data-science-for-esm">Dr. F. Neumann’s repository</a>.</strong> We use Dr. Neumann’s repository in the figures below.</p>
 <blockquote>
 <div><p><strong>Goal:</strong> To create a course page for your own teaching, like OET has done, follow this guide.</p>
 </div></blockquote>
 <ul class="simple">
 <li><p>Its primary purpose if helping/guiding on how to build/generate a GitHub page, to be used for learning material, i.e. lectures, or similar.</p></li>
 <li><p>It can also be used for any other purpose, for that matter.</p></li>
-<li><p>This setup draws from the [peaceiris actions-gh-pages][02], in specific using the [Static Site Generator with Python][17].</p>
+<li><p>This setup draws from the <a class="reference external" href="https://github.com/peaceiris/actions-gh-pages">peaceiris actions-gh-pages</a>, in specific using the <a class="reference external" href="https://github.com/peaceiris/actions-gh-pages?tab=readme-ov-file#%EF%B8%8F-static-site-generators-with-python">Static Site Generator with Python</a>.</p>
 <ul>
 <li><p><em>This serves only as a reference, as the the full explanation is below.</em></p></li>
 </ul>
@@ -416,202 +432,173 @@ document.write(`
 <p>The first step is forking this repository. By doing so, one is able to create his own website, similar to this one, with a tailor-made content, quickly and with ease. However, there are two or three thing to keep in mind when doing so, so please read on.</p>
 <section id="requirements">
 <h2>Requirements<a class="headerlink" href="#requirements" title="Link to this heading">#</a></h2>
-<p>Please keep in mind that that for a successful workflow run, the [correct python environment][12], with all the [python package dependencies][13], is required. Our suggestion is <code class="docutils literal notranslate"><span class="pre">venv</span></code> and a package manager <code class="docutils literal notranslate"><span class="pre">mamba</span></code>, for which further detailed, and well explained, installation instructions are provided in the [documentation of PyPSA-Earth creators][15].</p>
+<p>Please keep in mind that that for a successful workflow run, the <a class="reference external" href="https://github.com/open-energy-transition/data-science-for-esm/blob/e52f7980165928a7cd90826ee0bf8cd3fb407892/environment.yaml">correct python environment</a>, with all the <a class="reference external" href="https://github.com/open-energy-transition/data-science-for-esm/blob/e52f7980165928a7cd90826ee0bf8cd3fb407892/requirements.txt">python package dependencies</a>, is required. Our suggestion is <code class="docutils literal notranslate"><span class="pre">venv</span></code> and a package manager <code class="docutils literal notranslate"><span class="pre">mamba</span></code>, for which further detailed, and well explained, installation instructions are provided in the <a class="reference external" href="https://pypsa-earth.readthedocs.io/en/latest/installation.html">documentation of PyPSA-Earth creators</a>.</p>
 <ul class="simple">
 <li><p>Please also keep in mind that there is no need to run the the usual</p></li>
 </ul>
-<div class="highlight-pip notranslate"><div class="highlight"><pre><span></span>
-as the
-
-~~~mamba env create -f envs/environment.yaml~~~
-
-takes care of both the correct `venv` creation, and packages installation. The only package requiring `pip` is the `highspy` solver, which we highly recommend for general use, and for that an installed `pip` is needed:
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="o">-</span><span class="n">r</span> <span class="n">requirements</span><span class="o">.</span><span class="n">txt</span>
 </pre></div>
 </div>
-<p>sudo apt install python3-pip -y
-pip install highspy</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>
-Python is optimally used in a 
-
-An IDE is also a prerequisite. Our recommendation is VSCode, used by the [PyPSA developers][15], due to ease of use, and being open-source.
-
----
-
-Creating a new fork of this repository
-=====================================================================
-&gt; **Note:** The first step is forking the repository, having the below in mind.
-
-Before forking this repository please have the following in mind:
-    * In the &lt;strong&gt;&lt;b&gt;&lt;mark&gt;Create a new fork&lt;/mark&gt;&lt;/b&gt;&lt;/strong&gt; pop-up menu, shown in the figure below, **deselect** the default **Copy the `main` branch only** option. 
-    
-By doing so, you will reduce further branch creation, required by the workflow.
-
-:::{note}
-&lt;center&gt;
-&lt;figure&gt;
-    &lt;a href=&#39;https://github.com/fneum/data-science-for-esm/fork&#39;&gt;
-    &lt;img src=&#39;https://github.com/open-energy-transition/data-science-for-esm/raw/stanford/data-science-for-esm/_images/03_fork_option.png&#39; alt=&#39;&#39; width=&#39;95%&#39; style=&#39;vertical-align:middle;border:5px solid goldenrod;margin:20px 0px&#39; /&gt;
-    &lt;/a&gt;
-    &lt;figcaption&gt;Clicking on the image above will lead directly to the &lt;strong&gt;&lt;b&gt;&lt;mark&gt;Create a new fork&lt;/mark&gt;&lt;/b&gt;&lt;/strong&gt; menu&lt;/figcaption&gt;
-&lt;/figure&gt;
-&lt;/center&gt;
-:::
-
-&gt; **Note:** The key point is to have/keep the `stanford` branch in your fork. This is fully tested using the `stanford` branch
-
-* Alternatively, `stanford` branch can be created locally and `git pushed`, however, this is to be skipped if adhering to the **Note** above.
-* `gh-pages` branch will be automatically generated, as defined by the workflow, hence its creation is not required.
-* It is also **not** required to have the `gh-pages` locally, once generated, as it hosts only the static site build files, which are taken care of by the workflow.
-
-&gt; **Note:** The remote `gh-pages`, itself, hosts the required `HTML`, `css`, `.js`, and the other files, used for generating the `github.io` website. Hence, there is no requirement for having the branch locally.
-
-These will be re-generated, upon a successful workflow execution, every time `git push` is performed, in the prior specified git branch. Branch specification is provided [below](#deployment-setup).
-
-&lt;!-- of the forked repository, in the `.github/workflows/deploy.yml` ([link][07]) file which will contain the required `HTML`, `css`, `.js`, and other files
+<p>as the</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">mamba</span> <span class="n">env</span> <span class="n">create</span> <span class="o">-</span><span class="n">f</span> <span class="n">envs</span><span class="o">/</span><span class="n">environment</span><span class="o">.</span><span class="n">yaml</span>
+</pre></div>
+</div>
+<p>takes care of both the correct <code class="docutils literal notranslate"><span class="pre">venv</span></code> creation, and packages installation. The only package requiring <code class="docutils literal notranslate"><span class="pre">pip</span></code> is the <code class="docutils literal notranslate"><span class="pre">highspy</span></code> solver, which we highly recommend for general use, and for that an installed <code class="docutils literal notranslate"><span class="pre">pip</span></code> is needed:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">apt</span> <span class="n">install</span> <span class="n">python3</span><span class="o">-</span><span class="n">pip</span> <span class="o">-</span><span class="n">y</span>
+<span class="n">pip</span> <span class="n">install</span> <span class="n">highspy</span>
+</pre></div>
+</div>
+<p>Python is optimally used in a</p>
+<p>An IDE is also a prerequisite. Our recommendation is VSCode, used by the <a class="reference external" href="https://pypsa-earth.readthedocs.io/en/latest/installation.html">PyPSA developers</a>, due to ease of use, and being open-source.</p>
+</section>
+</section>
+<hr class="docutils" />
+<section class="tex2jax_ignore mathjax_ignore" id="creating-a-new-fork-of-this-repository">
+<h1>Creating a new fork of this repository<a class="headerlink" href="#creating-a-new-fork-of-this-repository" title="Link to this heading">#</a></h1>
+<blockquote>
+<div><p><strong>Note:</strong> The first step is forking the repository, having the below in mind.</p>
+</div></blockquote>
+<p>Before forking this repository please have the following in mind:
+* In the <strong><b><mark>Create a new fork</mark></b></strong> pop-up menu, shown in the figure below, <strong>deselect</strong> the default <strong>Copy the <code class="docutils literal notranslate"><span class="pre">main</span></code> branch only</strong> option.</p>
+<p>By doing so, you will reduce further branch creation, required by the workflow.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<center>
+<figure>
+    <a href='https://github.com/fneum/data-science-for-esm/fork'>
+    <img src='https://github.com/open-energy-transition/data-science-for-esm/raw/stanford/data-science-for-esm/_images/03_fork_option.png' alt='' width='95%' style='vertical-align:middle;border:5px solid goldenrod;margin:20px 0px' />
+    </a>
+    <figcaption>Clicking on the image above will lead directly to the <strong><b><mark>Create a new fork</mark></b></strong> menu</figcaption>
+</figure>
+</center>
+</div>
+<blockquote>
+<div><p><strong>Note:</strong> The key point is to have/keep the <code class="docutils literal notranslate"><span class="pre">stanford</span></code> branch in your fork. This is fully tested using the <code class="docutils literal notranslate"><span class="pre">stanford</span></code> branch</p>
+</div></blockquote>
+<ul class="simple">
+<li><p>Alternatively, <code class="docutils literal notranslate"><span class="pre">stanford</span></code> branch can be created locally and <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">pushed</span></code>, however, this is to be skipped if adhering to the <strong>Note</strong> above.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">gh-pages</span></code> branch will be automatically generated, as defined by the workflow, hence its creation is not required.</p></li>
+<li><p>It is also <strong>not</strong> required to have the <code class="docutils literal notranslate"><span class="pre">gh-pages</span></code> locally, once generated, as it hosts only the static site build files, which are taken care of by the workflow.</p></li>
+</ul>
+<blockquote>
+<div><p><strong>Note:</strong> The remote <code class="docutils literal notranslate"><span class="pre">gh-pages</span></code>, itself, hosts the required <code class="docutils literal notranslate"><span class="pre">HTML</span></code>, <code class="docutils literal notranslate"><span class="pre">css</span></code>, <code class="docutils literal notranslate"><span class="pre">.js</span></code>, and the other files, used for generating the <code class="docutils literal notranslate"><span class="pre">github.io</span></code> website. Hence, there is no requirement for having the branch locally.</p>
+</div></blockquote>
+<p>These will be re-generated, upon a successful workflow execution, every time <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">push</span></code> is performed, in the prior specified git branch. Branch specification is provided <a class="reference internal" href="#deployment-setup"><span class="xref myst">below</span></a>.</p>
+<!-- of the forked repository, in the `.github/workflows/deploy.yml` ([link][07]) file which will contain the required `HTML`, `css`, `.js`, and other files
 is used for generating the required `HTML`, `css`, `.js`, as well as the other files - other than the `gh-pages`
 
-- on preexisting knowledge disseminating the gained expertise by OET, and TU Berlin, to help .   Welcome to the website accompanying the course [Data Science for Energy System Modelling][04]. This course is being developed by [Dr. F. Neumann][05] and offered as part of the curriculum of the [Department of Digital Transformation of Energy Systems at TU Berlin][06]. --&gt;
-
----
-
-GitHub Pages Setup
-=================================================
-* In the your own forked repository `&quot;owner&quot;/data-science-for-energy-system-modelling`, please go to the GitHub **Settings** -&gt; **Pages**.
-
-* In the **GitHub Pages**, go to the **Branch** section, and change the selection from `None` to `gh-pages` `/root`.
-
-Once the branch has been selected, a URL will be provided (&lt;ins&gt;please give it a moment&lt;/ins&gt;), at the top: **&quot;Your site is live at [https://&quot;owner&quot;.github.io/data-science-for-esm](https://open-energy-transition.github.io/data-science-for-esm/)&quot;**
-
-&lt;center&gt;
-&lt;figure&gt;
-    &lt;a href=&#39;https://github.com/mdzzg/data-science-for-esm/settings/pages&#39;&gt;
-    &lt;img src=&#39;https://raw.githubusercontent.com/open-energy-transition/data-science-for-esm/stanford/data-science-for-esm/_images/04_gh_pages-options.png&#39; width=&#39;97%&#39;style=&#39;vertical-align:middle;border:5px solid darkgreen;margin:30px 30px&#39; /&gt;
-    &lt;/a&gt;
-    &lt;figcaption&gt;Clicking on the image above will lead directly to the our &lt;strong&gt;&lt;b&gt;&lt;mark&gt;GitHub Pages&lt;/mark&gt;&lt;/b&gt;&lt;/strong&gt; settings menu&lt;/figcaption&gt;
-&lt;/figure&gt;
-&lt;/center&gt;
-
-&lt;!-- This GitHub is the go to location for disseminating any material, be it Jupyter Notebooks, slides, videos, markdown text explanations, or links to your other resources.  --&gt;
-
-
----
-
-Deployment Setup
-===============================================
-&gt; **Note:** The key point is to set the correct deployment branch in the &lt;code&gt;./github/workflows/deploy.yml&lt;/code&gt;.
-
-In the &lt;code&gt;.github/workflows/deploy.yml&lt;/code&gt; [file][08] please specify the branch, later to be used by the workflow. Upon the `git push` command to the specified branch, the workflow will be triggered:
-
-</pre></div>
-</div>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>push:
-  branches:
-  - stanford
-</pre></div>
-</div>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>
-The specified `branch` can be any[^1], other than the &lt;ins&gt;`gh-pages`&lt;/ins&gt;.
-
-This setup uses the `stanford` branch for our workflow, but it can also be the `main`, or any other newly created branch. Upon the `git push`, the [workflow](#github-workflow-deployment) will be triggered.
-
-The deployment itself is the `jupyter-build book` [command](https://github.com/open-energy-transition/data-science-for-esm/blob/b1ab15c6d99fb325ca3877b0d33578a42669c3b7/.github/workflows/deploy.yml#L37) being executed on the [data-science-for-esm folder][16]. This command is generating the HTML code from the data provided in the data-science-for-esm folder.
-
-Further explanation of this command, i.e. `jupyter-book build`, as well as the other  to be used is provided in the [README.md](https://github.com/open-energy-transition/data-science-for-esm/blob/37c3ef84651a12ee947573dfedd6c4b7786731bc/README.md) file, as well as the following **References:**
-1. [Build your book](https://jupyterbook.org/en/stable/start/build.html)
-1. [Build from the command line](https://jupyterbook.org/en/stable/basics/build.html)
-1. [Structure the Table of Contents](https://jupyterbook.org/en/stable/structure/toc.html)
-
----
-
-Content Modification Setup
-=========================================================
-Please use the provided files as templates, as this will assist you in content creating, reducing the time in searching for answers.
-
-* The website logo, as well as the other figures can be placed in the `data-science-for-esm/_images/` folder.
-* Please keep in mind that, when changing images and modifying files, the referencing throughout `.md` and `.ipynb` files needs changing as well.
-* The `.ipynb` &amp; `.md` content files are to be placed in the root of the `data-science-for--esm` folder, and specified in the `_toc.yml` file.
-    * If not being placed in the root, the workflow will be unable to locate the files specified in the `_toc.yml`, resulting in the unsuccessful deployment, and unaccessible `github.io` site.
-
-Both `_config.yml`, as well as the `_toc.yml` are to remain in the root of the `data-science-for esm` folder. The details of the website, such as the author, logo, other relevant links to GitHub, Google Collab, are defined in the `_config.yml`. Please use the already provided `_toc` and `_config.yml` files as a template, and follow their structure.
-
-- In the `data-science-for-esm/_toc.yml` [file](https://github.com/open-energy-transition/data-science-for-esm/blob/37c3ef84651a12ee947573dfedd6c4b7786731bc/data-science-for-esm/_toc.yml), a sequence of files to be included in the GitHub Page is defined, and further used by the `jupyter-build book` command.
-
-After a successful run, the TOC displayed in the menu, located on the left side of the page.
-
----
-
-GitHub Workflow Deployment
-=========================================================
-In the [Deployment Setup](#deployment-setup) we entered in the `.github/workflows/deploy.yml` [file][08] which branch, of the repository, is used for the deployment. You are free to use any branch, other than the `gh-pages`, keeping in mind that upon the `git push`, the workflow will be triggered.
-
-The workflow deployment itself is tracked by the status indicator in the repository, in this case a beige-brown dot, which if clicked on, will show the running status, and the deployment details. As mentioned, the deployment takes approx. 2 minutes to finish.
-
-&lt;center&gt;
-&lt;figure&gt;
-    &lt;!-- &lt;a href=&#39;https://github.com/open-energy-transition/data-science-for-esm/settings/pages&#39;&gt; --&gt;
-    &lt;img src=&#39;https://raw.githubusercontent.com/open-energy-transition/data-science-for-esm/stanford/data-science-for-esm/_images/05_deployment_status.png&#39; width=&#39;85%&#39;style=&#39;vertical-align:middle;border:5px solid paleturquoise;margin:30px 30px&#39; /&gt;
-    &lt;!-- &lt;/a&gt; --&gt;
-    &lt;figcaption&gt;Deployment status upon &lt;code&gt;git push&lt;/code&gt; to the branch specified in the &lt;em&gt;deploy.yml&lt;/em&gt; file&lt;/figcaption&gt;
-&lt;/figure&gt;
-&lt;/center&gt;
-
-Upon a successful deployment, indicated by the deploy status - either a green thick (successful) or a red x (unsuccessful), in that time you should be able to see the changes taking place in the specified `github.io` URL.
-
-&lt;center&gt;
-&lt;figure&gt;
-    &lt;!-- &lt;a href=&#39;https://github.com/open-energy-transition/data-science-for-esm/settings/pages&#39;&gt; --&gt;
-    &lt;img src=&#39;https://raw.githubusercontent.com/open-energy-transition/data-science-for-esm/stanford/data-science-for-esm/_images/06_successful_deployment.png&#39; width=&#39;85%&#39;style=&#39;vertical-align:middle;border:5px solid paleturquoise;margin:30px 30px&#39; /&gt;
-    &lt;!-- &lt;/a&gt; --&gt;
-    &lt;figcaption&gt;Successful deployment, after a finalized &lt;code&gt;jupyter book build&lt;/code&gt; run&lt;/figcaption&gt;
-&lt;/figure&gt;
-&lt;/center&gt;
-
-
-Relevant References for further reading
-=======================================
-
-1. Jupyter-book
-    * https://jupyterbook.org/en/stable/start/build.html
-    * https://jupyterbook.org/en/stable/structure/toc.html
-1. 
-1. 
-1. 
-1. 
-
-&lt;!-- &lt;mark style=&quot;background-color: peachpuff; color: black&quot;&gt; --&gt;
-*Kindly [reference][11] us, in case using our materials, e.g. the workflow presented here.
-This way, your success is our success also.*
-
-&lt;!-- # Internal Doc References --&gt;
-[01]: https://github.com/fneum/data-science-for-esm
-[02]: https://github.com/peaceiris/actions-gh-pages
-[04]: https://moseskonto.tu-berlin.de/moses/modultransfersystem/bolognamodule/beschreibung/anzeigen.html;jsessionid=DQfixqzzpn1XIg5N1GG7S9um4EDykZn99AHmH6Fj.moseskonto?number=31027&amp;version=1&amp;sprache=2
-[05]: https://neumann.fyi
-[06]: https://www.tu.berlin/ensys
-[07]: https://github.com/open-energy-transition/data-science-for-esm/blob/ef394898e3100e2bd2d074a8b2da89235355cd4e/.github/workflows/deploy.yml
-[08]: https://github.com/open-energy-transition/data-science-for-esm/blob/ef394898e3100e2bd2d074a8b2da89235355cd4e/.github/workflows/deploy.yml#L4-L7
-[09]: https://github.com/open-energy-transition/data-science-for-esm/fork
-[10]: https://github.com/open-energy-transition/data-science-for-esm/settings/pages
-[11]: https://open-energy-transition.github.io/data-science-for-esm/00_intro.html
-[12]: https://github.com/open-energy-transition/data-science-for-esm/blob/e52f7980165928a7cd90826ee0bf8cd3fb407892/environment.yaml
-[13]: https://github.com/open-energy-transition/data-science-for-esm/blob/e52f7980165928a7cd90826ee0bf8cd3fb407892/requirements.txt
-&lt;!-- [14]: https://pypsa.readthedocs.io/en/latest/getting-started/installation.html --&gt;
-[15]: https://pypsa-earth.readthedocs.io/en/latest/installation.html
-[16]: https://github.com/open-energy-transition/data-science-for-esm/tree/ef394898e3100e2bd2d074a8b2da89235355cd4e/data-science-for-esm
-[17]: https://github.com/peaceiris/actions-gh-pages?tab=readme-ov-file#%EF%B8%8F-static-site-generators-with-python
-
-&lt;!-- &lt;center&gt;&lt;mark&gt;Table of Abbreviations&lt;/mark&gt;&lt;/center&gt; --&gt;
-&lt;!-- ###### Table of Abbreviations --&gt;
-
-[^1]: The workflow has been successfully tested using the `stanford` branch, while when using the `main` branch some issues persisted, and are currently being investigated.
-
-[^bignote]: | Acronym     | Description |
-    |:-----------:|:-----------:|
-    | **GH**      | GitHub      |
-    | **repo**    | repository  |
-</pre></div>
-</div>
+- on preexisting knowledge disseminating the gained expertise by OET, and TU Berlin, to help .   Welcome to the website accompanying the course [Data Science for Energy System Modelling][04]. This course is being developed by [Dr. F. Neumann][05] and offered as part of the curriculum of the [Department of Digital Transformation of Energy Systems at TU Berlin][06]. -->
 </section>
+<hr class="docutils" />
+<section class="tex2jax_ignore mathjax_ignore" id="github-pages-setup">
+<h1>GitHub Pages Setup<a class="headerlink" href="#github-pages-setup" title="Link to this heading">#</a></h1>
+<ul class="simple">
+<li><p>In the your own forked repository <code class="docutils literal notranslate"><span class="pre">&quot;owner&quot;/data-science-for-energy-system-modelling</span></code>, please go to the GitHub <strong>Settings</strong> -&gt; <strong>Pages</strong>.</p></li>
+<li><p>In the <strong>GitHub Pages</strong>, go to the <strong>Branch</strong> section, and change the selection from <code class="docutils literal notranslate"><span class="pre">None</span></code> to <code class="docutils literal notranslate"><span class="pre">gh-pages</span></code> <code class="docutils literal notranslate"><span class="pre">/root</span></code>.</p></li>
+</ul>
+<p>Once the branch has been selected, a URL will be provided (<ins>please give it a moment</ins>), at the top: <strong>“Your site is live at <a class="reference external" href="https://open-energy-transition.github.io/data-science-for-esm/">https://”owner”.github.io/data-science-for-esm</a>”</strong></p>
+<center>
+<figure>
+    <a href='https://github.com/mdzzg/data-science-for-esm/settings/pages'>
+    <img src='https://raw.githubusercontent.com/open-energy-transition/data-science-for-esm/stanford/data-science-for-esm/_images/04_gh_pages-options.png' width='97%'style='vertical-align:middle;border:5px solid darkgreen;margin:30px 30px' />
+    </a>
+    <figcaption>Clicking on the image above will lead directly to the our <strong><b><mark>GitHub Pages</mark></b></strong> settings menu</figcaption>
+</figure>
+</center>
+<!-- This GitHub is the go to location for disseminating any material, be it Jupyter Notebooks, slides, videos, markdown text explanations, or links to your other resources.  -->
+</section>
+<hr class="docutils" />
+<section class="tex2jax_ignore mathjax_ignore" id="deployment-setup">
+<h1>Deployment Setup<a class="headerlink" href="#deployment-setup" title="Link to this heading">#</a></h1>
+<blockquote>
+<div><p><strong>Note:</strong> The key point is to set the correct deployment branch in the <code>./github/workflows/deploy.yml</code>.</p>
+</div></blockquote>
+<p>In the <code>.github/workflows/deploy.yml</code> <a class="reference external" href="https://github.com/open-energy-transition/data-science-for-esm/blob/ef394898e3100e2bd2d074a8b2da89235355cd4e/.github/workflows/deploy.yml#L4-L7">file</a> please specify the branch, later to be used by the workflow. Upon the <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">push</span></code> command to the specified branch, the workflow will be triggered:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>    <span class="n">push</span><span class="p">:</span>
+      <span class="n">branches</span><span class="p">:</span>
+      <span class="o">-</span> <span class="n">stanford</span>
+</pre></div>
+</div>
+<p>The specified <code class="docutils literal notranslate"><span class="pre">branch</span></code> can be any<a class="footnote-reference brackets" href="#id2" id="id1" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a>, other than the <ins><code class="docutils literal notranslate"><span class="pre">gh-pages</span></code></ins>.</p>
+<p>This setup uses the <code class="docutils literal notranslate"><span class="pre">stanford</span></code> branch for our workflow, but it can also be the <code class="docutils literal notranslate"><span class="pre">main</span></code>, or any other newly created branch. Upon the <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">push</span></code>, the <a class="reference internal" href="#github-workflow-deployment"><span class="xref myst">workflow</span></a> will be triggered.</p>
+<p>The deployment itself is the <code class="docutils literal notranslate"><span class="pre">jupyter-build</span> <span class="pre">book</span></code> <a class="reference external" href="https://github.com/open-energy-transition/data-science-for-esm/blob/b1ab15c6d99fb325ca3877b0d33578a42669c3b7/.github/workflows/deploy.yml#L37">command</a> being executed on the <a class="reference external" href="https://github.com/open-energy-transition/data-science-for-esm/tree/ef394898e3100e2bd2d074a8b2da89235355cd4e/data-science-for-esm">data-science-for-esm folder</a>. This command is generating the HTML code from the data provided in the data-science-for-esm folder.</p>
+<p>Further explanation of this command, i.e. <code class="docutils literal notranslate"><span class="pre">jupyter-book</span> <span class="pre">build</span></code>, as well as the other  to be used is provided in the <a class="reference external" href="https://github.com/open-energy-transition/data-science-for-esm/blob/37c3ef84651a12ee947573dfedd6c4b7786731bc/README.md">README.md</a> file, as well as the following <strong>References:</strong></p>
+<ol class="arabic simple">
+<li><p><a class="reference external" href="https://jupyterbook.org/en/stable/start/build.html">Build your book</a></p></li>
+<li><p><a class="reference external" href="https://jupyterbook.org/en/stable/basics/build.html">Build from the command line</a></p></li>
+<li><p><a class="reference external" href="https://jupyterbook.org/en/stable/structure/toc.html">Structure the Table of Contents</a></p></li>
+</ol>
+</section>
+<hr class="docutils" />
+<section class="tex2jax_ignore mathjax_ignore" id="content-modification-setup">
+<h1>Content Modification Setup<a class="headerlink" href="#content-modification-setup" title="Link to this heading">#</a></h1>
+<p>Please use the provided files as templates, as this will assist you in content creating, reducing the time in searching for answers.</p>
+<ul class="simple">
+<li><p>The website logo, as well as the other figures can be placed in the <code class="docutils literal notranslate"><span class="pre">data-science-for-esm/_images/</span></code> folder.</p></li>
+<li><p>Please keep in mind that, when changing images and modifying files, the referencing throughout <code class="docutils literal notranslate"><span class="pre">.md</span></code> and <code class="docutils literal notranslate"><span class="pre">.ipynb</span></code> files needs changing as well.</p></li>
+<li><p>The <code class="docutils literal notranslate"><span class="pre">.ipynb</span></code> &amp; <code class="docutils literal notranslate"><span class="pre">.md</span></code> content files are to be placed in the root of the <code class="docutils literal notranslate"><span class="pre">data-science-for--esm</span></code> folder, and specified in the <code class="docutils literal notranslate"><span class="pre">_toc.yml</span></code> file.</p>
+<ul>
+<li><p>If not being placed in the root, the workflow will be unable to locate the files specified in the <code class="docutils literal notranslate"><span class="pre">_toc.yml</span></code>, resulting in the unsuccessful deployment, and unaccessible <code class="docutils literal notranslate"><span class="pre">github.io</span></code> site.</p></li>
+</ul>
+</li>
+</ul>
+<p>Both <code class="docutils literal notranslate"><span class="pre">_config.yml</span></code>, as well as the <code class="docutils literal notranslate"><span class="pre">_toc.yml</span></code> are to remain in the root of the <code class="docutils literal notranslate"><span class="pre">data-science-for</span> <span class="pre">esm</span></code> folder. The details of the website, such as the author, logo, other relevant links to GitHub, Google Collab, are defined in the <code class="docutils literal notranslate"><span class="pre">_config.yml</span></code>. Please use the already provided <code class="docutils literal notranslate"><span class="pre">_toc</span></code> and <code class="docutils literal notranslate"><span class="pre">_config.yml</span></code> files as a template, and follow their structure.</p>
+<ul class="simple">
+<li><p>In the <code class="docutils literal notranslate"><span class="pre">data-science-for-esm/_toc.yml</span></code> <a class="reference external" href="https://github.com/open-energy-transition/data-science-for-esm/blob/37c3ef84651a12ee947573dfedd6c4b7786731bc/data-science-for-esm/_toc.yml">file</a>, a sequence of files to be included in the GitHub Page is defined, and further used by the <code class="docutils literal notranslate"><span class="pre">jupyter-build</span> <span class="pre">book</span></code> command.</p></li>
+</ul>
+<p>After a successful run, the TOC displayed in the menu, located on the left side of the page.</p>
+</section>
+<hr class="docutils" />
+<section class="tex2jax_ignore mathjax_ignore" id="github-workflow-deployment">
+<h1>GitHub Workflow Deployment<a class="headerlink" href="#github-workflow-deployment" title="Link to this heading">#</a></h1>
+<p>In the <a class="reference internal" href="#deployment-setup"><span class="xref myst">Deployment Setup</span></a> we entered in the <code class="docutils literal notranslate"><span class="pre">.github/workflows/deploy.yml</span></code> <a class="reference external" href="https://github.com/open-energy-transition/data-science-for-esm/blob/ef394898e3100e2bd2d074a8b2da89235355cd4e/.github/workflows/deploy.yml#L4-L7">file</a> which branch, of the repository, is used for the deployment. You are free to use any branch, other than the <code class="docutils literal notranslate"><span class="pre">gh-pages</span></code>, keeping in mind that upon the <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">push</span></code>, the workflow will be triggered.</p>
+<p>The workflow deployment itself is tracked by the status indicator in the repository, in this case a beige-brown dot, which if clicked on, will show the running status, and the deployment details. As mentioned, the deployment takes approx. 2 minutes to finish.</p>
+<center>
+<figure>
+    <!-- <a href='https://github.com/open-energy-transition/data-science-for-esm/settings/pages'> -->
+    <img src='https://raw.githubusercontent.com/open-energy-transition/data-science-for-esm/stanford/data-science-for-esm/_images/05_deployment_status.png' width='85%'style='vertical-align:middle;border:5px solid paleturquoise;margin:30px 30px' />
+    <!-- </a> -->
+    <figcaption>Deployment status upon <code>git push</code> to the branch specified in the <em>deploy.yml</em> file</figcaption>
+</figure>
+</center>
+<p>Upon a successful deployment, indicated by the deploy status - either a green thick (successful) or a red x (unsuccessful), in that time you should be able to see the changes taking place in the specified <code class="docutils literal notranslate"><span class="pre">github.io</span></code> URL.</p>
+<center>
+<figure>
+    <!-- <a href='https://github.com/open-energy-transition/data-science-for-esm/settings/pages'> -->
+    <img src='https://raw.githubusercontent.com/open-energy-transition/data-science-for-esm/stanford/data-science-for-esm/_images/06_successful_deployment.png' width='85%'style='vertical-align:middle;border:5px solid paleturquoise;margin:30px 30px' />
+    <!-- </a> -->
+    <figcaption>Successful deployment, after a finalized <code>jupyter book build</code> run</figcaption>
+</figure>
+</center>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="relevant-references-for-further-reading">
+<h1>Relevant References for further reading<a class="headerlink" href="#relevant-references-for-further-reading" title="Link to this heading">#</a></h1>
+<ol class="arabic simple">
+<li><p>Jupyter-book</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://jupyterbook.org/en/stable/start/build.html">https://jupyterbook.org/en/stable/start/build.html</a></p></li>
+<li><p><a class="reference external" href="https://jupyterbook.org/en/stable/structure/toc.html">https://jupyterbook.org/en/stable/structure/toc.html</a></p></li>
+</ul>
+</li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+</ol>
+<!-- <mark style="background-color: peachpuff; color: black"> -->
+<p><em>Kindly <a class="reference external" href="https://open-energy-transition.github.io/data-science-for-esm/00_intro.html">reference</a> us, in case using our materials, e.g. the workflow presented here.
+This way, your success is our success also.</em></p>
+<!-- # Internal Doc References -->
+<!-- [14]: https://pypsa.readthedocs.io/en/latest/getting-started/installation.html -->
+<!-- <center><mark>Table of Abbreviations</mark></center> -->
+<!-- ###### Table of Abbreviations -->
+<hr class="footnotes docutils" />
+<aside class="footnote-list brackets">
+<aside class="footnote brackets" id="id2" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id1">1</a><span class="fn-bracket">]</span></span>
+<p>The workflow has been successfully tested using the <code class="docutils literal notranslate"><span class="pre">stanford</span></code> branch, while when using the <code class="docutils literal notranslate"><span class="pre">main</span></code> branch some issues persisted, and are currently being investigated.</p>
+</aside>
+</aside>
 </section>
 
     <script type="text/x-thebe-config">
@@ -669,8 +656,18 @@ This way, your success is our success also.*
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#"><font color="red">Build Your Own Content</font></a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#requirements">Requirements</a></li>
 </ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-a-new-fork-of-this-repository">Creating a new fork of this repository</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#github-pages-setup">GitHub Pages Setup</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#deployment-setup">Deployment Setup</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#content-modification-setup">Content Modification Setup</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#github-workflow-deployment">GitHub Workflow Deployment</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#relevant-references-for-further-reading">Relevant References for further reading</a></li>
+</ul>
+
   </nav></div>
 
 </div></div>
