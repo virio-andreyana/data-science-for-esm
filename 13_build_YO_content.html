@@ -416,7 +416,8 @@ document.write(`
 <section class="tex2jax_ignore mathjax_ignore" id="build-your-own-content">
 <h1><font color="red">Build Your Own Content</font><a class="headerlink" href="#build-your-own-content" title="Link to this heading">#</a></h1>
 <!-- ###### List of Abbreviation[^bignote] -->
-<p><strong>This section assists academics, and alike, in build their content, by modifying this repository, or the original <a class="reference external" href="https://github.com/fneum/data-science-for-esm">Dr. F. Neumann’s repository</a>.</strong> We use Dr. Neumann’s repository in the figures below.</p>
+<br>
+**This section assists academics, and alike, in build their content, by modifying this repository, or the original [Dr. F. Neumann's repository][01].** We use Dr. Neumann's repository in the figures below.
 <blockquote>
 <div><p><strong>Goal:</strong> To create a course page for your own teaching, like OET has done, follow this guide.</p>
 </div></blockquote>
@@ -434,7 +435,7 @@ document.write(`
 <h2>Requirements<a class="headerlink" href="#requirements" title="Link to this heading">#</a></h2>
 <p>Please keep in mind that that for a successful workflow run, the <a class="reference external" href="https://github.com/open-energy-transition/data-science-for-esm/blob/e52f7980165928a7cd90826ee0bf8cd3fb407892/environment.yaml">correct python environment</a>, with all the <a class="reference external" href="https://github.com/open-energy-transition/data-science-for-esm/blob/e52f7980165928a7cd90826ee0bf8cd3fb407892/requirements.txt">python package dependencies</a>, is required. Our suggestion is <code class="docutils literal notranslate"><span class="pre">venv</span></code> and a package manager <code class="docutils literal notranslate"><span class="pre">mamba</span></code>, for which further detailed, and well explained, installation instructions are provided in the <a class="reference external" href="https://pypsa-earth.readthedocs.io/en/latest/installation.html">documentation of PyPSA-Earth creators</a>.</p>
 <ul class="simple">
-<li><p>Please also keep in mind that there is no need to run the the usual</p></li>
+<li><p>Please also keep in mind that there is no need to run the the usual:</p></li>
 </ul>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="o">-</span><span class="n">r</span> <span class="n">requirements</span><span class="o">.</span><span class="n">txt</span>
 </pre></div>
@@ -443,13 +444,12 @@ document.write(`
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">mamba</span> <span class="n">env</span> <span class="n">create</span> <span class="o">-</span><span class="n">f</span> <span class="n">envs</span><span class="o">/</span><span class="n">environment</span><span class="o">.</span><span class="n">yaml</span>
 </pre></div>
 </div>
-<p>takes care of both the correct <code class="docutils literal notranslate"><span class="pre">venv</span></code> creation, and packages installation. The only package requiring <code class="docutils literal notranslate"><span class="pre">pip</span></code> is the <code class="docutils literal notranslate"><span class="pre">highspy</span></code> solver, which we highly recommend for general use, and for that an installed <code class="docutils literal notranslate"><span class="pre">pip</span></code> is needed:</p>
+<p>takes care of both the correct <code class="docutils literal notranslate"><span class="pre">venv</span></code> creation, and packages installation. The only package requiring <code class="docutils literal notranslate"><span class="pre">pip</span></code> is the <code class="docutils literal notranslate"><span class="pre">highspy</span></code> solver. We highly recommend <code class="docutils literal notranslate"><span class="pre">highspy</span></code> for general use, and for that an installed <code class="docutils literal notranslate"><span class="pre">pip</span></code> is needed:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">apt</span> <span class="n">install</span> <span class="n">python3</span><span class="o">-</span><span class="n">pip</span> <span class="o">-</span><span class="n">y</span>
 <span class="n">pip</span> <span class="n">install</span> <span class="n">highspy</span>
 </pre></div>
 </div>
-<p>Python is optimally used in a</p>
-<p>An IDE is also a prerequisite. Our recommendation is VSCode, used by the <a class="reference external" href="https://pypsa-earth.readthedocs.io/en/latest/installation.html">PyPSA developers</a>, due to ease of use, and being open-source.</p>
+<p>Python and <code class="docutils literal notranslate"><span class="pre">*.ipynb</span></code> are optimally used in an IDE. Our recommendation is VSCode, used by the <a class="reference external" href="https://pypsa-earth.readthedocs.io/en/latest/installation.html">PyPSA developers</a>, due to ease of use, and being open-source.</p>
 </section>
 </section>
 <hr class="docutils" />
