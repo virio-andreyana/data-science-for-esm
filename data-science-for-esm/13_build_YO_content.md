@@ -13,7 +13,7 @@
 /
 This section assists academics, and alike, in build their content, by modifying this repository, or the original [Dr. F. Neumann's repository][01]. Dr. Neumann's repository is used as ane example in the figures below.
 /
-> **Goal:** *To create a course page for your own teaching, like OET has done, follow this guide.*
+> **Goal:** *To create a course page for your own knowledge dissemination, like OET has done, follow this guide.*
 
 * Its primary purpose is guidance on how to generate a GitHub page, to be used for learning material, i.e. lectures, or similar.
 * It can also be purpose for anything else, for that matter.
@@ -129,9 +129,14 @@ The specified `branch` can be any[^1], other than the <ins>`gh-pages`</ins>.
 
 This setup uses the `stanford` branch for our workflow, but it can also be the `main`, or any other newly created branch. Upon the `git push`, the [workflow](#github-workflow-deployment) will be triggered.
 
-The deployment itself is the `jupyter-build book` [command](https://github.com/open-energy-transition/data-science-for-esm/blob/b1ab15c6d99fb325ca3877b0d33578a42669c3b7/.github/workflows/deploy.yml#L37) being executed on the [data-science-for-esm folder][16]. This command is generating the HTML code from the data provided in the data-science-for-esm folder.
+The deployment itself is the:
 
-Further explanation of this command, i.e. `jupyter-book build`, as well as the other  to be used is provided in the [README.md](https://github.com/open-energy-transition/data-science-for-esm/blob/37c3ef84651a12ee947573dfedd6c4b7786731bc/README.md) file, as well as the following **References:**
+~~~
+`jupyter-build book data-science-for-esm/` 
+~~~
+[command](https://github.com/open-energy-transition/data-science-for-esm/blob/b1ab15c6d99fb325ca3877b0d33578a42669c3b7/.github/workflows/deploy.yml#L37). This command is generating the HTML code from the data provided in the data-science-for-esm [folder][16]folder.
+
+Further explanation of this command, i.e. `jupyter-book build`, as well as the other  to be used is provided in the [README.md](https://github.com/open-energy-transition/data-science-for-esm/blob/37c3ef84651a12ee947573dfedd6c4b7786731bc/README.md) file. Amore detailed explanation is to be found at the following **References:**
 1. [Build your book](https://jupyterbook.org/en/stable/start/build.html)
 1. [Build from the command line](https://jupyterbook.org/en/stable/basics/build.html)
 1. [Structure the Table of Contents](https://jupyterbook.org/en/stable/structure/toc.html)
@@ -218,7 +223,7 @@ This way, your success is our success also.*
 <!-- <center><mark>Table of Abbreviations</mark></center> -->
 <!-- ###### Table of Abbreviations -->
 
-[^1]: The workflow has been successfully tested using the `stanford` branch, while when using the `main` branch some issues persisted, and are currently being investigated.
+[^1]: The workflow has been successfully tested using the `stanford` branch, while, when using the `main` branch, we experienced some issues, which are currently being investigated. 
 
 [^bignote]: | Acronym     | Description |
     |:-----------:|:-----------:|
