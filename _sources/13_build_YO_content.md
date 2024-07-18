@@ -150,7 +150,12 @@ Please use the provided files as templates, as this will assist you in content c
 * The website logo, as well as the other figures can be placed in the `data-science-for-esm/_images/` folder.
 * Please keep in mind that, when changing images and modifying files, the referencing throughout `.md` and `.ipynb` files needs changing as well.
 * The `.ipynb` & `.md` content files are to be placed in the root of the `data-science-for--esm` folder, and specified in the `_toc.yml` file.
-    * If not being placed in the root, the workflow will be unable to locate the files specified in the `_toc.yml`, resulting in the unsuccessful deployment, and unaccessible `github.io` site.
+    * If not being placed in the root, the workflow will be unable to find the files specified in the `_toc.yml`, resulting in the unsuccessful deployment, and unaccessible `github.io` site.
+* Please modify `*.ipynb` files as seen fit. They are the core-content.
+* Upon each content update, there is a chain of git to-do commands, resulting in the website update:
+~~~
+git add
+~~~
 
 Both `_config.yml`, as well as the `_toc.yml` are to remain in the root of the `data-science-for esm` folder. The details of the website, such as the author, logo, other relevant links to GitHub, Google Collab, are defined in the `_config.yml`. Please use the already provided `_toc` and `_config.yml` files as a template, and follow their structure.
 
@@ -175,7 +180,7 @@ The workflow deployment itself is tracked by the status indicator in the reposit
 </figure>
 </center>
 
-Upon a successful deployment, indicated by the deploy status - either a green thick (successful) or a red x (unsuccessful), in that time you should be able to see the changes taking place in the specified `github.io` URL.
+Upon a successful deployment, indicated by the deploy status - either a green thick <strong><b><font color='green'>🗸</font></strong></b> (successful) or a red <font color="red">🗶</font> (unsuccessful), in that time you should be able to see the changes taking place in the specified `github.io` URL.
 
 <center>
 <figure>
