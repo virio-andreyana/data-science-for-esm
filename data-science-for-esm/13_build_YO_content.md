@@ -9,7 +9,7 @@
 <font color="red">Build Your Own Content</font>
 ===============================================
 <!-- ###### List of Abbreviation[^bignote] -->
-<br>
+
 **This section assists academics, and alike, in build their content, by modifying this repository, or the original [Dr. F. Neumann's repository][01].** We use Dr. Neumann's repository in the figures below.
 
 > **Goal:** To create a course page for your own teaching, like OET has done, follow this guide
