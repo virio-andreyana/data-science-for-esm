@@ -180,7 +180,10 @@ The workflow deployment itself is tracked by the status indicator in the reposit
 </figure>
 </center>
 
-Upon a successful deployment, indicated by the deploy status - either a green thick <strong><b><font color='green'>🗸</font></strong></b> (successful) or a red <font color="red">🗶</font> (unsuccessful), in that time you should be able to see the changes taking place in the specified `github.io` URL.
+Upon a successful deployment, indicated by the deploy status:
+* successful: a green thick <strong><b><font color='green'>🗸</font></strong></b>
+* unsuccessful: a red cross mark <font color="red">🗶</font>,
+you should be able to see the changes taking place in the specified `github.io` URL.
 
 <center>
 <figure>
