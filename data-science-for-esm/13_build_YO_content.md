@@ -10,9 +10,9 @@
 ===============================================
 <!-- ###### List of Abbreviation[^bignote] -->
 
-/
+
 This section assists academics, and alike, in build their content, by modifying this repository, or the original [Dr. F. Neumann's repository][01]. Dr. Neumann's repository is used as ane example in the figures below.
-/
+
 > **Goal:** *To create a course page for your own knowledge dissemination, like OET has done, follow this guide.*
 
 * Its primary purpose is guidance on how to generate a GitHub page, to be used for learning material, i.e. lectures, or similar.
@@ -25,7 +25,7 @@ The first step is forking this repository. By doing so, one is able to create hi
 
 Requirements
 ------------
-Please keep in mind that that for a successful workflow run, the [correct python environment][12], with all the [python package dependencies][13], is required. Our suggestion is `venv` and a package manager `mamba`, for which further detailed, and well explained, installation instructions are provided in the [documentation of PyPSA-Earth creators][15].
+Please keep in mind that that for a successful workflow run, the [correct python environment][12], with all the [python package dependencies][13] satisfied, is required. Our suggestion is `venv` and a package manager `mamba`, for which further details, and installation instructions, are provided in the [documentation of PyPSA-Earth creators][15].
 
 * Please also keep in mind that there is no need to run the the usual:
 
