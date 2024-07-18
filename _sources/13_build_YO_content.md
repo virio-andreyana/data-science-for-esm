@@ -10,9 +10,9 @@
 ===============================================
 <!-- ###### List of Abbreviation[^bignote] -->
 
-<br>
+/
 This section assists academics, and alike, in build their content, by modifying this repository, or the original [Dr. F. Neumann's repository][01]. Dr. Neumann's repository is used as ane example in the figures below.
-
+/
 > **Goal:** *To create a course page for your own teaching, like OET has done, follow this guide.*
 
 * Its primary purpose is guidance on how to generate a GitHub page, to be used for learning material, i.e. lectures, or similar.
