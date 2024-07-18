@@ -402,7 +402,7 @@ document.write(`
 <!-- ###### List of Abbreviation[^bignote] -->
 <p><strong>This section assists academics, and alike, in build their content, by modifying this repository, or the original [Dr. F. Neumann’s repository][01].</strong> We use Dr. Neumann’s repository in the figures below.</p>
 <blockquote>
-<div><p><strong>Goal:</strong> To create a course page for your own teaching, like OET has done, follow this guide</p>
+<div><p><strong>Goal:</strong> To create a course page for your own teaching, like OET has done, follow this guide.</p>
 </div></blockquote>
 <ul class="simple">
 <li><p>Its primary purpose if helping/guiding on how to build/generate a GitHub page, to be used for learning material, i.e. lectures, or similar.</p></li>
@@ -416,8 +416,10 @@ document.write(`
 <p>The first step is forking this repository. By doing so, one is able to create his own website, similar to this one, with a tailor-made content, quickly and with ease. However, there are two or three thing to keep in mind when doing so, so please read on.</p>
 <section id="requirements">
 <h2>Requirements<a class="headerlink" href="#requirements" title="Link to this heading">#</a></h2>
-<p>Please keep in mind that that for a successful workflow run, the [correct python environment][12], with all the [python package dependencies][13], is required.
-* Please also keep in mind that there is no need to run the the usual</p>
+<p>Please keep in mind that that for a successful workflow run, the [correct python environment][12], with all the [python package dependencies][13], is required. Our suggestion is <code class="docutils literal notranslate"><span class="pre">venv</span></code> and a package manager <code class="docutils literal notranslate"><span class="pre">mamba</span></code>, for which further detailed, and well explained, installation instructions are provided in the [documentation of PyPSA-Earth creators][15].</p>
+<ul class="simple">
+<li><p>Please also keep in mind that there is no need to run the the usual</p></li>
+</ul>
 <div class="highlight-pip notranslate"><div class="highlight"><pre><span></span>
 as the
 
@@ -429,7 +431,7 @@ takes care of both the correct `venv` creation, and packages installation. The o
 <p>sudo apt install python3-pip -y
 pip install highspy</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>
-Python is optimally used in a `venv` and a package manager `mamba`, for which further very detailed, and well explained, installation instructions are provided in the [documentation of PyPSA-Earth creators][15].
+Python is optimally used in a 
 
 An IDE is also a prerequisite. Our recommendation is VSCode, used by the [PyPSA developers][15], due to ease of use, and being open-source.
 
@@ -482,7 +484,7 @@ Once the branch has been selected, a URL will be provided (&lt;ins&gt;please giv
 
 &lt;center&gt;
 &lt;figure&gt;
-    &lt;a href=&#39;https://github.com/open-energy-transition/data-science-for-esm/settings/pages&#39;&gt;
+    &lt;a href=&#39;https://github.com/mdzzg/data-science-for-esm/settings/pages&#39;&gt;
     &lt;img src=&#39;https://raw.githubusercontent.com/open-energy-transition/data-science-for-esm/stanford/data-science-for-esm/_images/04_gh_pages-options.png&#39; width=&#39;97%&#39;style=&#39;vertical-align:middle;border:5px solid darkgreen;margin:30px 30px&#39; /&gt;
     &lt;/a&gt;
     &lt;figcaption&gt;Clicking on the image above will lead directly to the our &lt;strong&gt;&lt;b&gt;&lt;mark&gt;GitHub Pages&lt;/mark&gt;&lt;/b&gt;&lt;/strong&gt; settings menu&lt;/figcaption&gt;
@@ -528,7 +530,7 @@ Please use the provided files as templates, as this will assist you in content c
 * The website logo, as well as the other figures can be placed in the `data-science-for-esm/_images/` folder.
 * Please keep in mind that, when changing images and modifying files, the referencing throughout `.md` and `.ipynb` files needs changing as well.
 * The `.ipynb` &amp; `.md` content files are to be placed in the root of the `data-science-for--esm` folder, and specified in the `_toc.yml` file.
-    + If not being placed in the root, the workflow will be unable to locate the files specified in the `_toc.yml`, resulting in the unsuccessful deployment, and unaccessible `github.io` site.
+    * If not being placed in the root, the workflow will be unable to locate the files specified in the `_toc.yml`, resulting in the unsuccessful deployment, and unaccessible `github.io` site.
 
 Both `_config.yml`, as well as the `_toc.yml` are to remain in the root of the `data-science-for esm` folder. The details of the website, such as the author, logo, other relevant links to GitHub, Google Collab, are defined in the `_config.yml`. Please use the already provided `_toc` and `_config.yml` files as a template, and follow their structure.
 
