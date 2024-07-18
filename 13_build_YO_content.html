@@ -486,15 +486,12 @@ is used for generating the required `HTML`, `css`, `.js`, as well as the other f
 <blockquote>
 <div><p><strong>Note:</strong> The key point is to set the correct deployment branch in the <code>./github/workflows/deploy.yml</code>.</p>
 </div></blockquote>
-<ul>
-<li><p>In the <code>.github/workflows/deploy.yml</code> <a class="reference external" href="https://github.com/open-energy-transition/data-science-for-esm/blob/ef394898e3100e2bd2d074a8b2da89235355cd4e/.github/workflows/deploy.yml#L4-L7">file</a> please specify the branch, which will later be used by the workflow, which upon the <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">push</span></code> command, triggers the workflow:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">push</span><span class="p">:</span>
-  <span class="n">branches</span><span class="p">:</span>
-  <span class="o">-</span> <span class="n">stanford</span>
-</pre></div>
-</div>
-</li>
-</ul>
+<p>In the <code>.github/workflows/deploy.yml</code> <a class="reference external" href="https://github.com/open-energy-transition/data-science-for-esm/blob/ef394898e3100e2bd2d074a8b2da89235355cd4e/.github/workflows/deploy.yml#L4-L7">file</a> please specify the branch, which will later be used by the workflow. Upon the <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">push</span></code> command to the specified branch, the workflow will be triggered:
+~~~
+push:
+branches:
+- stanford
+~~~</p>
 <p>The specified <code class="docutils literal notranslate"><span class="pre">branch</span></code> can be any, other than the <ins><code class="docutils literal notranslate"><span class="pre">gh-pages</span></code></ins>.</p>
 <p>This setup uses the <code class="docutils literal notranslate"><span class="pre">stanford</span></code> branch for our workflow, but it can also be the <code class="docutils literal notranslate"><span class="pre">main</span></code>, or any other newly created branch. Upon the <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">push</span></code>, the <a class="reference internal" href="#github-workflow-deployment"><span class="xref myst">workflow</span></a> will be triggered.</p>
 <p>The actual deployment is the <code class="docutils literal notranslate"><span class="pre">jupyter-build</span> <span class="pre">book</span></code> executed on the data-science-for-esm folder, the command generating the HTML code from the data provided in the <a class="reference external" href="https://github.com/open-energy-transition/data-science-for-esm/tree/ef394898e3100e2bd2d074a8b2da89235355cd4e/data-science-for-esm">data-science-for-esm folder</a>.</p>
