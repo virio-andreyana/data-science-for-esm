@@ -16,7 +16,7 @@ This section assists academics, and alike, in build their content, by modifying 
 > **Goal:** *To create a course page for your own teaching, like OET has done, follow this guide.*
 
 * Its primary purpose is guidance on how to generate a GitHub page, to be used for learning material, i.e. lectures, or similar.
-* It can also be used for any other purpose, for that matter.
+* It can also be purpose for anything else, for that matter.
 * This setup draws from the [peaceiris actions-gh-pages][02], in specific using the [Static Site Generator with Python][17].
     * *This serves only as a reference, as the the full explanation is below.*
 
@@ -72,8 +72,10 @@ By doing so, you will reduce further branch creation, required by the workflow.
 > **Note:** The key point is to have/keep the `stanford` branch in your fork. This is fully tested using the `stanford` branch
 
 * Alternatively, `stanford` branch can be created locally: 
-```git switch -c stanford
-git push origin stanford```
+~~~
+git switch -c stanford
+git push origin stanford
+~~~
     * However, this is to be skipped if adhering to the **Note** above.
 * `gh-pages` branch will be automatically generated, as defined by the workflow, hence its creation is not required.
 * It is also **not** required to have the `gh-pages` locally, once generated, as it hosts only the static site build files, which are taken care of by the workflow.
