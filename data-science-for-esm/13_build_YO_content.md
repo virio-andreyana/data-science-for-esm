@@ -21,6 +21,28 @@
 
 The first step is forking this repository. By doing so, one is able to create his own website, similar to this one, with a tailor-made content, quickly and with ease. However, there are two or three thing to keep in mind when doing so, so please read on.
 
+
+Requirements
+------------
+Please keep in mind that that for a successful workflow run, the [correct python environment][12], with all the [python package dependencies][13], is required.
+    * Please also keep in mind that there is no need to run the the usual
+
+~~~pip install -r requirements.txt~~~
+
+as the
+
+~~~mamba env create -f envs/environment.yaml~~~
+
+takes care of both the correct `venv` creation, and packages installation. The only package requiring `pip` is the `highspy` solver, which we highly recommend for general use, and for that an installed `pip` is needed:
+~~~
+sudo apt install python3-pip -y
+pip install highspy
+~~~
+
+Python is optimally used in a `venv` and a package manager `mamba`, for which further very detailed, and well explained, installation instructions are provided in the [documentation of PyPSA-Earth creators][15].
+
+An IDE is also a prerequisite. Our recommendation is VSCode, used by the [PyPSA developers][15], due to ease of use, and being open-source.
+
 ---
 
 Creating a new fork of this repository
@@ -121,12 +143,6 @@ Both `_config.yml`, as well as the `_toc.yml` are to remain in the root of the `
 - In the `data-science-for-esm/_toc.yml` [file](https://github.com/open-energy-transition/data-science-for-esm/blob/37c3ef84651a12ee947573dfedd6c4b7786731bc/data-science-for-esm/_toc.yml), a sequence of files to be included in the GitHub Page is defined, and further used by the `jupyter-build book` command.
 
 After a successful run, the TOC displayed in the menu, located on the left side of the page.
-
-Please keep in mind that that for a successful workflow run, the [correct python environment][12], with all the [python package dependencies][13], is required.
-
-Python is optimally used in a `venv` and a package manager `mamba`, for which further detailed installation instructions are provided in the [documentation][15].
-
-An IDE is also a prerequisite, and our recommendation VSCode, used by [PyPSA developers][15], due to ease of use, and being open-source.
 
 ---
 
