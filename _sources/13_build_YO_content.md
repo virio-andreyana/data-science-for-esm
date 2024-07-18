@@ -45,7 +45,7 @@ sudo apt install python3-pip -y
 pip install highspy
 ~~~
 
-Python and `*.ipynb` are optimally used in an IDE. Our recommendation is VSCode, used by the [PyPSA developers][15], due to ease of use, and being open-source.
+Python and `*.ipynb` are optimally used in an [IDE](https://github.com/microsoft/vscode). Our recommendation is VSCode, used by the [PyPSA developers][15], due to ease of use, and being open-source.
 
 ---
 
