@@ -91,7 +91,7 @@ In the <code>.github/workflows/deploy.yml</code> [file][08] please specify the b
       - stanford
     ~~~
 
-The specified `branch` can be any, other than the <ins>`gh-pages`</ins>.
+The specified `branch` can be any[^1], other than the <ins>`gh-pages`</ins>.
 
 This setup uses the `stanford` branch for our workflow, but it can also be the `main`, or any other newly created branch. Upon the `git push`, the [workflow](#github-workflow-deployment) will be triggered.
 
@@ -187,6 +187,8 @@ Relevant References for further reading
 
 <!-- <center><mark>Table of Abbreviations</mark></center> -->
 <!-- ###### Table of Abbreviations -->
+
+[^1]: The workflow has been successfully tested using the `stanford` branch, while when using the `main` branch some issues persisted, and are currently being investigated.
 
 [^bignote]: | Acronym     | Description |
     |:-----------:|:-----------:|
