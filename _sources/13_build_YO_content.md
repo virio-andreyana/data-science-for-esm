@@ -25,7 +25,10 @@ Creating a new fork of this repository
 =====================================================================
 > **Note:** The first step is forking the repository, having the below in mind.
 
-Before forking this repository please have the following in mind. In the <strong><b><mark>Create a new fork</mark></b></strong> pop-up menu, shown in the figure below, **deselect** the default **Copy the `main` branch only** option. By doing so, you will reduce further branch creation, required by the workflow.
+Before forking this repository please have the following in mind:
+    * In the <strong><b><mark>Create a new fork</mark></b></strong> pop-up menu, shown in the figure below, **deselect** the default **Copy the `main` branch only** option. 
+    
+By doing so, you will reduce further branch creation, required by the workflow.
 
 :::{note}
 <center>
@@ -154,7 +157,9 @@ Upon a successful deployment, indicated by the deploy status - either a green th
 Relevant References for further reading
 =======================================
 
-1. 
+1. Jupyter-book
+    * https://jupyterbook.org/en/stable/start/build.html
+    * https://jupyterbook.org/en/stable/structure/toc.html
 1. 
 1. 
 1. 
