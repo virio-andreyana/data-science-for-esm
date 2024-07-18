@@ -60,9 +60,9 @@ is used for generating the required `HTML`, `css`, `.js`, as well as the other f
 
 GitHub Pages Setup
 =================================================
-In the your own forked repository `"owner"/data-science-for-energy-system-modelling`, please go to the GitHub **Settings** -> **Pages**.
+* In the your own forked repository `"owner"/data-science-for-energy-system-modelling`, please go to the GitHub **Settings** -> **Pages**.
 
-In the **GitHub Pages**, go to the **Branch** section, and change the selection from `None` to `gh-pages` `/root`.
+* In the **GitHub Pages**, go to the **Branch** section, and change the selection from `None` to `gh-pages` `/root`.
 
 Once the branch has been selected, a URL will be provided (<ins>please give it a moment</ins>), at the top: **"Your site is live at [https://"owner".github.io/data-science-for-esm](https://open-energy-transition.github.io/data-science-for-esm/)"**
 
