@@ -72,8 +72,8 @@ By doing so, you will reduce further branch creation, required by the workflow.
 > **Note:** The key point is to have/keep the `stanford` branch in your fork. This is fully tested using the `stanford` branch
 
 In this workflow:
-* Your source code is in `stanford`
-* Your published website is in `gh-pages`
+* Your source code is in the `stanford` branch
+* Your published website is in the `gh-pages` branch
 
 * Alternatively, `stanford` branch can be created locally: 
 ~~~
