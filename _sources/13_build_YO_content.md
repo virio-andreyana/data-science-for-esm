@@ -208,8 +208,15 @@ Relevant References for further reading
     * https://jupyterbook.org/en/stable/structure/toc.html
 1. PyPSA-Earth:
     * https://pypsa-eur.readthedocs.io/en/latest/introduction.html
+1. Open Energy Transition
+    * https://openenergytransition.org/about-us.html#theory-of-change
+    * https://open-energy-transition.github.io/handbook/
 1. Data Science for Energy System Modelling
+    * https://www.tu.berlin/ensys
     * https://fneum.github.io/data-science-for-esm/09-workshop-pypsa.html
+    * https://moseskonto.tu-berlin.de/moses/modultransfersystem/bolognamodule/beschreibung/anzeigen.html;jsessionid=DQfixqzzpn1XIg5N1GG7S9um4EDykZn99AHmH6Fj.moseskonto?number=31027&version=1&sprache=2
+1. Dr. Fabian Neumann
+    * https://www.neumann.fyi/
 
 <!-- <mark style="background-color: peachpuff; color: black"> -->
 *Kindly [reference][11] us, in case using our materials, e.g. the workflow presented here.
@@ -219,10 +226,6 @@ This way, your success is our success also.*
 [fneum]:                https://github.com/fneum/data-science-for-esm
 [gh_actions]:           https://github.com/peaceiris/actions-gh-pages
 [gh_actions_python]:    https://github.com/peaceiris/actions-gh-pages?tab=readme-ov-file#%EF%B8%8F-static-site-generators-with-python
-[04]: https://moseskonto.tu-berlin.de/moses/modultransfersystem/bolognamodule/beschreibung/anzeigen.html;jsessionid=DQfixqzzpn1XIg5N1GG7S9um4EDykZn99AHmH6Fj.moseskonto?number=31027&version=1&sprache=2
-[05]: https://neumann.fyi
-[06]: https://www.tu.berlin/ensys
-[07]: https://github.com/open-energy-transition/data-science-for-esm/blob/ef394898e3100e2bd2d074a8b2da89235355cd4e/.github/workflows/deploy.yml
 [08]: https://github.com/open-energy-transition/data-science-for-esm/blob/ef394898e3100e2bd2d074a8b2da89235355cd4e/.github/workflows/deploy.yml#L4-L7
 [09]: https://github.com/open-energy-transition/data-science-for-esm/fork
 [10]: https://github.com/open-energy-transition/data-science-for-esm/settings/pages
