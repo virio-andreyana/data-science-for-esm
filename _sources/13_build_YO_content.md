@@ -122,7 +122,7 @@ Deployment Setup
 ===============================================
 > **Note:** The key point is to set the correct deployment branch in the <code>./github/workflows/deploy.yml</code>.
 
-In the <code>.github/workflows/deploy.yml</code> [file][08] please specify the branch, later to be used by the workflow. Upon the `git push` command to the specified branch, the workflow will be triggered:
+In the <code>.github/workflows/deploy.yml</code> [file][deploy] please specify the branch, later to be used by the workflow. Upon the `git push` command to the specified branch, the workflow will be triggered:
 
 ~~~
     push:
@@ -172,7 +172,7 @@ After a successful run, the TOC displayed in the menu, located on the left side 
 
 GitHub Workflow Deployment
 =========================================================
-In [Deployment Setup](#deployment-setup) we defined the deployment branch in the `.github/workflows/deploy.yml` [file][08], which is used then used for the deployment, whenever performing `git push`. You are free to use any branch, other than the `gh-pages`, keeping in mind that only upon the `git push`, the workflow will be triggered.
+In [Deployment Setup](#deployment-setup) we defined the deployment branch in the `.github/workflows/deploy.yml` [file][deploy], which is used then used for the deployment, whenever performing `git push`. You are free to use any branch, other than the `gh-pages`, keeping in mind that only upon the `git push`, the workflow will be triggered.
 
 The workflow deployment itself is tracked by the status indicator in the repository, in this case a beige-brown dot <strong><b><font color='peru'>⏺</font></strong></b>, which if clicked on, will show the running status, and the deployment details. As mentioned, the deployment takes approx. 2 minutes to finish.
 
@@ -226,7 +226,7 @@ This way, your success is our success also.*
 [fneum]:                https://github.com/fneum/data-science-for-esm
 [gh_actions]:           https://github.com/peaceiris/actions-gh-pages
 [gh_actions_python]:    https://github.com/peaceiris/actions-gh-pages?tab=readme-ov-file#%EF%B8%8F-static-site-generators-with-python
-[08]: https://github.com/open-energy-transition/data-science-for-esm/blob/ef394898e3100e2bd2d074a8b2da89235355cd4e/.github/workflows/deploy.yml#L4-L7
+[deploy]:               https://github.com/open-energy-transition/data-science-for-esm/blob/ef394898e3100e2bd2d074a8b2da89235355cd4e/.github/workflows/deploy.yml#L4-L7
 [09]: https://github.com/open-energy-transition/data-science-for-esm/fork
 [10]: https://github.com/open-energy-transition/data-science-for-esm/settings/pages
 [11]: https://open-energy-transition.github.io/data-science-for-esm/00_intro.html
