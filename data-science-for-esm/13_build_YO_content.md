@@ -11,13 +11,13 @@
 <!-- ###### List of Abbreviation[^bignote] -->
 
 
-This section assists academics, and alike, in build their content, by modifying this repository, or the original [Dr. F. Neumann's repository][01]. Dr. Neumann's repository is used as ane example in the figures below.
+This section assists academics, and alike, in build their content, by modifying this repository, or the original [Dr. F. Neumann's repository][fneum]. Dr. Neumann's repository is used as ane example in the figures below.
 
 > **Goal:** *To create a course page for your own knowledge dissemination, like OET has done, follow this guide.*
 
 * Its primary purpose is guidance on how to generate a GitHub page, to be used for learning material, i.e. lectures, or similar.
 * It can also be purpose for anything else, for that matter.
-* This setup draws from the [peaceiris actions-gh-pages][02], in specific using the [Static Site Generator with Python][17].
+* This setup draws from the [peaceiris actions-gh-pages][gh_actions], in specific using the [Static Site Generator with Python][17].
     * *This serves only as a reference, as the the full explanation is below.*
 
 By following these instructions, one is able to create his own website, alike this one, with a tailor-made content, quickly and with ease. However, there are two or three things to keep in mind when doing so. Please read on.
@@ -25,7 +25,7 @@ By following these instructions, one is able to create his own website, alike th
 
 Requirements
 ------------
-Please keep in mind that that for a successful workflow run, the [correct python environment][12], with all the [python package dependencies][13] satisfied, is required. Our suggestion is `venv` and a package manager `mamba`, for which further details, and installation instructions, are provided in the [documentation of PyPSA-Earth creators][15].
+Please keep in mind that that for a successful workflow run, the [correct python environment][12], with all the [python package dependencies][13] satisfied, is required. Our suggestion is the package manager `conda` or `mamba`, for which further details, and installation instructions, are provided in the [documentation of PyPSA-Earth creators][15].
 
 * Please also keep in mind that there is no need for the usual:
 
@@ -216,8 +216,9 @@ Relevant References for further reading
 This way, your success is our success also.*
 
 <!-- # Internal Doc References -->
-[01]: https://github.com/fneum/data-science-for-esm
-[02]: https://github.com/peaceiris/actions-gh-pages
+[fneum]:                https://github.com/fneum/data-science-for-esm
+[gh_actions]:           https://github.com/peaceiris/actions-gh-pages
+[gh_actions_python]:    https://github.com/peaceiris/actions-gh-pages?tab=readme-ov-file#%EF%B8%8F-static-site-generators-with-python
 [04]: https://moseskonto.tu-berlin.de/moses/modultransfersystem/bolognamodule/beschreibung/anzeigen.html;jsessionid=DQfixqzzpn1XIg5N1GG7S9um4EDykZn99AHmH6Fj.moseskonto?number=31027&version=1&sprache=2
 [05]: https://neumann.fyi
 [06]: https://www.tu.berlin/ensys
@@ -228,10 +229,8 @@ This way, your success is our success also.*
 [11]: https://open-energy-transition.github.io/data-science-for-esm/00_intro.html
 [12]: https://github.com/open-energy-transition/data-science-for-esm/blob/e52f7980165928a7cd90826ee0bf8cd3fb407892/environment.yaml
 [13]: https://github.com/open-energy-transition/data-science-for-esm/blob/e52f7980165928a7cd90826ee0bf8cd3fb407892/requirements.txt
-<!-- [14]: https://pypsa.readthedocs.io/en/latest/getting-started/installation.html -->
 [15]: https://pypsa-earth.readthedocs.io/en/latest/installation.html
 [16]: https://github.com/open-energy-transition/data-science-for-esm/tree/ef394898e3100e2bd2d074a8b2da89235355cd4e/data-science-for-esm
-[17]: https://github.com/peaceiris/actions-gh-pages?tab=readme-ov-file#%EF%B8%8F-static-site-generators-with-python
 
 <!-- <center><mark>Table of Abbreviations</mark></center> -->
 <!-- ###### Table of Abbreviations -->
