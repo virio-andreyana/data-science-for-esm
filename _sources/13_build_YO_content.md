@@ -45,7 +45,7 @@ sudo apt install python3-pip -y
 pip install highspy
 ~~~
 
-Python and `*.ipynb` are optimally used in an [IDE](https://github.com/microsoft/vscode). Our recommendation is VSCode, used by the [PyPSA developers][15], due to ease of use, and being open-source.
+Python and `*.ipynb` are optimally used in an [IDE](https://github.com/microsoft/vscode). Our recommendation is VSCode, used by the [PyPSA developers][15], due to its ease of use, and being open-source.
 
 ---
 
@@ -54,11 +54,11 @@ Creating a new fork of this repository
 > **Note:** The first step is forking the repository, having the below in mind.
 
 Before forking this repository please have the following in mind:
-* In the <strong><b><mark>Create a new fork</mark></b></strong> pop-up menu, shown in the figure below, **deselect** the default **Copy the `main` branch only** option. 
+* In the <strong><b><mark>Create a new fork</mark></b></strong> pop-up menu, shown in the figure below, <ins>>deselect</ins> the default **Copy the `main` branch only** option. 
     
 By doing so, you will reduce further branch creation, required by the workflow.
 
-:::{note}
+:::{idea}
 <center>
 <figure>
     <a href='https://github.com/fneum/data-science-for-esm/fork'>
