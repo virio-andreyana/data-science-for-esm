@@ -206,10 +206,10 @@ Relevant References for further reading
 1. Jupyter-book
     * https://jupyterbook.org/en/stable/start/build.html
     * https://jupyterbook.org/en/stable/structure/toc.html
-1. 
-1. 
-1. 
-1. 
+1. PyPSA-Earth:
+    * https://pypsa-eur.readthedocs.io/en/latest/introduction.html
+1. Datascience for Energy System Modelling
+    * https://fneum.github.io/data-science-for-esm/09-workshop-pypsa.html
 
 <!-- <mark style="background-color: peachpuff; color: black"> -->
 *Kindly [reference][11] us, in case using our materials, e.g. the workflow presented here.
