@@ -172,9 +172,9 @@ After a successful run, the TOC displayed in the menu, located on the left side 
 
 GitHub Workflow Deployment
 =========================================================
-In the [Deployment Setup](#deployment-setup) we entered in the `.github/workflows/deploy.yml` [file][08] which branch, of the repository, is used for the deployment. You are free to use any branch, other than the `gh-pages`, keeping in mind that upon the `git push`, the workflow will be triggered.
+In [Deployment Setup](#deployment-setup) we defined the deployment branch in the `.github/workflows/deploy.yml` [file][08], which is used then used for the deployment, whenever performing `git push`. You are free to use any branch, other than the `gh-pages`, keeping in mind that only upon the `git push`, the workflow will be triggered.
 
-The workflow deployment itself is tracked by the status indicator in the repository, in this case a beige-brown dot, which if clicked on, will show the running status, and the deployment details. As mentioned, the deployment takes approx. 2 minutes to finish.
+The workflow deployment itself is tracked by the status indicator in the repository, in this case a beige-brown dot <strong><b><font color='tan'>･</font></strong></b>, which if clicked on, will show the running status, and the deployment details. As mentioned, the deployment takes approx. 2 minutes to finish.
 
 <center>
 <figure>
