@@ -20,7 +20,7 @@ This section assists academics, and alike, in build their content, by modifying 
 * This setup draws from the [peaceiris actions-gh-pages][02], in specific using the [Static Site Generator with Python][17].
     * *This serves only as a reference, as the the full explanation is below.*
 
-By following these instructions, one is able to create his own website, alike this one, with a tailor-made content, quickly and with ease. However, there are two or three things to keep in mind when doing so, so please read on.
+By following these instructions, one is able to create his own website, alike this one, with a tailor-made content, quickly and with ease. However, there are two or three things to keep in mind when doing so. Please read on.
 
 
 Requirements
