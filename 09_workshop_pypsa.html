@@ -564,13 +564,13 @@ document.write(`
 <h2>From structured data to optimisation<a class="headerlink" href="#from-structured-data-to-optimisation" title="Link to this heading">#</a></h2>
 <p>The design principle of PyPSA is that basically each component is associated with a set of variables and constraints that will be added to the optimisation model based on the input data stored for the components.</p>
 <p>For an <em>hourly</em> electricity market simulation, PyPSA will solve an optimisation problem that looks like this</p>
-<div class="amsmath math notranslate nohighlight" id="equation-77b7c9cc-0424-4fb8-bed1-aa14206a9aaf">
-<span class="eqno">(1)<a class="headerlink" href="#equation-77b7c9cc-0424-4fb8-bed1-aa14206a9aaf" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-4b3a129f-5d5d-433f-8436-fce181b18c45">
+<span class="eqno">(1)<a class="headerlink" href="#equation-4b3a129f-5d5d-433f-8436-fce181b18c45" title="Permalink to this equation">#</a></span>\[\begin{equation}
 \min_{g_{i,s,t}; f_{\ell,t}; g_{i,r,t,\text{charge}}; g_{i,r,t,\text{discharge}}; e_{i,r,t}} \sum_s o_{s} g_{i,s,t}
 \end{equation}\]</div>
 <p>such that</p>
-<div class="amsmath math notranslate nohighlight" id="equation-33457d2d-e238-4e7b-913b-9f1b2d517922">
-<span class="eqno">(2)<a class="headerlink" href="#equation-33457d2d-e238-4e7b-913b-9f1b2d517922" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-d13c262a-06b3-4a7f-a2d4-a7f54b35cbbc">
+<span class="eqno">(2)<a class="headerlink" href="#equation-d13c262a-06b3-4a7f-a2d4-a7f54b35cbbc" title="Permalink to this equation">#</a></span>\[\begin{align}
 0 &amp; \leq g_{i,s,t} \leq \hat{g}_{i,s,t} G_{i,s}  &amp; \text{generation limits : generator} \\
 -F_\ell &amp;\leq f_{\ell,t} \leq F_\ell &amp; \text{transmission limits : line}  \\
 d_{i,t} &amp;= \sum_s g_{i,s,t} + \sum_r g_{i,r,t,\text{discharge}} - \sum_r g_{i,r,t,\text{charge}} - \sum_\ell K_{i\ell} f_{\ell,t} &amp; \text{KCL : bus} \\
@@ -1271,8 +1271,9 @@ Downloading: https://naturalearth.s3.amazonaws.com/50m_physical/ne_50m_ocean.zip
 <div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/opt/hostedtoolcache/Python/3.11.9/x64/lib/python3.11/site-packages/cartopy/io/__init__.py:241: DownloadWarning:
 
 Downloading: https://naturalearth.s3.amazonaws.com/50m_cultural/ne_50m_admin_0_boundary_lines_land.zip
-
-/opt/hostedtoolcache/Python/3.11.9/x64/lib/python3.11/site-packages/cartopy/io/__init__.py:241: DownloadWarning:
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/opt/hostedtoolcache/Python/3.11.9/x64/lib/python3.11/site-packages/cartopy/io/__init__.py:241: DownloadWarning:
 
 Downloading: https://naturalearth.s3.amazonaws.com/50m_physical/ne_50m_coastline.zip
 </pre></div>
@@ -1338,7 +1339,7 @@ Model   status      : Optimal
 Simplex   iterations: 1
 Objective value     :  2.2222222222e+04
 HiGHS run time      :          0.00
-Writing the solution to /tmp/linopy-solve-mds9h9ud.sol
+Writing the solution to /tmp/linopy-solve-zsvvma12.sol
 </pre></div>
 </div>
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(&#39;ok&#39;, &#39;optimal&#39;)
@@ -1744,8 +1745,8 @@ Writing the solution to /tmp/linopy-solve-mds9h9ud.sol
 facecolor will have no effect as it has been defined as &quot;never&quot;.
 </pre></div>
 </div>
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(&lt;matplotlib.collections.PatchCollection at 0x7f3771531ad0&gt;,
- &lt;matplotlib.collections.LineCollection at 0x7f37718a3d50&gt;)
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(&lt;matplotlib.collections.PatchCollection at 0x7f7dd9388dd0&gt;,
+ &lt;matplotlib.collections.LineCollection at 0x7f7dd94196d0&gt;)
 </pre></div>
 </div>
 <img alt="_images/9d9f1bcc8a0fc8e9fbb35ca9a88684a9ed14fd4d1a590b9dea116eb39fa3ab90.png" src="_images/9d9f1bcc8a0fc8e9fbb35ca9a88684a9ed14fd4d1a590b9dea116eb39fa3ab90.png" />
@@ -2140,7 +2141,7 @@ Solving the original LP from the solution after postsolve
 Model   status      : Optimal
 Objective value     :  2.1245210728e+06
 HiGHS run time      :          0.00
-Writing the solution to /tmp/linopy-solve-mbvxzm4_.sol
+Writing the solution to /tmp/linopy-solve-n2y1rs41.sol
 </pre></div>
 </div>
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(&#39;ok&#39;, &#39;optimal&#39;)
@@ -2355,7 +2356,7 @@ Solving the original LP from the solution after postsolve
 Model   status      : Optimal
 Objective value     :  2.2711598746e+06
 HiGHS run time      :          0.00
-Writing the solution to /tmp/linopy-solve-zftv3bax.sol
+Writing the solution to /tmp/linopy-solve-kqbxei__.sol
 </pre></div>
 </div>
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(&#39;ok&#39;, &#39;optimal&#39;)
@@ -2527,7 +2528,7 @@ Problem status detected on presolve: Infeasible
 Model   status      : Infeasible
 Objective value     :  0.0000000000e+00
 HiGHS run time      :          0.00
-Writing the solution to /tmp/linopy-solve-fvxpoeok.sol
+Writing the solution to /tmp/linopy-solve-phnkfx34.sol
 </pre></div>
 </div>
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(&#39;warning&#39;, &#39;infeasible&#39;)
@@ -2560,7 +2561,7 @@ Writing the solution to /tmp/linopy-solve-fvxpoeok.sol
 <div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>WARNING:pypsa.io:Directory tmp does not exist, creating it
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>INFO:pypsa.io:Exported network tmp has loads, buses, generators, global_constraints, carriers, lines
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>INFO:pypsa.io:Exported network tmp has generators, buses, loads, carriers, lines, global_constraints
 </pre></div>
 </div>
 </div>
@@ -2584,7 +2585,7 @@ Writing the solution to /tmp/linopy-solve-fvxpoeok.sol
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>INFO:pypsa.io:Exported network tmp.nc has loads, buses, generators, global_constraints, carriers, lines
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>INFO:pypsa.io:Exported network tmp.nc has generators, buses, loads, carriers, lines, global_constraints
 </pre></div>
 </div>
 </div>
@@ -2873,7 +2874,7 @@ Writing the solution to /tmp/linopy-solve-fvxpoeok.sol
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_1856/2724211621.py:1: FutureWarning:
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_1783/2724211621.py:1: FutureWarning:
 
 DataFrame.groupby with axis=1 is deprecated. Do `frame.T.groupby(...)` without axis instead.
 </pre></div>
@@ -2982,7 +2983,7 @@ facecolor will have no effect as it has been defined as &quot;never&quot;.
 facecolor will have no effect as it has been defined as &quot;never&quot;.
 </pre></div>
 </div>
-<img alt="_images/45f2bd2e0772e9d2f8b1f6356f2d0ef02d1701aa019b932440ecb2089de3e88b.png" src="_images/45f2bd2e0772e9d2f8b1f6356f2d0ef02d1701aa019b932440ecb2089de3e88b.png" />
+<img alt="_images/1a91c799dbba5d4b22e4016dbdd986682cec687472f9ea38cc05d7b40f884936.png" src="_images/1a91c799dbba5d4b22e4016dbdd986682cec687472f9ea38cc05d7b40f884936.png" />
 </div>
 </div>
 <p>This dataset also includes a few hydro storage units:</p>
@@ -3186,16 +3187,16 @@ Index([&#39;2&#39;, &#39;5&#39;, &#39;10&#39;, &#39;12&#39;, &#39;13&#39;, &#39;
 <div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Writing constraints.:   0%|          | 0/15 [00:00&lt;?, ?it/s]
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Writing constraints.:  13%|█▎        | 2/15 [00:00&lt;00:01, 11.88it/s]
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Writing constraints.:  13%|█▎        | 2/15 [00:00&lt;00:01, 12.47it/s]
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Writing constraints.:  27%|██▋       | 4/15 [00:00&lt;00:00, 15.19it/s]
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Writing constraints.:  27%|██▋       | 4/15 [00:00&lt;00:00, 15.96it/s]
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Writing constraints.:  87%|████████▋ | 13/15 [00:00&lt;00:00, 33.09it/s]
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Writing constraints.:  87%|████████▋ | 13/15 [00:00&lt;00:00, 34.55it/s]
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Writing constraints.: 100%|██████████| 15/15 [00:00&lt;00:00, 26.04it/s]
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Writing constraints.: 100%|██████████| 15/15 [00:00&lt;00:00, 27.16it/s]
 </pre></div>
 </div>
 <div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
@@ -3204,31 +3205,17 @@ Index([&#39;2&#39;, &#39;5&#39;, &#39;10&#39;, &#39;12&#39;, &#39;13&#39;, &#39;
 <div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Writing continuous variables.:   0%|          | 0/6 [00:00&lt;?, ?it/s]
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Writing continuous variables.: 100%|██████████| 6/6 [00:00&lt;00:00, 63.22it/s]
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Writing continuous variables.: 100%|██████████| 6/6 [00:00&lt;00:00, 67.32it/s]
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>INFO:linopy.io: Writing time: 0.71s
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>INFO:linopy.io: Writing time: 0.67s
 </pre></div>
 </div>
 <div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>INFO:linopy.solvers:Log file at /tmp/highs.log
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running HiGHS 1.7.2 (git hash: 184e327): Copyright (c) 2024 HiGHS under MIT licence terms
-</pre></div>
-</div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>INFO:linopy.constants: Optimization successful: 
-Status: ok
-Termination condition: optimal
-Solution: 59640 primals, 142968 duals
-Objective: 9.20e+06
-Solver model: available
-Solver message: optimal
-</pre></div>
-</div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>INFO:pypsa.optimization.optimize:The shadow-prices of the constraints Generator-fix-p-lower, Generator-fix-p-upper, Line-fix-s-lower, Line-fix-s-upper, Transformer-fix-s-lower, Transformer-fix-s-upper, StorageUnit-fix-p_dispatch-lower, StorageUnit-fix-p_dispatch-upper, StorageUnit-fix-p_store-lower, StorageUnit-fix-p_store-upper, StorageUnit-fix-state_of_charge-lower, StorageUnit-fix-state_of_charge-upper, Kirchhoff-Voltage-Law, StorageUnit-energy_balance were not assigned to the network.
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Coefficient ranges:
+Coefficient ranges:
   Matrix [1e-02, 2e+02]
   Cost   [3e+00, 1e+02]
   Bound  [0e+00, 0e+00]
@@ -3249,8 +3236,20 @@ Solving the original LP from the solution after postsolve
 Model   status      : Optimal
 Simplex   iterations: 17377
 Objective value     :  9.1992880405e+06
-HiGHS run time      :          5.37
-Writing the solution to /tmp/linopy-solve-k2nus2mi.sol
+HiGHS run time      :          5.16
+Writing the solution to /tmp/linopy-solve-w1ip7byz.sol
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>INFO:linopy.constants: Optimization successful: 
+Status: ok
+Termination condition: optimal
+Solution: 59640 primals, 142968 duals
+Objective: 9.20e+06
+Solver model: available
+Solver message: optimal
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>INFO:pypsa.optimization.optimize:The shadow-prices of the constraints Generator-fix-p-lower, Generator-fix-p-upper, Line-fix-s-lower, Line-fix-s-upper, Transformer-fix-s-lower, Transformer-fix-s-upper, StorageUnit-fix-p_dispatch-lower, StorageUnit-fix-p_dispatch-upper, StorageUnit-fix-p_store-lower, StorageUnit-fix-p_store-upper, StorageUnit-fix-state_of_charge-lower, StorageUnit-fix-state_of_charge-upper, Kirchhoff-Voltage-Law, StorageUnit-energy_balance were not assigned to the network.
 </pre></div>
 </div>
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(&#39;ok&#39;, &#39;optimal&#39;)
