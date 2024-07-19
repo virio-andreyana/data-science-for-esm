@@ -75,7 +75,7 @@ In this workflow:
 * Your source code is in the `stanford` branch
 * Your published website is in the `gh-pages` branch
 
-* Alternatively, `stanford` branch can be created locally: 
+* Alternatively, the `stanford` branch can be created locally: 
 ~~~
 git switch -c stanford
 git push origin stanford
@@ -145,7 +145,9 @@ Further explanation of this command, i.e. `jupyter-book build`, as well as the o
 
 Content Modification Setup
 =========================================================
-Please use the provided files as templates, as this will assist you in content creating, reducing the time in searching for answers.
+Please use the provided files as templates, as this will assist you in content creating, reducing the time in searching for the answers.
+
+> **Note:** `jupyter-book build` builds content from the *markdown* and jupyter notebook files, hence their content needs modifying.
 
 * The website logo, as well as the other figures can be placed in the `data-science-for-esm/_images/` folder.
 * Please keep in mind that, when changing images and modifying files, the referencing throughout `.md` and `.ipynb` files needs changing as well.
