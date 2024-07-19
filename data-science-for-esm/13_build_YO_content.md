@@ -174,7 +174,7 @@ GitHub Workflow Deployment
 =========================================================
 In [Deployment Setup](#deployment-setup) we defined the deployment branch in the `.github/workflows/deploy.yml` [file][08], which is used then used for the deployment, whenever performing `git push`. You are free to use any branch, other than the `gh-pages`, keeping in mind that only upon the `git push`, the workflow will be triggered.
 
-The workflow deployment itself is tracked by the status indicator in the repository, in this case a beige-brown dot <strong><b><font color='tan'>･</font></strong></b>, which if clicked on, will show the running status, and the deployment details. As mentioned, the deployment takes approx. 2 minutes to finish.
+The workflow deployment itself is tracked by the status indicator in the repository, in this case a beige-brown dot <strong><b><font color='sandybrown'>･</font></strong></b>, which if clicked on, will show the running status, and the deployment details. As mentioned, the deployment takes approx. 2 minutes to finish.
 
 <center>
 <figure>
@@ -208,7 +208,7 @@ Relevant References for further reading
     * https://jupyterbook.org/en/stable/structure/toc.html
 1. PyPSA-Earth:
     * https://pypsa-eur.readthedocs.io/en/latest/introduction.html
-1. Datascience for Energy System Modelling
+1. Data Science for Energy System Modelling
     * https://fneum.github.io/data-science-for-esm/09-workshop-pypsa.html
 
 <!-- <mark style="background-color: peachpuff; color: black"> -->
