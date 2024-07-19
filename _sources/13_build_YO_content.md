@@ -201,7 +201,7 @@ you should be able to see the changes taking place in the specified `github.io` 
 
 
 Relevant References for further reading
-=======================================
+---------------------------------------
 
 1. Jupyter-book
     * https://jupyterbook.org/en/stable/start/build.html
