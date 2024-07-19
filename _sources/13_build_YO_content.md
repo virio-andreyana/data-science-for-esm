@@ -80,7 +80,8 @@ In this workflow:
 git switch -c stanford
 git push origin stanford
 ~~~
-    * However, this is to be skipped if adhering to the **Note** above.
+
+* However, this is to be skipped if adhering to the **Note** above.
 * `gh-pages` branch will be automatically generated, as defined by the workflow, hence its creation is not required.
 * It is also **not** required to have the `gh-pages` locally, once generated, as it hosts only the static site build files, which are taken care of by the workflow.
 
@@ -101,7 +102,7 @@ GitHub Pages Setup
 
 * In the **GitHub Pages**, go to the **Branch** section, and change the selection from `None` to `gh-pages` `/root`.
 
-Once the branch has been selected, a URL will be provided (<ins>please give it a moment</ins>), at the top: **"Your site is live at [https://"owner".github.io/data-science-for-esm](https://open-energy-transition.github.io/data-science-for-esm/)"**
+Once the branch has been selected, a URL will be provided (<ins>please give it a moment</ins>), at the top: **Your site is live at [https://"owner".github.io/data-science-for-esm](https://open-energy-transition.github.io/data-science-for-esm/)**
 
 <center>
 <figure>
@@ -133,12 +134,7 @@ The specified `branch` can be any[^1], other than the <ins>`gh-pages`</ins>.
 
 This setup uses the `stanford` branch for our workflow, but it can also be the `main`, or any other newly created branch. Upon the `git push`, the [workflow](#github-workflow-deployment) will be triggered.
 
-The deployment itself is the:
-
-~~~
-`jupyter-build book data-science-for-esm/` 
-~~~
-[command](https://github.com/open-energy-transition/data-science-for-esm/blob/b1ab15c6d99fb325ca3877b0d33578a42669c3b7/.github/workflows/deploy.yml#L37). This command is generating the HTML code from the data provided in the data-science-for-esm [folder][16]folder.
+The deployment itself is the `jupyter-build book data-science-for-esm/` [command](https://github.com/open-energy-transition/data-science-for-esm/blob/b1ab15c6d99fb325ca3877b0d33578a42669c3b7/.github/workflows/deploy.yml#L37). This command is generating the HTML code from the data provided in the data-science-for-esm [folder][16]folder.
 
 Further explanation of this command, i.e. `jupyter-book build`, as well as the other  to be used is provided in the [README.md](https://github.com/open-energy-transition/data-science-for-esm/blob/37c3ef84651a12ee947573dfedd6c4b7786731bc/README.md) file. Amore detailed explanation is to be found at the following **References:**
 1. [Build your book](https://jupyterbook.org/en/stable/start/build.html)
