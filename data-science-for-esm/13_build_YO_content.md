@@ -58,7 +58,7 @@ Before forking this repository please have the following in mind:
     
 By doing so, you will reduce further branch creation, required by the workflow.
 
-:::{memo}
+:::{note}
 <center>
 <figure>
     <a href='https://github.com/fneum/data-science-for-esm/fork'>
