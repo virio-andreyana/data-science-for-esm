@@ -16,8 +16,8 @@
     document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
     document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
   </script>
-  <!-- 
-    this give us a css class that will be invisible only if js is disabled 
+  <!--
+    this give us a css class that will be invisible only if js is disabled
   -->
   <noscript>
     <style>
@@ -27,8 +27,8 @@
   </noscript>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="_static/styles/theme.css?digest=26a4bc78f4c0ddb94549" rel="stylesheet" />
-<link href="_static/styles/pydata-sphinx-theme.css?digest=26a4bc78f4c0ddb94549" rel="stylesheet" />
+  <link href="_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
 
     <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
     <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=a3416100" />
@@ -39,10 +39,10 @@
     <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
   
   <!-- So that users can add custom icons -->
-  <script src="_static/scripts/fontawesome.js?digest=26a4bc78f4c0ddb94549"></script>
+  <script src="_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=26a4bc78f4c0ddb94549" />
-<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=26a4bc78f4c0ddb94549" />
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
 
     <script src="_static/documentation_options.js?v=9eb32ce0"></script>
     <script src="_static/doctools.js?v=9a2dae69"></script>
@@ -196,9 +196,14 @@
   
   
   <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
   </div>
-  
-  <div id="rtd-footer-container"></div>
 
 
       </div>
@@ -242,7 +247,7 @@
       
       
       
-      <li><a href="https://colab.research.google.com/github/fneum/data-science-for-esm/blob/main/data-science-for-esm/14-workshop-linopy.ipynb" target="_blank"
+      <li><a href="https://colab.research.google.com/github/open-energy-transition/data-science-for-esm/blob/main/data-science-for-esm/14-workshop-linopy.ipynb" target="_blank"
    class="btn btn-sm dropdown-item"
    title="Launch on Colab"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -273,7 +278,7 @@
       
       
       
-      <li><a href="https://github.com/fneum/data-science-for-esm" target="_blank"
+      <li><a href="https://github.com/open-energy-transition/data-science-for-esm" target="_blank"
    class="btn btn-sm btn-source-repository-button dropdown-item"
    title="Source repository"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -290,7 +295,7 @@
       
       
       
-      <li><a href="https://github.com/fneum/data-science-for-esm/issues/new?title=Issue%20on%20page%20%2F14-workshop-linopy.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/open-energy-transition/data-science-for-esm/issues/new?title=Issue%20on%20page%20%2F14-workshop-linopy.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -688,7 +693,7 @@ initialized
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running HiGHS 1.8.1 (git hash: 4a7f24a): Copyright (c) 2024 HiGHS under MIT licence terms
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running HiGHS 1.9.0 (git hash: fa40bdf): Copyright (c) 2024 HiGHS under MIT licence terms
 Coefficient ranges:
   Matrix [2e+00, 7e+00]
   Cost   [1e+00, 2e+00]
@@ -703,13 +708,13 @@ Using EKK dual simplex solver - serial
   Iteration        Objective     Infeasibilities num(sum)
           0     0.0000000000e+00 Pr: 2(13) 0s
           2     2.8620689655e+00 Pr: 0(0) 0s
-Model name          : linopy-problem-u5vdczs6
+Model name          : linopy-problem-my1elftr
 Model status        : Optimal
 Simplex   iterations: 2
 Objective value     :  2.8620689655e+00
 Relative P-D gap    :  0.0000000000e+00
 HiGHS run time      :          0.00
-Writing the solution to /tmp/linopy-solve-gv_zgxcr.sol
+Writing the solution to /tmp/linopy-solve-byz462rr.sol
 </pre></div>
 </div>
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(&#39;ok&#39;, &#39;optimal&#39;)
@@ -1106,7 +1111,7 @@ dl.xr-attrs {
   fill: currentColor;
 }
 </style><pre class='xr-text-repr-fallback'>&lt;xarray.DataArray &#x27;solution&#x27; ()&gt; Size: 8B
-array(0.03448276)</pre><div class='xr-wrap' style='display:none'><div class='xr-header'><div class='xr-obj-type'>xarray.DataArray</div><div class='xr-array-name'>'solution'</div></div><ul class='xr-sections'><li class='xr-section-item'><div class='xr-array-wrap'><input id='section-a7fae109-aae2-4760-97c5-72f6c856fae9' class='xr-array-in' type='checkbox' checked><label for='section-a7fae109-aae2-4760-97c5-72f6c856fae9' title='Show/hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-array-preview xr-preview'><span>0.03448</span></div><div class='xr-array-data'><pre>array(0.03448276)</pre></div></div></li><li class='xr-section-item'><input id='section-3065a7ec-128e-4d18-97f8-f80eb03bf812' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-3065a7ec-128e-4d18-97f8-f80eb03bf812' class='xr-section-summary'  title='Expand/collapse section'>Coordinates: <span>(0)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><ul class='xr-var-list'></ul></div></li><li class='xr-section-item'><input id='section-83842705-40cc-4384-8c53-b9921449fdbb' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-83842705-40cc-4384-8c53-b9921449fdbb' class='xr-section-summary'  title='Expand/collapse section'>Indexes: <span>(0)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><ul class='xr-var-list'></ul></div></li><li class='xr-section-item'><input id='section-36febf8f-da68-4f85-8cfe-7767ba18e5b2' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-36febf8f-da68-4f85-8cfe-7767ba18e5b2' class='xr-section-summary'  title='Expand/collapse section'>Attributes: <span>(0)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><dl class='xr-attrs'></dl></div></li></ul></div></div></div></div>
+array(0.03448276)</pre><div class='xr-wrap' style='display:none'><div class='xr-header'><div class='xr-obj-type'>xarray.DataArray</div><div class='xr-array-name'>'solution'</div></div><ul class='xr-sections'><li class='xr-section-item'><div class='xr-array-wrap'><input id='section-01dfa25a-971b-4ab5-8460-8176804896a8' class='xr-array-in' type='checkbox' checked><label for='section-01dfa25a-971b-4ab5-8460-8176804896a8' title='Show/hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-array-preview xr-preview'><span>0.03448</span></div><div class='xr-array-data'><pre>array(0.03448276)</pre></div></div></li><li class='xr-section-item'><input id='section-0101001a-fa78-4b43-8f98-d7b2bdb8e139' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-0101001a-fa78-4b43-8f98-d7b2bdb8e139' class='xr-section-summary'  title='Expand/collapse section'>Coordinates: <span>(0)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><ul class='xr-var-list'></ul></div></li><li class='xr-section-item'><input id='section-73afb864-107c-4f64-a803-995586166c32' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-73afb864-107c-4f64-a803-995586166c32' class='xr-section-summary'  title='Expand/collapse section'>Indexes: <span>(0)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><ul class='xr-var-list'></ul></div></li><li class='xr-section-item'><input id='section-46782ebe-eeba-4363-b42f-589bf2506f03' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-46782ebe-eeba-4363-b42f-589bf2506f03' class='xr-section-summary'  title='Expand/collapse section'>Attributes: <span>(0)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><dl class='xr-attrs'></dl></div></li></ul></div></div></div></div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1486,7 +1491,7 @@ dl.xr-attrs {
   fill: currentColor;
 }
 </style><pre class='xr-text-repr-fallback'>&lt;xarray.DataArray &#x27;solution&#x27; ()&gt; Size: 8B
-array(1.4137931)</pre><div class='xr-wrap' style='display:none'><div class='xr-header'><div class='xr-obj-type'>xarray.DataArray</div><div class='xr-array-name'>'solution'</div></div><ul class='xr-sections'><li class='xr-section-item'><div class='xr-array-wrap'><input id='section-c546e287-8929-4e9d-9595-ebcd6b1a2ee2' class='xr-array-in' type='checkbox' checked><label for='section-c546e287-8929-4e9d-9595-ebcd6b1a2ee2' title='Show/hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-array-preview xr-preview'><span>1.414</span></div><div class='xr-array-data'><pre>array(1.4137931)</pre></div></div></li><li class='xr-section-item'><input id='section-f595c0b1-04a5-4737-a3b5-3882eee83932' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-f595c0b1-04a5-4737-a3b5-3882eee83932' class='xr-section-summary'  title='Expand/collapse section'>Coordinates: <span>(0)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><ul class='xr-var-list'></ul></div></li><li class='xr-section-item'><input id='section-12e72367-6292-4b4b-bbf7-ccf23f34e0e2' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-12e72367-6292-4b4b-bbf7-ccf23f34e0e2' class='xr-section-summary'  title='Expand/collapse section'>Indexes: <span>(0)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><ul class='xr-var-list'></ul></div></li><li class='xr-section-item'><input id='section-c56bf424-9ed8-41e0-9f9a-c57d558361f9' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-c56bf424-9ed8-41e0-9f9a-c57d558361f9' class='xr-section-summary'  title='Expand/collapse section'>Attributes: <span>(0)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><dl class='xr-attrs'></dl></div></li></ul></div></div></div></div>
+array(1.4137931)</pre><div class='xr-wrap' style='display:none'><div class='xr-header'><div class='xr-obj-type'>xarray.DataArray</div><div class='xr-array-name'>'solution'</div></div><ul class='xr-sections'><li class='xr-section-item'><div class='xr-array-wrap'><input id='section-88cab0e4-e94e-4bf3-a6f9-9d5673755278' class='xr-array-in' type='checkbox' checked><label for='section-88cab0e4-e94e-4bf3-a6f9-9d5673755278' title='Show/hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-array-preview xr-preview'><span>1.414</span></div><div class='xr-array-data'><pre>array(1.4137931)</pre></div></div></li><li class='xr-section-item'><input id='section-98681d81-3790-49f2-8e0a-6c01227db3ca' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-98681d81-3790-49f2-8e0a-6c01227db3ca' class='xr-section-summary'  title='Expand/collapse section'>Coordinates: <span>(0)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><ul class='xr-var-list'></ul></div></li><li class='xr-section-item'><input id='section-55608454-4bdb-4f31-b1ea-1b3e08926a2c' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-55608454-4bdb-4f31-b1ea-1b3e08926a2c' class='xr-section-summary'  title='Expand/collapse section'>Indexes: <span>(0)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><ul class='xr-var-list'></ul></div></li><li class='xr-section-item'><input id='section-c02c7edc-5261-4e77-99fe-9765ce4cce43' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-c02c7edc-5261-4e77-99fe-9765ce4cce43' class='xr-section-summary'  title='Expand/collapse section'>Attributes: <span>(0)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><dl class='xr-attrs'></dl></div></li></ul></div></div></div></div>
 </div>
 <p>We can also read out the objective value:</p>
 <div class="cell docutils container">
@@ -1880,7 +1885,7 @@ dl.xr-attrs {
   fill: currentColor;
 }
 </style><pre class='xr-text-repr-fallback'>&lt;xarray.DataArray &#x27;con0&#x27; ()&gt; Size: 8B
-array(0.27586207)</pre><div class='xr-wrap' style='display:none'><div class='xr-header'><div class='xr-obj-type'>xarray.DataArray</div><div class='xr-array-name'>'con0'</div></div><ul class='xr-sections'><li class='xr-section-item'><div class='xr-array-wrap'><input id='section-35712186-912e-465f-860d-5f342c7ff01a' class='xr-array-in' type='checkbox' checked><label for='section-35712186-912e-465f-860d-5f342c7ff01a' title='Show/hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-array-preview xr-preview'><span>0.2759</span></div><div class='xr-array-data'><pre>array(0.27586207)</pre></div></div></li><li class='xr-section-item'><input id='section-c578d30b-425b-40e3-bc2d-2253da22e4f9' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-c578d30b-425b-40e3-bc2d-2253da22e4f9' class='xr-section-summary'  title='Expand/collapse section'>Coordinates: <span>(0)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><ul class='xr-var-list'></ul></div></li><li class='xr-section-item'><input id='section-ed183fba-276c-4ef2-80a4-8441184a3cbd' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-ed183fba-276c-4ef2-80a4-8441184a3cbd' class='xr-section-summary'  title='Expand/collapse section'>Indexes: <span>(0)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><ul class='xr-var-list'></ul></div></li><li class='xr-section-item'><input id='section-54519f87-e472-46c8-8661-75765f4fcb04' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-54519f87-e472-46c8-8661-75765f4fcb04' class='xr-section-summary'  title='Expand/collapse section'>Attributes: <span>(0)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><dl class='xr-attrs'></dl></div></li></ul></div></div></div></div>
+array(0.27586207)</pre><div class='xr-wrap' style='display:none'><div class='xr-header'><div class='xr-obj-type'>xarray.DataArray</div><div class='xr-array-name'>'con0'</div></div><ul class='xr-sections'><li class='xr-section-item'><div class='xr-array-wrap'><input id='section-1dadb676-4969-42a7-ada4-72f296dbcbe6' class='xr-array-in' type='checkbox' checked><label for='section-1dadb676-4969-42a7-ada4-72f296dbcbe6' title='Show/hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-array-preview xr-preview'><span>0.2759</span></div><div class='xr-array-data'><pre>array(0.27586207)</pre></div></div></li><li class='xr-section-item'><input id='section-4da72f04-bc0b-495a-a7b0-ddd441a58fe8' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-4da72f04-bc0b-495a-a7b0-ddd441a58fe8' class='xr-section-summary'  title='Expand/collapse section'>Coordinates: <span>(0)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><ul class='xr-var-list'></ul></div></li><li class='xr-section-item'><input id='section-e796a56d-1a23-4930-86be-8344fa318855' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-e796a56d-1a23-4930-86be-8344fa318855' class='xr-section-summary'  title='Expand/collapse section'>Indexes: <span>(0)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><ul class='xr-var-list'></ul></div></li><li class='xr-section-item'><input id='section-90a56887-24b2-45c0-be61-27f357795173' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-90a56887-24b2-45c0-be61-27f357795173' class='xr-section-summary'  title='Expand/collapse section'>Attributes: <span>(0)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><dl class='xr-attrs'></dl></div></li></ul></div></div></div></div>
 </div>
 <p>Well done! You solved your first linopy model!</p>
 </section>
@@ -2047,7 +2052,7 @@ initialized
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running HiGHS 1.8.1 (git hash: 4a7f24a): Copyright (c) 2024 HiGHS under MIT licence terms
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running HiGHS 1.9.0 (git hash: fa40bdf): Copyright (c) 2024 HiGHS under MIT licence terms
 Coefficient ranges:
   Matrix [2e+00, 7e+00]
   Cost   [1e+00, 2e+00]
@@ -2063,13 +2068,13 @@ Using EKK dual simplex solver - serial
           0     0.0000000000e+00 Pr: 18(585) 0s
          18     1.2879310345e+02 Pr: 0(0) 0s
 Solving the original LP from the solution after postsolve
-Model name          : linopy-problem-nubtsw0t
+Model name          : linopy-problem-l6foueyp
 Model status        : Optimal
 Simplex   iterations: 18
 Objective value     :  1.2879310345e+02
 Relative P-D gap    :  0.0000000000e+00
 HiGHS run time      :          0.00
-Writing the solution to /tmp/linopy-solve-bkys7kxx.sol
+Writing the solution to /tmp/linopy-solve-9cmcinxe.sol
 </pre></div>
 </div>
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(&#39;ok&#39;, &#39;optimal&#39;)
@@ -2175,7 +2180,7 @@ Writing the solution to /tmp/linopy-solve-bkys7kxx.sol
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/4f014664d05465e7df964ebed7bfa91dd9a3b27e947d710c0b682690eac7d33f.png" src="_images/4f014664d05465e7df964ebed7bfa91dd9a3b27e947d710c0b682690eac7d33f.png" />
+<img alt="_images/24ff53213b7396cc2e9e39851e4d2a9c398e141c853028fc7bd562a5ea241603.png" src="_images/24ff53213b7396cc2e9e39851e4d2a9c398e141c853028fc7bd562a5ea241603.png" />
 </div>
 </div>
 <p>Alright! Now you learned how to set up linopy variables and expressions with coordinates. For more advanced <code class="docutils literal notranslate"><span class="pre">linopy</span></code> operations you can check out the <a class="reference external" href="https://linopy.readthedocs.io/en/latest/user-guide.html">User Guide</a>.</p>
@@ -2185,13 +2190,13 @@ Writing the solution to /tmp/linopy-solve-bkys7kxx.sol
 <section id="single-bidding-zone-single-period">
 <h3>Single bidding zone, single period<a class="headerlink" href="#single-bidding-zone-single-period" title="Link to this heading">#</a></h3>
 <p>We want to minimise operational cost of an example electricity system representing South Africa subject to generator limits and meeting the load:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-546c497f-a854-4ab7-a606-2713486dd427">
-<span class="eqno">(1)<a class="headerlink" href="#equation-546c497f-a854-4ab7-a606-2713486dd427" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-154add99-cc4a-49fe-9de7-f203073dbba4">
+<span class="eqno">(1)<a class="headerlink" href="#equation-154add99-cc4a-49fe-9de7-f203073dbba4" title="Permalink to this equation">#</a></span>\[\begin{equation}
     \min_{g_s} \sum_s o_s g_s
   \end{equation}\]</div>
 <p>such that</p>
-<div class="amsmath math notranslate nohighlight" id="equation-43a58832-f9d0-418b-b3f8-094f5caa75af">
-<span class="eqno">(2)<a class="headerlink" href="#equation-43a58832-f9d0-418b-b3f8-094f5caa75af" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-c91d11af-28dc-4401-8e09-adcd17eb94d2">
+<span class="eqno">(2)<a class="headerlink" href="#equation-c91d11af-28dc-4401-8e09-adcd17eb94d2" title="Permalink to this equation">#</a></span>\[\begin{align}
   g_s &amp;\leq G_s \\
   g_s &amp;\geq 0 \\
   \sum_s g_s &amp;= d
@@ -2314,7 +2319,7 @@ Value: None
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running HiGHS 1.8.1 (git hash: 4a7f24a): Copyright (c) 2024 HiGHS under MIT licence terms
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running HiGHS 1.9.0 (git hash: fa40bdf): Copyright (c) 2024 HiGHS under MIT licence terms
 Coefficient ranges:
   Matrix [1e+00, 1e+00]
   Cost   [3e+01, 8e+01]
@@ -2325,12 +2330,12 @@ Presolving model
 0 rows, 0 cols, 0 nonzeros  0s
 Presolve : Reductions: rows 0(-1); columns 0(-4); elements 0(-4) - Reduced to empty
 Solving the original LP from the solution after postsolve
-Model name          : linopy-problem-fzu2_wt4
+Model name          : linopy-problem-5qkwskib
 Model status        : Optimal
 Objective value     :  1.2900000000e+06
 Relative P-D gap    :  0.0000000000e+00
 HiGHS run time      :          0.00
-Writing the solution to /tmp/linopy-solve-4ku7ue90.sol
+Writing the solution to /tmp/linopy-solve-it3fpray.sol
 </pre></div>
 </div>
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(&#39;ok&#39;, &#39;optimal&#39;)
@@ -2771,19 +2776,19 @@ dl.xr-attrs {
   fill: currentColor;
 }
 </style><pre class='xr-text-repr-fallback'>&lt;xarray.DataArray &#x27;energy_balance&#x27; ()&gt; Size: 8B
-array(60.)</pre><div class='xr-wrap' style='display:none'><div class='xr-header'><div class='xr-obj-type'>xarray.DataArray</div><div class='xr-array-name'>'energy_balance'</div></div><ul class='xr-sections'><li class='xr-section-item'><div class='xr-array-wrap'><input id='section-a407255b-f00a-4811-a505-4f70b994a4fa' class='xr-array-in' type='checkbox' checked><label for='section-a407255b-f00a-4811-a505-4f70b994a4fa' title='Show/hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-array-preview xr-preview'><span>60.0</span></div><div class='xr-array-data'><pre>array(60.)</pre></div></div></li><li class='xr-section-item'><input id='section-82fb2d4b-4421-4fc8-9d77-70bbb240051a' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-82fb2d4b-4421-4fc8-9d77-70bbb240051a' class='xr-section-summary'  title='Expand/collapse section'>Coordinates: <span>(0)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><ul class='xr-var-list'></ul></div></li><li class='xr-section-item'><input id='section-878817b4-0acb-4eca-ad3a-c24d42109342' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-878817b4-0acb-4eca-ad3a-c24d42109342' class='xr-section-summary'  title='Expand/collapse section'>Indexes: <span>(0)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><ul class='xr-var-list'></ul></div></li><li class='xr-section-item'><input id='section-ffe3ee56-663a-4fe7-aa93-becbad567f72' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-ffe3ee56-663a-4fe7-aa93-becbad567f72' class='xr-section-summary'  title='Expand/collapse section'>Attributes: <span>(0)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><dl class='xr-attrs'></dl></div></li></ul></div></div></div></div>
+array(60.)</pre><div class='xr-wrap' style='display:none'><div class='xr-header'><div class='xr-obj-type'>xarray.DataArray</div><div class='xr-array-name'>'energy_balance'</div></div><ul class='xr-sections'><li class='xr-section-item'><div class='xr-array-wrap'><input id='section-0c3e68a6-ec79-459d-b4c8-30b09d5eabf0' class='xr-array-in' type='checkbox' checked><label for='section-0c3e68a6-ec79-459d-b4c8-30b09d5eabf0' title='Show/hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-array-preview xr-preview'><span>60.0</span></div><div class='xr-array-data'><pre>array(60.)</pre></div></div></li><li class='xr-section-item'><input id='section-92d37cac-f29a-4bcb-956c-d41db57af6f7' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-92d37cac-f29a-4bcb-956c-d41db57af6f7' class='xr-section-summary'  title='Expand/collapse section'>Coordinates: <span>(0)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><ul class='xr-var-list'></ul></div></li><li class='xr-section-item'><input id='section-f9433280-5efd-4923-93bd-bca578cc0c56' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-f9433280-5efd-4923-93bd-bca578cc0c56' class='xr-section-summary'  title='Expand/collapse section'>Indexes: <span>(0)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><ul class='xr-var-list'></ul></div></li><li class='xr-section-item'><input id='section-66a09414-cf9e-4f8e-ac24-791b121f563a' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-66a09414-cf9e-4f8e-ac24-791b121f563a' class='xr-section-summary'  title='Expand/collapse section'>Attributes: <span>(0)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><dl class='xr-attrs'></dl></div></li></ul></div></div></div></div>
 </div>
 </section>
 <section id="two-bidding-zones-with-transmission">
 <h3>Two bidding zones with transmission<a class="headerlink" href="#two-bidding-zones-with-transmission" title="Link to this heading">#</a></h3>
 <p>Let’s add a spatial dimension, such that the optimisation problem is expanded to</p>
-<div class="amsmath math notranslate nohighlight" id="equation-30c05a94-7215-4f14-9f4d-1da013d3c327">
-<span class="eqno">(3)<a class="headerlink" href="#equation-30c05a94-7215-4f14-9f4d-1da013d3c327" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-ed790bd5-bd54-404c-8695-d50f3636b5d6">
+<span class="eqno">(3)<a class="headerlink" href="#equation-ed790bd5-bd54-404c-8695-d50f3636b5d6" title="Permalink to this equation">#</a></span>\[\begin{equation}
   \min_{g_{i,s}, f_\ell} \sum_s o_{i,s} g_{i,s}
 \end{equation}\]</div>
 <p>such that</p>
-<div class="amsmath math notranslate nohighlight" id="equation-c755f4bb-24b2-4710-802a-dbc9515b5860">
-<span class="eqno">(4)<a class="headerlink" href="#equation-c755f4bb-24b2-4710-802a-dbc9515b5860" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-ec570018-c1e1-4505-897b-90000f3ab43a">
+<span class="eqno">(4)<a class="headerlink" href="#equation-ec570018-c1e1-4505-897b-90000f3ab43a" title="Permalink to this equation">#</a></span>\[\begin{align}
   g_{i,s} &amp;\leq G_{i,s} \\
   g_{i,s} &amp;\geq 0 \\
   \sum_s g_{i,s} - \sum_\ell K_{i\ell} f_\ell &amp;= d_i &amp; \text{KCL} \\
@@ -3015,8 +3020,8 @@ dtype: int64
 </div>
 <p>We now define the line limit for the transmission line, assuming that power flowing from Mozambique	to South Africa is positive.</p>
 <p>The line limit equation can be defined as</p>
-<div class="amsmath math notranslate nohighlight" id="equation-87a221c7-ffa2-44fd-a3e1-a57258e355e4">
-<span class="eqno">(5)<a class="headerlink" href="#equation-87a221c7-ffa2-44fd-a3e1-a57258e355e4" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-3c792d47-96cb-48fa-8fa8-ef25f9c9aa1c">
+<span class="eqno">(5)<a class="headerlink" href="#equation-3c792d47-96cb-48fa-8fa8-ef25f9c9aa1c" title="Permalink to this equation">#</a></span>\[\begin{align}
 |f_\ell| &amp;\leq F_\ell &amp; \text{line limits}
 \end{align}\]</div>
 <div class="cell docutils container">
@@ -3035,8 +3040,8 @@ flow_MZ_SA ∈ [-500, 500]
 </div>
 </div>
 <p>The energy balance constraint is replaced by KCL, where we take into account local generation as well as incoming or outgoing flows. The KCL equation can be defined as:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-04455506-db31-4cf3-b7f9-a9acef7cf4d8">
-<span class="eqno">(6)<a class="headerlink" href="#equation-04455506-db31-4cf3-b7f9-a9acef7cf4d8" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-39094bd2-73e4-4c1b-b3c8-d58579b6d765">
+<span class="eqno">(6)<a class="headerlink" href="#equation-39094bd2-73e4-4c1b-b3c8-d58579b6d765" title="Permalink to this equation">#</a></span>\[\begin{align}
   \sum_s g_{i,s} - \sum_\ell K_{i\ell} f_\ell &amp;= d_i &amp; \text{KCL} \\
 \end{align}\]</div>
 <p>We also need the incidence matrix <span class="math notranslate nohighlight">\(K_{i\ell}\)</span> of this network (here it’s very simple!) and assume some direction for the flow variable. Here, we picked the orientation from South Africa to Mozambique. This means that if the values for the flow variable <span class="math notranslate nohighlight">\(f_\ell\)</span> are positive South Africa exports to Mozambique and vice versa if the variable takes negative values.</p>
@@ -3098,7 +3103,7 @@ $<span class="math notranslate nohighlight">\(\min_{g_{i,s}, f_\ell} \sum_s o_{i
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running HiGHS 1.8.1 (git hash: 4a7f24a): Copyright (c) 2024 HiGHS under MIT licence terms
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running HiGHS 1.9.0 (git hash: fa40bdf): Copyright (c) 2024 HiGHS under MIT licence terms
 Coefficient ranges:
   Matrix [1e+00, 1e+00]
   Cost   [3e+01, 8e+01]
@@ -3109,12 +3114,12 @@ Presolving model
 0 rows, 0 cols, 0 nonzeros  0s
 Presolve : Reductions: rows 0(-2); columns 0(-11); elements 0(-12) - Reduced to empty
 Solving the original LP from the solution after postsolve
-Model name          : linopy-problem-7uukja4b
+Model name          : linopy-problem-owrxg4d3
 Model status        : Optimal
 Objective value     :  1.2600000000e+06
 Relative P-D gap    :  0.0000000000e+00
 HiGHS run time      :          0.00
-Writing the solution to /tmp/linopy-solve-177vu8nw.sol
+Writing the solution to /tmp/linopy-solve-qq7rt2ii.sol
 </pre></div>
 </div>
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(&#39;ok&#39;, &#39;optimal&#39;)
@@ -3596,7 +3601,7 @@ dl.xr-attrs {
 </style><pre class='xr-text-repr-fallback'>&lt;xarray.DataArray &#x27;dual&#x27; ()&gt; Size: 8B
 array(60.)
 Coordinates:
-    countries  &lt;U12 48B &#x27;South_Africa&#x27;</pre><div class='xr-wrap' style='display:none'><div class='xr-header'><div class='xr-obj-type'>xarray.DataArray</div><div class='xr-array-name'>'dual'</div></div><ul class='xr-sections'><li class='xr-section-item'><div class='xr-array-wrap'><input id='section-f3952204-a57d-4009-b6e3-7e35e5036021' class='xr-array-in' type='checkbox' checked><label for='section-f3952204-a57d-4009-b6e3-7e35e5036021' title='Show/hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-array-preview xr-preview'><span>60.0</span></div><div class='xr-array-data'><pre>array(60.)</pre></div></div></li><li class='xr-section-item'><input id='section-80b9d69c-c428-4188-9d48-47be134890dc' class='xr-section-summary-in' type='checkbox'  checked><label for='section-80b9d69c-c428-4188-9d48-47be134890dc' class='xr-section-summary' >Coordinates: <span>(1)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><ul class='xr-var-list'><li class='xr-var-item'><div class='xr-var-name'><span>countries</span></div><div class='xr-var-dims'>()</div><div class='xr-var-dtype'>&lt;U12</div><div class='xr-var-preview xr-preview'>&#x27;South_Africa&#x27;</div><input id='attrs-4b2ac32d-1be0-4004-bc97-3810637bb26c' class='xr-var-attrs-in' type='checkbox' disabled><label for='attrs-4b2ac32d-1be0-4004-bc97-3810637bb26c' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-80dd61d7-b1f9-4678-b391-8ae39451f77a' class='xr-var-data-in' type='checkbox'><label for='data-80dd61d7-b1f9-4678-b391-8ae39451f77a' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'></dl></div><div class='xr-var-data'><pre>array(&#x27;South_Africa&#x27;, dtype=&#x27;&lt;U12&#x27;)</pre></div></li></ul></div></li><li class='xr-section-item'><input id='section-26cf57b1-b651-4f74-b5e4-6432f56213b0' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-26cf57b1-b651-4f74-b5e4-6432f56213b0' class='xr-section-summary'  title='Expand/collapse section'>Indexes: <span>(0)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><ul class='xr-var-list'></ul></div></li><li class='xr-section-item'><input id='section-dc0cd795-78fb-4709-b83a-5253d5fbe41f' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-dc0cd795-78fb-4709-b83a-5253d5fbe41f' class='xr-section-summary'  title='Expand/collapse section'>Attributes: <span>(0)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><dl class='xr-attrs'></dl></div></li></ul></div></div></div></div>
+    countries  &lt;U12 48B &#x27;South_Africa&#x27;</pre><div class='xr-wrap' style='display:none'><div class='xr-header'><div class='xr-obj-type'>xarray.DataArray</div><div class='xr-array-name'>'dual'</div></div><ul class='xr-sections'><li class='xr-section-item'><div class='xr-array-wrap'><input id='section-00f8d7ce-cdbe-4788-9db7-d97760126a51' class='xr-array-in' type='checkbox' checked><label for='section-00f8d7ce-cdbe-4788-9db7-d97760126a51' title='Show/hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-array-preview xr-preview'><span>60.0</span></div><div class='xr-array-data'><pre>array(60.)</pre></div></div></li><li class='xr-section-item'><input id='section-7e7d7127-8416-460b-8540-ec9ca0bd5549' class='xr-section-summary-in' type='checkbox'  checked><label for='section-7e7d7127-8416-460b-8540-ec9ca0bd5549' class='xr-section-summary' >Coordinates: <span>(1)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><ul class='xr-var-list'><li class='xr-var-item'><div class='xr-var-name'><span>countries</span></div><div class='xr-var-dims'>()</div><div class='xr-var-dtype'>&lt;U12</div><div class='xr-var-preview xr-preview'>&#x27;South_Africa&#x27;</div><input id='attrs-a0f42cc2-c7ec-4d39-a1e5-8e4afba9f3e8' class='xr-var-attrs-in' type='checkbox' disabled><label for='attrs-a0f42cc2-c7ec-4d39-a1e5-8e4afba9f3e8' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-8582ea25-5d5b-496f-97cf-69011a324624' class='xr-var-data-in' type='checkbox'><label for='data-8582ea25-5d5b-496f-97cf-69011a324624' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'></dl></div><div class='xr-var-data'><pre>array(&#x27;South_Africa&#x27;, dtype=&#x27;&lt;U12&#x27;)</pre></div></li></ul></div></li><li class='xr-section-item'><input id='section-8eddd13b-78f2-4634-a671-7c86f6a82766' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-8eddd13b-78f2-4634-a671-7c86f6a82766' class='xr-section-summary'  title='Expand/collapse section'>Indexes: <span>(0)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><ul class='xr-var-list'></ul></div></li><li class='xr-section-item'><input id='section-ad1c9da3-08b3-4e89-b769-288a6802056f' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-ad1c9da3-08b3-4e89-b769-288a6802056f' class='xr-section-summary'  title='Expand/collapse section'>Attributes: <span>(0)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><dl class='xr-attrs'></dl></div></li></ul></div></div></div></div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -3978,19 +3983,19 @@ dl.xr-attrs {
 </style><pre class='xr-text-repr-fallback'>&lt;xarray.DataArray &#x27;dual&#x27; ()&gt; Size: 8B
 array(-0.)
 Coordinates:
-    countries  &lt;U10 40B &#x27;Mozambique&#x27;</pre><div class='xr-wrap' style='display:none'><div class='xr-header'><div class='xr-obj-type'>xarray.DataArray</div><div class='xr-array-name'>'dual'</div></div><ul class='xr-sections'><li class='xr-section-item'><div class='xr-array-wrap'><input id='section-55d094c9-d1ce-41b2-a865-4150b62402c3' class='xr-array-in' type='checkbox' checked><label for='section-55d094c9-d1ce-41b2-a865-4150b62402c3' title='Show/hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-array-preview xr-preview'><span>-0.0</span></div><div class='xr-array-data'><pre>array(-0.)</pre></div></div></li><li class='xr-section-item'><input id='section-f7473d14-9a14-4ad9-94ea-4d8c99e19bd3' class='xr-section-summary-in' type='checkbox'  checked><label for='section-f7473d14-9a14-4ad9-94ea-4d8c99e19bd3' class='xr-section-summary' >Coordinates: <span>(1)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><ul class='xr-var-list'><li class='xr-var-item'><div class='xr-var-name'><span>countries</span></div><div class='xr-var-dims'>()</div><div class='xr-var-dtype'>&lt;U10</div><div class='xr-var-preview xr-preview'>&#x27;Mozambique&#x27;</div><input id='attrs-616a354d-160f-48ed-aff7-e7dd4ded40b4' class='xr-var-attrs-in' type='checkbox' disabled><label for='attrs-616a354d-160f-48ed-aff7-e7dd4ded40b4' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-13ce55d5-0728-4a66-b8f1-9f2f0349e40e' class='xr-var-data-in' type='checkbox'><label for='data-13ce55d5-0728-4a66-b8f1-9f2f0349e40e' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'></dl></div><div class='xr-var-data'><pre>array(&#x27;Mozambique&#x27;, dtype=&#x27;&lt;U10&#x27;)</pre></div></li></ul></div></li><li class='xr-section-item'><input id='section-7652b73b-53e3-4532-aa4e-881eaca324db' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-7652b73b-53e3-4532-aa4e-881eaca324db' class='xr-section-summary'  title='Expand/collapse section'>Indexes: <span>(0)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><ul class='xr-var-list'></ul></div></li><li class='xr-section-item'><input id='section-cb8fd725-fded-412d-8f3d-535499a9c95d' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-cb8fd725-fded-412d-8f3d-535499a9c95d' class='xr-section-summary'  title='Expand/collapse section'>Attributes: <span>(0)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><dl class='xr-attrs'></dl></div></li></ul></div></div></div></div>
+    countries  &lt;U10 40B &#x27;Mozambique&#x27;</pre><div class='xr-wrap' style='display:none'><div class='xr-header'><div class='xr-obj-type'>xarray.DataArray</div><div class='xr-array-name'>'dual'</div></div><ul class='xr-sections'><li class='xr-section-item'><div class='xr-array-wrap'><input id='section-515b5e3d-9a87-4c4d-a193-b15ad08edd28' class='xr-array-in' type='checkbox' checked><label for='section-515b5e3d-9a87-4c4d-a193-b15ad08edd28' title='Show/hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-array-preview xr-preview'><span>-0.0</span></div><div class='xr-array-data'><pre>array(-0.)</pre></div></div></li><li class='xr-section-item'><input id='section-68c27736-d21a-4e4a-bfcc-1e9146dba042' class='xr-section-summary-in' type='checkbox'  checked><label for='section-68c27736-d21a-4e4a-bfcc-1e9146dba042' class='xr-section-summary' >Coordinates: <span>(1)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><ul class='xr-var-list'><li class='xr-var-item'><div class='xr-var-name'><span>countries</span></div><div class='xr-var-dims'>()</div><div class='xr-var-dtype'>&lt;U10</div><div class='xr-var-preview xr-preview'>&#x27;Mozambique&#x27;</div><input id='attrs-f0808d8f-6c51-45f5-b48f-41a060ba9680' class='xr-var-attrs-in' type='checkbox' disabled><label for='attrs-f0808d8f-6c51-45f5-b48f-41a060ba9680' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-fa149d50-af97-4c1a-8978-d260ccc9d7f1' class='xr-var-data-in' type='checkbox'><label for='data-fa149d50-af97-4c1a-8978-d260ccc9d7f1' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'></dl></div><div class='xr-var-data'><pre>array(&#x27;Mozambique&#x27;, dtype=&#x27;&lt;U10&#x27;)</pre></div></li></ul></div></li><li class='xr-section-item'><input id='section-1883d9ca-8330-4fe1-86c8-3638248fdd51' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-1883d9ca-8330-4fe1-86c8-3638248fdd51' class='xr-section-summary'  title='Expand/collapse section'>Indexes: <span>(0)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><ul class='xr-var-list'></ul></div></li><li class='xr-section-item'><input id='section-0c42fa34-4607-4a4e-a67a-5dce745ce861' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-0c42fa34-4607-4a4e-a67a-5dce745ce861' class='xr-section-summary'  title='Expand/collapse section'>Attributes: <span>(0)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><dl class='xr-attrs'></dl></div></li></ul></div></div></div></div>
 </div>
 </section>
 <section id="single-bidding-zone-with-several-periods">
 <h3>Single bidding zone with several periods<a class="headerlink" href="#single-bidding-zone-with-several-periods" title="Link to this heading">#</a></h3>
 <p>In this example, we consider multiple time periods (labelled [0,1,2,3]) to represent variable wind generation and changing load.</p>
-<div class="amsmath math notranslate nohighlight" id="equation-d619ff87-d96b-4d1a-a2c4-3067d7e57ad2">
-<span class="eqno">(7)<a class="headerlink" href="#equation-d619ff87-d96b-4d1a-a2c4-3067d7e57ad2" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-cccba47e-b43b-49e0-9e22-6aef6fc9adf9">
+<span class="eqno">(7)<a class="headerlink" href="#equation-cccba47e-b43b-49e0-9e22-6aef6fc9adf9" title="Permalink to this equation">#</a></span>\[\begin{equation}
   \min_{g_{s,t}} \sum_s o_{s} g_{s,t}
 \end{equation}\]</div>
 <p>such that</p>
-<div class="amsmath math notranslate nohighlight" id="equation-2463ee5e-752b-4c94-a0a4-29d96cfced18">
-<span class="eqno">(8)<a class="headerlink" href="#equation-2463ee5e-752b-4c94-a0a4-29d96cfced18" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-acc326f5-244a-4c75-a7d8-8b2c74fa9533">
+<span class="eqno">(8)<a class="headerlink" href="#equation-acc326f5-244a-4c75-a7d8-8b2c74fa9533" title="Permalink to this equation">#</a></span>\[\begin{align}
   g_{s,t} &amp;\leq \hat{g}_{s,t} G_{i,s} \\
   g_{s,t} &amp;\geq 0 \\
   \sum_s g_{s,t} &amp;= d_t
@@ -4123,8 +4128,8 @@ Coordinates:
 </div>
 </div>
 <p>Let’s define the dispatch variables <code class="docutils literal notranslate"><span class="pre">g</span></code> with the <code class="docutils literal notranslate"><span class="pre">lower</span></code> and <code class="docutils literal notranslate"><span class="pre">upper</span></code> bound:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-8f806a76-1fd5-459e-b975-1b0c0bd90887">
-<span class="eqno">(9)<a class="headerlink" href="#equation-8f806a76-1fd5-459e-b975-1b0c0bd90887" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-7d3bacd4-d06c-4a6f-941e-c120697efcde">
+<span class="eqno">(9)<a class="headerlink" href="#equation-7d3bacd4-d06c-4a6f-941e-c120697efcde" title="Permalink to this equation">#</a></span>\[\begin{align}
   g_{s,t} &amp;\leq \hat{g}_{s,t} G_{i,s} \\
   g_{s,t} &amp;\geq 0 \\
 \end{align}\]</div>
@@ -4158,8 +4163,8 @@ Coordinates:
 </div>
 </div>
 <p>Then, we add the objective:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-466363ef-fcd4-4477-af34-528b80002a0e">
-<span class="eqno">(10)<a class="headerlink" href="#equation-466363ef-fcd4-4477-af34-528b80002a0e" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-3ee5074d-333a-492c-b3f6-72f5ad7eacf7">
+<span class="eqno">(10)<a class="headerlink" href="#equation-3ee5074d-333a-492c-b3f6-72f5ad7eacf7" title="Permalink to this equation">#</a></span>\[\begin{equation}
   \min_{g_{s,t}} \sum_s o_{s} g_{s,t}
 \end{equation}\]</div>
 <div class="cell docutils container">
@@ -4180,8 +4185,8 @@ Value: None
 </div>
 </div>
 <p>Which is subject to:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-d085b2c4-c4c4-408c-ac26-0f328d19bd70">
-<span class="eqno">(11)<a class="headerlink" href="#equation-d085b2c4-c4c4-408c-ac26-0f328d19bd70" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-e1a5671a-f6b1-4f8f-8086-953f73c6fe2a">
+<span class="eqno">(11)<a class="headerlink" href="#equation-e1a5671a-f6b1-4f8f-8086-953f73c6fe2a" title="Permalink to this equation">#</a></span>\[\begin{align}
   \sum_s g_{s,t} &amp;= d_t
 \end{align}\]</div>
 <div class="cell docutils container">
@@ -4212,7 +4217,7 @@ Value: None
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running HiGHS 1.8.1 (git hash: 4a7f24a): Copyright (c) 2024 HiGHS under MIT licence terms
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running HiGHS 1.9.0 (git hash: fa40bdf): Copyright (c) 2024 HiGHS under MIT licence terms
 Coefficient ranges:
   Matrix [1e+00, 1e+00]
   Cost   [3e+01, 8e+01]
@@ -4223,12 +4228,12 @@ Presolving model
 0 rows, 0 cols, 0 nonzeros  0s
 Presolve : Reductions: rows 0(-4); columns 0(-20); elements 0(-20) - Reduced to empty
 Solving the original LP from the solution after postsolve
-Model name          : linopy-problem-gizsa87v
+Model name          : linopy-problem-rpgo3f5j
 Model status        : Optimal
 Objective value     :  6.0820000000e+06
 Relative P-D gap    :  0.0000000000e+00
 HiGHS run time      :          0.00
-Writing the solution to /tmp/linopy-solve-qaqgiyxe.sol
+Writing the solution to /tmp/linopy-solve-pdb0d5g_.sol
 </pre></div>
 </div>
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(&#39;ok&#39;, &#39;optimal&#39;)
@@ -4514,7 +4519,7 @@ ok
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running HiGHS 1.8.1 (git hash: 4a7f24a): Copyright (c) 2024 HiGHS under MIT licence terms
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running HiGHS 1.9.0 (git hash: fa40bdf): Copyright (c) 2024 HiGHS under MIT licence terms
 Coefficient ranges:
   Matrix [9e-01, 1e+00]
   Cost   [3e+01, 8e+01]
@@ -4531,13 +4536,13 @@ Using EKK dual simplex solver - serial
           7     6.0172006560e+06 Pr: 0(0) 0s
           7     6.0172006560e+06 Pr: 0(0) 0s
 Solving the original LP from the solution after postsolve
-Model name          : linopy-problem-1xyjv8mx
+Model name          : linopy-problem-m1b371j1
 Model status        : Optimal
 Simplex   iterations: 7
 Objective value     :  6.0172006560e+06
 Relative P-D gap    :  1.5477671892e-16
 HiGHS run time      :          0.00
-Writing the solution to /tmp/linopy-solve-tesgqq0o.sol
+Writing the solution to /tmp/linopy-solve-k_w4o7br.sol
 </pre></div>
 </div>
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(&#39;ok&#39;, &#39;optimal&#39;)
@@ -4903,7 +4908,7 @@ Writing the solution to /tmp/linopy-solve-tesgqq0o.sol
   <div class="footer-item">
     
 <p class="component-author">
-By Fabian Neumann
+By Fabian Neumann & Open Energy Transition
 </p>
 
   </div>
@@ -4913,7 +4918,7 @@ By Fabian Neumann
 
   <p class="copyright">
     
-      © Copyright 2022-2024.
+      © Copyright 2023.
       <br/>
     
   </p>
@@ -4937,8 +4942,8 @@ By Fabian Neumann
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script defer src="_static/scripts/bootstrap.js?digest=26a4bc78f4c0ddb94549"></script>
-<script defer src="_static/scripts/pydata-sphinx-theme.js?digest=26a4bc78f4c0ddb94549"></script>
+  <script defer src="_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
 
   <footer class="bd-footer">
   </footer>
