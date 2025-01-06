@@ -30,7 +30,7 @@
   <link href="_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
 <link href="_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
 
-    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
     <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=a3416100" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
@@ -498,7 +498,7 @@
 <p>Almost all Pyomo objects exist within the <code class="docutils literal notranslate"><span class="pre">pyomo.environ</span></code> namespace:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pyomo.environ</span> <span class="k">as</span> <span class="nn">pe</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">pyomo.environ</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pe</span>
 </pre></div>
 </div>
 </div>
@@ -596,8 +596,8 @@
 <p><strong>Constraints</strong> are equality or inequality expressions that constrain the <em>feasible</em> space of the decision variables.</p>
 <p>In <code class="docutils literal notranslate"><span class="pre">pyomo</span></code>, constraints are created with the <code class="docutils literal notranslate"><span class="pre">pe.Constraint()</span></code> constructor.</p>
 <p>In the code below, we create three simple constraints in different ways:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-42c326c0-1955-42c1-825d-02910b68c136">
-<span class="eqno">(14)<a class="headerlink" href="#equation-42c326c0-1955-42c1-825d-02910b68c136" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-49bd2b6f-f15d-49d8-9498-5d571a7c5f5a">
+<span class="eqno">(14)<a class="headerlink" href="#equation-49bd2b6f-f15d-49d8-9498-5d571a7c5f5a" title="Permalink to this equation">#</a></span>\[\begin{align}
   x &amp; \leq 4 \\
   2x + y &amp; \leq 10 \\
   x + y &amp; \leq 10 \\
@@ -1066,7 +1066,7 @@ Solution:
 <p>When building indexed constraints, particular indices are passed as argument to a rule (function) that returns an expression for each index.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">construction_rule</span><span class="p">(</span><span class="n">m</span><span class="p">,</span> <span class="n">a</span><span class="p">):</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">construction_rule</span><span class="p">(</span><span class="n">m</span><span class="p">,</span> <span class="n">a</span><span class="p">):</span>
     <span class="k">return</span> <span class="nb">sum</span><span class="p">(</span><span class="n">m</span><span class="o">.</span><span class="n">y</span><span class="p">[</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">]</span> <span class="k">for</span> <span class="n">b</span> <span class="ow">in</span> <span class="n">m</span><span class="o">.</span><span class="n">B</span><span class="p">)</span> <span class="o">==</span> <span class="mi">1</span>
 </pre></div>
 </div>
@@ -1113,7 +1113,7 @@ Solution:
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nd">@m</span><span class="o">.</span><span class="n">Constraint</span><span class="p">(</span><span class="n">m</span><span class="o">.</span><span class="n">A</span><span class="p">)</span>
-<span class="k">def</span> <span class="nf">c3</span><span class="p">(</span><span class="n">m</span><span class="p">,</span> <span class="n">a</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">c3</span><span class="p">(</span><span class="n">m</span><span class="p">,</span> <span class="n">a</span><span class="p">):</span>
     <span class="k">return</span> <span class="nb">sum</span><span class="p">(</span><span class="n">m</span><span class="o">.</span><span class="n">y</span><span class="p">[</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">]</span> <span class="k">for</span> <span class="n">b</span> <span class="ow">in</span> <span class="n">B</span><span class="p">)</span> <span class="o">&gt;=</span> <span class="mi">1</span>
 </pre></div>
 </div>
@@ -1126,13 +1126,13 @@ Solution:
 <section id="single-bidding-zone-single-period">
 <h3>Single bidding zone, single period<a class="headerlink" href="#single-bidding-zone-single-period" title="Link to this heading">#</a></h3>
 <p>We want to minimise operational cost of an example electricity system representing South Africa subject to generator limits and meeting the load:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-9c2f36da-06e9-4ef4-a70e-812b89a2d9b7">
-<span class="eqno">(15)<a class="headerlink" href="#equation-9c2f36da-06e9-4ef4-a70e-812b89a2d9b7" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-ff37cedf-ae9f-4e30-9a68-91b23b49a05f">
+<span class="eqno">(15)<a class="headerlink" href="#equation-ff37cedf-ae9f-4e30-9a68-91b23b49a05f" title="Permalink to this equation">#</a></span>\[\begin{equation}
     \min_{g_s} \sum_s o_s g_s
   \end{equation}\]</div>
 <p>such that</p>
-<div class="amsmath math notranslate nohighlight" id="equation-fb4db9e0-408b-4469-96b0-a773654a4177">
-<span class="eqno">(16)<a class="headerlink" href="#equation-fb4db9e0-408b-4469-96b0-a773654a4177" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-4da64eb8-be29-4e44-91ac-911d565526b7">
+<span class="eqno">(16)<a class="headerlink" href="#equation-4da64eb8-be29-4e44-91ac-911d565526b7" title="Permalink to this equation">#</a></span>\[\begin{align}
   g_s &amp;\leq G_s \\
   g_s &amp;\geq 0 \\
   \sum_s g_s &amp;= d
@@ -1218,7 +1218,7 @@ Solution:
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nd">@m</span><span class="o">.</span><span class="n">Constraint</span><span class="p">(</span><span class="n">m</span><span class="o">.</span><span class="n">S</span><span class="p">)</span>
-<span class="k">def</span> <span class="nf">generator_limit</span><span class="p">(</span><span class="n">m</span><span class="p">,</span> <span class="n">s</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">generator_limit</span><span class="p">(</span><span class="n">m</span><span class="p">,</span> <span class="n">s</span><span class="p">):</span>
     <span class="k">return</span> <span class="n">m</span><span class="o">.</span><span class="n">g</span><span class="p">[</span><span class="n">s</span><span class="p">]</span> <span class="o">&lt;=</span> <span class="n">capacities</span><span class="p">[</span><span class="n">s</span><span class="p">]</span>
 </pre></div>
 </div>
@@ -1305,7 +1305,7 @@ Solution:
 <p>We can use <code class="docutils literal notranslate"><span class="pre">pandas</span></code> to retrieve and process the optimisation results.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
 </pre></div>
 </div>
 </div>
@@ -1381,13 +1381,13 @@ dtype: float64
 <section id="two-bidding-zones-with-transmission">
 <h3>Two bidding zones with transmission<a class="headerlink" href="#two-bidding-zones-with-transmission" title="Link to this heading">#</a></h3>
 <p>Let’s add a spatial dimension, such that the optimisation problem is expanded to</p>
-<div class="amsmath math notranslate nohighlight" id="equation-96246e9b-95b2-4069-948c-95c9cafc0d04">
-<span class="eqno">(17)<a class="headerlink" href="#equation-96246e9b-95b2-4069-948c-95c9cafc0d04" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-2607e1e5-d28f-4a28-b576-b04211649149">
+<span class="eqno">(17)<a class="headerlink" href="#equation-2607e1e5-d28f-4a28-b576-b04211649149" title="Permalink to this equation">#</a></span>\[\begin{equation}
   \min_{g_{i,s}, f_\ell} \sum_s o_{i,s} g_{i,s}
 \end{equation}\]</div>
 <p>such that</p>
-<div class="amsmath math notranslate nohighlight" id="equation-77275f2a-c8ae-4c6d-b405-e7ea782950d1">
-<span class="eqno">(18)<a class="headerlink" href="#equation-77275f2a-c8ae-4c6d-b405-e7ea782950d1" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-1790c9e5-9d66-4129-91a7-a7601dcc7397">
+<span class="eqno">(18)<a class="headerlink" href="#equation-1790c9e5-9d66-4129-91a7-a7601dcc7397" title="Permalink to this equation">#</a></span>\[\begin{align}
   g_{i,s} &amp;\leq G_{i,s} \\
   g_{i,s} &amp;\geq 0 \\
   \sum_s g_{i,s} - \sum_\ell K_{i\ell} f_\ell &amp;= d_i &amp; \text{KCL} \\
@@ -1492,7 +1492,7 @@ For missing entries, we set the upper limit to zero (e.g. this country-technolog
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nd">@m</span><span class="o">.</span><span class="n">Constraint</span><span class="p">(</span><span class="n">m</span><span class="o">.</span><span class="n">countries</span><span class="p">,</span> <span class="n">m</span><span class="o">.</span><span class="n">technologies</span><span class="p">)</span>
-<span class="k">def</span> <span class="nf">generator_limit</span><span class="p">(</span><span class="n">m</span><span class="p">,</span> <span class="n">c</span><span class="p">,</span> <span class="n">s</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">generator_limit</span><span class="p">(</span><span class="n">m</span><span class="p">,</span> <span class="n">c</span><span class="p">,</span> <span class="n">s</span><span class="p">):</span>
     <span class="k">return</span> <span class="n">m</span><span class="o">.</span><span class="n">g</span><span class="p">[</span><span class="n">c</span><span class="p">,</span> <span class="n">s</span><span class="p">]</span> <span class="o">&lt;=</span> <span class="n">capacities</span><span class="p">[</span><span class="n">c</span><span class="p">]</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -1526,7 +1526,7 @@ For missing entries, we set the upper limit to zero (e.g. this country-technolog
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nd">@m</span><span class="o">.</span><span class="n">Constraint</span><span class="p">(</span><span class="n">m</span><span class="o">.</span><span class="n">countries</span><span class="p">)</span>
-<span class="k">def</span> <span class="nf">kcl</span><span class="p">(</span><span class="n">m</span><span class="p">,</span> <span class="n">c</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">kcl</span><span class="p">(</span><span class="n">m</span><span class="p">,</span> <span class="n">c</span><span class="p">):</span>
     <span class="n">sign</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span> <span class="k">if</span> <span class="n">c</span> <span class="o">==</span> <span class="s2">&quot;Mozambique&quot;</span> <span class="k">else</span> <span class="mi">1</span>  <span class="c1"># minimal incidence matrix</span>
     <span class="k">return</span> <span class="nb">sum</span><span class="p">(</span><span class="n">m</span><span class="o">.</span><span class="n">g</span><span class="p">[</span><span class="n">c</span><span class="p">,</span> <span class="n">s</span><span class="p">]</span> <span class="k">for</span> <span class="n">s</span> <span class="ow">in</span> <span class="n">m</span><span class="o">.</span><span class="n">technologies</span><span class="p">)</span> <span class="o">-</span> <span class="n">sign</span> <span class="o">*</span> <span class="n">m</span><span class="o">.</span><span class="n">f</span> <span class="o">==</span> <span class="n">loads</span><span class="p">[</span><span class="n">c</span><span class="p">]</span>
 </pre></div>
@@ -1542,8 +1542,8 @@ For missing entries, we set the upper limit to zero (e.g. this country-technolog
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>kcl : Size=2, Index=countries, Active=True
     Key          : Lower   : Body                                                                                                                : Upper   : Active
-      Mozambique :   650.0 :           g[Mozambique,Gas] + g[Mozambique,Hydro] + g[Mozambique,Wind] + g[Mozambique,Oil] + g[Mozambique,Coal] + f :   650.0 :   True
-    South Africa : 42000.0 : g[South Africa,Gas] + g[South Africa,Hydro] + g[South Africa,Wind] + g[South Africa,Oil] + g[South Africa,Coal] - f : 42000.0 :   True
+      Mozambique :   650.0 :           g[Mozambique,Gas] + g[Mozambique,Wind] + g[Mozambique,Oil] + g[Mozambique,Coal] + g[Mozambique,Hydro] + f :   650.0 :   True
+    South Africa : 42000.0 : g[South Africa,Gas] + g[South Africa,Wind] + g[South Africa,Oil] + g[South Africa,Coal] + g[South Africa,Hydro] - f : 42000.0 :   True
 </pre></div>
 </div>
 </div>
@@ -1693,15 +1693,15 @@ Solution:
 </div>
 <div class="cell_output docutils container">
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>generator_limit[South Africa,Gas]      -0.0
-generator_limit[South Africa,Hydro]   -60.0
 generator_limit[South Africa,Wind]    -60.0
 generator_limit[South Africa,Oil]      -0.0
 generator_limit[South Africa,Coal]    -30.0
+generator_limit[South Africa,Hydro]   -60.0
 generator_limit[Mozambique,Gas]        -0.0
-generator_limit[Mozambique,Hydro]      -0.0
 generator_limit[Mozambique,Wind]       -0.0
 generator_limit[Mozambique,Oil]        -0.0
 generator_limit[Mozambique,Coal]       -0.0
+generator_limit[Mozambique,Hydro]      -0.0
 kcl[South Africa]                      60.0
 kcl[Mozambique]                        -0.0
 [None]                                 60.0
@@ -1825,13 +1825,13 @@ Solution:
 <section id="single-bidding-zone-with-several-periods">
 <h3>Single bidding zone with several periods<a class="headerlink" href="#single-bidding-zone-with-several-periods" title="Link to this heading">#</a></h3>
 <p>In this example, we consider multiple time periods (labelled [1,2,3,4]) to represent variable wind generation and changing load.</p>
-<div class="amsmath math notranslate nohighlight" id="equation-403ec521-b125-4a75-a12a-a9ef234af4ba">
-<span class="eqno">(19)<a class="headerlink" href="#equation-403ec521-b125-4a75-a12a-a9ef234af4ba" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-146607e9-2be5-4627-9935-916475539719">
+<span class="eqno">(19)<a class="headerlink" href="#equation-146607e9-2be5-4627-9935-916475539719" title="Permalink to this equation">#</a></span>\[\begin{equation}
   \min_{g_{s,t}} \sum_s o_{s} g_{s,t}
 \end{equation}\]</div>
 <p>such that</p>
-<div class="amsmath math notranslate nohighlight" id="equation-eb533937-0d69-482e-9589-b86d0bc1a580">
-<span class="eqno">(20)<a class="headerlink" href="#equation-eb533937-0d69-482e-9589-b86d0bc1a580" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-d80a69bb-9404-49b5-a1fd-654f8931313c">
+<span class="eqno">(20)<a class="headerlink" href="#equation-d80a69bb-9404-49b5-a1fd-654f8931313c" title="Permalink to this equation">#</a></span>\[\begin{align}
   g_{s,t} &amp;\leq \hat{g}_{s,t} G_{i,s} \\
   g_{s,t} &amp;\geq 0 \\
   \sum_s g_{s,t} &amp;= d_t
@@ -1879,7 +1879,7 @@ Solution:
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nd">@m</span><span class="o">.</span><span class="n">Constraint</span><span class="p">(</span><span class="n">m</span><span class="o">.</span><span class="n">S</span><span class="p">,</span> <span class="n">m</span><span class="o">.</span><span class="n">T</span><span class="p">)</span>
-<span class="k">def</span> <span class="nf">generator_limit</span><span class="p">(</span><span class="n">m</span><span class="p">,</span> <span class="n">s</span><span class="p">,</span> <span class="n">t</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">generator_limit</span><span class="p">(</span><span class="n">m</span><span class="p">,</span> <span class="n">s</span><span class="p">,</span> <span class="n">t</span><span class="p">):</span>
     <span class="n">cf</span> <span class="o">=</span> <span class="n">wind_ts</span><span class="p">[</span><span class="n">t</span> <span class="o">-</span> <span class="mi">1</span><span class="p">]</span> <span class="k">if</span> <span class="n">s</span> <span class="o">==</span> <span class="s2">&quot;Wind&quot;</span> <span class="k">else</span> <span class="mi">1</span>
     <span class="k">return</span> <span class="n">m</span><span class="o">.</span><span class="n">g</span><span class="p">[</span><span class="n">s</span><span class="p">,</span> <span class="n">t</span><span class="p">]</span> <span class="o">&lt;=</span> <span class="n">cf</span> <span class="o">*</span> <span class="n">capacities</span><span class="p">[</span><span class="s2">&quot;South Africa&quot;</span><span class="p">][</span><span class="n">s</span><span class="p">]</span>
 </pre></div>
@@ -1918,7 +1918,7 @@ Solution:
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nd">@m</span><span class="o">.</span><span class="n">Constraint</span><span class="p">(</span><span class="n">m</span><span class="o">.</span><span class="n">T</span><span class="p">)</span>
-<span class="k">def</span> <span class="nf">energy_balance</span><span class="p">(</span><span class="n">m</span><span class="p">,</span> <span class="n">t</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">energy_balance</span><span class="p">(</span><span class="n">m</span><span class="p">,</span> <span class="n">t</span><span class="p">):</span>
     <span class="k">return</span> <span class="nb">sum</span><span class="p">(</span><span class="n">m</span><span class="o">.</span><span class="n">g</span><span class="p">[</span><span class="n">s</span><span class="p">,</span> <span class="n">t</span><span class="p">]</span> <span class="k">for</span> <span class="n">s</span> <span class="ow">in</span> <span class="n">m</span><span class="o">.</span><span class="n">S</span><span class="p">)</span> <span class="o">==</span> <span class="n">load_ts</span><span class="p">[</span><span class="n">t</span> <span class="o">-</span> <span class="mi">1</span><span class="p">]</span>
 </pre></div>
 </div>
@@ -1976,7 +1976,7 @@ Solver:
 Solution: 
 - number of solutions: 0
   number of solutions displayed: 0
-4.44 ms ± 0 ns per loop (mean ± std. dev. of 1 run, 1 loop each)
+4.65 ms ± 0 ns per loop (mean ± std. dev. of 1 run, 1 loop each)
 </pre></div>
 </div>
 </div>
@@ -2123,7 +2123,7 @@ dtype: float64
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nd">@m</span><span class="o">.</span><span class="n">Constraint</span><span class="p">(</span><span class="n">m</span><span class="o">.</span><span class="n">T</span><span class="p">)</span>
-<span class="k">def</span> <span class="nf">storage_consistency</span><span class="p">(</span><span class="n">m</span><span class="p">,</span> <span class="n">t</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">storage_consistency</span><span class="p">(</span><span class="n">m</span><span class="p">,</span> <span class="n">t</span><span class="p">):</span>
     <span class="k">if</span> <span class="n">t</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
         <span class="k">return</span> <span class="n">m</span><span class="o">.</span><span class="n">soc</span><span class="p">[</span><span class="n">t</span><span class="p">]</span> <span class="o">==</span> <span class="mi">0</span>
     <span class="k">return</span> <span class="p">(</span>
@@ -2165,7 +2165,7 @@ dtype: float64
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nd">@m</span><span class="o">.</span><span class="n">Constraint</span><span class="p">(</span><span class="n">m</span><span class="o">.</span><span class="n">T</span><span class="p">)</span>
-<span class="k">def</span> <span class="nf">energy_balance</span><span class="p">(</span><span class="n">m</span><span class="p">,</span> <span class="n">t</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">energy_balance</span><span class="p">(</span><span class="n">m</span><span class="p">,</span> <span class="n">t</span><span class="p">):</span>
     <span class="k">return</span> <span class="nb">sum</span><span class="p">(</span><span class="n">m</span><span class="o">.</span><span class="n">g</span><span class="p">[</span><span class="n">s</span><span class="p">,</span> <span class="n">t</span><span class="p">]</span> <span class="k">for</span> <span class="n">s</span> <span class="ow">in</span> <span class="n">m</span><span class="o">.</span><span class="n">S</span><span class="p">)</span> <span class="o">+</span> <span class="n">m</span><span class="o">.</span><span class="n">discharge</span><span class="p">[</span><span class="n">t</span><span class="p">]</span> <span class="o">-</span> <span class="n">m</span><span class="o">.</span><span class="n">charge</span><span class="p">[</span><span class="n">t</span><span class="p">]</span> <span class="o">==</span> <span class="n">load_ts</span><span class="p">[</span><span class="n">t</span> <span class="o">-</span> <span class="mi">1</span><span class="p">]</span>
 </pre></div>
 </div>

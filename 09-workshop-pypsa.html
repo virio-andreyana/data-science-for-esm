@@ -30,7 +30,7 @@
   <link href="_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
 <link href="_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
 
-    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
     <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=a3416100" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
@@ -548,13 +548,13 @@
 <h2>From structured data to optimisation<a class="headerlink" href="#from-structured-data-to-optimisation" title="Link to this heading">#</a></h2>
 <p>The design principle of PyPSA is that basically each component is associated with a set of variables and constraints that will be added to the optimisation model based on the input data stored for the components.</p>
 <p>For an <em>hourly</em> electricity market simulation, PyPSA will solve an optimisation problem that looks like this</p>
-<div class="amsmath math notranslate nohighlight" id="equation-0b436aec-3a40-42b2-b764-8ee25317aa1e">
-<span class="eqno">(12)<a class="headerlink" href="#equation-0b436aec-3a40-42b2-b764-8ee25317aa1e" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-54e30b25-7ffb-4412-b3e9-d4823b950a06">
+<span class="eqno">(12)<a class="headerlink" href="#equation-54e30b25-7ffb-4412-b3e9-d4823b950a06" title="Permalink to this equation">#</a></span>\[\begin{equation}
 \min_{g_{i,s,t}; f_{\ell,t}; g_{i,r,t,\text{charge}}; g_{i,r,t,\text{discharge}}; e_{i,r,t}} \sum_s o_{s} g_{i,s,t}
 \end{equation}\]</div>
 <p>such that</p>
-<div class="amsmath math notranslate nohighlight" id="equation-c0be5fc1-7b93-41ef-b9bf-705c078befa6">
-<span class="eqno">(13)<a class="headerlink" href="#equation-c0be5fc1-7b93-41ef-b9bf-705c078befa6" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-924b85ec-7e89-4d2e-9fe6-3dc36e92353c">
+<span class="eqno">(13)<a class="headerlink" href="#equation-924b85ec-7e89-4d2e-9fe6-3dc36e92353c" title="Permalink to this equation">#</a></span>\[\begin{align}
 0 &amp; \leq g_{i,s,t} \leq \hat{g}_{i,s,t} G_{i,s}  &amp; \text{generation limits : generator} \\
 -F_\ell &amp;\leq f_{\ell,t} \leq F_\ell &amp; \text{transmission limits : line}  \\
 d_{i,t} &amp;= \sum_s g_{i,s,t} + \sum_r g_{i,r,t,\text{discharge}} - \sum_r g_{i,r,t,\text{charge}} - \sum_\ell K_{i\ell} f_{\ell,t} &amp; \text{KCL : bus} \\
@@ -669,7 +669,7 @@ d_{i,t} &amp;= \sum_s g_{i,s,t} + \sum_r g_{i,r,t,\text{discharge}} - \sum_r g_{
 <p>By convention, PyPSA is imported without an alias:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pypsa</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">pypsa</span>
 </pre></div>
 </div>
 </div>
@@ -1339,12 +1339,12 @@ Presolving model
 0 rows, 0 cols, 0 nonzeros  0s
 Presolve : Reductions: rows 0(-14); columns 0(-6); elements 0(-19) - Reduced to empty
 Solving the original LP from the solution after postsolve
-Model name          : linopy-problem-t9hgarxa
+Model name          : linopy-problem-v7w3o2ly
 Model status        : Optimal
 Objective value     :  1.3813912524e+06
 Relative P-D gap    :  0.0000000000e+00
 HiGHS run time      :          0.00
-Writing the solution to /tmp/linopy-solve-m9jnh372.sol
+Writing the solution to /tmp/linopy-solve-g_925y3e.sol
 </pre></div>
 </div>
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(&#39;ok&#39;, &#39;optimal&#39;)
@@ -1598,8 +1598,8 @@ Writing the solution to /tmp/linopy-solve-m9jnh372.sol
 <p>For plotting PyPSA network, we’re going to need the help of some old friends:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
-<span class="kn">import</span> <span class="nn">cartopy.crs</span> <span class="k">as</span> <span class="nn">ccrs</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">cartopy.crs</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">ccrs</span>
 </pre></div>
 </div>
 </div>
@@ -1617,8 +1617,8 @@ Writing the solution to /tmp/linopy-solve-m9jnh372.sol
 facecolor will have no effect as it has been defined as &quot;never&quot;.
 </pre></div>
 </div>
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(&lt;matplotlib.collections.PatchCollection at 0x7fc3b0102e50&gt;,
- &lt;matplotlib.collections.LineCollection at 0x7fc3b2709dd0&gt;)
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(&lt;matplotlib.collections.PatchCollection at 0x7f79025924d0&gt;,
+ &lt;matplotlib.collections.LineCollection at 0x7f7902427310&gt;)
 </pre></div>
 </div>
 <img alt="_images/2a517d6e46f715545369837defac8948732fab551bf90da89faf11f211fcf24b.png" src="_images/2a517d6e46f715545369837defac8948732fab551bf90da89faf11f211fcf24b.png" />
@@ -1937,12 +1937,12 @@ Presolving model
 0 rows, 0 cols, 0 nonzeros  0s
 Presolve : Reductions: rows 0(-14); columns 0(-6); elements 0(-19) - Reduced to empty
 Solving the original LP from the solution after postsolve
-Model name          : linopy-problem-l1133u80
+Model name          : linopy-problem-kmdm84tt
 Model status        : Optimal
 Objective value     :  1.3986326317e+06
 Relative P-D gap    :  3.3294038530e-16
 HiGHS run time      :          0.00
-Writing the solution to /tmp/linopy-solve-81jukopw.sol
+Writing the solution to /tmp/linopy-solve-5vjv8h0j.sol
 </pre></div>
 </div>
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(&#39;ok&#39;, &#39;optimal&#39;)
@@ -2147,12 +2147,12 @@ Presolving model
 0 rows, 0 cols, 0 nonzeros  0s
 Presolve : Reductions: rows 0(-15); columns 0(-6); elements 0(-22) - Reduced to empty
 Solving the original LP from the solution after postsolve
-Model name          : linopy-problem-qdit_2h0
+Model name          : linopy-problem-3i14gm79
 Model status        : Optimal
 Objective value     :  2.1206212849e+06
 Relative P-D gap    :  0.0000000000e+00
 HiGHS run time      :          0.00
-Writing the solution to /tmp/linopy-solve-oeai3bo_.sol
+Writing the solution to /tmp/linopy-solve-j0gnakkq.sol
 </pre></div>
 </div>
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(&#39;ok&#39;, &#39;optimal&#39;)
@@ -2324,11 +2324,11 @@ Coefficient ranges:
   RHS    [8e-01, 4e+04]
 Presolving model
 Problem status detected on presolve: Infeasible
-Model name          : linopy-problem-9chmmd8w
+Model name          : linopy-problem-2kku6086
 Model status        : Infeasible
 Objective value     :  0.0000000000e+00
 HiGHS run time      :          0.00
-Writing the solution to /tmp/linopy-solve-chjodc2e.sol
+Writing the solution to /tmp/linopy-solve-ttszjxi9.sol
 </pre></div>
 </div>
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(&#39;warning&#39;, &#39;infeasible&#39;)
@@ -2361,7 +2361,7 @@ Writing the solution to /tmp/linopy-solve-chjodc2e.sol
 <div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>WARNING:pypsa.io:Directory tmp does not exist, creating it
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>INFO:pypsa.io:Exported network &#39;tmp&#39; contains: buses, generators, lines, global_constraints, loads, carriers
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>INFO:pypsa.io:Exported network &#39;tmp&#39; contains: buses, lines, carriers, loads, global_constraints, generators
 </pre></div>
 </div>
 </div>
@@ -2385,7 +2385,7 @@ Writing the solution to /tmp/linopy-solve-chjodc2e.sol
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>INFO:pypsa.io:Exported network &#39;tmp.nc&#39; contains: buses, generators, lines, global_constraints, loads, carriers
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>INFO:pypsa.io:Exported network &#39;tmp.nc&#39; contains: buses, lines, carriers, loads, global_constraints, generators
 </pre></div>
 </div>
 </div>
@@ -2693,7 +2693,7 @@ facecolor will have no effect as it has been defined as &quot;never&quot;.
 <p>For plotting we need to assign some colors to the technologies.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">random</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">random</span>
 
 <span class="n">carriers</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">n</span><span class="o">.</span><span class="n">generators</span><span class="o">.</span><span class="n">carrier</span><span class="o">.</span><span class="n">unique</span><span class="p">())</span> <span class="o">+</span> <span class="nb">list</span><span class="p">(</span><span class="n">n</span><span class="o">.</span><span class="n">storage_units</span><span class="o">.</span><span class="n">carrier</span><span class="o">.</span><span class="n">unique</span><span class="p">())</span>
 <span class="n">colors</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;#</span><span class="si">%06x</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mh">0xFFFFFF</span><span class="p">)</span> <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="n">carriers</span><span class="p">]</span>
@@ -2713,7 +2713,7 @@ facecolor will have no effect as it has been defined as &quot;never&quot;.
 <p>Because we want to see which color represents which technology, we cann add a legend using the  <code class="docutils literal notranslate"><span class="pre">add_legend_patches</span></code> function of PyPSA.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">pypsa.plot</span> <span class="kn">import</span> <span class="n">add_legend_patches</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">pypsa.plot</span><span class="w"> </span><span class="kn">import</span> <span class="n">add_legend_patches</span>
 
 <span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">()</span>
 <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">axes</span><span class="p">(</span><span class="n">projection</span><span class="o">=</span><span class="n">ccrs</span><span class="o">.</span><span class="n">EqualEarth</span><span class="p">())</span>
@@ -2735,7 +2735,7 @@ facecolor will have no effect as it has been defined as &quot;never&quot;.
 facecolor will have no effect as it has been defined as &quot;never&quot;.
 </pre></div>
 </div>
-<img alt="_images/ba2b3d60398d83ab527437c44012d13d098b09b5e023450f0e0c9d3fa33f7d83.png" src="_images/ba2b3d60398d83ab527437c44012d13d098b09b5e023450f0e0c9d3fa33f7d83.png" />
+<img alt="_images/25d408d48fc79ab96947029886265a27e7ea56bddb9c60a0f03c18b3e0a49f01.png" src="_images/25d408d48fc79ab96947029886265a27e7ea56bddb9c60a0f03c18b3e0a49f01.png" />
 </div>
 </div>
 <p>This dataset also includes a few hydro storage units:</p>
@@ -2939,16 +2939,16 @@ Index([&#39;2&#39;, &#39;5&#39;, &#39;10&#39;, &#39;12&#39;, &#39;13&#39;, &#39;
 <div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Writing constraints.:   0%|          | 0/15 [00:00&lt;?, ?it/s]
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Writing constraints.:  13%|█▎        | 2/15 [00:00&lt;00:01, 12.24it/s]
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Writing constraints.:  13%|█▎        | 2/15 [00:00&lt;00:01, 12.22it/s]
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Writing constraints.:  27%|██▋       | 4/15 [00:00&lt;00:00, 15.55it/s]
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Writing constraints.:  27%|██▋       | 4/15 [00:00&lt;00:00, 15.48it/s]
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Writing constraints.:  87%|████████▋ | 13/15 [00:00&lt;00:00, 33.30it/s]
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Writing constraints.:  87%|████████▋ | 13/15 [00:00&lt;00:00, 33.20it/s]
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Writing constraints.: 100%|██████████| 15/15 [00:00&lt;00:00, 26.35it/s]
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Writing constraints.: 100%|██████████| 15/15 [00:00&lt;00:00, 26.16it/s]
 </pre></div>
 </div>
 <div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
@@ -2957,7 +2957,7 @@ Index([&#39;2&#39;, &#39;5&#39;, &#39;10&#39;, &#39;12&#39;, &#39;13&#39;, &#39;
 <div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Writing continuous variables.:   0%|          | 0/6 [00:00&lt;?, ?it/s]
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Writing continuous variables.: 100%|██████████| 6/6 [00:00&lt;00:00, 63.80it/s]
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Writing continuous variables.: 100%|██████████| 6/6 [00:00&lt;00:00, 64.51it/s]
 </pre></div>
 </div>
 <div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>INFO:linopy.io: Writing time: 0.69s
@@ -2970,26 +2970,29 @@ Coefficient ranges:
   Bound  [0e+00, 0e+00]
   RHS    [2e-11, 6e+03]
 Presolving model
-18737 rows, 44750 cols, 113266 nonzeros  0s
-13259 rows, 39078 cols, 104782 nonzeros  0s
+18737 rows, 44750 cols, 115742 nonzeros  0s
+13266 rows, 39085 cols, 107646 nonzeros  0s
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>12733 rows, 31722 cols, 97382 nonzeros  0s
-12702 rows, 31678 cols, 97289 nonzeros  0s
-Presolve : Reductions: rows 12702(-130266); columns 31678(-27962); elements 97289(-164009)
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>12708 rows, 31697 cols, 99739 nonzeros  0s
+12699 rows, 31675 cols, 99730 nonzeros  0s
+Presolve : Reductions: rows 12699(-130269); columns 31675(-27965); elements 99730(-163896)
 Solving the presolved LP
 Using EKK dual simplex solver - serial
   Iteration        Objective     Infeasibilities num(sum)
           0     0.0000000000e+00 Ph1: 0(0) 0s
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>      17377     9.1992880405e+06 Pr: 0(0); Du: 0(1.63425e-13) 5s
-      17377     9.1992880405e+06 Pr: 0(0); Du: 0(1.63425e-13) 5s
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>      17203     9.1992880405e+06 Pr: 0(0); Du: 0(1.24345e-14) 4s
+      17203     9.1992880405e+06 Pr: 0(0); Du: 0(1.24345e-14) 4s
 Solving the original LP from the solution after postsolve
-Model name          : linopy-problem-kc9f1v60
+Model name          : linopy-problem-6qy0fb5p
 Model status        : Optimal
-Simplex   iterations: 17377
+Simplex   iterations: 17203
 Objective value     :  9.1992880405e+06
+Relative P-D gap    :  1.5388259474e-14
+HiGHS run time      :          4.51
+Writing the solution to /tmp/linopy-solve-ddyrtjwr.sol
 </pre></div>
 </div>
 <div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>INFO:linopy.constants: Optimization successful: 
@@ -3002,11 +3005,6 @@ Solver message: optimal
 </pre></div>
 </div>
 <div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>INFO:pypsa.optimization.optimize:The shadow-prices of the constraints Generator-fix-p-lower, Generator-fix-p-upper, Line-fix-s-lower, Line-fix-s-upper, Transformer-fix-s-lower, Transformer-fix-s-upper, StorageUnit-fix-p_dispatch-lower, StorageUnit-fix-p_dispatch-upper, StorageUnit-fix-p_store-lower, StorageUnit-fix-p_store-upper, StorageUnit-fix-state_of_charge-lower, StorageUnit-fix-state_of_charge-upper, Kirchhoff-Voltage-Law, StorageUnit-energy_balance were not assigned to the network.
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Relative P-D gap    :  6.0743129502e-16
-HiGHS run time      :          5.22
-Writing the solution to /tmp/linopy-solve-o1t9w2lp.sol
 </pre></div>
 </div>
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(&#39;ok&#39;, &#39;optimal&#39;)
@@ -3059,10 +3057,10 @@ Writing the solution to /tmp/linopy-solve-o1t9w2lp.sol
 facecolor will have no effect as it has been defined as &quot;never&quot;.
 </pre></div>
 </div>
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.colorbar.Colorbar at 0x7fc3ac202550&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.colorbar.Colorbar at 0x7f78fa315d90&gt;
 </pre></div>
 </div>
-<img alt="_images/7f5f12623e4b83b0e72174b8c3be4eb90675f89f55e1731ff62e6f59ca537d50.png" src="_images/7f5f12623e4b83b0e72174b8c3be4eb90675f89f55e1731ff62e6f59ca537d50.png" />
+<img alt="_images/47d510d513317bd2b39bdc02353f5db8548685de3d31c2b2f410f4dc5d6b63e8.png" src="_images/47d510d513317bd2b39bdc02353f5db8548685de3d31c2b2f410f4dc5d6b63e8.png" />
 </div>
 </div>
 <p>Or plot the hourly dispatch grouped by carrier:</p>
@@ -3093,7 +3091,7 @@ facecolor will have no effect as it has been defined as &quot;never&quot;.
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/17f9bd7695163695cf4cb16ada6c6d68b24358a1fdab4244a24fb389b014a9f2.png" src="_images/17f9bd7695163695cf4cb16ada6c6d68b24358a1fdab4244a24fb389b014a9f2.png" />
+<img alt="_images/26b8245013365fb652ac6752bc6b605b3c02f246bc02001c3ba5b8a6c34daa17.png" src="_images/26b8245013365fb652ac6752bc6b605b3c02f246bc02001c3ba5b8a6c34daa17.png" />
 </div>
 </div>
 <p>Or plot the aggregate dispatch of the pumped hydro storage units and the state of charge throughout the day:</p>
@@ -3117,7 +3115,7 @@ facecolor will have no effect as it has been defined as &quot;never&quot;.
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Text(0, 0.5, &#39;MWh or MW&#39;)
 </pre></div>
 </div>
-<img alt="_images/24b80031b46fecbdde071f0da3ee10e7b07740a6b59fa258edf4b585ce6c7667.png" src="_images/24b80031b46fecbdde071f0da3ee10e7b07740a6b59fa258edf4b585ce6c7667.png" />
+<img alt="_images/13ce933edc1170fcecf79f739b614da80eb4ece3f1a1126a2cf1135bbd4d87e3.png" src="_images/13ce933edc1170fcecf79f739b614da80eb4ece3f1a1126a2cf1135bbd4d87e3.png" />
 </div>
 </div>
 <p>Or plot the locational marginal prices (LMPs):</p>
@@ -3151,7 +3149,7 @@ facecolor will have no effect as it has been defined as &quot;never&quot;.
 facecolor will have no effect as it has been defined as &quot;never&quot;.
 </pre></div>
 </div>
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.colorbar.Colorbar at 0x7fc3b02ccfd0&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.colorbar.Colorbar at 0x7f78f9f947d0&gt;
 </pre></div>
 </div>
 <img alt="_images/b31156e5d67159bf244938f4ca4995de5cf680de6b45570b20677f79214c30a7.png" src="_images/b31156e5d67159bf244938f4ca4995de5cf680de6b45570b20677f79214c30a7.png" />

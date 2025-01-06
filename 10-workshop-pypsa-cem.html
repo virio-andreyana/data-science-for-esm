@@ -30,7 +30,7 @@
   <link href="_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
 <link href="_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
 
-    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
     <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=a3416100" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
@@ -498,9 +498,9 @@ in the <em>objective function</em> and <em>new constraints for their expansion l
 <p>First things first! We need a few packages for this tutorial:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pypsa</span>
-<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">pypsa</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
 
 <span class="n">plt</span><span class="o">.</span><span class="n">style</span><span class="o">.</span><span class="n">use</span><span class="p">(</span><span class="s2">&quot;bmh&quot;</span><span class="p">)</span>
 </pre></div>
@@ -553,7 +553,7 @@ a(r, n) = \frac{r}{1-(1+r)^{-n}}
 <p>where <span class="math notranslate nohighlight">\(r\)</span> is the discount rate and <span class="math notranslate nohighlight">\(n\)</span> is the lifetime.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">annuity</span><span class="p">(</span><span class="n">r</span><span class="p">,</span> <span class="n">n</span><span class="p">):</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">annuity</span><span class="p">(</span><span class="n">r</span><span class="p">,</span> <span class="n">n</span><span class="p">):</span>
     <span class="k">return</span> <span class="n">r</span> <span class="o">/</span> <span class="p">(</span><span class="mf">1.0</span> <span class="o">-</span> <span class="mf">1.0</span> <span class="o">/</span> <span class="p">(</span><span class="mf">1.0</span> <span class="o">+</span> <span class="n">r</span><span class="p">)</span> <span class="o">**</span> <span class="n">n</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -1035,13 +1035,13 @@ Using EKK dual simplex solver - serial
           0     0.0000000000e+00 Pr: 2190(1.25606e+09) 0s
        7615     3.1624531941e+10 Pr: 0(0) 0s
 Solving the original LP from the solution after postsolve
-Model name          : linopy-problem-4ae39gj3
+Model name          : linopy-problem-g5bklppm
 Model status        : Optimal
 Simplex   iterations: 7615
 Objective value     :  3.1624531941e+10
 Relative P-D gap    :  1.2062462372e-16
 HiGHS run time      :          0.16
-Writing the solution to /tmp/linopy-solve-1vzex_ev.sol
+Writing the solution to /tmp/linopy-solve-eq0f3z37.sol
 </pre></div>
 </div>
 <div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>INFO:linopy.constants: Optimization successful: 
@@ -1160,7 +1160,7 @@ dtype: float64
 <p>This function takes the network object <code class="docutils literal notranslate"><span class="pre">n</span></code> as an argument and, optionally, a time frame. We want to plot the load time series, and stacked area charts for electricity feed-in and storage charging. Technologies should be coloured by their color defined in <code class="docutils literal notranslate"><span class="pre">n.carriers</span></code>.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">plot_dispatch</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="n">time</span><span class="o">=</span><span class="s2">&quot;2015-07&quot;</span><span class="p">):</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">plot_dispatch</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="n">time</span><span class="o">=</span><span class="s2">&quot;2015-07&quot;</span><span class="p">):</span>
     <span class="n">p</span> <span class="o">=</span> <span class="p">(</span>
         <span class="n">n</span><span class="o">.</span><span class="n">statistics</span><span class="o">.</span><span class="n">energy_balance</span><span class="p">(</span><span class="n">aggregate_time</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
         <span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s2">&quot;carrier&quot;</span><span class="p">)</span>
@@ -1301,10 +1301,10 @@ Index([&#39;electricity&#39;], dtype=&#39;object&#39;, name=&#39;Bus&#39;)
 <div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Writing constraints.:   0%|          | 0/14 [00:00&lt;?, ?it/s]
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Writing constraints.:  57%|█████▋    | 8/14 [00:00&lt;00:00, 78.93it/s]
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Writing constraints.:  57%|█████▋    | 8/14 [00:00&lt;00:00, 76.05it/s]
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Writing constraints.: 100%|██████████| 14/14 [00:00&lt;00:00, 61.29it/s]
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Writing constraints.: 100%|██████████| 14/14 [00:00&lt;00:00, 60.33it/s]
 </pre></div>
 </div>
 <div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
@@ -1313,7 +1313,7 @@ Index([&#39;electricity&#39;], dtype=&#39;object&#39;, name=&#39;Bus&#39;)
 <div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Writing continuous variables.:   0%|          | 0/6 [00:00&lt;?, ?it/s]
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Writing continuous variables.: 100%|██████████| 6/6 [00:00&lt;00:00, 157.47it/s]
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Writing continuous variables.: 100%|██████████| 6/6 [00:00&lt;00:00, 158.50it/s]
 </pre></div>
 </div>
 <div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>INFO:linopy.io: Writing time: 0.29s
@@ -1349,13 +1349,13 @@ Solver message: optimal
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>      24575     3.1624531941e+10 Pr: 0(0); Du: 0(7.21478e-13) 2s
 Solving the original LP from the solution after postsolve
-Model name          : linopy-problem-iuzgu2bz
+Model name          : linopy-problem-bnbs8_ci
 Model status        : Optimal
 Simplex   iterations: 24575
 Objective value     :  3.1624531941e+10
 Relative P-D gap    :  1.2062462372e-16
 HiGHS run time      :          2.09
-Writing the solution to /tmp/linopy-solve-80hpyrxa.sol
+Writing the solution to /tmp/linopy-solve-whuaw11_.sol
 </pre></div>
 </div>
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(&#39;ok&#39;, &#39;optimal&#39;)
@@ -1448,10 +1448,10 @@ Index([&#39;electricity&#39;], dtype=&#39;object&#39;, name=&#39;Bus&#39;)
 <div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Writing constraints.:   0%|          | 0/15 [00:00&lt;?, ?it/s]
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Writing constraints.:  53%|█████▎    | 8/15 [00:00&lt;00:00, 79.61it/s]
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Writing constraints.:  53%|█████▎    | 8/15 [00:00&lt;00:00, 79.38it/s]
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Writing constraints.: 100%|██████████| 15/15 [00:00&lt;00:00, 64.09it/s]
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Writing constraints.: 100%|██████████| 15/15 [00:00&lt;00:00, 64.29it/s]
 </pre></div>
 </div>
 <div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
@@ -1460,7 +1460,7 @@ Index([&#39;electricity&#39;], dtype=&#39;object&#39;, name=&#39;Bus&#39;)
 <div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Writing continuous variables.:   0%|          | 0/6 [00:00&lt;?, ?it/s]
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Writing continuous variables.: 100%|██████████| 6/6 [00:00&lt;00:00, 155.25it/s]
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Writing continuous variables.: 100%|██████████| 6/6 [00:00&lt;00:00, 156.74it/s]
 </pre></div>
 </div>
 <div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>INFO:linopy.io: Writing time: 0.29s
@@ -1482,7 +1482,7 @@ Using EKK dual simplex solver - serial
           0     0.0000000000e+00 Pr: 2190(1.52524e+09) 0s
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>      12767     2.6527670975e+10 Pr: 4644(6.78583e+12); Du: 0(2.8779e-08) 5s
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>      12175     2.6514976522e+10 Pr: 4644(6.34234e+12); Du: 0(2.8779e-08) 5s
 </pre></div>
 </div>
 <div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>INFO:linopy.constants: Optimization successful: 
@@ -1496,13 +1496,13 @@ Solver message: optimal
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>      21723     7.9406619875e+10 Pr: 0(0); Du: 0(1.42109e-14) 9s
 Solving the original LP from the solution after postsolve
-Model name          : linopy-problem-j0m5a3hx
+Model name          : linopy-problem-8ran__mb
 Model status        : Optimal
 Simplex   iterations: 21723
 Objective value     :  7.9406619875e+10
 Relative P-D gap    :  1.9216016356e-15
-HiGHS run time      :          9.21
-Writing the solution to /tmp/linopy-solve-vvprimwj.sol
+HiGHS run time      :          9.27
+Writing the solution to /tmp/linopy-solve-rp581ts3.sol
 </pre></div>
 </div>
 <div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>INFO:pypsa.optimization.optimize:The shadow-prices of the constraints Generator-ext-p-lower, Generator-ext-p-upper, StorageUnit-ext-p_dispatch-lower, StorageUnit-ext-p_dispatch-upper, StorageUnit-ext-p_store-lower, StorageUnit-ext-p_store-upper, StorageUnit-ext-state_of_charge-lower, StorageUnit-ext-state_of_charge-upper, StorageUnit-energy_balance were not assigned to the network.
@@ -1581,7 +1581,7 @@ Attempting to set identical low and high ylims makes transformation singular; au
 <p>We are also keen to see what technologies constitute the largest cost components. For that we’re going to define a small helper function:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">system_cost</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">system_cost</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
     <span class="n">tsc</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span><span class="n">n</span><span class="o">.</span><span class="n">statistics</span><span class="o">.</span><span class="n">capex</span><span class="p">(),</span> <span class="n">n</span><span class="o">.</span><span class="n">statistics</span><span class="o">.</span><span class="n">opex</span><span class="p">()],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
     <span class="k">return</span> <span class="n">tsc</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">droplevel</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span><span class="o">.</span><span class="n">div</span><span class="p">(</span><span class="mf">1e9</span><span class="p">)</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>  <span class="c1"># billion €/a</span>
 </pre></div>
@@ -1596,11 +1596,11 @@ Attempting to set identical low and high ylims makes transformation singular; au
 </div>
 <div class="cell_output docutils container">
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>carrier
+battery storage                  5.15
+hydrogen storage underground    21.32
 offwind                         10.81
 onwind                          27.29
 solar                           14.84
-battery storage                  5.15
-hydrogen storage underground    21.32
 dtype: float64
 </pre></div>
 </div>
@@ -1617,7 +1617,7 @@ dtype: float64
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;Axes: &gt;
 </pre></div>
 </div>
-<img alt="_images/edfc3b4f774d0d0df9f9887a657f7b2199dd295d3a6828d645bad9a83670888c.png" src="_images/edfc3b4f774d0d0df9f9887a657f7b2199dd295d3a6828d645bad9a83670888c.png" />
+<img alt="_images/44ed1cc669cabd201061a1cb6481b4108bdf9873959b923c823fd94d4856c8f1.png" src="_images/44ed1cc669cabd201061a1cb6481b4108bdf9873959b923c823fd94d4856c8f1.png" />
 </div>
 </div>
 <p>or use to compute the cost per unit of electricity consumed:</p>
@@ -1647,7 +1647,7 @@ dtype: float64
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>INFO:pypsa.io:Exported network &#39;network-new.nc&#39; contains: generators, global_constraints, buses, carriers, loads, storage_units
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>INFO:pypsa.io:Exported network &#39;network-new.nc&#39; contains: buses, global_constraints, storage_units, loads, carriers, generators
 </pre></div>
 </div>
 </div>
@@ -1699,10 +1699,10 @@ Index([&#39;electricity&#39;], dtype=&#39;object&#39;, name=&#39;Bus&#39;)
 <div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Writing constraints.:   0%|          | 0/15 [00:00&lt;?, ?it/s]
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Writing constraints.:  53%|█████▎    | 8/15 [00:00&lt;00:00, 77.98it/s]
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Writing constraints.:  53%|█████▎    | 8/15 [00:00&lt;00:00, 79.02it/s]
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Writing constraints.: 100%|██████████| 15/15 [00:00&lt;00:00, 63.22it/s]
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Writing constraints.: 100%|██████████| 15/15 [00:00&lt;00:00, 64.17it/s]
 </pre></div>
 </div>
 <div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
@@ -1711,7 +1711,7 @@ Index([&#39;electricity&#39;], dtype=&#39;object&#39;, name=&#39;Bus&#39;)
 <div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Writing continuous variables.:   0%|          | 0/6 [00:00&lt;?, ?it/s]
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Writing continuous variables.: 100%|██████████| 6/6 [00:00&lt;00:00, 153.86it/s]
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Writing continuous variables.: 100%|██████████| 6/6 [00:00&lt;00:00, 154.53it/s]
 </pre></div>
 </div>
 <div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>INFO:linopy.io: Writing time: 0.29s
@@ -1747,13 +1747,13 @@ Solver message: optimal
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>      24532     3.1624531941e+10 Pr: 0(0); Du: 0(1.65201e-13) 4s
 Solving the original LP from the solution after postsolve
-Model name          : linopy-problem-vfjv5wdg
+Model name          : linopy-problem-6m74tpst
 Model status        : Optimal
 Simplex   iterations: 24532
 Objective value     :  3.1624531941e+10
 Relative P-D gap    :  1.2062462372e-16
 HiGHS run time      :          3.69
-Writing the solution to /tmp/linopy-solve-d16p3bp3.sol
+Writing the solution to /tmp/linopy-solve-i11oqz99.sol
 </pre></div>
 </div>
 <div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>WARNING:pypsa.consistency:The following buses have carriers which are not defined:
@@ -1773,10 +1773,10 @@ Index([&#39;electricity&#39;], dtype=&#39;object&#39;, name=&#39;Bus&#39;)
 <div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Writing constraints.:   0%|          | 0/15 [00:00&lt;?, ?it/s]
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Writing constraints.:  53%|█████▎    | 8/15 [00:00&lt;00:00, 74.45it/s]
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Writing constraints.:  53%|█████▎    | 8/15 [00:00&lt;00:00, 79.67it/s]
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Writing constraints.: 100%|██████████| 15/15 [00:00&lt;00:00, 62.38it/s]
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Writing constraints.: 100%|██████████| 15/15 [00:00&lt;00:00, 64.35it/s]
 </pre></div>
 </div>
 <div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
@@ -1785,10 +1785,10 @@ Index([&#39;electricity&#39;], dtype=&#39;object&#39;, name=&#39;Bus&#39;)
 <div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Writing continuous variables.:   0%|          | 0/6 [00:00&lt;?, ?it/s]
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Writing continuous variables.: 100%|██████████| 6/6 [00:00&lt;00:00, 152.99it/s]
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Writing continuous variables.: 100%|██████████| 6/6 [00:00&lt;00:00, 154.34it/s]
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>INFO:linopy.io: Writing time: 0.3s
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>INFO:linopy.io: Writing time: 0.29s
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running HiGHS 1.9.0 (git hash: fa40bdf): Copyright (c) 2024 HiGHS under MIT licence terms
@@ -1821,13 +1821,13 @@ Solver message: optimal
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>      25751     3.1764091630e+10 Pr: 0(0); Du: 0(3.11244e-11) 8s
 Solving the original LP from the solution after postsolve
-Model name          : linopy-problem-pnjxrpxf
+Model name          : linopy-problem-_48ewnbl
 Model status        : Optimal
 Simplex   iterations: 25751
 Objective value     :  3.1764091630e+10
 Relative P-D gap    :  1.3210410803e-15
-HiGHS run time      :          7.73
-Writing the solution to /tmp/linopy-solve-j6d7uouy.sol
+HiGHS run time      :          7.76
+Writing the solution to /tmp/linopy-solve-8sqt9u3m.sol
 </pre></div>
 </div>
 <div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>INFO:pypsa.optimization.optimize:The shadow-prices of the constraints Generator-ext-p-lower, Generator-ext-p-upper, StorageUnit-ext-p_dispatch-lower, StorageUnit-ext-p_dispatch-upper, StorageUnit-ext-p_store-lower, StorageUnit-ext-p_store-upper, StorageUnit-ext-state_of_charge-lower, StorageUnit-ext-state_of_charge-upper, StorageUnit-energy_balance were not assigned to the network.
@@ -1850,10 +1850,10 @@ Index([&#39;electricity&#39;], dtype=&#39;object&#39;, name=&#39;Bus&#39;)
 <div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Writing constraints.:   0%|          | 0/15 [00:00&lt;?, ?it/s]
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Writing constraints.:  53%|█████▎    | 8/15 [00:00&lt;00:00, 79.69it/s]
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Writing constraints.:  60%|██████    | 9/15 [00:00&lt;00:00, 79.95it/s]
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Writing constraints.: 100%|██████████| 15/15 [00:00&lt;00:00, 64.07it/s]
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Writing constraints.: 100%|██████████| 15/15 [00:00&lt;00:00, 63.15it/s]
 </pre></div>
 </div>
 <div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
@@ -1862,7 +1862,7 @@ Index([&#39;electricity&#39;], dtype=&#39;object&#39;, name=&#39;Bus&#39;)
 <div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Writing continuous variables.:   0%|          | 0/6 [00:00&lt;?, ?it/s]
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Writing continuous variables.: 100%|██████████| 6/6 [00:00&lt;00:00, 155.69it/s]
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Writing continuous variables.: 100%|██████████| 6/6 [00:00&lt;00:00, 156.15it/s]
 </pre></div>
 </div>
 <div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>INFO:linopy.io: Writing time: 0.29s
@@ -1900,13 +1900,13 @@ Solver message: optimal
       30327     3.5768174048e+10 Pr: 0(0) 10s
       30327     3.5768174048e+10 Pr: 0(0) 10s
 Solving the original LP from the solution after postsolve
-Model name          : linopy-problem-4suzrg1i
+Model name          : linopy-problem-3uwqllk2
 Model status        : Optimal
 Simplex   iterations: 30327
 Objective value     :  3.5768174048e+10
 Relative P-D gap    :  2.7729156309e-15
-HiGHS run time      :         10.43
-Writing the solution to /tmp/linopy-solve-4x466j7z.sol
+HiGHS run time      :         10.41
+Writing the solution to /tmp/linopy-solve-c0jba8vs.sol
 </pre></div>
 </div>
 <div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>INFO:pypsa.optimization.optimize:The shadow-prices of the constraints Generator-ext-p-lower, Generator-ext-p-upper, StorageUnit-ext-p_dispatch-lower, StorageUnit-ext-p_dispatch-upper, StorageUnit-ext-p_store-lower, StorageUnit-ext-p_store-upper, StorageUnit-ext-state_of_charge-lower, StorageUnit-ext-state_of_charge-upper, StorageUnit-energy_balance were not assigned to the network.
@@ -1929,10 +1929,10 @@ Index([&#39;electricity&#39;], dtype=&#39;object&#39;, name=&#39;Bus&#39;)
 <div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Writing constraints.:   0%|          | 0/15 [00:00&lt;?, ?it/s]
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Writing constraints.:  53%|█████▎    | 8/15 [00:00&lt;00:00, 79.03it/s]
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Writing constraints.:  60%|██████    | 9/15 [00:00&lt;00:00, 79.99it/s]
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Writing constraints.: 100%|██████████| 15/15 [00:00&lt;00:00, 63.79it/s]
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Writing constraints.: 100%|██████████| 15/15 [00:00&lt;00:00, 63.85it/s]
 </pre></div>
 </div>
 <div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
@@ -1941,7 +1941,7 @@ Index([&#39;electricity&#39;], dtype=&#39;object&#39;, name=&#39;Bus&#39;)
 <div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Writing continuous variables.:   0%|          | 0/6 [00:00&lt;?, ?it/s]
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Writing continuous variables.: 100%|██████████| 6/6 [00:00&lt;00:00, 154.82it/s]
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Writing continuous variables.: 100%|██████████| 6/6 [00:00&lt;00:00, 156.58it/s]
 </pre></div>
 </div>
 <div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>INFO:linopy.io: Writing time: 0.29s

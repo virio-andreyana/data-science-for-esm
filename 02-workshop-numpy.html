@@ -30,7 +30,7 @@
   <link href="_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
 <link href="_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
 
-    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
     <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=a3416100" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
@@ -495,7 +495,7 @@
 <p>Usually we import <code class="docutils literal notranslate"><span class="pre">numpy</span></code> with the <em>alias</em> <code class="docutils literal notranslate"><span class="pre">np</span></code>.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
 </pre></div>
 </div>
 </div>
@@ -638,11 +638,11 @@
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([[0.19346489, 0.42341624],
-       [0.89127572, 0.39275746],
-       [0.84330319, 0.48621743],
-       [0.74334937, 0.28284208],
-       [0.4471272 , 0.64882985]])
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([[0.48514998, 0.36215335],
+       [0.70553587, 0.64963174],
+       [0.59316949, 0.6151563 ],
+       [0.61343405, 0.54887239],
+       [0.87207258, 0.25468899]])
 </pre></div>
 </div>
 </div>
@@ -815,7 +815,7 @@ It takes two arrays representing x and y values and creates two 2D grids: one fo
 <p>To use this function, we first need to import it from the <code class="docutils literal notranslate"><span class="pre">matplotlib</span></code> library.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">matplotlib</span> <span class="kn">import</span> <span class="n">pyplot</span> <span class="k">as</span> <span class="n">plt</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">matplotlib</span><span class="w"> </span><span class="kn">import</span> <span class="n">pyplot</span> <span class="k">as</span> <span class="n">plt</span>
 </pre></div>
 </div>
 </div>
@@ -864,7 +864,7 @@ He we use <code class="docutils literal notranslate"><span class="pre">pcolormes
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.collections.QuadMesh at 0x7ff514bc8810&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.collections.QuadMesh at 0x7f0b03fac090&gt;
 </pre></div>
 </div>
 <img alt="_images/80b9fff0cb274566b8e3d3590907d18a28d5d970ab43332a743070cc0f847b15.png" src="_images/80b9fff0cb274566b8e3d3590907d18a28d5d970ab43332a743070cc0f847b15.png" />
@@ -947,7 +947,7 @@ If the last two dimensions have the same length, then the two arrays can be broa
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.collections.QuadMesh at 0x7ff514bf06d0&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.collections.QuadMesh at 0x7f0b00b46850&gt;
 </pre></div>
 </div>
 <img alt="_images/b46593f18e4cbb445af2aa985f6e7fdc065b5608a909e80250315da28b6ce24c.png" src="_images/b46593f18e4cbb445af2aa985f6e7fdc065b5608a909e80250315da28b6ce24c.png" />
@@ -1045,7 +1045,7 @@ If the last two dimensions have the same length, then the two arrays can be broa
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&lt;matplotlib.lines.Line2D at 0x7ff514bb6410&gt;]
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&lt;matplotlib.lines.Line2D at 0x7f0b00bcad50&gt;]
 </pre></div>
 </div>
 <img alt="_images/38e0066018458310c212b110727f176594005fa0ad08c416a93586e857e724c8.png" src="_images/38e0066018458310c212b110727f176594005fa0ad08c416a93586e857e724c8.png" />
@@ -1058,7 +1058,7 @@ If the last two dimensions have the same length, then the two arrays can be broa
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&lt;matplotlib.lines.Line2D at 0x7ff514a54310&gt;]
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&lt;matplotlib.lines.Line2D at 0x7f0b01d636d0&gt;]
 </pre></div>
 </div>
 <img alt="_images/ffd3dc4b62cd3506bd30586dd070efe44d7d2d6c9b96215cd75c7af26a501be7.png" src="_images/ffd3dc4b62cd3506bd30586dd070efe44d7d2d6c9b96215cd75c7af26a501be7.png" />
@@ -1158,7 +1158,7 @@ If the last two dimensions have the same length, then the two arrays can be broa
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># create some data to plot</span>
-<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
 
 <span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="o">-</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span>
 <span class="n">y</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
@@ -1175,7 +1175,7 @@ If the last two dimensions have the same length, then the two arrays can be broa
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&lt;matplotlib.lines.Line2D at 0x7ff514bf8c50&gt;]
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&lt;matplotlib.lines.Line2D at 0x7f0b01de2cd0&gt;]
 </pre></div>
 </div>
 <img alt="_images/db3db9ea422842a926d9652d0f9b87c5e5aad225c18841732ba5e57d8f0b9ea9.png" src="_images/db3db9ea422842a926d9652d0f9b87c5e5aad225c18841732ba5e57d8f0b9ea9.png" />
@@ -1189,7 +1189,7 @@ If the last two dimensions have the same length, then the two arrays can be broa
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&lt;matplotlib.lines.Line2D at 0x7ff514430d90&gt;]
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&lt;matplotlib.lines.Line2D at 0x7f0b00ae3ad0&gt;]
 </pre></div>
 </div>
 <img alt="_images/db3db9ea422842a926d9652d0f9b87c5e5aad225c18841732ba5e57d8f0b9ea9.png" src="_images/db3db9ea422842a926d9652d0f9b87c5e5aad225c18841732ba5e57d8f0b9ea9.png" />
@@ -1206,7 +1206,7 @@ If the last two dimensions have the same length, then the two arrays can be broa
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&lt;matplotlib.lines.Line2D at 0x7ff5144a5990&gt;]
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&lt;matplotlib.lines.Line2D at 0x7f0b009385d0&gt;]
 </pre></div>
 </div>
 <img alt="_images/2cb5896f279d2448236869e762009e2589d50fce3e582edead65912555fe2d44.png" src="_images/2cb5896f279d2448236869e762009e2589d50fce3e582edead65912555fe2d44.png" />
@@ -1245,8 +1245,8 @@ If the last two dimensions have the same length, then the two arrays can be broa
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&lt;matplotlib.lines.Line2D at 0x7ff514bc2650&gt;,
- &lt;matplotlib.lines.Line2D at 0x7ff514a6cdd0&gt;]
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&lt;matplotlib.lines.Line2D at 0x7f0b00547d90&gt;,
+ &lt;matplotlib.lines.Line2D at 0x7f0b0099a1d0&gt;]
 </pre></div>
 </div>
 <img alt="_images/7157c9ecb9ed95a8840266ff53bf42160b891b6f9337af0b92a1c2baa6e0408a.png" src="_images/7157c9ecb9ed95a8840266ff53bf42160b891b6f9337af0b92a1c2baa6e0408a.png" />
@@ -1261,8 +1261,8 @@ If the last two dimensions have the same length, then the two arrays can be broa
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&lt;matplotlib.lines.Line2D at 0x7ff514231ed0&gt;,
- &lt;matplotlib.lines.Line2D at 0x7ff5143e6d50&gt;]
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&lt;matplotlib.lines.Line2D at 0x7f0b1bff4b10&gt;,
+ &lt;matplotlib.lines.Line2D at 0x7f0b0056da90&gt;]
 </pre></div>
 </div>
 <img alt="_images/efcfa8b7611b5d9178e68c2586dd228d929c2f0bafcbcc7a63d9331e2e69f90c.png" src="_images/efcfa8b7611b5d9178e68c2586dd228d929c2f0bafcbcc7a63d9331e2e69f90c.png" />
@@ -1279,7 +1279,7 @@ If the last two dimensions have the same length, then the two arrays can be broa
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&lt;matplotlib.lines.Line2D at 0x7ff5142e7010&gt;]
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&lt;matplotlib.lines.Line2D at 0x7f0b004baf50&gt;]
 </pre></div>
 </div>
 <img alt="_images/9ab503c6bc7c9c162bdad176920b81c9d7d0b1122b6e24dc8dfb97d62d2821b4.png" src="_images/9ab503c6bc7c9c162bdad176920b81c9d7d0b1122b6e24dc8dfb97d62d2821b4.png" />
@@ -1298,7 +1298,7 @@ If the last two dimensions have the same length, then the two arrays can be broa
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&lt;matplotlib.lines.Line2D at 0x7ff51411e950&gt;]
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&lt;matplotlib.lines.Line2D at 0x7f0b00339b50&gt;]
 </pre></div>
 </div>
 <img alt="_images/d0eb2738066ea7eb22a228ec12ee986cfa1ed7cd337fb352b98eb1129a6458b8.png" src="_images/d0eb2738066ea7eb22a228ec12ee986cfa1ed7cd337fb352b98eb1129a6458b8.png" />
@@ -1317,7 +1317,7 @@ If the last two dimensions have the same length, then the two arrays can be broa
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&lt;matplotlib.lines.Line2D at 0x7ff5141f0cd0&gt;]
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&lt;matplotlib.lines.Line2D at 0x7f0b003c1410&gt;]
 </pre></div>
 </div>
 <img alt="_images/0073d511e649d6d5d5acca463e0a00cafcfadbbe5fdb1b84c463ddffb1660102.png" src="_images/0073d511e649d6d5d5acca463e0a00cafcfadbbe5fdb1b84c463ddffb1660102.png" />
@@ -1356,7 +1356,7 @@ If the last two dimensions have the same length, then the two arrays can be broa
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.colorbar.Colorbar at 0x7ff5140e00d0&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.colorbar.Colorbar at 0x7f0b0040b210&gt;
 </pre></div>
 </div>
 <img alt="_images/a0b3276f7cd85b4a5d00bea154c34b640e49d49dcba9036909a169003f32141a.png" src="_images/a0b3276f7cd85b4a5d00bea154c34b640e49d49dcba9036909a169003f32141a.png" />
@@ -1395,7 +1395,7 @@ If the last two dimensions have the same length, then the two arrays can be broa
 <span class="expanded">Hide code cell content</span>
 </summary>
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
 </pre></div>
 </div>
 </div>
@@ -1517,17 +1517,17 @@ If the last two dimensions have the same length, then the two arrays can be broa
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([[[-0.47706719, -0.86174597,  0.30662349],
-        [ 0.56754163, -1.22372965, -1.79377101],
-        [-0.41111093, -0.21843414, -1.39127576]],
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([[[-0.28879908,  0.33661031, -2.44809494],
+        [ 0.37240196, -0.12005667, -1.21562565],
+        [ 1.95637511,  1.21362928,  1.52684372]],
 
-       [[ 0.05138759, -0.4694999 ,  0.14342913],
-        [ 0.27058376,  0.64121228, -1.08564117],
-        [ 0.87126161, -0.79126679,  0.98542944]],
+       [[ 0.15819733, -1.62101075, -1.00305697],
+        [ 0.67283758,  1.92464538,  1.08706521],
+        [ 0.40528489, -0.61718515, -0.36671249]],
 
-       [[-0.45075272, -1.33775312, -0.02136972],
-        [-0.79393146,  1.3868008 ,  1.18775764],
-        [ 1.32571885,  0.2281954 , -0.59969539]]])
+       [[ 0.56775623,  0.03522147, -1.01037235],
+        [-0.67236752,  0.73961558, -0.28625346],
+        [-0.33175489, -1.68955584, -0.1059867 ]]])
 </pre></div>
 </div>
 </div>
