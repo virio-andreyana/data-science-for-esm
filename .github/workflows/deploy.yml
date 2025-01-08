@@ -12,7 +12,7 @@ permissions:
   contents: write
   statuses: write
   actions: write
-  checks: read
+  checks: read 
 
 # This job installs dependencies, build the book, and pushes it to `gh-pages`
 jobs:
