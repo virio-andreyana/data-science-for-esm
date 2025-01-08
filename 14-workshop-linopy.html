@@ -66,8 +66,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Introduction to pypsa" href="09-workshop-pypsa.html" />
-    <link rel="prev" title="Introduction to networkx" href="07-workshop-networkx.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -118,6 +116,8 @@
     <div class="bd-container__inner bd-page-width">
       
       
+      
+        
       
       <dialog id="pst-primary-sidebar-modal"></dialog>
       <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
@@ -171,21 +171,13 @@
                 </a>
             </li>
         </ul>
-        <ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="01-workshop-python.html">Introduction to <code class="docutils literal notranslate"><span class="pre">Python</span></code></a></li>
-<li class="toctree-l1"><a class="reference internal" href="02-workshop-numpy.html">Introduction to <code class="docutils literal notranslate"><span class="pre">numpy</span></code> and <code class="docutils literal notranslate"><span class="pre">matplotlib</span></code></a></li>
-<li class="toctree-l1"><a class="reference internal" href="03-workshop-pandas.html">Introduction to <code class="docutils literal notranslate"><span class="pre">pandas</span></code></a></li>
-<li class="toctree-l1"><a class="reference internal" href="04-workshop-geopandas.html">Introduction to <code class="docutils literal notranslate"><span class="pre">geopandas</span></code> and <code class="docutils literal notranslate"><span class="pre">cartopy</span></code></a></li>
-<li class="toctree-l1"><a class="reference internal" href="06-workshop-atlite.html">Introduction to <code class="docutils literal notranslate"><span class="pre">rasterio</span></code> and <code class="docutils literal notranslate"><span class="pre">atlite</span></code></a></li>
-<li class="toctree-l1"><a class="reference internal" href="05-workshop-pysheds.html">Introduction to <code class="docutils literal notranslate"><span class="pre">pysheds</span></code></a></li>
-<li class="toctree-l1"><a class="reference internal" href="07-workshop-networkx.html">Introduction to <code class="docutils literal notranslate"><span class="pre">networkx</span></code></a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Introduction to <code class="docutils literal notranslate"><span class="pre">linopy</span></code></a></li>
+        <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="09-workshop-pypsa.html">Introduction to <code class="docutils literal notranslate"><span class="pre">pypsa</span></code></a></li>
 <li class="toctree-l1"><a class="reference internal" href="10-workshop-pypsa-cem.html">Capacity Expansion Planning with <code class="docutils literal notranslate"><span class="pre">pypsa</span></code></a></li>
 <li class="toctree-l1"><a class="reference internal" href="11-workshop-groupwork.html">Preparation for Group Assignment</a></li>
 <li class="toctree-l1"><a class="reference internal" href="12-workshop-pypsa-sector-coupling.html">Sector-Coupling with <code class="docutils literal notranslate"><span class="pre">pypsa</span></code></a></li>
 <li class="toctree-l1"><a class="reference internal" href="13-workshop-interactive-visualisation.html">Interactive Visualisation and Dashboards</a></li>
-<li class="toctree-l1"><a class="reference internal" href="08-workshop-pyomo.html">Introduction to <code class="docutils literal notranslate"><span class="pre">pyomo</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="short_tutorial.html">Short tutorial</a></li>
 <li class="toctree-l1"><a class="reference internal" href="oet-extension/00-build_your_own_content.html">Educators Build Your Own Content</a></li>
 <li class="toctree-l1"><a class="reference internal" href="oet-extension/00-reference.html">References</a></li>
 </ul>
@@ -708,13 +700,13 @@ Using EKK dual simplex solver - serial
   Iteration        Objective     Infeasibilities num(sum)
           0     0.0000000000e+00 Pr: 2(13) 0s
           2     2.8620689655e+00 Pr: 0(0) 0s
-Model name          : linopy-problem-zll0q15b
+Model name          : linopy-problem-eo2h4ezc
 Model status        : Optimal
 Simplex   iterations: 2
 Objective value     :  2.8620689655e+00
 Relative P-D gap    :  0.0000000000e+00
 HiGHS run time      :          0.00
-Writing the solution to /tmp/linopy-solve-5p7bfyed.sol
+Writing the solution to /tmp/linopy-solve-t2s2v_k1.sol
 </pre></div>
 </div>
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(&#39;ok&#39;, &#39;optimal&#39;)
@@ -1111,7 +1103,7 @@ dl.xr-attrs {
   fill: currentColor;
 }
 </style><pre class='xr-text-repr-fallback'>&lt;xarray.DataArray &#x27;solution&#x27; ()&gt; Size: 8B
-array(0.03448276)</pre><div class='xr-wrap' style='display:none'><div class='xr-header'><div class='xr-obj-type'>xarray.DataArray</div><div class='xr-array-name'>'solution'</div></div><ul class='xr-sections'><li class='xr-section-item'><div class='xr-array-wrap'><input id='section-2329bc88-1f96-4a6c-af85-606ae8caf6d3' class='xr-array-in' type='checkbox' checked><label for='section-2329bc88-1f96-4a6c-af85-606ae8caf6d3' title='Show/hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-array-preview xr-preview'><span>0.03448</span></div><div class='xr-array-data'><pre>array(0.03448276)</pre></div></div></li><li class='xr-section-item'><input id='section-f12012d7-dd08-4fb9-9125-86a4b185d0eb' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-f12012d7-dd08-4fb9-9125-86a4b185d0eb' class='xr-section-summary'  title='Expand/collapse section'>Coordinates: <span>(0)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><ul class='xr-var-list'></ul></div></li><li class='xr-section-item'><input id='section-c298ab51-250f-45ea-88de-60f6ca39ca82' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-c298ab51-250f-45ea-88de-60f6ca39ca82' class='xr-section-summary'  title='Expand/collapse section'>Indexes: <span>(0)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><ul class='xr-var-list'></ul></div></li><li class='xr-section-item'><input id='section-973ee518-1c62-40e6-bb7c-917ebd61c9b5' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-973ee518-1c62-40e6-bb7c-917ebd61c9b5' class='xr-section-summary'  title='Expand/collapse section'>Attributes: <span>(0)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><dl class='xr-attrs'></dl></div></li></ul></div></div></div></div>
+array(0.03448276)</pre><div class='xr-wrap' style='display:none'><div class='xr-header'><div class='xr-obj-type'>xarray.DataArray</div><div class='xr-array-name'>'solution'</div></div><ul class='xr-sections'><li class='xr-section-item'><div class='xr-array-wrap'><input id='section-4b5c174a-83a9-42cc-ab0d-005a31f39e62' class='xr-array-in' type='checkbox' checked><label for='section-4b5c174a-83a9-42cc-ab0d-005a31f39e62' title='Show/hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-array-preview xr-preview'><span>0.03448</span></div><div class='xr-array-data'><pre>array(0.03448276)</pre></div></div></li><li class='xr-section-item'><input id='section-371d8c28-a0cc-45f2-a14a-b62340b73b74' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-371d8c28-a0cc-45f2-a14a-b62340b73b74' class='xr-section-summary'  title='Expand/collapse section'>Coordinates: <span>(0)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><ul class='xr-var-list'></ul></div></li><li class='xr-section-item'><input id='section-20811cd9-4d99-4b61-a3c8-26a38230739a' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-20811cd9-4d99-4b61-a3c8-26a38230739a' class='xr-section-summary'  title='Expand/collapse section'>Indexes: <span>(0)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><ul class='xr-var-list'></ul></div></li><li class='xr-section-item'><input id='section-00ef3cba-4112-4bec-bc42-f686d78b8ad5' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-00ef3cba-4112-4bec-bc42-f686d78b8ad5' class='xr-section-summary'  title='Expand/collapse section'>Attributes: <span>(0)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><dl class='xr-attrs'></dl></div></li></ul></div></div></div></div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1491,7 +1483,7 @@ dl.xr-attrs {
   fill: currentColor;
 }
 </style><pre class='xr-text-repr-fallback'>&lt;xarray.DataArray &#x27;solution&#x27; ()&gt; Size: 8B
-array(1.4137931)</pre><div class='xr-wrap' style='display:none'><div class='xr-header'><div class='xr-obj-type'>xarray.DataArray</div><div class='xr-array-name'>'solution'</div></div><ul class='xr-sections'><li class='xr-section-item'><div class='xr-array-wrap'><input id='section-2b5a6500-1fe5-415b-8a97-bacfbe632db6' class='xr-array-in' type='checkbox' checked><label for='section-2b5a6500-1fe5-415b-8a97-bacfbe632db6' title='Show/hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-array-preview xr-preview'><span>1.414</span></div><div class='xr-array-data'><pre>array(1.4137931)</pre></div></div></li><li class='xr-section-item'><input id='section-5b70fc3e-82f8-46eb-964c-b488e31de180' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-5b70fc3e-82f8-46eb-964c-b488e31de180' class='xr-section-summary'  title='Expand/collapse section'>Coordinates: <span>(0)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><ul class='xr-var-list'></ul></div></li><li class='xr-section-item'><input id='section-58a10467-d4b4-4e6a-87b3-748a79ec2509' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-58a10467-d4b4-4e6a-87b3-748a79ec2509' class='xr-section-summary'  title='Expand/collapse section'>Indexes: <span>(0)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><ul class='xr-var-list'></ul></div></li><li class='xr-section-item'><input id='section-60767059-218d-4657-a43d-070bc08162fa' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-60767059-218d-4657-a43d-070bc08162fa' class='xr-section-summary'  title='Expand/collapse section'>Attributes: <span>(0)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><dl class='xr-attrs'></dl></div></li></ul></div></div></div></div>
+array(1.4137931)</pre><div class='xr-wrap' style='display:none'><div class='xr-header'><div class='xr-obj-type'>xarray.DataArray</div><div class='xr-array-name'>'solution'</div></div><ul class='xr-sections'><li class='xr-section-item'><div class='xr-array-wrap'><input id='section-db950886-58da-4ca2-8ad9-408b39df8861' class='xr-array-in' type='checkbox' checked><label for='section-db950886-58da-4ca2-8ad9-408b39df8861' title='Show/hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-array-preview xr-preview'><span>1.414</span></div><div class='xr-array-data'><pre>array(1.4137931)</pre></div></div></li><li class='xr-section-item'><input id='section-dda8e291-8d00-4e89-bd41-ca05fb2c8076' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-dda8e291-8d00-4e89-bd41-ca05fb2c8076' class='xr-section-summary'  title='Expand/collapse section'>Coordinates: <span>(0)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><ul class='xr-var-list'></ul></div></li><li class='xr-section-item'><input id='section-bdd07475-e54f-46be-8cf9-9a455406f898' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-bdd07475-e54f-46be-8cf9-9a455406f898' class='xr-section-summary'  title='Expand/collapse section'>Indexes: <span>(0)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><ul class='xr-var-list'></ul></div></li><li class='xr-section-item'><input id='section-f8014bb8-4dc3-4496-8fcd-d74f3dbfdf5a' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-f8014bb8-4dc3-4496-8fcd-d74f3dbfdf5a' class='xr-section-summary'  title='Expand/collapse section'>Attributes: <span>(0)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><dl class='xr-attrs'></dl></div></li></ul></div></div></div></div>
 </div>
 <p>We can also read out the objective value:</p>
 <div class="cell docutils container">
@@ -1885,7 +1877,7 @@ dl.xr-attrs {
   fill: currentColor;
 }
 </style><pre class='xr-text-repr-fallback'>&lt;xarray.DataArray &#x27;con0&#x27; ()&gt; Size: 8B
-array(0.27586207)</pre><div class='xr-wrap' style='display:none'><div class='xr-header'><div class='xr-obj-type'>xarray.DataArray</div><div class='xr-array-name'>'con0'</div></div><ul class='xr-sections'><li class='xr-section-item'><div class='xr-array-wrap'><input id='section-671149ec-3301-487a-9c9d-4a43c34952cf' class='xr-array-in' type='checkbox' checked><label for='section-671149ec-3301-487a-9c9d-4a43c34952cf' title='Show/hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-array-preview xr-preview'><span>0.2759</span></div><div class='xr-array-data'><pre>array(0.27586207)</pre></div></div></li><li class='xr-section-item'><input id='section-49f5028a-47f2-4901-925a-0a65f6bcf131' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-49f5028a-47f2-4901-925a-0a65f6bcf131' class='xr-section-summary'  title='Expand/collapse section'>Coordinates: <span>(0)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><ul class='xr-var-list'></ul></div></li><li class='xr-section-item'><input id='section-2d5cdf98-dd9a-40a9-b45b-e472f0dfe757' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-2d5cdf98-dd9a-40a9-b45b-e472f0dfe757' class='xr-section-summary'  title='Expand/collapse section'>Indexes: <span>(0)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><ul class='xr-var-list'></ul></div></li><li class='xr-section-item'><input id='section-da856643-4ad8-4db8-b151-3eb1fe9d50f2' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-da856643-4ad8-4db8-b151-3eb1fe9d50f2' class='xr-section-summary'  title='Expand/collapse section'>Attributes: <span>(0)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><dl class='xr-attrs'></dl></div></li></ul></div></div></div></div>
+array(0.27586207)</pre><div class='xr-wrap' style='display:none'><div class='xr-header'><div class='xr-obj-type'>xarray.DataArray</div><div class='xr-array-name'>'con0'</div></div><ul class='xr-sections'><li class='xr-section-item'><div class='xr-array-wrap'><input id='section-1a89cddf-c15c-41ba-9dea-9dde515e4ca6' class='xr-array-in' type='checkbox' checked><label for='section-1a89cddf-c15c-41ba-9dea-9dde515e4ca6' title='Show/hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-array-preview xr-preview'><span>0.2759</span></div><div class='xr-array-data'><pre>array(0.27586207)</pre></div></div></li><li class='xr-section-item'><input id='section-9f83356a-7e44-4399-9f44-22e06baddca4' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-9f83356a-7e44-4399-9f44-22e06baddca4' class='xr-section-summary'  title='Expand/collapse section'>Coordinates: <span>(0)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><ul class='xr-var-list'></ul></div></li><li class='xr-section-item'><input id='section-56522881-658c-4b34-94c0-c728b49f00c8' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-56522881-658c-4b34-94c0-c728b49f00c8' class='xr-section-summary'  title='Expand/collapse section'>Indexes: <span>(0)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><ul class='xr-var-list'></ul></div></li><li class='xr-section-item'><input id='section-cadd02ea-d19a-4914-ae26-0d1e2ccedb94' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-cadd02ea-d19a-4914-ae26-0d1e2ccedb94' class='xr-section-summary'  title='Expand/collapse section'>Attributes: <span>(0)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><dl class='xr-attrs'></dl></div></li></ul></div></div></div></div>
 </div>
 <p>Well done! You solved your first linopy model!</p>
 </section>
@@ -2068,13 +2060,13 @@ Using EKK dual simplex solver - serial
           0     0.0000000000e+00 Pr: 18(585) 0s
          18     1.2879310345e+02 Pr: 0(0) 0s
 Solving the original LP from the solution after postsolve
-Model name          : linopy-problem-bi6zgffr
+Model name          : linopy-problem-m2lptyww
 Model status        : Optimal
 Simplex   iterations: 18
 Objective value     :  1.2879310345e+02
 Relative P-D gap    :  0.0000000000e+00
 HiGHS run time      :          0.00
-Writing the solution to /tmp/linopy-solve-qc_j73i9.sol
+Writing the solution to /tmp/linopy-solve-rk4b5lj3.sol
 </pre></div>
 </div>
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(&#39;ok&#39;, &#39;optimal&#39;)
@@ -2190,13 +2182,13 @@ Writing the solution to /tmp/linopy-solve-qc_j73i9.sol
 <section id="single-bidding-zone-single-period">
 <h3>Single bidding zone, single period<a class="headerlink" href="#single-bidding-zone-single-period" title="Link to this heading">#</a></h3>
 <p>We want to minimise operational cost of an example electricity system representing South Africa subject to generator limits and meeting the load:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-20ad3ee2-f25b-487e-8389-dfd728205480">
-<span class="eqno">(1)<a class="headerlink" href="#equation-20ad3ee2-f25b-487e-8389-dfd728205480" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-fbb5238f-b9e1-4e45-87b6-b82c14eda2a9">
+<span class="eqno">()<a class="headerlink" href="#equation-fbb5238f-b9e1-4e45-87b6-b82c14eda2a9" title="Permalink to this equation">#</a></span>\[\begin{equation}
     \min_{g_s} \sum_s o_s g_s
   \end{equation}\]</div>
 <p>such that</p>
-<div class="amsmath math notranslate nohighlight" id="equation-357aa6e9-8c34-4537-a45e-a5bffe2d4bd1">
-<span class="eqno">(2)<a class="headerlink" href="#equation-357aa6e9-8c34-4537-a45e-a5bffe2d4bd1" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-481bf401-434c-4ecd-a399-5f07d927713a">
+<span class="eqno">()<a class="headerlink" href="#equation-481bf401-434c-4ecd-a399-5f07d927713a" title="Permalink to this equation">#</a></span>\[\begin{align}
   g_s &amp;\leq G_s \\
   g_s &amp;\geq 0 \\
   \sum_s g_s &amp;= d
@@ -2330,12 +2322,12 @@ Presolving model
 0 rows, 0 cols, 0 nonzeros  0s
 Presolve : Reductions: rows 0(-1); columns 0(-4); elements 0(-4) - Reduced to empty
 Solving the original LP from the solution after postsolve
-Model name          : linopy-problem-ezfesp33
+Model name          : linopy-problem-8yxq3s2f
 Model status        : Optimal
 Objective value     :  1.2900000000e+06
 Relative P-D gap    :  0.0000000000e+00
 HiGHS run time      :          0.00
-Writing the solution to /tmp/linopy-solve-y98nh9rg.sol
+Writing the solution to /tmp/linopy-solve-ot9po984.sol
 </pre></div>
 </div>
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(&#39;ok&#39;, &#39;optimal&#39;)
@@ -2776,19 +2768,19 @@ dl.xr-attrs {
   fill: currentColor;
 }
 </style><pre class='xr-text-repr-fallback'>&lt;xarray.DataArray &#x27;energy_balance&#x27; ()&gt; Size: 8B
-array(60.)</pre><div class='xr-wrap' style='display:none'><div class='xr-header'><div class='xr-obj-type'>xarray.DataArray</div><div class='xr-array-name'>'energy_balance'</div></div><ul class='xr-sections'><li class='xr-section-item'><div class='xr-array-wrap'><input id='section-26ece5e1-8a9a-4227-a6a2-dcd166a86f2f' class='xr-array-in' type='checkbox' checked><label for='section-26ece5e1-8a9a-4227-a6a2-dcd166a86f2f' title='Show/hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-array-preview xr-preview'><span>60.0</span></div><div class='xr-array-data'><pre>array(60.)</pre></div></div></li><li class='xr-section-item'><input id='section-70aa143b-9b6c-4eb1-9dd6-a8b4f7bc90d4' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-70aa143b-9b6c-4eb1-9dd6-a8b4f7bc90d4' class='xr-section-summary'  title='Expand/collapse section'>Coordinates: <span>(0)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><ul class='xr-var-list'></ul></div></li><li class='xr-section-item'><input id='section-484c7e7a-b14e-4466-aee1-656038f20b57' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-484c7e7a-b14e-4466-aee1-656038f20b57' class='xr-section-summary'  title='Expand/collapse section'>Indexes: <span>(0)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><ul class='xr-var-list'></ul></div></li><li class='xr-section-item'><input id='section-601d8e47-d96f-4f87-b7d5-6ea466193735' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-601d8e47-d96f-4f87-b7d5-6ea466193735' class='xr-section-summary'  title='Expand/collapse section'>Attributes: <span>(0)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><dl class='xr-attrs'></dl></div></li></ul></div></div></div></div>
+array(60.)</pre><div class='xr-wrap' style='display:none'><div class='xr-header'><div class='xr-obj-type'>xarray.DataArray</div><div class='xr-array-name'>'energy_balance'</div></div><ul class='xr-sections'><li class='xr-section-item'><div class='xr-array-wrap'><input id='section-490253fa-195f-4c4d-8b2c-e78c9ae55872' class='xr-array-in' type='checkbox' checked><label for='section-490253fa-195f-4c4d-8b2c-e78c9ae55872' title='Show/hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-array-preview xr-preview'><span>60.0</span></div><div class='xr-array-data'><pre>array(60.)</pre></div></div></li><li class='xr-section-item'><input id='section-ba3f9f71-e8cd-4b63-84ad-5c94bd21c358' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-ba3f9f71-e8cd-4b63-84ad-5c94bd21c358' class='xr-section-summary'  title='Expand/collapse section'>Coordinates: <span>(0)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><ul class='xr-var-list'></ul></div></li><li class='xr-section-item'><input id='section-60f6b61a-e839-4c0f-b60e-a5ccdd84f622' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-60f6b61a-e839-4c0f-b60e-a5ccdd84f622' class='xr-section-summary'  title='Expand/collapse section'>Indexes: <span>(0)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><ul class='xr-var-list'></ul></div></li><li class='xr-section-item'><input id='section-f34ca18a-b75b-430f-92eb-30fc2c79d6f2' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-f34ca18a-b75b-430f-92eb-30fc2c79d6f2' class='xr-section-summary'  title='Expand/collapse section'>Attributes: <span>(0)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><dl class='xr-attrs'></dl></div></li></ul></div></div></div></div>
 </div>
 </section>
 <section id="two-bidding-zones-with-transmission">
 <h3>Two bidding zones with transmission<a class="headerlink" href="#two-bidding-zones-with-transmission" title="Link to this heading">#</a></h3>
 <p>Let’s add a spatial dimension, such that the optimisation problem is expanded to</p>
-<div class="amsmath math notranslate nohighlight" id="equation-9ffb8bbe-eb76-4d91-9fb8-1e79348203bf">
-<span class="eqno">(3)<a class="headerlink" href="#equation-9ffb8bbe-eb76-4d91-9fb8-1e79348203bf" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-3b013cff-6083-42a2-bdec-0cfbc6f25cdd">
+<span class="eqno">()<a class="headerlink" href="#equation-3b013cff-6083-42a2-bdec-0cfbc6f25cdd" title="Permalink to this equation">#</a></span>\[\begin{equation}
   \min_{g_{i,s}, f_\ell} \sum_s o_{i,s} g_{i,s}
 \end{equation}\]</div>
 <p>such that</p>
-<div class="amsmath math notranslate nohighlight" id="equation-afab8bdb-7438-4306-bb7d-8783b937299e">
-<span class="eqno">(4)<a class="headerlink" href="#equation-afab8bdb-7438-4306-bb7d-8783b937299e" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-12bacf1b-d80b-4f18-91bd-d0a6a6ab1c31">
+<span class="eqno">()<a class="headerlink" href="#equation-12bacf1b-d80b-4f18-91bd-d0a6a6ab1c31" title="Permalink to this equation">#</a></span>\[\begin{align}
   g_{i,s} &amp;\leq G_{i,s} \\
   g_{i,s} &amp;\geq 0 \\
   \sum_s g_{i,s} - \sum_\ell K_{i\ell} f_\ell &amp;= d_i &amp; \text{KCL} \\
@@ -3020,8 +3012,8 @@ dtype: int64
 </div>
 <p>We now define the line limit for the transmission line, assuming that power flowing from Mozambique	to South Africa is positive.</p>
 <p>The line limit equation can be defined as</p>
-<div class="amsmath math notranslate nohighlight" id="equation-30b18e7a-8552-434c-8565-0ecbd6b094a8">
-<span class="eqno">(5)<a class="headerlink" href="#equation-30b18e7a-8552-434c-8565-0ecbd6b094a8" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-112141ce-0fca-42ea-abc4-8f45d0ef231a">
+<span class="eqno">()<a class="headerlink" href="#equation-112141ce-0fca-42ea-abc4-8f45d0ef231a" title="Permalink to this equation">#</a></span>\[\begin{align}
 |f_\ell| &amp;\leq F_\ell &amp; \text{line limits}
 \end{align}\]</div>
 <div class="cell docutils container">
@@ -3040,8 +3032,8 @@ flow_MZ_SA ∈ [-500, 500]
 </div>
 </div>
 <p>The energy balance constraint is replaced by KCL, where we take into account local generation as well as incoming or outgoing flows. The KCL equation can be defined as:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-0a7b941e-dc15-4b18-91c5-39e4be86132f">
-<span class="eqno">(6)<a class="headerlink" href="#equation-0a7b941e-dc15-4b18-91c5-39e4be86132f" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-949d0257-76fd-4dae-8fc8-83e3ec572aa3">
+<span class="eqno">()<a class="headerlink" href="#equation-949d0257-76fd-4dae-8fc8-83e3ec572aa3" title="Permalink to this equation">#</a></span>\[\begin{align}
   \sum_s g_{i,s} - \sum_\ell K_{i\ell} f_\ell &amp;= d_i &amp; \text{KCL} \\
 \end{align}\]</div>
 <p>We also need the incidence matrix <span class="math notranslate nohighlight">\(K_{i\ell}\)</span> of this network (here it’s very simple!) and assume some direction for the flow variable. Here, we picked the orientation from South Africa to Mozambique. This means that if the values for the flow variable <span class="math notranslate nohighlight">\(f_\ell\)</span> are positive South Africa exports to Mozambique and vice versa if the variable takes negative values.</p>
@@ -3114,12 +3106,12 @@ Presolving model
 0 rows, 0 cols, 0 nonzeros  0s
 Presolve : Reductions: rows 0(-2); columns 0(-11); elements 0(-12) - Reduced to empty
 Solving the original LP from the solution after postsolve
-Model name          : linopy-problem-0_d_pdn4
+Model name          : linopy-problem-ggcahoyt
 Model status        : Optimal
 Objective value     :  1.2600000000e+06
 Relative P-D gap    :  0.0000000000e+00
 HiGHS run time      :          0.00
-Writing the solution to /tmp/linopy-solve-dlrzwngc.sol
+Writing the solution to /tmp/linopy-solve-9a1u8f36.sol
 </pre></div>
 </div>
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(&#39;ok&#39;, &#39;optimal&#39;)
@@ -3601,7 +3593,7 @@ dl.xr-attrs {
 </style><pre class='xr-text-repr-fallback'>&lt;xarray.DataArray &#x27;dual&#x27; ()&gt; Size: 8B
 array(60.)
 Coordinates:
-    countries  &lt;U12 48B &#x27;South_Africa&#x27;</pre><div class='xr-wrap' style='display:none'><div class='xr-header'><div class='xr-obj-type'>xarray.DataArray</div><div class='xr-array-name'>'dual'</div></div><ul class='xr-sections'><li class='xr-section-item'><div class='xr-array-wrap'><input id='section-04d69260-7a20-4905-aaca-c5e46ba03373' class='xr-array-in' type='checkbox' checked><label for='section-04d69260-7a20-4905-aaca-c5e46ba03373' title='Show/hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-array-preview xr-preview'><span>60.0</span></div><div class='xr-array-data'><pre>array(60.)</pre></div></div></li><li class='xr-section-item'><input id='section-cc02966d-be03-4db2-bfb6-1cfbaccea366' class='xr-section-summary-in' type='checkbox'  checked><label for='section-cc02966d-be03-4db2-bfb6-1cfbaccea366' class='xr-section-summary' >Coordinates: <span>(1)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><ul class='xr-var-list'><li class='xr-var-item'><div class='xr-var-name'><span>countries</span></div><div class='xr-var-dims'>()</div><div class='xr-var-dtype'>&lt;U12</div><div class='xr-var-preview xr-preview'>&#x27;South_Africa&#x27;</div><input id='attrs-df72dc60-4882-41eb-bb32-000ac3b12b0a' class='xr-var-attrs-in' type='checkbox' disabled><label for='attrs-df72dc60-4882-41eb-bb32-000ac3b12b0a' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-2f32ef7f-ae61-4758-b14e-d508e3390cd4' class='xr-var-data-in' type='checkbox'><label for='data-2f32ef7f-ae61-4758-b14e-d508e3390cd4' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'></dl></div><div class='xr-var-data'><pre>array(&#x27;South_Africa&#x27;, dtype=&#x27;&lt;U12&#x27;)</pre></div></li></ul></div></li><li class='xr-section-item'><input id='section-0fc4975e-ef22-4e6b-9d79-34fb87a72dee' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-0fc4975e-ef22-4e6b-9d79-34fb87a72dee' class='xr-section-summary'  title='Expand/collapse section'>Indexes: <span>(0)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><ul class='xr-var-list'></ul></div></li><li class='xr-section-item'><input id='section-77ea6fe7-d6a8-4b7c-98df-8defe24f33f1' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-77ea6fe7-d6a8-4b7c-98df-8defe24f33f1' class='xr-section-summary'  title='Expand/collapse section'>Attributes: <span>(0)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><dl class='xr-attrs'></dl></div></li></ul></div></div></div></div>
+    countries  &lt;U12 48B &#x27;South_Africa&#x27;</pre><div class='xr-wrap' style='display:none'><div class='xr-header'><div class='xr-obj-type'>xarray.DataArray</div><div class='xr-array-name'>'dual'</div></div><ul class='xr-sections'><li class='xr-section-item'><div class='xr-array-wrap'><input id='section-a3bc4ae7-52f1-44d3-a698-ede13d975915' class='xr-array-in' type='checkbox' checked><label for='section-a3bc4ae7-52f1-44d3-a698-ede13d975915' title='Show/hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-array-preview xr-preview'><span>60.0</span></div><div class='xr-array-data'><pre>array(60.)</pre></div></div></li><li class='xr-section-item'><input id='section-e15bb290-6b3d-417d-9351-3b4dea1fc25f' class='xr-section-summary-in' type='checkbox'  checked><label for='section-e15bb290-6b3d-417d-9351-3b4dea1fc25f' class='xr-section-summary' >Coordinates: <span>(1)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><ul class='xr-var-list'><li class='xr-var-item'><div class='xr-var-name'><span>countries</span></div><div class='xr-var-dims'>()</div><div class='xr-var-dtype'>&lt;U12</div><div class='xr-var-preview xr-preview'>&#x27;South_Africa&#x27;</div><input id='attrs-74b6799d-56ba-47b3-9635-5434d8a64dae' class='xr-var-attrs-in' type='checkbox' disabled><label for='attrs-74b6799d-56ba-47b3-9635-5434d8a64dae' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-8261ad3a-4793-48c1-a9ef-8efeed47f210' class='xr-var-data-in' type='checkbox'><label for='data-8261ad3a-4793-48c1-a9ef-8efeed47f210' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'></dl></div><div class='xr-var-data'><pre>array(&#x27;South_Africa&#x27;, dtype=&#x27;&lt;U12&#x27;)</pre></div></li></ul></div></li><li class='xr-section-item'><input id='section-dae7debd-1908-4ecf-b1f5-693853ebb457' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-dae7debd-1908-4ecf-b1f5-693853ebb457' class='xr-section-summary'  title='Expand/collapse section'>Indexes: <span>(0)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><ul class='xr-var-list'></ul></div></li><li class='xr-section-item'><input id='section-e97de111-84ce-414d-a6dd-a8a980e4df8b' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-e97de111-84ce-414d-a6dd-a8a980e4df8b' class='xr-section-summary'  title='Expand/collapse section'>Attributes: <span>(0)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><dl class='xr-attrs'></dl></div></li></ul></div></div></div></div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -3983,19 +3975,19 @@ dl.xr-attrs {
 </style><pre class='xr-text-repr-fallback'>&lt;xarray.DataArray &#x27;dual&#x27; ()&gt; Size: 8B
 array(-0.)
 Coordinates:
-    countries  &lt;U10 40B &#x27;Mozambique&#x27;</pre><div class='xr-wrap' style='display:none'><div class='xr-header'><div class='xr-obj-type'>xarray.DataArray</div><div class='xr-array-name'>'dual'</div></div><ul class='xr-sections'><li class='xr-section-item'><div class='xr-array-wrap'><input id='section-130f2707-1614-4321-8d20-20331092c7ab' class='xr-array-in' type='checkbox' checked><label for='section-130f2707-1614-4321-8d20-20331092c7ab' title='Show/hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-array-preview xr-preview'><span>-0.0</span></div><div class='xr-array-data'><pre>array(-0.)</pre></div></div></li><li class='xr-section-item'><input id='section-b2bc10ea-2d48-4dbb-a0f0-3d9b3150222e' class='xr-section-summary-in' type='checkbox'  checked><label for='section-b2bc10ea-2d48-4dbb-a0f0-3d9b3150222e' class='xr-section-summary' >Coordinates: <span>(1)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><ul class='xr-var-list'><li class='xr-var-item'><div class='xr-var-name'><span>countries</span></div><div class='xr-var-dims'>()</div><div class='xr-var-dtype'>&lt;U10</div><div class='xr-var-preview xr-preview'>&#x27;Mozambique&#x27;</div><input id='attrs-35253a00-3a66-47e2-84bf-65b39d618ba6' class='xr-var-attrs-in' type='checkbox' disabled><label for='attrs-35253a00-3a66-47e2-84bf-65b39d618ba6' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-e5c10708-ead7-4eb5-853c-f14f81a72f8f' class='xr-var-data-in' type='checkbox'><label for='data-e5c10708-ead7-4eb5-853c-f14f81a72f8f' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'></dl></div><div class='xr-var-data'><pre>array(&#x27;Mozambique&#x27;, dtype=&#x27;&lt;U10&#x27;)</pre></div></li></ul></div></li><li class='xr-section-item'><input id='section-9ffdca1d-86a5-495e-9605-8ec6d175e435' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-9ffdca1d-86a5-495e-9605-8ec6d175e435' class='xr-section-summary'  title='Expand/collapse section'>Indexes: <span>(0)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><ul class='xr-var-list'></ul></div></li><li class='xr-section-item'><input id='section-2bae0ae3-d496-493e-b7e3-d206a48a207d' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-2bae0ae3-d496-493e-b7e3-d206a48a207d' class='xr-section-summary'  title='Expand/collapse section'>Attributes: <span>(0)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><dl class='xr-attrs'></dl></div></li></ul></div></div></div></div>
+    countries  &lt;U10 40B &#x27;Mozambique&#x27;</pre><div class='xr-wrap' style='display:none'><div class='xr-header'><div class='xr-obj-type'>xarray.DataArray</div><div class='xr-array-name'>'dual'</div></div><ul class='xr-sections'><li class='xr-section-item'><div class='xr-array-wrap'><input id='section-e10c4ae6-b42f-4fee-aa9e-fb02d722182d' class='xr-array-in' type='checkbox' checked><label for='section-e10c4ae6-b42f-4fee-aa9e-fb02d722182d' title='Show/hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-array-preview xr-preview'><span>-0.0</span></div><div class='xr-array-data'><pre>array(-0.)</pre></div></div></li><li class='xr-section-item'><input id='section-1692304a-6358-42c4-860e-edf235a9c9ed' class='xr-section-summary-in' type='checkbox'  checked><label for='section-1692304a-6358-42c4-860e-edf235a9c9ed' class='xr-section-summary' >Coordinates: <span>(1)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><ul class='xr-var-list'><li class='xr-var-item'><div class='xr-var-name'><span>countries</span></div><div class='xr-var-dims'>()</div><div class='xr-var-dtype'>&lt;U10</div><div class='xr-var-preview xr-preview'>&#x27;Mozambique&#x27;</div><input id='attrs-4db3e42f-34b9-4dc4-9ee4-2f1ee3fe05a6' class='xr-var-attrs-in' type='checkbox' disabled><label for='attrs-4db3e42f-34b9-4dc4-9ee4-2f1ee3fe05a6' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-72d1a344-9dde-4586-a3ce-95eb2f3d3605' class='xr-var-data-in' type='checkbox'><label for='data-72d1a344-9dde-4586-a3ce-95eb2f3d3605' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'></dl></div><div class='xr-var-data'><pre>array(&#x27;Mozambique&#x27;, dtype=&#x27;&lt;U10&#x27;)</pre></div></li></ul></div></li><li class='xr-section-item'><input id='section-0112347e-13e7-4708-91db-23db88ddb5c0' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-0112347e-13e7-4708-91db-23db88ddb5c0' class='xr-section-summary'  title='Expand/collapse section'>Indexes: <span>(0)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><ul class='xr-var-list'></ul></div></li><li class='xr-section-item'><input id='section-b60d6ae2-e54e-4eaf-9435-d42489777429' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-b60d6ae2-e54e-4eaf-9435-d42489777429' class='xr-section-summary'  title='Expand/collapse section'>Attributes: <span>(0)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><dl class='xr-attrs'></dl></div></li></ul></div></div></div></div>
 </div>
 </section>
 <section id="single-bidding-zone-with-several-periods">
 <h3>Single bidding zone with several periods<a class="headerlink" href="#single-bidding-zone-with-several-periods" title="Link to this heading">#</a></h3>
 <p>In this example, we consider multiple time periods (labelled [0,1,2,3]) to represent variable wind generation and changing load.</p>
-<div class="amsmath math notranslate nohighlight" id="equation-82492703-1f7c-4039-9e6e-62348a6b9dfd">
-<span class="eqno">(7)<a class="headerlink" href="#equation-82492703-1f7c-4039-9e6e-62348a6b9dfd" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-793a8c5a-74d0-42b3-a71f-0b405412f2b2">
+<span class="eqno">()<a class="headerlink" href="#equation-793a8c5a-74d0-42b3-a71f-0b405412f2b2" title="Permalink to this equation">#</a></span>\[\begin{equation}
   \min_{g_{s,t}} \sum_s o_{s} g_{s,t}
 \end{equation}\]</div>
 <p>such that</p>
-<div class="amsmath math notranslate nohighlight" id="equation-be8cbc52-c5cf-4b6f-a2c6-40a310abf315">
-<span class="eqno">(8)<a class="headerlink" href="#equation-be8cbc52-c5cf-4b6f-a2c6-40a310abf315" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-91538111-7b48-4526-b56c-75d2181ffcd2">
+<span class="eqno">()<a class="headerlink" href="#equation-91538111-7b48-4526-b56c-75d2181ffcd2" title="Permalink to this equation">#</a></span>\[\begin{align}
   g_{s,t} &amp;\leq \hat{g}_{s,t} G_{i,s} \\
   g_{s,t} &amp;\geq 0 \\
   \sum_s g_{s,t} &amp;= d_t
@@ -4128,8 +4120,8 @@ Coordinates:
 </div>
 </div>
 <p>Let’s define the dispatch variables <code class="docutils literal notranslate"><span class="pre">g</span></code> with the <code class="docutils literal notranslate"><span class="pre">lower</span></code> and <code class="docutils literal notranslate"><span class="pre">upper</span></code> bound:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-61586633-9730-43c7-876e-9faa4f316bad">
-<span class="eqno">(9)<a class="headerlink" href="#equation-61586633-9730-43c7-876e-9faa4f316bad" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-91bf12e5-49ec-4916-bed3-d2c9b33c560f">
+<span class="eqno">()<a class="headerlink" href="#equation-91bf12e5-49ec-4916-bed3-d2c9b33c560f" title="Permalink to this equation">#</a></span>\[\begin{align}
   g_{s,t} &amp;\leq \hat{g}_{s,t} G_{i,s} \\
   g_{s,t} &amp;\geq 0 \\
 \end{align}\]</div>
@@ -4163,8 +4155,8 @@ Coordinates:
 </div>
 </div>
 <p>Then, we add the objective:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-679466a1-d9c9-428f-8b2f-9d9371c0fe7c">
-<span class="eqno">(10)<a class="headerlink" href="#equation-679466a1-d9c9-428f-8b2f-9d9371c0fe7c" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-72ceedb1-2cad-4b69-810c-cc870668c438">
+<span class="eqno">()<a class="headerlink" href="#equation-72ceedb1-2cad-4b69-810c-cc870668c438" title="Permalink to this equation">#</a></span>\[\begin{equation}
   \min_{g_{s,t}} \sum_s o_{s} g_{s,t}
 \end{equation}\]</div>
 <div class="cell docutils container">
@@ -4185,8 +4177,8 @@ Value: None
 </div>
 </div>
 <p>Which is subject to:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-a59073bb-df79-4603-bf77-8a19721ebd96">
-<span class="eqno">(11)<a class="headerlink" href="#equation-a59073bb-df79-4603-bf77-8a19721ebd96" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-31609df9-e726-4b49-b858-848c9e523590">
+<span class="eqno">()<a class="headerlink" href="#equation-31609df9-e726-4b49-b858-848c9e523590" title="Permalink to this equation">#</a></span>\[\begin{align}
   \sum_s g_{s,t} &amp;= d_t
 \end{align}\]</div>
 <div class="cell docutils container">
@@ -4228,12 +4220,12 @@ Presolving model
 0 rows, 0 cols, 0 nonzeros  0s
 Presolve : Reductions: rows 0(-4); columns 0(-20); elements 0(-20) - Reduced to empty
 Solving the original LP from the solution after postsolve
-Model name          : linopy-problem-ez_u9jue
+Model name          : linopy-problem-fhkirbcx
 Model status        : Optimal
 Objective value     :  6.0820000000e+06
 Relative P-D gap    :  0.0000000000e+00
 HiGHS run time      :          0.00
-Writing the solution to /tmp/linopy-solve-40jrmcxb.sol
+Writing the solution to /tmp/linopy-solve-8k78bhvb.sol
 </pre></div>
 </div>
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(&#39;ok&#39;, &#39;optimal&#39;)
@@ -4536,13 +4528,13 @@ Using EKK dual simplex solver - serial
           7     6.0172006560e+06 Pr: 0(0) 0s
           7     6.0172006560e+06 Pr: 0(0) 0s
 Solving the original LP from the solution after postsolve
-Model name          : linopy-problem-dsbxju8v
+Model name          : linopy-problem-lvq0m1v2
 Model status        : Optimal
 Simplex   iterations: 7
 Objective value     :  6.0172006560e+06
 Relative P-D gap    :  1.5477671892e-16
 HiGHS run time      :          0.00
-Writing the solution to /tmp/linopy-solve-mftiqr42.sol
+Writing the solution to /tmp/linopy-solve-832kdw_j.sol
 </pre></div>
 </div>
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(&#39;ok&#39;, &#39;optimal&#39;)
@@ -4841,24 +4833,6 @@ Writing the solution to /tmp/linopy-solve-mftiqr42.sol
                 <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
-    <a class="left-prev"
-       href="07-workshop-networkx.html"
-       title="previous page">
-      <i class="fa-solid fa-angle-left"></i>
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Introduction to <code class="docutils literal notranslate"><span class="pre">networkx</span></code></p>
-      </div>
-    </a>
-    <a class="right-next"
-       href="09-workshop-pypsa.html"
-       title="next page">
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Introduction to <code class="docutils literal notranslate"><span class="pre">pypsa</span></code></p>
-      </div>
-      <i class="fa-solid fa-angle-right"></i>
-    </a>
 </div>
                 </footer>
               

@@ -67,7 +67,7 @@
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Capacity Expansion Planning with pypsa" href="10-workshop-pypsa-cem.html" />
-    <link rel="prev" title="Introduction to linopy" href="14-workshop-linopy.html" />
+    <link rel="prev" title="Welcome" href="intro.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -172,20 +172,12 @@
             </li>
         </ul>
         <ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="01-workshop-python.html">Introduction to <code class="docutils literal notranslate"><span class="pre">Python</span></code></a></li>
-<li class="toctree-l1"><a class="reference internal" href="02-workshop-numpy.html">Introduction to <code class="docutils literal notranslate"><span class="pre">numpy</span></code> and <code class="docutils literal notranslate"><span class="pre">matplotlib</span></code></a></li>
-<li class="toctree-l1"><a class="reference internal" href="03-workshop-pandas.html">Introduction to <code class="docutils literal notranslate"><span class="pre">pandas</span></code></a></li>
-<li class="toctree-l1"><a class="reference internal" href="04-workshop-geopandas.html">Introduction to <code class="docutils literal notranslate"><span class="pre">geopandas</span></code> and <code class="docutils literal notranslate"><span class="pre">cartopy</span></code></a></li>
-<li class="toctree-l1"><a class="reference internal" href="06-workshop-atlite.html">Introduction to <code class="docutils literal notranslate"><span class="pre">rasterio</span></code> and <code class="docutils literal notranslate"><span class="pre">atlite</span></code></a></li>
-<li class="toctree-l1"><a class="reference internal" href="05-workshop-pysheds.html">Introduction to <code class="docutils literal notranslate"><span class="pre">pysheds</span></code></a></li>
-<li class="toctree-l1"><a class="reference internal" href="07-workshop-networkx.html">Introduction to <code class="docutils literal notranslate"><span class="pre">networkx</span></code></a></li>
-<li class="toctree-l1"><a class="reference internal" href="14-workshop-linopy.html">Introduction to <code class="docutils literal notranslate"><span class="pre">linopy</span></code></a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Introduction to <code class="docutils literal notranslate"><span class="pre">pypsa</span></code></a></li>
 <li class="toctree-l1"><a class="reference internal" href="10-workshop-pypsa-cem.html">Capacity Expansion Planning with <code class="docutils literal notranslate"><span class="pre">pypsa</span></code></a></li>
 <li class="toctree-l1"><a class="reference internal" href="11-workshop-groupwork.html">Preparation for Group Assignment</a></li>
 <li class="toctree-l1"><a class="reference internal" href="12-workshop-pypsa-sector-coupling.html">Sector-Coupling with <code class="docutils literal notranslate"><span class="pre">pypsa</span></code></a></li>
 <li class="toctree-l1"><a class="reference internal" href="13-workshop-interactive-visualisation.html">Interactive Visualisation and Dashboards</a></li>
-<li class="toctree-l1"><a class="reference internal" href="08-workshop-pyomo.html">Introduction to <code class="docutils literal notranslate"><span class="pre">pyomo</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="short_tutorial.html">Short tutorial</a></li>
 <li class="toctree-l1"><a class="reference internal" href="oet-extension/00-build_your_own_content.html">Educators Build Your Own Content</a></li>
 <li class="toctree-l1"><a class="reference internal" href="oet-extension/00-reference.html">References</a></li>
 </ul>
@@ -548,13 +540,13 @@
 <h2>From structured data to optimisation<a class="headerlink" href="#from-structured-data-to-optimisation" title="Link to this heading">#</a></h2>
 <p>The design principle of PyPSA is that basically each component is associated with a set of variables and constraints that will be added to the optimisation model based on the input data stored for the components.</p>
 <p>For an <em>hourly</em> electricity market simulation, PyPSA will solve an optimisation problem that looks like this</p>
-<div class="amsmath math notranslate nohighlight" id="equation-54e30b25-7ffb-4412-b3e9-d4823b950a06">
-<span class="eqno">(12)<a class="headerlink" href="#equation-54e30b25-7ffb-4412-b3e9-d4823b950a06" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-7fcad7df-b039-4a42-bc7c-d58de6815d0d">
+<span class="eqno">(1)<a class="headerlink" href="#equation-7fcad7df-b039-4a42-bc7c-d58de6815d0d" title="Permalink to this equation">#</a></span>\[\begin{equation}
 \min_{g_{i,s,t}; f_{\ell,t}; g_{i,r,t,\text{charge}}; g_{i,r,t,\text{discharge}}; e_{i,r,t}} \sum_s o_{s} g_{i,s,t}
 \end{equation}\]</div>
 <p>such that</p>
-<div class="amsmath math notranslate nohighlight" id="equation-924b85ec-7e89-4d2e-9fe6-3dc36e92353c">
-<span class="eqno">(13)<a class="headerlink" href="#equation-924b85ec-7e89-4d2e-9fe6-3dc36e92353c" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-69d44d21-b51e-4ff8-a714-24ca81a358a0">
+<span class="eqno">(2)<a class="headerlink" href="#equation-69d44d21-b51e-4ff8-a714-24ca81a358a0" title="Permalink to this equation">#</a></span>\[\begin{align}
 0 &amp; \leq g_{i,s,t} \leq \hat{g}_{i,s,t} G_{i,s}  &amp; \text{generation limits : generator} \\
 -F_\ell &amp;\leq f_{\ell,t} \leq F_\ell &amp; \text{transmission limits : line}  \\
 d_{i,t} &amp;= \sum_s g_{i,s,t} + \sum_r g_{i,r,t,\text{discharge}} - \sum_r g_{i,r,t,\text{charge}} - \sum_\ell K_{i\ell} f_{\ell,t} &amp; \text{KCL : bus} \\
@@ -1288,6 +1280,15 @@ d_{i,t} &amp;= \sum_s g_{i,s,t} + \sum_r g_{i,r,t,\text{discharge}} - \sum_r g_{
 <div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/opt/hostedtoolcache/Python/3.11.11/x64/lib/python3.11/site-packages/cartopy/mpl/feature_artist.py:144: UserWarning:
 
 facecolor will have no effect as it has been defined as &quot;never&quot;.
+
+/opt/hostedtoolcache/Python/3.11.11/x64/lib/python3.11/site-packages/cartopy/io/__init__.py:241: DownloadWarning:
+
+Downloading: https://naturalearth.s3.amazonaws.com/50m_cultural/ne_50m_admin_0_boundary_lines_land.zip
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/opt/hostedtoolcache/Python/3.11.11/x64/lib/python3.11/site-packages/cartopy/io/__init__.py:241: DownloadWarning:
+
+Downloading: https://naturalearth.s3.amazonaws.com/50m_physical/ne_50m_coastline.zip
 </pre></div>
 </div>
 <img alt="_images/c873b7ac8ae74c8bc4ef3cd2a2950947e8e09c55cb74b44c2f457d5be8e36c64.png" src="_images/c873b7ac8ae74c8bc4ef3cd2a2950947e8e09c55cb74b44c2f457d5be8e36c64.png" />
@@ -1339,12 +1340,12 @@ Presolving model
 0 rows, 0 cols, 0 nonzeros  0s
 Presolve : Reductions: rows 0(-14); columns 0(-6); elements 0(-19) - Reduced to empty
 Solving the original LP from the solution after postsolve
-Model name          : linopy-problem-v7w3o2ly
+Model name          : linopy-problem-qpssjh25
 Model status        : Optimal
 Objective value     :  1.3813912524e+06
 Relative P-D gap    :  0.0000000000e+00
 HiGHS run time      :          0.00
-Writing the solution to /tmp/linopy-solve-g_925y3e.sol
+Writing the solution to /tmp/linopy-solve-7br9i619.sol
 </pre></div>
 </div>
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(&#39;ok&#39;, &#39;optimal&#39;)
@@ -1617,8 +1618,8 @@ Writing the solution to /tmp/linopy-solve-g_925y3e.sol
 facecolor will have no effect as it has been defined as &quot;never&quot;.
 </pre></div>
 </div>
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(&lt;matplotlib.collections.PatchCollection at 0x7f79025924d0&gt;,
- &lt;matplotlib.collections.LineCollection at 0x7f7902427310&gt;)
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(&lt;matplotlib.collections.PatchCollection at 0x7fae403c6510&gt;,
+ &lt;matplotlib.collections.LineCollection at 0x7fae39e25c50&gt;)
 </pre></div>
 </div>
 <img alt="_images/2a517d6e46f715545369837defac8948732fab551bf90da89faf11f211fcf24b.png" src="_images/2a517d6e46f715545369837defac8948732fab551bf90da89faf11f211fcf24b.png" />
@@ -1655,6 +1656,15 @@ facecolor will have no effect as it has been defined as &quot;never&quot;.
 <div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/opt/hostedtoolcache/Python/3.11.11/x64/lib/python3.11/site-packages/cartopy/mpl/feature_artist.py:144: UserWarning:
 
 facecolor will have no effect as it has been defined as &quot;never&quot;.
+
+/opt/hostedtoolcache/Python/3.11.11/x64/lib/python3.11/site-packages/cartopy/io/__init__.py:241: DownloadWarning:
+
+Downloading: https://naturalearth.s3.amazonaws.com/50m_physical/ne_50m_land.zip
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/opt/hostedtoolcache/Python/3.11.11/x64/lib/python3.11/site-packages/cartopy/io/__init__.py:241: DownloadWarning:
+
+Downloading: https://naturalearth.s3.amazonaws.com/50m_physical/ne_50m_ocean.zip
 </pre></div>
 </div>
 <img alt="_images/7ff99ce8836a596e95cfaee6c7e51a0138088b2a40e67f4c1b207f4a7162f281.png" src="_images/7ff99ce8836a596e95cfaee6c7e51a0138088b2a40e67f4c1b207f4a7162f281.png" />
@@ -1937,12 +1947,12 @@ Presolving model
 0 rows, 0 cols, 0 nonzeros  0s
 Presolve : Reductions: rows 0(-14); columns 0(-6); elements 0(-19) - Reduced to empty
 Solving the original LP from the solution after postsolve
-Model name          : linopy-problem-kmdm84tt
+Model name          : linopy-problem-2gczytfb
 Model status        : Optimal
 Objective value     :  1.3986326317e+06
 Relative P-D gap    :  3.3294038530e-16
 HiGHS run time      :          0.00
-Writing the solution to /tmp/linopy-solve-5vjv8h0j.sol
+Writing the solution to /tmp/linopy-solve-i3ktugub.sol
 </pre></div>
 </div>
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(&#39;ok&#39;, &#39;optimal&#39;)
@@ -2147,12 +2157,12 @@ Presolving model
 0 rows, 0 cols, 0 nonzeros  0s
 Presolve : Reductions: rows 0(-15); columns 0(-6); elements 0(-22) - Reduced to empty
 Solving the original LP from the solution after postsolve
-Model name          : linopy-problem-3i14gm79
+Model name          : linopy-problem-i048dh42
 Model status        : Optimal
 Objective value     :  2.1206212849e+06
 Relative P-D gap    :  0.0000000000e+00
 HiGHS run time      :          0.00
-Writing the solution to /tmp/linopy-solve-j0gnakkq.sol
+Writing the solution to /tmp/linopy-solve-th2cnf7m.sol
 </pre></div>
 </div>
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(&#39;ok&#39;, &#39;optimal&#39;)
@@ -2324,11 +2334,11 @@ Coefficient ranges:
   RHS    [8e-01, 4e+04]
 Presolving model
 Problem status detected on presolve: Infeasible
-Model name          : linopy-problem-2kku6086
+Model name          : linopy-problem-ea656n8_
 Model status        : Infeasible
 Objective value     :  0.0000000000e+00
 HiGHS run time      :          0.00
-Writing the solution to /tmp/linopy-solve-ttszjxi9.sol
+Writing the solution to /tmp/linopy-solve-do2ss0os.sol
 </pre></div>
 </div>
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(&#39;warning&#39;, &#39;infeasible&#39;)
@@ -2361,7 +2371,7 @@ Writing the solution to /tmp/linopy-solve-ttszjxi9.sol
 <div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>WARNING:pypsa.io:Directory tmp does not exist, creating it
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>INFO:pypsa.io:Exported network &#39;tmp&#39; contains: buses, lines, carriers, loads, global_constraints, generators
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>INFO:pypsa.io:Exported network &#39;tmp&#39; contains: buses, lines, global_constraints, generators, loads, carriers
 </pre></div>
 </div>
 </div>
@@ -2385,7 +2395,7 @@ Writing the solution to /tmp/linopy-solve-ttszjxi9.sol
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>INFO:pypsa.io:Exported network &#39;tmp.nc&#39; contains: buses, lines, carriers, loads, global_constraints, generators
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>INFO:pypsa.io:Exported network &#39;tmp.nc&#39; contains: buses, lines, global_constraints, generators, loads, carriers
 </pre></div>
 </div>
 </div>
@@ -2735,7 +2745,7 @@ facecolor will have no effect as it has been defined as &quot;never&quot;.
 facecolor will have no effect as it has been defined as &quot;never&quot;.
 </pre></div>
 </div>
-<img alt="_images/25d408d48fc79ab96947029886265a27e7ea56bddb9c60a0f03c18b3e0a49f01.png" src="_images/25d408d48fc79ab96947029886265a27e7ea56bddb9c60a0f03c18b3e0a49f01.png" />
+<img alt="_images/50a3d003c7d0f7d2bdde950698cf9a2f8fcd76850331e30ca807af9c53ecc9c2.png" src="_images/50a3d003c7d0f7d2bdde950698cf9a2f8fcd76850331e30ca807af9c53ecc9c2.png" />
 </div>
 </div>
 <p>This dataset also includes a few hydro storage units:</p>
@@ -2939,16 +2949,16 @@ Index([&#39;2&#39;, &#39;5&#39;, &#39;10&#39;, &#39;12&#39;, &#39;13&#39;, &#39;
 <div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Writing constraints.:   0%|          | 0/15 [00:00&lt;?, ?it/s]
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Writing constraints.:  13%|█▎        | 2/15 [00:00&lt;00:01, 12.22it/s]
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Writing constraints.:  13%|█▎        | 2/15 [00:00&lt;00:01, 11.38it/s]
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Writing constraints.:  27%|██▋       | 4/15 [00:00&lt;00:00, 15.48it/s]
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Writing constraints.:  27%|██▋       | 4/15 [00:00&lt;00:00, 14.90it/s]
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Writing constraints.:  87%|████████▋ | 13/15 [00:00&lt;00:00, 33.20it/s]
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Writing constraints.:  87%|████████▋ | 13/15 [00:00&lt;00:00, 32.53it/s]
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Writing constraints.: 100%|██████████| 15/15 [00:00&lt;00:00, 26.16it/s]
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Writing constraints.: 100%|██████████| 15/15 [00:00&lt;00:00, 25.60it/s]
 </pre></div>
 </div>
 <div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
@@ -2957,10 +2967,10 @@ Index([&#39;2&#39;, &#39;5&#39;, &#39;10&#39;, &#39;12&#39;, &#39;13&#39;, &#39;
 <div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Writing continuous variables.:   0%|          | 0/6 [00:00&lt;?, ?it/s]
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Writing continuous variables.: 100%|██████████| 6/6 [00:00&lt;00:00, 64.51it/s]
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Writing continuous variables.: 100%|██████████| 6/6 [00:00&lt;00:00, 64.48it/s]
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>INFO:linopy.io: Writing time: 0.69s
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>INFO:linopy.io: Writing time: 0.7s
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running HiGHS 1.9.0 (git hash: fa40bdf): Copyright (c) 2024 HiGHS under MIT licence terms
@@ -2986,13 +2996,12 @@ Using EKK dual simplex solver - serial
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>      17203     9.1992880405e+06 Pr: 0(0); Du: 0(1.24345e-14) 4s
       17203     9.1992880405e+06 Pr: 0(0); Du: 0(1.24345e-14) 4s
 Solving the original LP from the solution after postsolve
-Model name          : linopy-problem-6qy0fb5p
+Model name          : linopy-problem-69xhzv89
 Model status        : Optimal
 Simplex   iterations: 17203
 Objective value     :  9.1992880405e+06
 Relative P-D gap    :  1.5388259474e-14
 HiGHS run time      :          4.51
-Writing the solution to /tmp/linopy-solve-ddyrtjwr.sol
 </pre></div>
 </div>
 <div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>INFO:linopy.constants: Optimization successful: 
@@ -3005,6 +3014,9 @@ Solver message: optimal
 </pre></div>
 </div>
 <div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>INFO:pypsa.optimization.optimize:The shadow-prices of the constraints Generator-fix-p-lower, Generator-fix-p-upper, Line-fix-s-lower, Line-fix-s-upper, Transformer-fix-s-lower, Transformer-fix-s-upper, StorageUnit-fix-p_dispatch-lower, StorageUnit-fix-p_dispatch-upper, StorageUnit-fix-p_store-lower, StorageUnit-fix-p_store-upper, StorageUnit-fix-state_of_charge-lower, StorageUnit-fix-state_of_charge-upper, Kirchhoff-Voltage-Law, StorageUnit-energy_balance were not assigned to the network.
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Writing the solution to /tmp/linopy-solve-f0ww53w_.sol
 </pre></div>
 </div>
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(&#39;ok&#39;, &#39;optimal&#39;)
@@ -3057,7 +3069,7 @@ Solver message: optimal
 facecolor will have no effect as it has been defined as &quot;never&quot;.
 </pre></div>
 </div>
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.colorbar.Colorbar at 0x7f78fa315d90&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.colorbar.Colorbar at 0x7fae395b4550&gt;
 </pre></div>
 </div>
 <img alt="_images/47d510d513317bd2b39bdc02353f5db8548685de3d31c2b2f410f4dc5d6b63e8.png" src="_images/47d510d513317bd2b39bdc02353f5db8548685de3d31c2b2f410f4dc5d6b63e8.png" />
@@ -3149,7 +3161,7 @@ facecolor will have no effect as it has been defined as &quot;never&quot;.
 facecolor will have no effect as it has been defined as &quot;never&quot;.
 </pre></div>
 </div>
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.colorbar.Colorbar at 0x7f78f9f947d0&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.colorbar.Colorbar at 0x7fae38032150&gt;
 </pre></div>
 </div>
 <img alt="_images/b31156e5d67159bf244938f4ca4995de5cf680de6b45570b20677f79214c30a7.png" src="_images/b31156e5d67159bf244938f4ca4995de5cf680de6b45570b20677f79214c30a7.png" />
@@ -3189,12 +3201,12 @@ facecolor will have no effect as it has been defined as &quot;never&quot;.
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="14-workshop-linopy.html"
+       href="intro.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Introduction to <code class="docutils literal notranslate"><span class="pre">linopy</span></code></p>
+        <p class="prev-next-title">Welcome</p>
       </div>
     </a>
     <a class="right-next"
